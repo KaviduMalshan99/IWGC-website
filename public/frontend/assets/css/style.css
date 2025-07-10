@@ -10599,7 +10599,7 @@ section.main-wrapper-sticky .sticky-statement .left-side .title {
   margin: 0;
 }
 section.main-wrapper-sticky .sticky-statement .right {
-  flex-basis: 65%;
+  flex-basis: 25%;
   display: flex;
   align-items: center;
   justify-content: space-between;

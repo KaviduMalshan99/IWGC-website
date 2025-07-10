@@ -40,6 +40,12 @@
     margin-right: 8px;
 }
 
+.icon-ribbon-item img {
+    width: auto;
+    height: 70px;
+    margin-right: 8px;
+}
+
 @keyframes scrollLeft {
     0% {
         transform: translateX(0%);
@@ -114,6 +120,19 @@
     }
 }
 
+.single-gallery img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    display: block;
+}
+
+.signle-fun-facts-one {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 </style>
 
     <div class="banner-swiper-two">
@@ -131,7 +150,7 @@
                                         <p class="disc">
                                            Gain real experience through internships, expert guidance, mentorship, and hands-on projects to prepare for your career.
                                         </p>
-                                        <a href="#" class="rts-btn btn-primary btn-white">Apply for Scholarships </a>
+                                        <a href="{{ route('scholarships') }}" class="rts-btn btn-primary btn-white">Apply for Scholarships </a>
                                     </div>
                                 </div>
                             </div>
@@ -165,7 +184,7 @@
                                         <p class="disc">
                                          Learn anytime, anywhere with our flexible online platform. Study at your own pace with a custom curriculum, get regular feedback, and receive dedicated support every step of the way.
                                         </p>
-                                        <a href="#" class="rts-btn btn-primary btn-white">Apply for Scholarships </a>
+                                        <a href="{{ route('scholarships') }}" class="rts-btn btn-primary btn-white">Apply for Scholarships </a>
                                     </div>
                                 </div>
                             </div>
@@ -199,7 +218,7 @@
                                         <p class="disc">
                                            Explore study abroad programs and career development & training opportunities. Our personalized advice and industry tips help students and graduates unlock their future. Strat your journey today!
                                         </p>
-                                        <a href="#" class="rts-btn btn-primary btn-white">Apply for Scholarships </a>
+                                        <a href="{{ route('scholarships') }}" class="rts-btn btn-primary btn-white">Apply for Scholarships </a>
                                     </div>
                                 </div>
                             </div>
@@ -301,7 +320,7 @@
                     </p>
 
                        
-                        <a href="#" class="rts-btn btn-primary">Explore Our Campus </a>
+                        <a href="{{ route('about') }}" class="rts-btn btn-primary">Explore Our Campus </a>
                     </div>
                 </div>
                 <div class="col-lg-7 pl--70">
@@ -349,7 +368,7 @@
 
 
 <!-- working process area start -->
-<div class="working-process-one bg-main" style="padding:60px 0">
+<div class="working-process-one bg-main " style="padding:60px 0">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -388,12 +407,14 @@
                         <li>Customized Solutions</li>
                         <li>Flexible Entry Points</li>
                         <li>Guided Transitions</li>
+                        <li>Personalized Mentorship & Academic Advising</li>
                     </ul>
                     <h4 style="color:white; margin-top:40px">Placements (Coming Soon)</h4>
                     <ul>
                         <li>Career Launchpad</li>
                         <li>Industry Integration</li>
                         <li>Post-Graduation Support</li>
+                        <li>Resume & Interview Preparation</li>
                     </ul>
                 </div>
             </div>
@@ -429,86 +450,67 @@
 
 
     <!-- rts latest service area start -->
-    <div class="rts-latest-service-area rts-section-gapBottom">
+    <div class="rts-latest-service-area rts-section-gapBottom pt-4 pb-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-style-one center">
-                        <span class="pre">Our Latest Services</span>
-                        <h2 class="title rts-text-anime-style-1">Service We Provide
+                        <span class="pre"></span>
+                        <h2 class="title rts-text-anime-style-1">Popular Programs at IWGC
                         </h2>
                     </div>
                 </div>
-                <div class="col-lg-12 mt--50">
+             <div class="col-lg-8 offset-lg-2 mt--50">
                     <section class="main-wrapper-sticky">
-                        <div class="sticky-statement">
-                            <div class="left-side">
-                                <div class="icon">
-                                    <img src="assets/images/service/01.svg" alt="service">
-                                </div>
-                                <h5 class="title">Business Solution</h5>
-                            </div>
+                        <div class="sticky-statement d-flex align-items-center justify-content-between py-3">
+                                <h5 class="title mb-0">Master of Business Administration (MBA)</h5>
                             <div class="right">
-                                <p class="disc">
-                                    comprehensive set of strategies, tools, technologies, and processes challenges,
-                                    optimize operations, and drive business growth.
-                                </p>
-                                <a href="#" class="arrow">
+                                <a href="{{ route('master_BA') }}" class="arrow" style="margin-left: auto;">
                                     <i class="fa-regular fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
-                        <div class="sticky-statement">
-                            <div class="left-side">
-                                <div class="icon">
-                                    <img src="assets/images/service/02.svg" alt="service">
-                                </div>
-                                <h5 class="title">Creative Ideas</h5>
-                            </div>
+                        <div class="sticky-statement d-flex align-items-center justify-content-between py-3">
+                                <h5 class="title mb-0">Master of Educational Leadership & Management </h5>
                             <div class="right">
-                                <p class="disc">
-                                    comprehensive set of strategies, tools, technologies, and processes challenges,
-                                    optimize operations, and drive business growth.
-                                </p>
-                                <a href="#" class="arrow">
+                                <a href="{{ route('master_ELM') }}" class="arrow" style="margin-left: auto;">
                                     <i class="fa-regular fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
-                        <div class="sticky-statement">
-                            <div class="left-side">
-                                <div class="icon">
-                                    <img src="assets/images/service/03.svg" alt="service">
-                                </div>
-                                <h5 class="title">Market Research</h5>
-                            </div>
+                         <div class="sticky-statement d-flex align-items-center justify-content-between py-3">
+                                <h5 class="title mb-0">Bachelor of Early Childhood Education (BECE)</h5>
                             <div class="right">
-                                <p class="disc">
-                                    comprehensive set of strategies, tools, technologies, and processes challenges,
-                                    optimize operations, and drive business growth.
-                                </p>
-                                <a href="#" class="arrow">
+                                <a href="{{ route('bachelor_ECE') }}" class="arrow" style="margin-left: auto;">
                                     <i class="fa-regular fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
-                        <div class="sticky-statement">
-                            <div class="left-side">
-                                <div class="icon">
-                                    <img src="assets/images/service/01.svg" alt="service">
-                                </div>
-                                <h5 class="title">Technology Solution</h5>
-                            </div>
+                         <div class="sticky-statement d-flex align-items-center justify-content-between py-3">
+                                <h5 class="title mb-0">Bachelor of Teaching (Primary)</h5>
                             <div class="right">
-                                <p class="disc">
-                                    comprehensive set of strategies, tools, technologies, and processes challenges,
-                                    optimize operations, and drive business growth.
-                                </p>
-                                <a href="#" class="arrow">
+                                <a href="{{ route('bachelor_teaching') }}" class="arrow" style="margin-left: auto;">
                                     <i class="fa-regular fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
+                         <div class="sticky-statement d-flex align-items-center justify-content-between py-3">
+                                <h5 class="title mb-0">Bachelor of Science in Psychology</h5>
+                            <div class="right">
+                                <a href="{{ route('bachelor_psychology') }}" class="arrow" style="margin-left: auto;">
+                                    <i class="fa-regular fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                         <div class="sticky-statement d-flex align-items-center justify-content-between py-3">
+                                <h5 class="title mb-0">Bachelor of Counseling </h5>
+                            <div class="right">
+                                <a href="{{ route('bachelor_counseling') }}" class="arrow" style="margin-left: auto;">
+                                    <i class="fa-regular fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                       
                     </section>
                 </div>
             </div>
@@ -516,54 +518,32 @@
     </div>
     <!-- rts latest service area end -->
 
-    <!-- rts just a consultancy area  -->
-    <div class="just-a-consultancy-area rts-section-gapBottom">
+    
+
+    <!-- rts faq area start -->
+    <div class="rts-faq-area rts-section-gapBottom">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="consultancy-thumbnail-area">
-                        <div class="large-image">
-                            <img src="assets/images/about/02.webp" alt="thumbnail">
-                        </div>
-                        <div class="small-iamge images-r">
-                            <img src="assets/images/about/03.webp" alt="">
-                        </div>
+            <div class="row">
+                 <div class="col-lg-12" style="padding-bottom:50px">
+                    <div class="title-style-one center">
+                        <span class="pre"></span>
+                        <h2 class="title rts-text-anime-style-1"> Frequently Asked Questions
+                        </h2>
                     </div>
                 </div>
-                <div class="col-lg-6 pl--50 pl_sm--15 mt_md--100 mt_sm--100">
-                    <div class="consultancy-style-one">
-                        <div class="title-style-one left mb--30">
-                            <span class="pre">Business Consultancy</span>
-                            <h2 class="title rts-text-anime-style-1">We know how to manage <br>
-                                business globally
-                            </h2>
+                <div class="col-lg-6 pl--50 pr--50" data-animation="fadeInUp" data-delay="0.1">
+                    <div class="thumbnail-about-right-4">
+                         <div class="large-iamge">
+                            <img src="frontend/assets/images/faq/01.webp" alt="about">
                         </div>
-                        <div class="signle-consultancy mb--30" data-animation="fadeInUp" data-delay="0.2" data-duration="1.2">
-                            <div class="icon">
-                                <img src="assets/images/about/icons/01.svg" alt="">
-                            </div>
-                            <div class="information">
-                                <h4 class="title">Best Business Consulting</h4>
-                                <p class="disc">
-                                    Fusce condimentum mattis placerat odio donec lacus porta torquent, mauris gravida
-                                    rutrum
-                                </p>
-                            </div>
+                        <div class="small-image images-r">
+                            <img src="frontend/assets/images/faq/03.jpg" alt="about">
                         </div>
-                        <div class="signle-consultancy" data-animation="fadeInUp" data-delay="0.4" data-duration="1.2">
-                            <div class="icon">
-                                <img src="assets/images/about/icons/02.svg" alt="">
-                            </div>
-                            <div class="information">
-                                <h4 class="title">24/7 Customer Support</h4>
-                                <p class="disc">
-                                    Fusce condimentum mattis placerat odio donec lacus porta torquent, mauris gravida
-                                    rutrum
-                                </p>
-                            </div>
+                        <div class="poligon-shape images-r">
+                            <img src="frontend/assets/images/faq/poligon-shape.svg" alt="">
                         </div>
-                        <div class="button-wrapper mt--40" data-animation="fadeInUp" data-delay="0.4" data-duration="1.2">
-                            <a href="#" class="rts-btn btn-primary">Contact Us</a>
+                        <div class="video-area">
+                           
                             <div class="vedio-icone">
                                 <a class="video-play-button play-video popup-video" href="https://www.youtube.com/watch?v=vZE0j_WCRvI">
                                     <span></span>
@@ -575,678 +555,400 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-6 pl--50 pl_md--0 pl_sm--0 mt_md--50 mt_sm--80" data-animation="fadeInUp" data-delay="0.3">
+                    <div class="accordion faq-wrapper-inner-page" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    01. What programs does the university offer?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  We offer a wide range of undergraduate, graduate, and professional programs in fields such as science, business, engineering, and education. Flexible formats are available to fit your schedule.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    02. How do I apply for admission?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+Our application process is simple. Choose your program, submit the required documents, and our team will assist you through every step. If you need help deciding, our advisors are here for you.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    03. What is the student to faculty ratio?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+We maintain a low student to faculty ratio to ensure personalized academic support, strong mentoring, and a collaborative learning environment.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    04. I am unsure which course fits my career or migration goals. Can you help?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  I am unsure which course fits my career or migration goals. Can you help?
+Yes. Our expert counselors will help you select the right course based on your career plans or migration objectives.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    05. What if I am working or managing a family?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+We understand your responsibilities. That is why we offer flexible learning options including fully online and hybrid programs to fit your lifestyle.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingsix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                                    06. Can I improve the value of my current education?
+                                </button>
+                            </h2>
+                            <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+Yes. We help enhance your current qualifications through internships, industry workshops, additional learning modules, and practical training.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- rts just a consultancy area  end -->
-
-   
+    <!-- rts faq area end -->
 
     
-
-    <!-- rts team area start -->
-    <div class="rts-team-area rts-section-gap">
+     <!-- start client review area start -->
+    <div class="rts-client-review-two bg-black-content pt-4 bg-client-r-h2">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-style-one center">
-                        <span class="pre">Our Experts</span>
-                        <h2 class="title rts-text-anime-style-1">Our Team Mates
+            <div class="row mt--30">
+                <div class="title-style-three-between">
+                    <div class="title-style-three left">
+                        <span class="pre">Our Testimonial</span>
+                        <div class="bg-title">04</div>
+                        <h2 class="title rts-text-anime-style-1">Student Testimonials
                         </h2>
                     </div>
-                </div>
-            </div>
-            <div class="row mt--30 g-5 g-sm-30 mt_sm--0">
-                <div class="col-lg-4 col-md-6 col-sm-12 mt_sm--50" data-animation="fadeInUp" data-delay="0.2" data-duration="1.2">
-                    <div class="single-team-area-one-start">
-                        <a href="team-details.html" class="thumbnail">
-                            <img src="assets/images/team/01.webp" alt="team">
-                        </a>
-                        <div class="inner-content">
-                            <div class="text-top">
-                                <a href="team-details.html">
-                                    <h5 class="title">Kevin Martin</h5>
-                                </a>
-                                <span>Consultant</span>
-                            </div>
-                            <div class="social-one-wrapper">
-                                <ul>
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt_sm--120" data-animation="fadeInUp" data-delay="0.4" data-duration="1.2">
-                    <div class="single-team-area-one-start">
-                        <a href="team-details.html" class="thumbnail">
-                            <img src="assets/images/team/02.webp" alt="team">
-                        </a>
-                        <div class="inner-content">
-                            <div class="text-top">
-                                <a href="team-details.html">
-                                    <h5 class="title">Martin Chopra</h5>
-                                </a>
-                                <span>Consultant</span>
-                            </div>
-                            <div class="social-one-wrapper">
-                                <ul>
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt_sm--120 mt_md--80" data-animation="fadeInUp" data-delay="0.6" data-duration="1.2">
-                    <div class="single-team-area-one-start">
-                        <a href="team-details.html" class="thumbnail">
-                            <img src="assets/images/team/03.webp" alt="team">
-                        </a>
-                        <div class="inner-content">
-                            <div class="text-top">
-                                <a href="team-details.html">
-                                    <h5 class="title">John Dion</h5>
-                                </a>
-                                <span>Consultant</span>
-                            </div>
-                            <div class="social-one-wrapper">
-                                <ul>
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- rts team area ends -->
-
-    <!-- business boost area start -->
-    <div class="boost-your-business-today mt--70">
-        <div class="container-2">
-            <div class="col-lg-12">
-                <div class="business-boost-wrapper-main rts-section-gap">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <div class="business-marklting-area-thumb">
-                                    <img src="assets/images/business/01.webp" alt="business_area">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 offset-lg-1">
-                                <div class="boosting-business-right-area">
-                                    <div class="title-style-one left">
-                                        <span class="pre">Boost Your Business Today</span>
-                                        <h2 class="title rts-text-anime-style-1">Most Reliable Efficient <br>
-                                            Consulting Agency
-                                        </h2>
-                                    </div>
-                                    <p class="disc">
-                                        Porttitor ornare fermentum aliquam pharetra ut facilisis gravida risus suscipit
-                                        feugiat fusce conubia ridiculus tristique solving parturient natoque vulputate
-                                        risu hasellus quam tincidunt posuere aliquam accumsan
-                                    </p>
-                                    <div class="feature-one-wrapper mt--40 pl_sm--0">
-                                        <div class="single-feature-one active">
-                                            <i class="fal fa-check"></i>
-                                            <p>Fast Growing Sells</p>
-                                        </div>
-                                        <div class="single-feature-one">
-                                            <i class="fal fa-check"></i>
-                                            <p>24/7 Quality Services</p>
-                                        </div>
-                                        <div class="single-feature-one">
-                                            <i class="fal fa-check"></i>
-                                            <p>Expert Members</p>
-                                        </div>
-                                        <div class="single-feature-one">
-                                            <i class="fal fa-check"></i>
-                                            <p>Best Quality Services</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- business boost area end -->
-
-    <!-- rts pricing area start -->
-    <div class="rts-pricing-area-one rts-section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="pricing-three-title-area">
-                        <div class="title-style-one left">
-                            <span class="pre">Price Table</span>
-                            <h2 class="title rts-text-anime-style-1">Pricing & Plans
-                            </h2>
-                        </div>
-                        <div class="pricing-tab-button-area">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Monthly PLan</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Yearly
-                                        Plan</button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt--100">
-                <div class="col-12">
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <div class="row g-5">
-                                <!-- single pricing plane -->
-                                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                    <div class="pricing-wrapper-one">
-                                        <div class="plane-process">
-                                            <span>/month</span>
-                                            <h3 class="title">$160</h3>
-                                        </div>
-                                        <!-- pricing header -->
-                                        <div class="pricing-header-start">
-                                            <span class="pre-title">Starter Package</span>
-                                            <h4 class="title">
-                                                Basic Plan
-                                            </h4>
-                                        </div>
-                                        <!-- pricing header End -->
-                                        <!-- pricing body start -->
-                                        <div class="pricing-body">
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Business Solution</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">24/7 Consultant Service</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Great Customer Support</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing ">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Market Growth Solution</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">24/7 Consultant Service</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <a class="rts-btn btn-primary" href="#">Buy This</a>
-                                        </div>
-                                        <!-- pricing body end -->
-                                    </div>
-                                </div>
-                                <!-- single pricing plane -->
-                                <!-- single pricing plane -->
-                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt_sm--80">
-                                    <div class="pricing-wrapper-one">
-                                        <div class="plane-process">
-                                            <span>/month</span>
-                                            <h3 class="title">$180</h3>
-                                        </div>
-                                        <!-- pricing header -->
-                                        <div class="pricing-header-start">
-                                            <span class="pre-title">Starter Package</span>
-                                            <h4 class="title">
-                                                Standard Plan
-                                            </h4>
-                                        </div>
-                                        <!-- pricing header End -->
-                                        <!-- pricing body start -->
-                                        <div class="pricing-body">
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Business Solution</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">24/7 Consultant Service</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Great Customer Support</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing ">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Market Growth Solution</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">24/7 Consultant Service</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <a class="rts-btn btn-primary" href="#">Buy This</a>
-                                        </div>
-                                        <!-- pricing body end -->
-                                    </div>
-                                </div>
-                                <!-- single pricing plane -->
-                                <!-- single pricing plane -->
-                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt_md--80 mt_sm--80">
-                                    <div class="pricing-wrapper-one">
-                                        <div class="plane-process">
-                                            <span>/month</span>
-                                            <h3 class="title">$260</h3>
-                                        </div>
-                                        <!-- pricing header -->
-                                        <div class="pricing-header-start">
-                                            <span class="pre-title">Starter Package</span>
-                                            <h4 class="title">
-                                                Premium Plan
-                                            </h4>
-                                        </div>
-                                        <!-- pricing header End -->
-                                        <!-- pricing body start -->
-                                        <div class="pricing-body">
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Business Solution</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">24/7 Consultant Service</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Great Customer Support</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing ">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Market Growth Solution</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">24/7 Consultant Service</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <a class="rts-btn btn-primary" href="#">Buy This</a>
-                                        </div>
-                                        <!-- pricing body end -->
-                                    </div>
-                                </div>
-                                <!-- single pricing plane -->
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <div class="row g-5">
-                                <!-- single pricing plane -->
-                                <div class="col-lg-4">
-                                    <div class="pricing-wrapper-one">
-                                        <div class="plane-process">
-                                            <span>/year</span>
-                                            <h3 class="title">$1800</h3>
-                                        </div>
-                                        <!-- pricing header -->
-                                        <div class="pricing-header-start">
-                                            <span class="pre-title">Starter Package</span>
-                                            <h4 class="title">
-                                                Basic Plan
-                                            </h4>
-                                        </div>
-                                        <!-- pricing header End -->
-                                        <!-- pricing body start -->
-                                        <div class="pricing-body">
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Business Solution</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">24/7 Consultant Service</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Great Customer Support</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing ">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Market Growth Solution</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">24/7 Consultant Service</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <a class="rts-btn btn-primary" href="#">Buy This</a>
-                                        </div>
-                                        <!-- pricing body end -->
-                                    </div>
-                                </div>
-                                <!-- single pricing plane -->
-                                <!-- single pricing plane -->
-                                <div class="col-lg-4">
-                                    <div class="pricing-wrapper-one">
-                                        <div class="plane-process">
-                                            <span>/year</span>
-                                            <h3 class="title">$2000</h3>
-                                        </div>
-                                        <!-- pricing header -->
-                                        <div class="pricing-header-start">
-                                            <span class="pre-title">Standard Plan</span>
-                                            <h4 class="title">
-                                                Standard Plan
-                                            </h4>
-                                        </div>
-                                        <!-- pricing header End -->
-                                        <!-- pricing body start -->
-                                        <div class="pricing-body">
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Business Solution</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">24/7 Consultant Service</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Great Customer Support</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing ">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Market Growth Solution</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">24/7 Consultant Service</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <a class="rts-btn btn-primary" href="#">Buy This</a>
-                                        </div>
-                                        <!-- pricing body end -->
-                                    </div>
-                                </div>
-                                <!-- single pricing plane -->
-                                <!-- single pricing plane -->
-                                <div class="col-lg-4">
-                                    <div class="pricing-wrapper-one">
-                                        <div class="plane-process">
-                                            <span>/year</span>
-                                            <h3 class="title">$2300</h3>
-                                        </div>
-                                        <!-- pricing header -->
-                                        <div class="pricing-header-start">
-                                            <span class="pre-title">Premium Plan</span>
-                                            <h4 class="title">
-                                                Premium Plan
-                                            </h4>
-                                        </div>
-                                        <!-- pricing header End -->
-                                        <!-- pricing body start -->
-                                        <div class="pricing-body">
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Business Solution</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">24/7 Consultant Service</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing available">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Great Customer Support</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing ">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">Market Growth Solution</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <!-- single pricing -->
-                                            <div class="single-pricing">
-                                                <div class="icon">
-                                                    <i class="far fa-check"></i>
-                                                </div>
-                                                <span class="price-details">24/7 Consultant Service</span>
-                                            </div>
-                                            <!-- single pricing End -->
-                                            <a class="rts-btn btn-primary" href="#">Buy This</a>
-                                        </div>
-                                        <!-- pricing body end -->
-                                    </div>
-                                </div>
-                                <!-- single pricing plane -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- rts pricing area end -->
-
-
-     <!-- rts blog area start -->
-    <div class="rts-blog-area rts-section-gapBottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-style-one center">
-                        <span class="pre">Blog & News</span>
-                        <h2 class="title rts-text-anime-style-1">Recent blog post
-                        </h2>
+                    <div class="button-area">
+                        <a href="#" class="rts-btn btn-primary btn-white">See All Reviews</a>
                     </div>
                 </div>
             </div>
             <div class="row g-5 mt--20">
-                <div class="col-lg-12">
-                    <div class="blog-swiper-style-one">
-                        <div class="swiper mySwiper-blog-one">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="single-blog-area-one">
-                                        <p>Business Solution / <span>by David Dolean</span></p>
-                                        <a href="blog-details.html">
-                                            <h4 class="title">Building a Brand That from Market Leaders</h4>
+                <div class="col-12">
+                    <div class="swiper mySwiperh2_clients">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!-- single client reviews -->
+                                <div class="rts-client-reviews-h2">
+                                    <div class="review-header">
+                                        <a href="#" class="thumbnail">
+                                            <img src="frontend/assets/images/testimonials/avatar/01.webp" alt="testimonials_area">
                                         </a>
-                                        <div class="bottom-details">
-                                            <a href="blog-details.html" class="thumbnail">
-                                                <img src="assets/images/blog/01.webp" alt="blog-area">
+                                        <div class="discription">
+                                            <a href="#">
+                                                <h6 class="title">David Smith</h6>
                                             </a>
+                                            <span>Web Developer</span>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single-blog-area-one">
-                                        <p>Business Solution / <span>by David Dolean</span></p>
-                                        <a href="blog-details.html">
-                                            <h4 class="title">Transforming Your Best Of Approach to Business</h4>
-                                        </a>
-                                        <div class="bottom-details">
-                                            <a href="blog-details.html" class="thumbnail">
-                                                <img src="assets/images/blog/02.webp" alt="blog-area">
-                                            </a>
-                                        </div>
+                                    <div class="review-body">
+                                        <p class="disc">
+                                            “The course content was and easy to follow instructors were
+                                    available answer questions”
+                                        </p>
+                                        
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="single-blog-area-one">
-                                        <p>Business Solution / <span>by David Dolean</span></p>
-                                        <a href="blog-details.html">
-                                            <h4 class="title">The quick settle tips of the new ages exist</h4>
-                                        </a>
-                                        <div class="bottom-details">
-                                            <a href="blog-details.html" class="thumbnail">
-                                                <img src="assets/images/blog/03.webp" alt="blog-area">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single-blog-area-one">
-                                        <p>Business Solution / <span>by David Dolean</span></p>
-                                        <a href="blog-details.html">
-                                            <h4 class="title">Building a Brand That from Market Leaders</h4>
-                                        </a>
-                                        <div class="bottom-details">
-                                            <a href="blog-details.html" class="thumbnail">
-                                                <img src="assets/images/blog/01.webp" alt="blog-area">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single-blog-area-one">
-                                        <p>Business Solution / <span>by David Dolean</span></p>
-                                        <a href="blog-details.html">
-                                            <h4 class="title">Transforming Your Best Of Approach to Business</h4>
-                                        </a>
-                                        <div class="bottom-details">
-                                            <a href="blog-details.html" class="thumbnail">
-                                                <img src="assets/images/blog/02.webp" alt="blog-area">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single-blog-area-one">
-                                        <p>Business Solution / <span>by David Dolean</span></p>
-                                        <a href="blog-details.html">
-                                            <h4 class="title">The quick settle tips of the new ages exist</h4>
-                                        </a>
-                                        <div class="bottom-details">
-                                            <a href="blog-details.html" class="thumbnail">
-                                                <img src="assets/images/blog/03.webp" alt="blog-area">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <!-- single client reviews End -->
                             </div>
-                            <div class="swiper-pagination"></div>
+                            <div class="swiper-slide">
+                                <!-- single client reviews -->
+                                <div class="rts-client-reviews-h2">
+                                    <div class="review-header">
+                                        <a href="#" class="thumbnail">
+                                            <img src="frontend/assets/images/testimonials/avatar/02.webp" alt="testimonials_area">
+                                        </a>
+                                        <div class="discription">
+                                            <a href="#">
+                                                <h6 class="title">Mark Jone</h6>
+                                            </a>
+                                            <span>Web Developer</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-body">
+                                        <p class="disc">
+                                            “The course content was and easy to follow instructors were
+                                    available answer questions”
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                                <!-- single client reviews End -->
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- single client reviews -->
+                                <div class="rts-client-reviews-h2">
+                                    <div class="review-header">
+                                        <a href="#" class="thumbnail">
+                                            <img src="frontend/assets/images/testimonials/avatar/03.webp" alt="testimonials_area">
+                                        </a>
+                                        <div class="discription">
+                                            <a href="#">
+                                                <h6 class="title">Lord Korn</h6>
+                                            </a>
+                                            <span>Web Developer</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-body">
+                                        <p class="disc">
+                                            “The course content was and easy to follow instructors were
+                                    available answer questions”
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                                <!-- single client reviews End -->
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- single client reviews -->
+                                <div class="rts-client-reviews-h2">
+                                    <div class="review-header">
+                                        <a href="#" class="thumbnail">
+                                            <img src="frontend/assets/images/testimonials/avatar/01.webp" alt="testimonials_area">
+                                        </a>
+                                        <div class="discription">
+                                            <a href="#">
+                                                <h6 class="title">David Smith</h6>
+                                            </a>
+                                            <span>Web Developer</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-body">
+                                        <p class="disc">
+                                            “The course content was and easy to follow instructors were
+                                    available answer questions”
+                                        </p>
+                                       
+                                    </div>
+                                </div>
+                                <!-- single client reviews End -->
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- single client reviews -->
+                                <div class="rts-client-reviews-h2">
+                                    <div class="review-header">
+                                        <a href="#" class="thumbnail">
+                                            <img src="frontend/assets/images/testimonials/avatar/02.webp" alt="testimonials_area">
+                                        </a>
+                                        <div class="discription">
+                                            <a href="#">
+                                                <h6 class="title">Mark Jone</h6>
+                                            </a>
+                                            <span>Web Developer</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-body">
+                                        <p class="disc">
+                                            “The course content was and easy to follow instructors were
+                                    available answer questions”
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                                <!-- single client reviews End -->
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- single client reviews -->
+                                <div class="rts-client-reviews-h2">
+                                    <div class="review-header">
+                                        <a href="#" class="thumbnail">
+                                            <img src="frontend/assets/images/testimonials/avatar/03.webp" alt="testimonials_area">
+                                        </a>
+                                        <div class="discription">
+                                            <a href="#">
+                                                <h6 class="title">Lord Korn</h6>
+                                            </a>
+                                            <span>Web Developer</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-body">
+                                        <p class="disc">
+                                            “The course content was and easy to follow instructors were
+                                    available answer questions”
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                                <!-- single client reviews End -->
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start client review area end -->
+
+    
+
+    <div class="service-ribbon-wrapper">
+        <div class="service-ribbon-track">
+            <div class="service-ribbon-content">
+                <!-- Content Repeated Twice for Seamless Scroll -->
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture1.png"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture2.png"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture3.jpg"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture4.png"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture5.png"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture6.png"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture7.png"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture8.jpg"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture9.jpg"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture10.png"></div>
+
+                <!-- Repeat for infinite loop effect -->
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture1.png"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture2.png"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture3.jpg"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture4.png"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture5.png"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture6.png"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture7.png"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture8.jpg"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture9.jpg"></div>
+                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture10.png"></div>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="rts-client-area ptb--100 brand-bg-three bg_image">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="client-three-wrapper">
+                        <div class="single">
+                            <img src="frontend/assets/images/uni/uni1.webp" alt="Business_client">
+                        </div>
+                        <div class="single">
+                            <img src="frontend/assets/images/uni/uni2.png" alt="Business_client">
+                        </div>
+                        <div class="single">
+                              <img src="frontend/assets/images/uni/uni3.png" alt="Business_client">
+                        </div>
+                        <div class="single">
+                              <img src="frontend/assets/images/uni/uni4.png" alt="Business_client">
+                        </div>
+                        <div class="single">
+                             <img src="frontend/assets/images/uni/uni5.png" alt="Business_client">
+                        </div>
+                        <div class="single">
+                              <img src="frontend/assets/images/malaysia/Picture9.png" alt="Business_client">
+                        </div>
+                          <div class="single">
+                              <img src="frontend/assets/images/uni/uni7.png" alt="Business_client">
+                        </div>
+                          <div class="single">
+                              <img src="frontend/assets/images/malaysia/Picture10.png" alt="Business_client">
+                        </div>
+                          <div class="single">
+                              <img src="frontend/assets/images/uni/uni9.png" alt="Business_client">
+                        </div>
+                          <div class="single">
+                              <img src="frontend/assets/images/malaysia/Picture8.png" alt="Business_client">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- rts blog area end -->
+
+    
+     
+    <!-- rts galllery area start -->
+    <div class="rts-gallery-area rts-section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="gallery-area-main-wrapper-4">
+                        <div class="row g-5">
+                            <div class="col-md-4">
+                                <div class="single-gallery">
+                                    <a href="frontend/assets/images/gallery/Picture1.png" class="thumbnail gallery-image">
+                                        <img src="frontend/assets/images/gallery/Picture1.png" alt="gallery">
+                                    </a>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-gallery">
+                                    <a href="frontend/assets/images/gallery/Picture2.png" class="thumbnail gallery-image">
+                                        <img src="frontend/assets/images/gallery/Picture2.png" alt="gallery">
+                                    </a>
+                                  
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-gallery">
+                                    <a href="frontend/assets/images/gallery/Picture3.png" class="thumbnail gallery-image">
+                                        <img src="frontend/assets/images/gallery/Picture3.png" alt="gallery">
+                                    </a>
+                                  
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-gallery">
+                                    <a href="frontend/assets/images/gallery/Picture4.png" class="thumbnail gallery-image">
+                                        <img src="frontend/assets/images/gallery/Picture4.png" alt="gallery">
+                                    </a>
+                          
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-gallery">
+                                    <a href="frontend/assets/images/gallery/Picture5.png" class="thumbnail gallery-image">
+                                        <img src="frontend/assets/images/gallery/Picture5.png" alt="gallery">
+                                    </a>
+                                  
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-gallery">
+                                    <a href="frontend/assets/images/gallery/Picture6.png" class="thumbnail gallery-image">
+                                        <img src="frontend/assets/images/gallery/Picture6.png" alt="gallery">
+                                    </a>
+                               
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rts galllery area end -->
 
      
     <!-- rts cta area start -->
@@ -1256,14 +958,12 @@
                 <div class="col-lg-12">
                     <div class="cta-main-area-wrapper-one bg_image">
                         <div class="left-areas">
-                            <span class="pre">Latest Business Ideas</span>
-                            <h3 class="title">Sign Up Newsletter</h3>
+                            <span class="pre" style="font-weight:bold; font-size:25px">Is your Progress on Hold?</span>
+                            <p style="font-weight:bold; font-size:20px">Don’t let family commitments and work barriers hold you back—your professional 
+                                journey deserves to keep moving forward, and at IWGC, we’re here to support you every step of the way</p>
                         </div>
-                        <div class="right-area">
-                            <div class="inpur-area-main">
-                                <input type="text" placeholder="Enter Email Address">
-                                <button class="rts-btn btn-primary">Subscribe Now</button>
-                            </div>
+                        <div class="right-area mt-2">
+                                <button class="rts-btn btn-primary">Get Started Now </button>
                         </div>
                     </div>
                 </div>

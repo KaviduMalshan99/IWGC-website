@@ -2,46 +2,60 @@
         <div class="container">
             <div class="row">
                 <!-- single wized -->
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 ">
                     <div class="footer-two-single-wized left">
-                        <h3 class="title animated fadeIn">
-                            <span>Ready To</span> <br>
-                        Work With Us?
-                        </h3>
-                        <p class="disc">
-                            Felis consequat magnis est fames sagittis ultrices placerat sodales porttitor quisque.
-                        </p>
-                        <a class="rts-btn btn-primary" href="#">Get a Quote</a>
+                        <div class="widget-head">
+                                    <a href="index.php">
+                                        <img src="{{ asset('logo.png') }}" alt="IWGC Logo" style="width:300px">
+                                    </a>
+                                </div>
+                    
+                            <div class="contact-info-1">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="disc">
+                                    <span>Our Location</span>
+                                    <a href="#">No. 85 -1/3, Galle Road, Dehiwala, Sri Lanka</a>
+                                </div>
+                            </div>
+                      
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--50">
                     <div class="footer-two-single-wized two">
                         <div class="wized-title-area">
-                            <h5 class="wized-title">Our Services</h5>
-                            <img src="assets/images/footer/01.png" alt="Invena_Footer">
+                            <h5 class="wized-title">Handy Links</h5>
                         </div>
                         <div class="wized-2-body">
                             <ul>
-                                <li><a href="service-details.html"><i class="fal fa-chevron-double-right"></i>Business
-                                        planning</a></li>
-                                <li><a href="service-details.html"><i class="fal fa-chevron-double-right"></i>Tax
-                                        strategy</a></li>
-                                <li><a href="service-details.html"><i class="fal fa-chevron-double-right"></i>Financial
-                                        advices</a></li>
-                                <li><a href="service-details.html"><i class="fal fa-chevron-double-right"></i>Insurance
-                                        strategy</a></li>
-                                <li><a href="service-details.html"><i class="fal fa-chevron-double-right"></i>Manage
-                                        investment</a></li>
+                                <li><a href="{{ route('scholarships') }}"><i class="fal fa-chevron-double-right"></i>Scholarships</a></li>
+                                <li><a href="{{ route('careers') }}"><i class="fal fa-chevron-double-right"></i>Careers</a></li>
+                                <li><a href="{{ route('blog') }}"><i class="fal fa-chevron-double-right"></i>Blogs</a></li>
+                                <li><a href="{{ route('events') }}"><i class="fal fa-chevron-double-right"></i>Events</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--50">
+                    <div class="footer-two-single-wized two">
+                        <div class="wized-title-area">
+                            <h5 class="wized-title">Learning</h5>
+                        </div>
+                        <div class="wized-2-body">
+                            <ul>
+                                <li><a href="{{ route('enroll') }}"><i class="fal fa-chevron-double-right"></i>Enroll</a></li>
+                                <li><a href="service-details.html"><i class="fal fa-chevron-double-right"></i>Pay Online</a></li>
+                                <li><a href="service-details.html"><i class="fal fa-chevron-double-right"></i>LMS</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <!-- single wized -->
-                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--30 mt_md--30">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--30 mt_md--30">
                     <div class="footer-two-single-wized">
                         <div class="wized-title-area">
                             <h5 class="wized-title">Contact Us</h5>
-                            <img src="assets/images/footer/01.png" alt="Invena_Footer">
                         </div>
                         <div class="wized-2-body">
                             <div class="contact-info-1">
@@ -50,7 +64,8 @@
                                 </div>
                                 <div class="disc">
                                     <span>Call Us 24/7</span>
-                                    <a href="#">(+256) 2145.2156</a>
+                                    <a href="#">+(94) 766 888 184</a>
+                                    <a href="#">+(94) 114 686 767</a>
                                 </div>
                             </div>
                             <div class="contact-info-1">
@@ -59,31 +74,16 @@
                                 </div>
                                 <div class="disc">
                                     <span>Work with us</span>
-                                    <a href="#">info@Invena.com</a>
+                                    <a href="#">info@iwgc.lk</a>
+                                     <a href="#">admissions@iwgc.com</a>
                                 </div>
                             </div>
+                           
                         </div>
                     </div>
                 </div>
                 <!-- single wized -->
-                <!-- single wized -->
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="footer-two-single-wized right">
-                        <div class="wized-2-body">
-                            <div class="contact-info-1">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="disc">
-                                    <span>Our Location</span>
-                                    <a href="#">XYZ Hilton Street, 125 Town <br>
-                                    United State</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- single wized -->
+                
             </div>
         </div>
     </div>
@@ -93,7 +93,7 @@
                 <div class="col-lg-12">
                     <div class="copyright-h-2-wrapper">
                         <p class="disc">
-                            Invena - Copyright
+                             IWGC - Copyright
                             <script>
                                 document.write(
                                     new Date().getFullYear()
@@ -102,9 +102,9 @@
                         </p>
                         <div class="right">
                             <ul>
-                                <li><a href="blog-list.html">Company News</a></li>
-                                <li><a href="#">Faq</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
+                                <li><a href="{{ route('Cookies-Policy') }}">Cookies Policy</a></li>
+                                <li><a href="{{ route('Terms-and-Conditions') }}">Terms & Conditions</a></li>
                             </ul>
                         </div>
                     </div>

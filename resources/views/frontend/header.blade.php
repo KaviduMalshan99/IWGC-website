@@ -15,7 +15,7 @@
                             </div>
                             <div class="right">
                                 <ul class="top-nav">
-                                    <li><a href="blog-list.html">Enroll</a></li>
+                                    <li><a href="{{ route('enroll') }}">Enroll</a></li>
                                     <li><a href="faq.html">LMS</a></li>
                                     <li><a href="contact.html">Pay Online</a></li>
                                 </ul>
@@ -48,7 +48,7 @@
                                             <a href="{{ route('index') }}">Home</a>
                                         </li>
                                         <li class="main-nav  mega-menu project-a-after">
-                                            <a href="#">About</a>
+                                            <a href="{{ route('about') }}">About</a>
                                         </li>
                                         
                                         <li class="main-nav has-dropdown mega-menu">
@@ -57,18 +57,19 @@
                                                 <div class="wrapper">
                                                     <div class="container">
                                                         <div class="row g-0">
-                                                            <div class="col-lg-4">
+                                                          <div class="col-lg-4">
                                                                 <ul class="mega-menu-item with-list parent-nav">
                                                                     <li class="hega-menu-head-wrapper">
-                                                                        <p class="hega-menu-head"><i class="fa-regular fa-folder-open"></i>
-                                                                            University Programs</p>
+                                                                        <p class="hega-menu-head"><i class="fa-regular fa-folder-open"></i>University Programs</p>
                                                                     </li>
-                                                                    <li><a href="project.html"><i
-                                                class="fa-sharp fa-regular fa-chevron-right"></i>Project</a>
+                                                                    <li>
+                                                                        <a href="{{ route('avid') }}"><i class="fa-sharp fa-regular fa-chevron-right"></i>Avid College – Maldives</a>
+                                                                        <a href="{{ route('business') }}" ><i class="fa-sharp fa-regular fa-chevron-right" style="padding-left: 20px; margin-top: 5px;"></i>Faculty of Business Management</a>
+                                                                        <a href="{{ route('education') }}" ><i class="fa-sharp fa-regular fa-chevron-right" style="padding-left: 20px; margin-top: 5px;"></i>Faculty of Education</a>
+                                                                        <a href="{{ route('humanities') }}" ><i class="fa-sharp fa-regular fa-chevron-right" style="padding-left: 20px; margin-top: 5px;"></i>Faculty of Humanities</a>
                                                                     </li>
                                                                 </ul>
                                                             </div>
-                                            
                                                             <div class="col-lg-4">
                                                                 <ul class="mega-menu-item with-list parent-nav">
                                                                     <li class="hega-menu-head-wrapper">
@@ -76,9 +77,9 @@
                                                                             Ofqual – UK Regulated
                                                                         </p>
                                                                     </li>
-                                                                    <li><a href="project-bg-dark.html"><i
-                                                class="fa-sharp fa-regular fa-chevron-right"></i>Project
-                                                                            Hide Content</a></li>
+                                                                    <li><a href="{{ route('qualifi') }}"><i
+                                                class="fa-sharp fa-regular fa-chevron-right"></i>
+                                                                QUALIFI   </a></li>
 
                                                                 </ul>
                                                             </div>
@@ -89,8 +90,7 @@
                                                                             Other</p>
                                                                     </li>
                                                                     <li><a href="project-details.html"><i
-                                                class="fa-sharp fa-regular fa-chevron-right"></i>Project
-                                                                            Detials</a>
+                                                class="fa-sharp fa-regular fa-chevron-right"></i>CPD – UK</a>
                                                                     </li>
                                                                     
                                                                 </ul>
@@ -103,17 +103,17 @@
                                         <li class="main-nav has-dropdown project-a-after">
                                             <a href="#">Study Abroad</a>
                                             <ul class="submenu parent-nav">
-                                                <li><a href="contact.html">Canada</a></li>
-                                                <li><a href="contact-2.html">Malaysia</a></li>
-                                                <li><a href="contact-2.html">Singapore</a></li>
-                                                <li><a href="contact-2.html">United Kingdom</a></li>
+                                                <li><a href="{{ route('study_canada') }}">Canada</a></li>
+                                                <li><a href="{{ route('study_malaysia') }}">Malaysia</a></li>
+                                                <li><a href="{{ route('study_singapore') }}">Singapore</a></li>
+                                                <li><a href="{{ route('study_uk') }}">United Kingdom</a></li>
                                             </ul>
                                         </li>
                                         <li class="main-nav  mega-menu project-a-after">
-                                            <a href="#">Blog</a>
+                                            <a href="{{ route('blog') }}">Blog</a>
                                         </li>
                                         <li class="main-nav  mega-menu project-a-after">
-                                            <a href="#">Contact</a>
+                                            <a href="{{ route('contact') }}">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
