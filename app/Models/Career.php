@@ -14,8 +14,9 @@ class Career extends Model
         'location',
         'description',
         'deadline_date',
+        'job_type', 
+        'experience',
     ];
-
 
     protected $casts = [
         'deadline_date' => 'date', 

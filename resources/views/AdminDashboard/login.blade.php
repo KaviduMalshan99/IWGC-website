@@ -7,9 +7,9 @@
     <meta name="description" content="Cuba admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Cuba admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon"  href="{{ asset('icon.png') }}" type="image/x-icon">
-    <link rel="shortcut icon"  href="{{ asset('icon.png') }}" type="image/x-icon">
-    <title>WebCeylon</title>
+    <link rel="icon"  href="{{ asset('logo2.png') }}" type="image/x-icon">
+    <link rel="shortcut icon"  href="{{ asset('logo2.png') }}" type="image/x-icon">
+    <title>IWGC</title>
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
@@ -33,7 +33,7 @@
         <div class="col-12 p-0">
           <div class="login-card login-dark">
             <div>
-              <div><a class="logo text-start" href=""><img class="img-fluid for-light" style="height:80px;" src="{{ asset('webceylon.png') }}" alt="looginpage"><img class="img-fluid for-dark" src="{{ asset('icon.png') }}" alt="loginpage"></a></div>
+              <div><a class="logo text-start" href=""><img class="img-fluid for-light" style="height:80px;" src="{{ asset('logo.png') }}" alt="looginpage"><img class="img-fluid for-dark" src="{{ asset('logo2.png') }}" alt="loginpage"></a></div>
               <div class="login-main"> 
               <form class="theme-form" method="POST" action="">
                     @csrf  {{-- CSRF Protection --}}

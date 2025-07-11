@@ -89,113 +89,54 @@
     </div>
 
 
-
-    <!-- current opening area start -->
-    <div class="current-opening-area bg_primary rts-section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-style-five center mb--40">
-                        <h2 class="title">Current Openings</h2>
-                        <span class="pre">Be part of our mission to provide quality education and shape the future of our students</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt--30">
-                <div class="col-lg-12">
-                    <div class="single-open-career" data-animation="fadeInUp" data-delay="0.1">
-                        <div class="left-side">
-                            <h4 class="title">Senior Lecturer - Computer Science
-                            </h4>
-                            <div class="bottom">
-                                <div class="single">
-                                    <i class="fa-regular fa-location-dot"></i>
-                                    <span>Colombo, Sri Lanka</span>
-                                </div>
-                                <div class="single">
-                                    <i class="fa-regular fa-location-dot"></i>
-                                    <span>Full Time</span>
-                                </div>
-                                <div class="single">
-                                    <i class="fa-regular fa-location-dot"></i>
-                                    <span>2 Year Experience</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right-side">
-                            <div class="bottom">
-                                <div class="single">
-                                    <p>Apply Deadline</p>
-                                    <span>25 Jan, 2025</span>
-                                </div>
-                                
-                                <a href="#" class="rts-btn btn-primary btn-white">Apply Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-open-career" data-animation="fadeInUp" data-delay="0.3">
-                        <div class="left-side">
-                            <h4 class="title">Student Counselor
-                            </h4>
-                            <div class="bottom">
-                                <div class="single">
-                                    <i class="fa-regular fa-location-dot"></i>
-                                    <span>Dehiwala, Sri Lanka</span>
-                                </div>
-                                <div class="single">
-                                    <i class="fa-regular fa-location-dot"></i>
-                                    <span>Full Time</span>
-                                </div>
-                                <div class="single">
-                                    <i class="fa-regular fa-location-dot"></i>
-                                    <span>1 Year Experience</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right-side">
-                            <div class="bottom">
-                                <div class="single">
-                                    <p>Apply Deadline</p>
-                                    <span>25 Jan, 2025</span>
-                                </div>
-                                <a href="#" class="rts-btn btn-primary btn-white">Apply Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-open-career" data-animation="fadeInUp" data-delay="0.5">
-                        <div class="left-side">
-                            <h4 class="title">Administrative Assistant
-                            </h4>
-                            <div class="bottom">
-                                <div class="single">
-                                    <i class="fa-regular fa-location-dot"></i>
-                                    <span>Dehiwala, Sri Lanka</span>
-                                </div>
-                                <div class="single">
-                                    <i class="fa-regular fa-location-dot"></i>
-                                    <span>Full Time</span>
-                                </div>
-                                <div class="single">
-                                    <i class="fa-regular fa-location-dot"></i>
-                                    <span>1 Year Experience</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right-side">
-                            <div class="bottom">
-                                <div class="single">
-                                    <p>Apply Deadline</p>
-                                    <span>25 Jan, 2025</span>
-                                </div>
-                                <a href="#" class="rts-btn btn-primary btn-white">Apply Now</a>
-                            </div>
-                        </div>
-                    </div>
+<!-- current opening area start -->
+<div class="current-opening-area bg_primary rts-section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-style-five center mb--40">
+                    <h2 class="title">Current Openings</h2>
+                    <span class="pre">Be part of our mission to provide quality education and shape the future of our students</span>
                 </div>
             </div>
         </div>
+        <div class="row mt--30">
+            @foreach($careers as $career)
+            <div class="col-lg-12">
+                <div class="single-open-career" data-animation="fadeInUp" data-delay="0.1">
+                    <div class="left-side">
+                        <h4 class="title">{{ $career->job_title }}</h4>
+                        <div class="bottom">
+                            <div class="single">
+                                <i class="fa-regular fa-location-dot"></i>
+                                <span>{{ $career->location }}</span>
+                            </div>
+                            <div class="single">
+                                <i class="fa-regular fa-location-dot"></i>
+                                <span>{{ $career->job_type }}</span>
+                            </div>
+                            <div class="single">
+                                <i class="fa-regular fa-location-dot"></i>
+                                <span>{{ $career->experience }} Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side" style="margin-left:15%">
+                        <div class="bottom">
+                            <div class="single">
+                                <p>Apply Deadline</p>
+                                <span>{{ \Carbon\Carbon::parse($career->deadline_date)->format('d M, Y') }}</span>
+                            </div>
+                            <a href="" class="rts-btn btn-primary btn-white">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
     </div>
-    <!-- current opening area end -->
+</div>
+<!-- current opening area end -->
 
 
         

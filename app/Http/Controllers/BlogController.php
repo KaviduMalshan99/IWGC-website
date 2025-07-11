@@ -125,17 +125,7 @@ class BlogController extends Controller
     {
         $blog = Blog::findOrFail($id);
         
-        // Retrieve related blogs (by the same author or category)
-        $relatedBlogs = Blog::where('id', '!=', $id) // Exclude the current blog
-            ->where(function($query) use ($blog) {
-                $query->where('author', $blog->author)
-                    ->orWhere('category', $blog->category);
-            })
-            ->latest()
-            ->take(5)
-            ->get();
-        
-        return view('frontend.blog-details', compact('blog', 'relatedBlogs'));
+        return view('frontend.blog-details', compact('blog'));
     }
 
 }

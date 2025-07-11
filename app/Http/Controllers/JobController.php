@@ -23,6 +23,8 @@ class JobController extends Controller
     {
         $request->validate([
             'job_title' => 'required|string|max:255',
+            'job_type' => 'required|string|max:255',  
+            'experience' => 'required|string|max:255', 
             'location' => 'required|string|max:255',
             'description' => 'required|string',
             'deadline_date' => 'required|date',
@@ -33,6 +35,8 @@ class JobController extends Controller
             'location' => $request->location,
             'description' => $request->description,
             'deadline_date' => $request->deadline_date,
+            'job_type' => $request->job_type, 
+            'experience' => $request->experience, 
         ]);
 
         return redirect()->route('careers.index')->with('success', 'Job opening created successfully.');
@@ -43,18 +47,23 @@ class JobController extends Controller
         return view('AdminDashboard.Career.edit', compact('career'));
     }
 
+
     public function update(Request $request, Career $career)
     {
         $request->validate([
             'job_title' => 'required|string|max:255',
+            'job_type' => 'required|string|max:255',  
             'location' => 'required|string|max:255',
+            'experience' => 'required|string|max:255', 
             'description' => 'required|string',
             'deadline_date' => 'required|date',
         ]);
 
         $career->update([
             'job_title' => $request->job_title,
+            'job_type' => $request->job_type, 
             'location' => $request->location,
+            'experience' => $request->experience, 
             'description' => $request->description,
             'deadline_date' => $request->deadline_date,
         ]);
@@ -74,6 +83,6 @@ class JobController extends Controller
       public function jobs()
     {
         $careers = Career::all();
-        return view('frontend.careers', compact('careers'));
+        return view('frontend.career', compact('careers'));
     }
 }

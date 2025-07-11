@@ -19,7 +19,7 @@
     <div class="col-sm-12">
       <div class="card">
         <div class="card-body">
-          <form method="POST" action="{{ route('careers.update', $career->id) }}" enctype="multipart/form-data">
+         <form method="POST" action="{{ route('careers.update', $career->id) }}" enctype="multipart/form-data">
             @csrf
             @method('PUT')
 
@@ -32,11 +32,37 @@
                 @error('job_title') <small class="text-danger">{{ $message }}</small> @enderror
               </div>
 
+              <!-- Job Type (Dropdown) -->
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Job Type</label>
+                <select name="job_type" class="form-control">
+                  <option value="Full-time" {{ old('job_type', $career->job_type) == 'Full-time' ? 'selected' : '' }}>Full-time</option>
+                  <option value="Part-Time" {{ old('job_type', $career->job_type) == 'Part-time' ? 'selected' : '' }}>Part-time</option>
+                  <option value="Contract" {{ old('job_type', $career->job_type) == 'Contract' ? 'selected' : '' }}>Contract</option>
+                  <option value="Freelance" {{ old('job_type', $career->job_type) == 'Freelance' ? 'selected' : '' }}>Freelance</option>
+                </select>
+                @error('job_type') <small class="text-danger">{{ $message }}</small> @enderror
+              </div>
+
               <!-- Location -->
               <div class="col-md-6 mb-3">
                 <label class="form-label">Location</label>
                 <input type="text" name="location" class="form-control" value="{{ old('location', $career->location) }}">
                 @error('location') <small class="text-danger">{{ $message }}</small> @enderror
+              </div>
+
+              <!-- Experience (Dropdown) -->
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Experience</label>
+                <select name="experience" class="form-control">
+                  <option value="Freshers - 0 years" {{ old('experience', $career->experience) == 'Freshers - 0 years' ? 'selected' : '' }}>Freshers - 0 years</option>
+                  <option value="1+" {{ old('experience', $career->experience) == '1+' ? 'selected' : '' }}>1+ year</option>
+                  <option value="2+" {{ old('experience', $career->experience) == '2+' ? 'selected' : '' }}>2+ years</option>
+                  <option value="3+" {{ old('experience', $career->experience) == '3+' ? 'selected' : '' }}>3+ years</option>
+                  <option value="5+" {{ old('experience', $career->experience) == '5+' ? 'selected' : '' }}>5+ years</option>
+                  <option value="10+" {{ old('experience', $career->experience) == '10+' ? 'selected' : '' }}>10+ years</option>
+                </select>
+                @error('experience') <small class="text-danger">{{ $message }}</small> @enderror
               </div>
 
               <!-- Description -->
@@ -58,8 +84,7 @@
             <div class="card-footer text-end">
               <button type="submit" class="btn btn-primary">Update Job Opening</button>
             </div>
-
-          </form>
+        </form>
         </div>
       </div>
     </div>

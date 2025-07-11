@@ -3,8 +3,8 @@
     <div>
         <div class="logo-wrapper">
             <a href="{{ route('dashboard') }}">
-                <img class="img-fluid for-light" src="{{ asset('webceylon.png') }}" alt="webceylon" style="height:50px">
-                <img class="img-fluid for-dark" src="{{ asset('webceylon.png') }}" alt="webceylon" style="height:50px">
+                <img class="img-fluid for-light" src="{{ asset('logo.png') }}" alt="webceylon" style="height:40px">
+                <img class="img-fluid for-dark" src="{{ asset('logo.png') }}" alt="webceylon" style="height:40px">
             </a>
             <div class="back-btn"><i class="fa fa-angle-left"></i></div>
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"></i></div>
@@ -12,7 +12,7 @@
 
         <div class="logo-icon-wrapper">
             <a href="{{ route('dashboard') }}">
-                <img class="img-fluid" src="{{ asset('backend/assets/images/logo/logo-icon.png') }}" alt="">
+                <img class="img-fluid" src="{{ asset('logo2.png') }}" alt="" style="height:35px">
             </a>
         </div>
 
@@ -22,7 +22,7 @@
                 <ul class="sidebar-links" id="simple-bar">
                     <li class="back-btn">
                         <a href="{{ route('dashboard') }}">
-                            <img class="img-fluid" src="{{ asset('backend/assets/images/logo/logo-icon.png') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('logo2.png') }}" alt="" style="height:35px">
                         </a>
                         <div class="mobile-back text-end">
                             <span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
@@ -43,7 +43,7 @@
                     </li>
 
 
-                    <li class="sidebar-list">
+                        <!--<li class="sidebar-list">
                            <a class="sidebar-link sidebar-title" href="#">
                                 <svg class="stroke-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
@@ -55,7 +55,7 @@
                                 <li><a href="{{ route('projects.index') }}">Project List</a></li>
                                 <li><a href="{{ route('projects.create') }}">Add Projects</a></li>
                             </ul>
-                        </li>
+                        </li>-->
 
                         <li class="sidebar-list">
                           <a class="sidebar-link sidebar-title" href="#">
@@ -100,7 +100,7 @@
                             </ul>
                         </li>
 
-                       <li class="sidebar-list">
+                       <!--<li class="sidebar-list">
                         <a class="sidebar-link sidebar-title" href="#">
                         <svg width="20" height="20" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -126,7 +126,7 @@
                                 <li> <a href="{{ route('services.index') }}">Services</a></li>
                             </ul>
                        
-                    </li>
+                    </li>-->
 
 
                 </ul>

@@ -20,22 +20,16 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('frontend.contact');
 })->name('contact');
+Route::post('/submit-inquiry', [InquiryController::class, 'store'])->name('inquiry.store');
+Route::get('/careers', [JobController::class, 'jobs'])->name('careers');
+Route::get('/blog', [BlogController::class, 'blogs'])->name('blog');
+Route::get('/blog-details/{id}', [BlogController::class, 'show'])->name('blog-details');
 
-Route::get('/blog', function () {
-    return view('frontend.blog');
-})->name('blog');
-
-Route::get('/careers', function () {
-    return view('frontend.career');
-})->name('careers');
 
 Route::get('/events', function () {
     return view('frontend.events');
 })->name('events');
 
-Route::get('/blog-details', function () {
-    return view('frontend.blog-details');
-})->name('blog-details');
 
 Route::get('/study_abroad_Canada', function () {
     return view('frontend.study_canada');

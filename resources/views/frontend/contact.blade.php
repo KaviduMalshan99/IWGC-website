@@ -60,20 +60,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-4">
                     <div class="thumbnail-contact-form">
                         <img src="frontend/assets/images/contact/01.webp" alt="contact">
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="contact-form-p">
-                        <form class="form__content" method="post" action="mailer.php" id="contact-form">
+                <div class="col-lg-4">
+                   <div class="contact-form-p new">
+                         <!-- Success Message -->
+                          @if(session('success'))
+                                <div id="success-message" data-message="{{ session('success') }}"></div>
+                            @endif
+                         <!-- Form -->
+                        <form class="form__content" method="post" action="{{ route('inquiry.store') }}" id="contact-form">
+                            @csrf
                             <h4 class="title">Get In Touch</h4>
                             <input name="name" id="name" type="text" placeholder="Your Name">
                             <input type="email" name="email" id="email" placeholder="Johndoe@gmail.com">
                             <textarea name="message" id="message" placeholder="Message"></textarea>
 
-                            <div id="form-messages"></div>
                             <button class="rts-btn btn-primary" type="submit">Get In Touch</button>
                         </form>
                     </div>
@@ -104,6 +109,12 @@
 
 
 
-
+<script>
+document.getElementById('contact-form').addEventListener('submit', function () {
+    setTimeout(() => {
+        window.location.reload();
+    }, 1000); // refresh 1 sec after submission
+});
+</script>
    
 @endsection
