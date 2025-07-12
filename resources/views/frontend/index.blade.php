@@ -445,11 +445,179 @@
 </div>
 <!-- working process area end -->
 
+<style>
+
+.program-card {
+    display: block;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    height: 100%;
+}
+
+.program-image {
+    position: relative;
+    height: 100%;
+}
+
+.program-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+.program-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.program-content h3 {
+    color: white;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+/* Overlay Styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.47);
+    z-index: 1;
+    transition: background 0.3s ease;
+    border-radius: 15px;
+}
+
+/* Button Style */
+.program-content .btn {
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 8px 20px;
+    margin-bottom: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effects */
+.program-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.program-card:hover .overlay {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.program-card:hover .btn-outline-light {
+    background-color: #fff;
+    color: #c1121f;
+    border-color: #fff;
+}
+
+</style>
 
 
+  <!-- Program Buttons Section -->
+        <section class="program-buttons-section section-padding  rts-section-gapBottom  rts-section-gapTop">
+            <div class="container">
+                <div class="section-title color-red text-center">
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                        Popular Programs at IWGC
+                    </h2>
+                    <p class="courses-sub-text mt-3 mb-5 wow fadeInUp" style="font-size:18px" data-wow-delay=".5s">Explore our <b>top-rated</b> programs designed for your <b>academic success</b></p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <a href="programs/mba-business-administration.php" class="program-card">
+                            <div class="program-image">
+                                <img src="{{ asset('frontend/assets/images/avid/1mb.png') }}" alt="Master of Business Administration" class="img-fluid">
+                                <div class="overlay"></div>
+                                <div class="program-content">
+                                    <h3>Master of Business Administration</h3>
+                                    <span class="btn btn-outline-light">Explore Program<i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/programs/master-educational-leadership.php" class="program-card">
+                            <div class="program-image">
+                                <img src="{{ asset('frontend/assets/images/avid/Master-of-Educational-Leadership-and-Management.jpg') }}" alt="Master of Educational Leadership and Management" class="img-fluid">
+                                <div class="overlay"></div>
+                                <div class="program-content">
+                                    <h3>Master of Educational Leadership and Management</h3>
+                                    <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/programs/bachelor-early-childhood-education.php" class="program-card">
+                            <div class="program-image">
+                                <img src="{{ asset('frontend/assets/images/avid/Bachelor-of-Early-Childhood Education.jpg') }}" alt="Bachelor of Early Childhood Education" class="img-fluid">
+                                <div class="overlay"></div>
+                                <div class="program-content">
+                                    <h3>Bachelor of Early Childhood Education (BECE)</h3>
+                                    <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/programs/bachelor-teaching-primary.php" class="program-card">
+                            <div class="program-image">
+                                <img src="{{ asset('frontend/assets/images/avid/Bachelor-of-Teaching-(Primary).jpg') }}" alt="Bachelor of Teaching (Primary)" class="img-fluid">
+                                <div class="overlay"></div>
+                                <div class="program-content">
+                                    <h3>Bachelor of Teaching (Primary)</h3>
+                                    <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/programs/Bachelor-of-Counseling.php" class="program-card">
+                            <div class="program-image">
+                                <img src="{{ asset('frontend/assets/images/avid/Bachelor-of-Counseling.jpg') }}" alt="Bachelor of Counseling" class="img-fluid">
+                                <div class="overlay"></div>
+                                <div class="program-content">
+                                    <h3>Bachelor of Counseling</h3>
+                                    <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/programs/Bachelor-of-Counseling.php" class="program-card">
+                            <div class="program-image">
+                                <img src="{{ asset('frontend/assets/images/avid/boc.jpg') }}" alt="Bachelor of Counseling" class="img-fluid">
+                                <div class="overlay"></div>
+                                <div class="program-content">
+                                    <h3>Bachelor of Psychology</h3>
+                                    <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-    <!-- rts latest service area start -->
+    <!-- rts latest service area start 
     <div class="rts-latest-service-area rts-section-gapBottom pt-4 pb-4">
         <div class="container">
             <div class="row">
@@ -516,7 +684,7 @@
             </div>
         </div>
     </div>
-    <!-- rts latest service area end -->
+  rts latest service area end -->
 
     
 
