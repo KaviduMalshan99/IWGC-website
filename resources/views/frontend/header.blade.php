@@ -129,7 +129,9 @@
                                     <button class="search" id="search"><i class="far fa-search"></i></button>
                                     <a href="contact.html" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">View 
                                         Programs</a>
-                                   
+                                    <button id="menu-btn" class="menu-btn menu ml--20 ml_sm--5">
+                                        <img class="menu-light" src="{{ asset('frontend/assets/images/icons/01.svg') }}" alt="Menu-icon">
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -144,11 +146,10 @@
         <button class="close-icon-menu"><i class="far fa-times"></i></button>
         <!-- inner menu area desktop start -->
         <div class="rts-sidebar-menu-desktop">
-            <a class="logo-1" href="index.html"><img class="logo" src="assets/images/logo/01.svg" alt="finbiz_logo"></a>
+            <a class="logo-1" href="{{ route('index') }}"><img class="logo" src="{{ asset('logo.png') }}" alt="IWGC"></a>
             <div class="body d-none d-xl-block">
                 <p class="disc">
-                    We must explain to you how all seds this mistakens idea denouncing pleasures and praising account.
-                    All seds this mistakens idea denouncing pleasures.
+                  
                 </p>
                 <div class="get-in-touch">
                     <!-- title -->
@@ -158,25 +159,20 @@
                         <!-- single -->
                         <div class="single">
                             <i class="fas fa-phone-alt"></i>
-                            <a href="#">+8801234566789</a>
+                            <a href="#">+(94) 766 888 184</a><br>
+
                         </div>
                         <!-- single ENd -->
                         <!-- single -->
                         <div class="single">
                             <i class="fas fa-envelope"></i>
-                            <a href="#">example@gmail.com</a>
-                        </div>
-                        <!-- single ENd -->
-                        <!-- single -->
-                        <div class="single">
-                            <i class="fas fa-globe"></i>
-                            <a href="#">www.webexample.com</a>
+                            <a href="#">info@iwgc.lk</a><br>
                         </div>
                         <!-- single ENd -->
                         <!-- single -->
                         <div class="single">
                             <i class="fas fa-map-marker-alt"></i>
-                            <a href="#">13/A, New Pro State, NYC</a>
+                            <a href="#">No. 85 -1/3, Galle Road,<br> Dehiwala, Sri Lanka</a>
                         </div>
                         <!-- single ENd -->
                     </div>
@@ -194,157 +190,34 @@
         <div class="mobile-menu d-block d-xl-none">
             <nav class="nav-main mainmenu-nav mt--30">
                 <ul class="mainmenu metismenu" id="mobile-menu-active">
-                    <li class="has-droupdown">
-                        <a href="#" class="main" aria-expanded="false">Demos</a>
-                        <ul class="submenu mm-collapse" style="height: 0px;">
-                            <li><a href="index.html">Demo One</a></li>
-                            <li><a href="index-two.html">Demo Two</a></li>
-                            <li><a href="index-three.html">Demo Three</a></li>
-                            <li><a href="index-four.html">Demo Four</a></li>
-                            <li><a href="index-five.html">Demo Five</a></li>
-                            <li><a href="index-six.html">Demo Six</a></li>
-                            <li><a href="index-seven.html">Demo Seven</a></li>
-                            <li><a href="index-eight.html">Demo Eight</a></li>
-                            <li><a href="index-nine.html">Demo Nine</a></li>
-                            <li><a href="index-ten.html">Demo Ten</a></li>
-                            <li><a href="index-eleven.html">Demo Eleven</a></li>
-                            <li><a href="index-twelve.html">Business Video</a></li>
-                            <li><a href="onepage.html">Onepage One</a></li>
-                            <li><a href="onepage-two.html">Onepage Two</a></li>
-                            <li><a href="onepage-three.html">Onepage Three</a></li>
-                            <li><a href="onepage-four.html">Onepage Four</a></li>
-                            <li><a href="onepage-five.html">Onepage Five</a></li>
-                            <li><a href="onepage-six.html">Onepage Six</a></li>
-                            <li><a href="onepage-seven.html">Onepage Seven</a></li>
-                            <li><a href="onepage-eight.html">Onepage Eight</a></li>
-                            <li><a href="onepage-nine.html">Onepage Nine</a></li>
-                            <li><a href="onepage-ten.html">Onepage Ten</a></li>
-                            <li><a href="onepage-eleven.html">Onepage Eleven</a></li>
-                            <li><a href="onepage-twelve.html">Onepage Eleven</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-droupdown">
-                        <a href="#" class="main" aria-expanded="false">Pages</a>
-                        <ul class="submenu mm-collapse" style="height: 0px;">
-                            <li><a href="about.html">About
-                                    Company</a></li>
-                            <li><a href="service.html">Service</a></li>
-                            <li><a href="service-details.html">Service
-                                    Details</a>
-                            </li>
-                            <li><a href="service-details-2.html">Service
-                                    Details 2</a>
-                            </li>
-                            <li><a href="project.html">Project</a>
-                            </li>
-                            <li><a href="team.html">Team</a>
-                            </li>
-                            <li><a href="team-details.html">Team
-                                    Details</a>
-                            </li>
-                            <li><a href="pricing.html">Pricing</a>
-                            </li>
-                            <li><a href="appoinment.html">Appoinment</a>
-                            </li>
-                            <li><a href="history.html">Our
-                                    History</a>
-                            </li>
-                            <li><a href="blog-list.html">Blog
-                                    List</a>
-                            </li>
-                            <li><a href="blog-grid.html">Blog
-                                    List</a>
-                            </li>
-                            <li><a href="blog-details.html">Blog
-                                    Details</a>
-                            </li>
-                            <li><a href="blog-details-2.html">Blog
-                                    Details 02</a>
-                            </li>
-                            <li><a href="faq.html">Faq's</a>
-                            <li><a href="career.html">Career</a>
-                            </li>
-                            <li><a href="our-mission.html">Our
-                                    Mission</a>
-                            </li>
-                            <li><a href="partners.html">Partners</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="has-droupdown">
-                        <a href="#" class="main" aria-expanded="false">Services</a>
-                        <ul class="submenu mm-collapse" style="height: 0px;">
-                            <li><a class="mobile-menu-link" href="service.html">Service</a></li>
-                            <li><a class="mobile-menu-link" href="service-details.html">Service Details</a></li>
-                            <li><a class="mobile-menu-link" href="service-details-2.html">Service Details 2</a></li>
-                            <li><a class="mobile-menu-link" href="service-details-3.html">Service Details 3</a></li>
-                            <li><a class="mobile-menu-link" href="service-details-4.html">Service Details 4</a></li>
-                            <li><a class="mobile-menu-link" href="service-details-5.html">Service Details 5</a></li>
-
-                        </ul>
-                    </li>
-                    <li class="has-droupdown">
-                        <a href="#" class="main" aria-expanded="false">Projects</a>
-                        <ul class="submenu mm-collapse">
-                            <li><a href="project.html">Project</a>
-                            </li>
-                            <li><a href="project-slider.html">Project
-                                    Slider</a></li>
-                            <li><a href="project-slider-2.html">Project
-                                    Slider 2</a></li>
-                            <li><a href="project-card-slider.html">Project
-                                    Card Slider</a></li>
-                            <li><a href="project-bg-dark.html">Project
-                                    Bg Dark</a></li>
-                            <li><a href="project-grid.html">Project
-                                    Grid</a></li>
-                            <li><a href="project-grid-col-2.html">Project
-                                    Grid Col 2</a></li>
-                            <li><a href="project-slider-grid.html">Grid Slider</a></li>
-                            <li><a href="project-slider-overflow.html">Project Overflow</a>
-                            </li>
-                            <li><a href="project-grid-col-3.html">Project Grid Col 3</a>
-                            </li>
-                            <li><a href="project-bg-dark.html">Project
-                                    Hide Content</a></li>
-
-
-                            <li><a href="project-slider-2.html">Project
-                                    Hide
-                                    Content wide</a>
-                            </li>
-                            <li><a href="project-grid.html">Project
-                                    Card Hover</a>
-                            </li>
-                            <li><a href="project-slider-2.html">Project
-                                    Slider Image
-                                    Zoom</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="has-droupdown">
-                        <a href="#" class="main" aria-expanded="false">Shop Pages</a>
-                        <ul class="submenu mm-collapse">
-                            <li><a href="shop.html">Shop</a>
-                            </li>
-                            <li><a href="shop-single.html">Shop
-                                    Details</a>
-                            </li>
-                            <li><a href="account.html">Account</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="has-droupdown">
-                        <a href="#" class="main" aria-expanded="false">Blog</a>
-                        <ul class="submenu mm-collapse">
-                            <li><a href="blog-grid.html">Blog Grid</a></li>
-                            <li><a href="blog-list.html">Blog List</a></li>
-                            <li><a href="blog-details.html">Blog Details</a></li>
-                            <li><a href="blog-details-2.html">Blog Details 2</a></li>
-                        </ul>
+                    <li>
+                        <a href="{{ route('index') }}" class="main" aria-expanded="false">Home</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="main" aria-expanded="false">Contact Us</a>
+                        <a href="{{ route('about') }}" class="main" aria-expanded="false">About Us</a>
+                    </li>
+                    <li class="has-droupdown">
+                        <a href="#" class="main" aria-expanded="false">Programs</a>
+                        <ul class="submenu mm-collapse" style="height: 0px;">
+                            <li><a href="{{ route('avid') }}">Avid College – Maldives</a></li>
+                            <li><a href="{{ route('qualifi') }}"> Ofqual – UK Regulated</a></li>
+                            <li><a href="index-three.html">CPD – UK</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-droupdown">
+                        <a href="#" class="main" aria-expanded="false">Study Abroad</a>
+                        <ul class="submenu mm-collapse" style="height: 0px;">
+                            <li><a href="{{ route('study_canada') }}">Canada</a></li>
+                            <li><a href="{{ route('study_malaysia') }}"> Malaysia</a></li>
+                            <li><a href="{{ route('study_singapore') }}">Singapore</a></li>
+                            <li><a href="{{ route('study_uk') }}">United Kingdom</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="{{ route('blog') }}" class="main" aria-expanded="false">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('contact') }}" class="main" aria-expanded="false">Contact Us</a>
                     </li>
                 </ul>
             </nav>
