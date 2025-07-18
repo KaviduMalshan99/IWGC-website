@@ -1,3 +1,4 @@
+
 <style>
     /* Add this to your CSS file */
     .rts-mega-menu .mega-menu-item.with-list li a {
@@ -55,7 +56,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="header-main" >
         <div class="container">
@@ -179,7 +179,6 @@
 
                                 </ul>
                             </div>
-
 
                             <div class="loader-wrapper">
                                 <div class="loader">
