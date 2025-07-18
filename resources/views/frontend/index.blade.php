@@ -625,7 +625,7 @@
                             <img src="frontend/assets/images/faq/01.webp" alt="about">
                         </div>
                         <div class="small-image images-r">
-                            <img src="frontend/assets/images/iwgc/FAQBoy.webp" alt="about">
+                            <img src="frontend/assets/images//FAQBoy.webp" alt="about">
                         </div>
                         <div class="poligon-shape images-r">
                             <img src="frontend/assets/images/faq/poligon-shape.svg" alt="">
