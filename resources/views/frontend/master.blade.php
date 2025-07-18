@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/odometer.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/vendor/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
 </head>
 
 <body class="index-one">
@@ -72,6 +75,15 @@
 <script src="{{ asset('frontend/assets/js/plugins/contact.form.js') }}"></script>
 
 <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
 
 </body>
 

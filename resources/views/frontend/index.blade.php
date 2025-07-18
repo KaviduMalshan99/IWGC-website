@@ -1,374 +1,532 @@
 @extends ('frontend.master')
 
 @section('content')
+<!-- Add this to your custom CSS or in a <style> tag -->
+
 
 <style>
-.service-ribbon-wrapper {
-    width: 100%;
-    overflow: hidden;
-    background: #f9f9f9;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 45px 0;
-    margin:50px 0;
-    position: relative;
-}
-
-.service-ribbon-track {
-    display: flex;
-    width: max-content;
-    animation: scrollLeft 60s linear infinite;
-}
-
-.service-ribbon-content {
-    display: flex;
-    gap: 60px;
-}
-
-.service-ribbon-item {
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    color: #333;
-    font-size: 30px;
-    white-space: nowrap;
-}
-
-.service-ribbon-item img {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
-}
-
-.icon-ribbon-item img {
-    width: auto;
-    height: 70px;
-    margin-right: 8px;
-}
-
-@keyframes scrollLeft {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-
-
-.working-process-one .row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.working-process-one .col-lg-4 {
-    display: flex;
-    flex-direction: column; 
-    height: 100%; 
-}
-
-
-.why-box {
-    background-color: #b30000; 
-    color: white !important; 
-    padding: 30px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    height: 100%;
-}
-
-.why-box:hover {
-    transform: translateY(-5px);
-}
-
-.why-box h4 {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.why-box ul {
-    padding-left: 20px;
-    flex-grow: 1; 
-}
-
-.why-box ul li {
-    position: relative;
-    margin-bottom: 3px; 
-    padding-left: 20px;
-    font-size: 16px;
-    color: white;
-    line-height: 1.2; 
-}
-
-@media (max-width: 768px) {
-    .why-box {
-        padding: 20px;
+    .step-card {
+        background-color: #ffffff;
+        border: 1px solid #e6e6e6;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .why-box h4 {
+    .step-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .step-number {
+        font-weight: bold;
+        background: linear-gradient(135deg, #0b4df5, #00c6ff);
+    }
+
+
+
+    /* Add this to your CSS file */
+    .banner-inner-two-content * {
+        animation: none !important;
+        opacity: 1 !important;
+        transition: none !important;
+        color: #fff !important;
+    }
+
+    .banner-inner-two-content .disc {
+        color: rgba(255, 255, 255, 0.8) !important;
+    }
+
+    .custom-box {
+        height: 100%;
+        border: 2px solid gold;
+        border-radius: 10px;
+        padding: 25px;
+        box-shadow: 0 0 12px rgba(255, 0, 0, 0.1);
+        transition: all 0.4s ease;
+        background-color: #fff;
+    }
+
+    .custom-box:hover {
+        box-shadow: 0 0 25px ;
+        transform: translateY(-5px);
+    }
+
+    .custom-box h5 {
+        margin-top: 20px;
+        font-weight: 600;
         font-size: 18px;
     }
 
-    .why-box ul li {
-        font-size: 14px;
+    .custom-box ul {
+        margin-top: 15px;
     }
+
+    .custom-box li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    /* services section */
+
+    .service-ribbon-wrapper {
+        width: 100%;
+        overflow: hidden;
+        background-color: #1b2954; /* 🎨 Background color */
+        height: 150px; 
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+
+    }
+
+    .service-ribbon-track {
+        width: 200%;
+        display: flex;
+        animation: scroll 30s linear infinite;
+    }
+
+    .service-ribbon-content {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .service-ribbon-item {
+        white-space: nowrap;
+        font-size: 35px;
+        font-weight: 500;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .service-ribbon-item i {
+        font-size: px;
+        color: #ed3532;
+        min-width: 35px;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+
+/* programs section */
+
+.program-card {
+    display: block;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    height: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* very soft default shadow */
 }
 
-.single-gallery img {
+.program-image {
+    position: relative;
+    height: 100%;
+}
+
+.program-image img {
     width: 100%;
-    height: 250px; 
+    height: 100%;
     object-fit: cover;
     display: block;
+    border-radius: 15px;
 }
 
-.signle-fun-facts-one {
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
+.program-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
 }
+
+.program-content h3 {
+    color: white;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+/* Overlay Styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* less opacity for a cleaner look */
+    z-index: 1;
+    transition: background 0.3s ease;
+    border-radius: 15px;
+}
+
+/* Button Style */
+.program-content .btn {
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 8px 20px;
+    margin-bottom: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* why choose iwgc section */
+.program-card:hover {
+    transform: scale(1.015);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* lighter and cleaner glow */
+}
+
+.program-card:hover .overlay {
+    background: #1b2954; /* slightly darker on hover */
+}
+
+.program-card:hover .btn-outline-light {
+    background-color: #fff;
+    color: #c1121f;
+    border-color: #fff;
+}
+
+/* Main background */
+.working-process-one {
+    background-color: #1b2954; /* deep navy blue */
+}
+
+
 
 </style>
 
-    <div class="banner-swiper-two">
-        <div class="swiper mySwiper-banner-two">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <!-- rts banner area start -->
-                    <div class="rts-banner-area-two rts-section-gap bg_image">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="banner-inner-two-content">
-                                        <p class="pre-title"><span>Welcome!</span></p>
-                                        <h1 class="title">Boost Your Career Skills</h1>
-                                        <p class="disc">
-                                           Gain real experience through internships, expert guidance, mentorship, and hands-on projects to prepare for your career.
-                                        </p>
-                                        <a href="{{ route('scholarships') }}" class="rts-btn btn-primary btn-white">Apply for Scholarships </a>
-                                    </div>
+<!-- Banner area start -->
+<div class="banner-swiper-two">
+    <div class="swiper mySwiper-banner-two">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="rts-banner-area-two rts-section-gap" style="position: relative; background-image: url('{{ asset('frontend/assets/images/iwgc/Hero02.webp') }}'); background-size: cover; background-position: center;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+                    <div class="container" style="position: relative; z-index: 2;">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="banner-inner-two-content">
+                                    <p class="pre-title" style="color: #fff;"><span style="color: #fff;">Welcome!</span> </p>
+                                    <h1 class="title" style="color: #fff;">Post-Study Guidance for Further Growth</h1>
+                                    <p class="disc" style="color: rgba(255,255,255,0.8);">
+                                    Explore study abroad programs and career development & training opportunities. Our personalized advice and industry tips help students and graduates unlock their future. Strat your journey today!
+                                    </p>
+                                    <a href="{{ route('scholarships') }}" class="rts-btn btn-primary btn-white" style="background:#ed3532;">Apply for Scholarships </a>
+                                    
                                 </div>
                             </div>
                         </div>
-                        <div class="shape-area-start">
-                            <div class="shape shape-one">
-                                <img src="frontend/assets/images/banner/shape/01.webp" alt="shape-area">
-                            </div>
-                            <div class="shape shape-two">
-                                <img src="frontend/assets/images/banner/shape/02.webp" alt="shape-area">
-                            </div>
-                            <div class="shape shape-three">
-                                <img src="frontend/assets/images/banner/shape/03.webp" alt="shape-area">
-                            </div>
-                            <div class="shape shape-four">
-                                <img src="frontend/assets/images/banner/shape/04.webp" alt="shape-area">
-                            </div>
-                        </div>
                     </div>
-                    <!-- rts banner area end -->
+                    <!-- Shape elements -->
                 </div>
-                <div class="swiper-slide">
-                    <!-- rts banner area start -->
-                    <div class="rts-banner-area-two two rts-section-gap bg_image">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="banner-inner-two-content">
-                                        <p class="pre-title"><span>Welcome!</span></p>
-                                        <h1 class="title">Designed to Suit Your Lifestyle</h1>
-                                        <p class="disc">
-                                         Learn anytime, anywhere with our flexible online platform. Study at your own pace with a custom curriculum, get regular feedback, and receive dedicated support every step of the way.
-                                        </p>
-                                        <a href="{{ route('scholarships') }}" class="rts-btn btn-primary btn-white">Apply for Scholarships </a>
-                                    </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="rts-banner-area-two rts-section-gap" style="position: relative; background-image: url('{{ asset('frontend/assets/images/iwgc/Hero03.webp') }}'); background-size: cover; background-position: center;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+                    <div class="container" style="position: relative; z-index: 2;">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="banner-inner-two-content">
+                                    <p class="pre-title" style="color: #fff;"><span style="color: #fff;">Welcome!</span> </p>
+                                    <h1 class="title" >Boost Your Career Skills</h1>
+                                    <p class="disc" style="color: rgba(255,255,255,0.8);">
+                                    Gain real experience through internships, expert guidance, mentorship, and hands-on projects to prepare for your career.
+                                    </p>
+                                    <a href="{{ route('scholarships') }}" class="rts-btn btn-primary btn-white" style="background:#ed3532;">Apply for Scholarships </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="shape-area-start">
-                            <div class="shape shape-one">
-                                <img src="frontend/assets/images/banner/shape/01.webp" alt="">
-                            </div>
-                            <div class="shape shape-two">
-                                <img src="frontend/assets/images/banner/shape/02.webp" alt="">
-                            </div>
-                            <div class="shape shape-three">
-                                <img src="frontend/assets/images/banner/shape/03.webp" alt="">
-                            </div>
-                            <div class="shape shape-four">
-                                <img src="frontend/assets/images/banner/shape/04.webp" alt="">
-                            </div>
-                        </div>
                     </div>
-                    <!-- rts banner area end -->
+                    <!-- Shape elements -->
                 </div>
-                <div class="swiper-slide">
-                    <!-- rts banner area start -->
-                    <div class="rts-banner-area-two three rts-section-gap bg_image">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="banner-inner-two-content">
-                                        <p class="pre-title"><span>Welcome!</span></p>
-                                        <h1 class="title">Post-Study Guidance for Further Growth</h1>
-                                        <p class="disc">
-                                           Explore study abroad programs and career development & training opportunities. Our personalized advice and industry tips help students and graduates unlock their future. Strat your journey today!
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="rts-banner-area-two rts-section-gap" style="position: relative; background-image: url('{{ asset('frontend/assets/images/iwgc/Hero04.png') }}'); background-size: cover; background-position: center;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+                    <div class="container" style="position: relative; z-index: 2;">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="banner-inner-two-content">
+                                    <p class="pre-title" style="color: #fff;"><span style="color: #fff;">Welcome!</span> </p>
+                                    <h1 class="title" style="color: #fff;">Designed to Suit Your Lifestyle</h1>
+                                    <p class="disc" style="color: rgba(255,255,255,0.8);">
+                                    Learn anytime, anywhere with our flexible online platform. Study at your own pace with a custom curriculum, get regular feedback, and receive dedicated support every step of the way.
                                         </p>
-                                        <a href="{{ route('scholarships') }}" class="rts-btn btn-primary btn-white">Apply for Scholarships </a>
-                                    </div>
+                                    </p>
+                                    <a href="{{ route('scholarships') }}" class="rts-btn btn-primary btn-white" style="background:#ed3532;">Apply for Scholarships </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="shape-area-start">
-                            <div class="shape shape-one">
-                                <img src="frontend/assets/images/banner/shape/01.webp" alt="">
-                            </div>
-                            <div class="shape shape-two">
-                                <img src="frontend/assets/images/banner/shape/02.webp" alt="">
-                            </div>
-                            <div class="shape shape-three">
-                                <img src="frontend/assets/images/banner/shape/03.webp" alt="">
-                            </div>
-                            <div class="shape shape-four">
-                                <img src="frontend/assets/images/banner/shape/04.webp" alt="">
-                            </div>
-                        </div>
                     </div>
-                    <!-- rts banner area end -->
-                </div>
-            </div>
-            <div class="swiper-button-next"><i class="fa-light fa-chevron-right"></i></div>
-            <div class="swiper-button-prev"><i class="fa-light fa-chevron-left"></i></div>
-        </div>
-    </div>
-
-
-
-<!-- rts fun facts area start -->
-<div class="rts-fun-facts-area rts-section-gapBottom mt--30">
-    <div class="container">
-        <div class="row g-5">
-            <!-- Section 1 -->
-            <div class="col-lg-4" data-animation="fadeInUp" data-delay="0.2" data-duration="1.2">
-                <div class="signle-fun-facts-one">
-                    <div class="icon">
-                        <img src="{{ asset('1st Class.png') }}" alt="fun-facts">
-                    </div>
-                    <h5 class="">Learning Experience Tailored to Your Lifestyle</h5>
-                    <ul style="text-align: left; padding-left: 20px;">
-                        <li>Flexible Online Learning & Enhanced Accessibility</li>
-                        <li>Self-Paced LMS</li>
-                        <li>Tailored Curriculum</li>
-                        <li>Continuous Assessment & Feedback</li>
-                        <li>Dedicated Learning Support</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Section 2 -->
-            <div class="col-lg-4" data-animation="fadeInUp" data-delay="0.4" data-duration="1.2">
-                <div class="signle-fun-facts-one">
-                    <div class="icon">
-                        <img src="{{ asset('1st Class.png') }}" alt="fun-facts">
-                    </div>
-                    <h5 class="">Professional Skills Development</h5>
-                    <ul style="text-align: left; padding-left: 20px;">
-                        <li>Internships</li>
-                        <li>Career Counseling</li>
-                        <li>Expert-Led Workshops & Seminars</li>
-                        <li>Mentorship Programs</li>
-                        <li>Capstone Projects</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Section 3 -->
-            <div class="col-lg-4" data-animation="fadeInUp" data-delay="0.6" data-duration="1.2">
-                <div class="signle-fun-facts-one">
-                    <div class="icon">
-                        <img src="{{ asset('1st Class.png') }}" alt="fun-facts">
-                    </div>
-                    <h5 class="">Guidance for Post-Study Opportunities</h5>
-                    <ul style="text-align: left; padding-left: 20px;">
-                        <li>Study Abroad & International Opportunities</li>
-                        <li>Continued Education & Training</li>
-                        <li>Career Development Services</li>
-                        <li>Networking Opportunities</li>
-                        <li>Job Placement Services</li>
-                    </ul>
+                    <!-- Shape elements -->
                 </div>
             </div>
         </div>
+        <div class="swiper-button-next"><i class="fa-light fa-chevron-right"></i></div>
+        <div class="swiper-button-prev"><i class="fa-light fa-chevron-left"></i></div>
     </div>
 </div>
-<!-- rts fun facts area end -->
+<!-- Banner area end -->
 
 
-    <!-- rts-about area start -->
-    <div class="rts-about-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <div class="about-content-left-one">
-                        <div class="title-style-one left">
-                            <span class="pre">Discover More About IWGC</span>
-                        </div>
-                     <p class="disc" style="text-align: justify;">
-                        Imperial Wisdom Graduate Campus stands as Sri Lanka’s premier center for innovative higher education, combining academic excellence with industry relevance. Our comprehensive programs are designed with flexibility to accommodate diverse student needs, ensuring they are future-ready with global competencies and critical thinking skills. Led by a team of experienced faculty, we emphasize personal growth and professional development, preparing students to excel in a competitive global marketplace. With a student-centric approach and a commitment to holistic education, Imperial Wisdom Graduate Campus offers a strategic advantage for those seeking a transformative academic experience in Sri Lanka.
-                    </p>
+<!-- rts 1st boxes area start -->
+<div class="rts-about-area-two rts-section-gap">
+    <div class="container">
+        <div class="row g-5">
+            <!-- Section Template -->
+            @php
+                $sections = [
+                    [
+                        'title' => 'Learning Experience Tailored to Your Lifestyle',
+                        'items' => [
+                            'Flexible Online Learning & Enhanced Accessibility',
+                            'Self-Paced LMS',
+                            'Tailored Curriculum',
+                            'Continuous Assessment & Feedback',
+                            'Dedicated Learning Support'
+                        ]
+                    ],
+                    [
+                        'title' => 'Professional Skills Development',
+                        'items' => [
+                            'Internships',
+                            'Career Counseling',
+                            'Expert-Led Workshops & Seminars',
+                            'Mentorship Programs',
+                            'Capstone Projects'
+                        ]
+                    ],
+                    [
+                        'title' => 'Guidance for Post-Study Opportunities',
+                        'items' => [
+                            'Study Abroad & International Opportunities',
+                            'Continued Education & Training',
+                            'Career Development Services',
+                            'Networking Opportunities',
+                            'Job Placement Services'
+                        ]
+                    ]
+                ];
+            @endphp
 
-                       
-                        <a href="{{ route('about') }}" class="rts-btn btn-primary">Explore Our Campus </a>
+            @foreach($sections as $index => $section)
+            <div class="col-lg-4" data-animation="fadeInUp" data-delay="0.{{ 2 + $index * 2 }}" data-duration="1.2">
+                <div class="signle-fun-facts-one custom-box">
+                    <div class="icon">
+                        <img src="{{ asset('1st Class.png') }}" alt="fun-facts">
                     </div>
+                    <h5>{{ $section['title'] }}</h5>
+                    <ul style="text-align: left; padding-left: 20px;">
+                        @foreach($section['items'] as $item)
+                        <li>
+                            <i class="fas fa-check-circle red-bg-icon" style="color:red; padding-right:10px;"></i> {{ $item }}
+                        </li>
+                        @endforeach
+                    </ul>
                 </div>
-                <div class="col-lg-7 pl--70">
-                    <div class="thumbnail-about-and-progress-1">
+            </div>
+            @endforeach
+        </div>
+    </div>
+    <div class="shape-area">
+        <img src="frontend/assets/images/about/shape/01.svg" alt="shape" class="one">
+        <img src="frontend/assets/images/about/shape/02.svg" alt="shape" class="two">
+    </div>
+</div>
+<!-- rts 1st boxes area end -->
 
-                        <div class="thumbnail-about-1">
-                            <img src="frontend/assets/images/about/01.webp" alt="about">
-                        </div>
+
+
+<!-- rts about area start -->
+<div class="rts-about-area-two rts-section-gap">
+    <div class="container">
+        <div class=" row d-flex flex-wrap align-items-center gap-5">
+            <div class="col-lg-6 ">
+                <div class="left-thumbnail-about-area-two">
+                    <img src="{{ asset('frontend/assets/images/about/01.webp') }}" style="border-radius:10px" alt="about">
+                    <div class="small-image">
+                        <img src="{{ asset('frontend/assets/images/about/02.webp') }}" style="border-radius:10px" alt="small">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-5 mt_sm--80 mt_md--80 ">
+                <div class="about-inner-content-two">
+                    <div class="title-style-two left">
+                        <span class="bg-content">About Us</span>
+                        <h2 class="title rts-text-anime-style-1">Discover More About IWGC
+
+                        </h2>
+                    </div>
+                    <div class="about-between-wrapper">
+                        <p class="disc" style="text-align: justify;">
+                        Imperial Wisdom Graduate Campus stands as Sri Lanka’s premier center for innovative higher education, combining academic excellence with industry relevance. Our comprehensive programs are designed with flexibility to accommodate diverse student needs, ensuring they are future-ready with global competencies and critical thinking skills. Led by a team of experienced faculty, we emphasize personal growth and professional development, preparing students to excel in a competitive global marketplace. With a student-centric approach and a commitment to holistic education, Imperial Wisdom Graduate Campus offers a strategic advantage for those seeking a transformative academic experience in Sri Lanka.
+                        </p>
                         
+                    </div>
+                    <div class="call-and-sign-area two mt--10">
+                        <div class="call-area">
+                        <a href="{{ route('contact') }}" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn" style="background:#1b2954;">View 
+                                        Programs</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- rts-about area end -->
+    <div class="shape-area">
+        <img src="frontend/assets/images/about/shape/01.svg" alt="shape" class="one">
+        <img src="frontend/assets/images/about/shape/02.svg" alt="shape" class="two">
+    </div>
+</div>
+<!-- rts about area end -->
 
 
-
-<div class="service-ribbon-wrapper">
+<!-- rts service area start -->
+<div class="service-ribbon-wrapper mb-5">
     <div class="service-ribbon-track">
         <div class="service-ribbon-content">
             <!-- Content Repeated Twice for Seamless Scroll -->
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/3135/3135755.png"> Education Marketing</div>
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/4140/4140048.png"> Curriculum & Learning Material Development</div>
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/10016/10016274.png"> Learner Management Systems (LMS)</div>
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/3820/3820353.png"> CPD for Tutors</div>
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/2865/2865369.png"> Education Seminars</div>
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/684/684908.png"> Events & Workshop Hosting</div>
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/3303/3303894.png"> Local & International Strategic Partnership Development</div>
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/3176/3176291.png"> Study Abroad</div>
+            <div class="service-ribbon-item"><i class="fas fa-bullhorn"></i> Educational Marketing</div>
+            <div class="service-ribbon-item"><i class="fas fa-edit"></i> Curriculum Development</div>
+            <div class="service-ribbon-item"><i class="fas fa-laptop-code"></i> Learner Management Systems</div>
+            <div class="service-ribbon-item"><i class="fas fa-certificate"></i> CPD for Tutors</div>
+            <div class="service-ribbon-item"><i class="fas fa-chalkboard-teacher"></i> Education Events</div>
+            <div class="service-ribbon-item"><i class="fas fa-handshake"></i> Global Partnerships</div>
+            <div class="service-ribbon-item"><i class="fas fa-globe"></i> Study Abroad</div>
 
             <!-- Repeat for infinite loop effect -->
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/3135/3135755.png"> Education Marketing</div>
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/4140/4140048.png"> Curriculum & Learning Material Development</div>
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/10016/10016274.png"> Learner Management Systems (LMS)</div>
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/3820/3820353.png"> CPD for Tutors</div>
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/2865/2865369.png"> Education Seminars</div>
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/684/684908.png"> Events & Workshop Hosting</div>
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/3303/3303894.png"> Local & International Strategic Partnership Development</div>
-            <div class="service-ribbon-item"><img src="https://cdn-icons-png.flaticon.com/128/3176/3176291.png"> Study Abroad</div>
+            <div class="service-ribbon-item"><i class="fas fa-bullhorn"></i> Educational Marketing</div>
+            <div class="service-ribbon-item"><i class="fas fa-edit"></i> Curriculum Development</div>
+            <div class="service-ribbon-item"><i class="fas fa-laptop-code"></i> Learner Management Systems</div>
+            <div class="service-ribbon-item"><i class="fas fa-certificate"></i> CPD for Tutors</div>
+            <div class="service-ribbon-item"><i class="fas fa-chalkboard-teacher"></i> Education Events</div>
+            <div class="service-ribbon-item"><i class="fas fa-handshake"></i> Global Partnerships</div>
+            <div class="service-ribbon-item"><i class="fas fa-globe"></i> Study Abroad</div>
         </div>
     </div>
 </div>
+<!-- rts service area end -->
 
+
+
+
+<!-- rts steps area start -->
+<div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-style-two center">
+                    <span class="bg-content">Popular Programs</span>
+                    <h2 class="title rts-text-anime-style-1">Popular Programs at IWGC</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <a href="programs/mba-business-administration.php" class="program-card">
+                        <div class="program-image">
+                            <img src="{{ asset('frontend/assets/images/avid/1mb.png') }}" alt="Master of Business Administration" class="img-fluid">
+                            <div class="overlay"></div>
+                            <div class="program-content">
+                                <h3>Master of Business Administration</h3>
+                                <span class="btn btn-outline-light">Explore Program<i class="fas fa-arrow-right ms-2"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="/programs/master-educational-leadership.php" class="program-card">
+                        <div class="program-image">
+                            <img src="{{ asset('frontend/assets/images/avid/Master-of-Educational-Leadership-and-Management.jpg') }}" alt="Master of Educational Leadership and Management" class="img-fluid">
+                            <div class="overlay"></div>
+                            <div class="program-content">
+                                <h3>Master of Educational Leadership and Management</h3>
+                                <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="/programs/bachelor-early-childhood-education.php" class="program-card">
+                        <div class="program-image">
+                            <img src="{{ asset('frontend/assets/images/avid/Bachelor-of-Early-Childhood Education.jpg') }}" alt="Bachelor of Early Childhood Education" class="img-fluid">
+                            <div class="overlay"></div>
+                            <div class="program-content">
+                                <h3>Bachelor of Early Childhood Education (BECE)</h3>
+                                <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="/programs/bachelor-teaching-primary.php" class="program-card">
+                        <div class="program-image">
+                            <img src="{{ asset('frontend/assets/images/avid/Bachelor-of-Teaching-(Primary).jpg') }}" alt="Bachelor of Teaching (Primary)" class="img-fluid">
+                            <div class="overlay"></div>
+                            <div class="program-content">
+                                <h3>Bachelor of Teaching (Primary)</h3>
+                                <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="/programs/Bachelor-of-Counseling.php" class="program-card">
+                        <div class="program-image">
+                            <img src="{{ asset('frontend/assets/images/avid/Bachelor-of-Counseling.jpg') }}" alt="Bachelor of Counseling" class="img-fluid">
+                            <div class="overlay"></div>
+                            <div class="program-content">
+                                <h3>Bachelor of Counseling</h3>
+                                <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="/programs/Bachelor-of-Counseling.php" class="program-card">
+                        <div class="program-image">
+                            <img src="{{ asset('frontend/assets/images/avid/boc.jpg') }}" alt="Bachelor of Counseling" class="img-fluid">
+                            <div class="overlay"></div>
+                            <div class="program-content">
+                                <h3>Bachelor of Psychology</h3>
+                                <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    </div>
+</div>
+<!-- rts steps area end -->
 
 
 <!-- working process area start -->
-<div class="working-process-one bg-main " style="padding:60px 0">
+<div class="working-process-one bg-main " style="padding:60px 0 ; margin-bottom: 20px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -445,267 +603,29 @@
 </div>
 <!-- working process area end -->
 
-<style>
 
-.program-card {
-    display: block;
-    overflow: hidden;
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-decoration: none;
-    height: 100%;
-}
-
-.program-image {
-    position: relative;
-    height: 100%;
-}
-
-.program-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 15px;
-}
-
-.program-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-    z-index: 2;
-}
-
-.program-content h3 {
-    color: white;
-    font-weight: 800;
-    margin-bottom: 25px;
-}
-
-/* Overlay Styling */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.47);
-    z-index: 1;
-    transition: background 0.3s ease;
-    border-radius: 15px;
-}
-
-/* Button Style */
-.program-content .btn {
-    position: relative;
-    z-index: 2;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 30px;
-    padding: 8px 20px;
-    margin-bottom: 25px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Hover Effects */
-.program-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.program-card:hover .overlay {
-    background: rgba(0, 0, 0, 0.65);
-}
-
-.program-card:hover .btn-outline-light {
-    background-color: #fff;
-    color: #c1121f;
-    border-color: #fff;
-}
-
-</style>
-
-
-  <!-- Program Buttons Section -->
-        <section class="program-buttons-section section-padding  rts-section-gapBottom  rts-section-gapTop">
-            <div class="container">
-                <div class="section-title color-red text-center">
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                        Popular Programs at IWGC
-                    </h2>
-                    <p class="courses-sub-text mt-3 mb-5 wow fadeInUp" style="font-size:18px" data-wow-delay=".5s">Explore our <b>top-rated</b> programs designed for your <b>academic success</b></p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-4">
-                        <a href="programs/mba-business-administration.php" class="program-card">
-                            <div class="program-image">
-                                <img src="{{ asset('frontend/assets/images/avid/1mb.png') }}" alt="Master of Business Administration" class="img-fluid">
-                                <div class="overlay"></div>
-                                <div class="program-content">
-                                    <h3>Master of Business Administration</h3>
-                                    <span class="btn btn-outline-light">Explore Program<i class="fas fa-arrow-right ms-2"></i></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="/programs/master-educational-leadership.php" class="program-card">
-                            <div class="program-image">
-                                <img src="{{ asset('frontend/assets/images/avid/Master-of-Educational-Leadership-and-Management.jpg') }}" alt="Master of Educational Leadership and Management" class="img-fluid">
-                                <div class="overlay"></div>
-                                <div class="program-content">
-                                    <h3>Master of Educational Leadership and Management</h3>
-                                    <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="/programs/bachelor-early-childhood-education.php" class="program-card">
-                            <div class="program-image">
-                                <img src="{{ asset('frontend/assets/images/avid/Bachelor-of-Early-Childhood Education.jpg') }}" alt="Bachelor of Early Childhood Education" class="img-fluid">
-                                <div class="overlay"></div>
-                                <div class="program-content">
-                                    <h3>Bachelor of Early Childhood Education (BECE)</h3>
-                                    <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="/programs/bachelor-teaching-primary.php" class="program-card">
-                            <div class="program-image">
-                                <img src="{{ asset('frontend/assets/images/avid/Bachelor-of-Teaching-(Primary).jpg') }}" alt="Bachelor of Teaching (Primary)" class="img-fluid">
-                                <div class="overlay"></div>
-                                <div class="program-content">
-                                    <h3>Bachelor of Teaching (Primary)</h3>
-                                    <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="/programs/Bachelor-of-Counseling.php" class="program-card">
-                            <div class="program-image">
-                                <img src="{{ asset('frontend/assets/images/avid/Bachelor-of-Counseling.jpg') }}" alt="Bachelor of Counseling" class="img-fluid">
-                                <div class="overlay"></div>
-                                <div class="program-content">
-                                    <h3>Bachelor of Counseling</h3>
-                                    <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="/programs/Bachelor-of-Counseling.php" class="program-card">
-                            <div class="program-image">
-                                <img src="{{ asset('frontend/assets/images/avid/boc.jpg') }}" alt="Bachelor of Counseling" class="img-fluid">
-                                <div class="overlay"></div>
-                                <div class="program-content">
-                                    <h3>Bachelor of Psychology</h3>
-                                    <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-    <!-- rts latest service area start 
-    <div class="rts-latest-service-area rts-section-gapBottom pt-4 pb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-style-one center">
-                        <span class="pre"></span>
-                        <h2 class="title rts-text-anime-style-1">Popular Programs at IWGC
-                        </h2>
-                    </div>
-                </div>
-             <div class="col-lg-8 offset-lg-2 mt--50">
-                    <section class="main-wrapper-sticky">
-                        <div class="sticky-statement d-flex align-items-center justify-content-between py-3">
-                                <h5 class="title mb-0">Master of Business Administration (MBA)</h5>
-                            <div class="right">
-                                <a href="{{ route('master_BA') }}" class="arrow" style="margin-left: auto;">
-                                    <i class="fa-regular fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="sticky-statement d-flex align-items-center justify-content-between py-3">
-                                <h5 class="title mb-0">Master of Educational Leadership & Management </h5>
-                            <div class="right">
-                                <a href="{{ route('master_ELM') }}" class="arrow" style="margin-left: auto;">
-                                    <i class="fa-regular fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                         <div class="sticky-statement d-flex align-items-center justify-content-between py-3">
-                                <h5 class="title mb-0">Bachelor of Early Childhood Education (BECE)</h5>
-                            <div class="right">
-                                <a href="{{ route('bachelor_ECE') }}" class="arrow" style="margin-left: auto;">
-                                    <i class="fa-regular fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                         <div class="sticky-statement d-flex align-items-center justify-content-between py-3">
-                                <h5 class="title mb-0">Bachelor of Teaching (Primary)</h5>
-                            <div class="right">
-                                <a href="{{ route('bachelor_teaching') }}" class="arrow" style="margin-left: auto;">
-                                    <i class="fa-regular fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                         <div class="sticky-statement d-flex align-items-center justify-content-between py-3">
-                                <h5 class="title mb-0">Bachelor of Science in Psychology</h5>
-                            <div class="right">
-                                <a href="{{ route('bachelor_psychology') }}" class="arrow" style="margin-left: auto;">
-                                    <i class="fa-regular fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                         <div class="sticky-statement d-flex align-items-center justify-content-between py-3">
-                                <h5 class="title mb-0">Bachelor of Counseling </h5>
-                            <div class="right">
-                                <a href="{{ route('bachelor_counseling') }}" class="arrow" style="margin-left: auto;">
-                                    <i class="fa-regular fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                       
-                    </section>
+<!-- rts faq area start -->
+<div class="rts-faq-area rts-section-gapBottom " style="margin-top: 80px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pb-5">
+                <div class="title-style-two center">
+                    <span class="bg-content">F.A.Q</span>
+                    <h2 class="title rts-text-anime-style-1">Frequently Asked Questions</h2>
                 </div>
             </div>
         </div>
-    </div>
-  rts latest service area end -->
-
-    
-
-    <!-- rts faq area start -->
-    <div class="rts-faq-area rts-section-gapBottom">
-        <div class="container">
-            <div class="row">
-                 <div class="col-lg-12" style="padding-bottom:50px">
-                    <div class="title-style-one center">
-                        <span class="pre"></span>
-                        <h2 class="title rts-text-anime-style-1"> Frequently Asked Questions
-                        </h2>
-                    </div>
-                </div>
+    </div>    
+    <div class="container">
+        <div class="row">
+                
                 <div class="col-lg-6 pl--50 pr--50" data-animation="fadeInUp" data-delay="0.1">
                     <div class="thumbnail-about-right-4">
                          <div class="large-iamge">
                             <img src="frontend/assets/images/faq/01.webp" alt="about">
                         </div>
                         <div class="small-image images-r">
-                            <img src="frontend/assets/images/faq/03.jpg" alt="about">
+                            <img src="frontend/assets/images/iwgc/FAQBoy.webp" alt="about">
                         </div>
                         <div class="poligon-shape images-r">
                             <img src="frontend/assets/images/faq/poligon-shape.svg" alt="">
@@ -745,7 +665,7 @@
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-Our application process is simple. Choose your program, submit the required documents, and our team will assist you through every step. If you need help deciding, our advisors are here for you.
+                                    Our application process is simple. Choose your program, submit the required documents, and our team will assist you through every step. If you need help deciding, our advisors are here for you.
                                 </div>
                             </div>
                         </div>
@@ -757,7 +677,7 @@ Our application process is simple. Choose your program, submit the required docu
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-We maintain a low student to faculty ratio to ensure personalized academic support, strong mentoring, and a collaborative learning environment.
+                                    We maintain a low student to faculty ratio to ensure personalized academic support, strong mentoring, and a collaborative learning environment.
                                 </div>
                             </div>
                         </div>
@@ -770,7 +690,7 @@ We maintain a low student to faculty ratio to ensure personalized academic suppo
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                   I am unsure which course fits my career or migration goals. Can you help?
-Yes. Our expert counselors will help you select the right course based on your career plans or migration objectives.
+            Yes. Our expert counselors will help you select the right course based on your career plans or migration objectives.
                                 </div>
                             </div>
                         </div>
@@ -782,7 +702,7 @@ Yes. Our expert counselors will help you select the right course based on your c
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-We understand your responsibilities. That is why we offer flexible learning options including fully online and hybrid programs to fit your lifestyle.
+                We understand your responsibilities. That is why we offer flexible learning options including fully online and hybrid programs to fit your lifestyle.
                                 </div>
                             </div>
                         </div>
@@ -794,7 +714,7 @@ We understand your responsibilities. That is why we offer flexible learning opti
                             </h2>
                             <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-Yes. We help enhance your current qualifications through internships, industry workshops, additional learning modules, and practical training.
+                Yes. We help enhance your current qualifications through internships, industry workshops, additional learning modules, and practical training.
                                 </div>
                             </div>
                         </div>
@@ -805,171 +725,276 @@ Yes. We help enhance your current qualifications through internships, industry w
     </div>
     <!-- rts faq area end -->
 
-    
-     <!-- start client review area start -->
-    <div class="rts-client-review-two bg-black-content pt-4 bg-client-r-h2">
+
+
+<div class="rts-trusted-client rts-section-gapBottom">
         <div class="container">
-            <div class="row mt--30">
-                <div class="title-style-three-between">
-                    <div class="title-style-three left">
-                        <span class="pre">Our Testimonial</span>
-                        <div class="bg-title">04</div>
-                        <h2 class="title rts-text-anime-style-1">Student Testimonials
-                        </h2>
-                    </div>
-                    <div class="button-area">
-                        <a href="#" class="rts-btn btn-primary btn-white">See All Reviews</a>
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-area-client-client text-center">
+                        <p class="client-title">Our Trusted Clients</p>
                     </div>
                 </div>
             </div>
-            <div class="row g-5 mt--20">
-                <div class="col-12">
-                    <div class="swiper mySwiperh2_clients">
+            <div class="row">
+                <div class="client-wrapper-one">
+                    <a href="#" data-animation="fadeInUp" data-delay="0.1" data-duration="1.2"><img src="frontend/assets/images/client/1.webp" alt="business_invena"></a>
+                    <a href="#" data-animation="fadeInUp" data-delay="0.2" data-duration="1.2"><img src="frontend/assets/images/client/2.webp" alt="business_invena"></a>
+                    <a href="#" data-animation="fadeInUp" data-delay="0.3" data-duration="1.2"><img src="frontend/assets/images/client/3.webp" alt="business_invena"></a>
+                    <a href="#" data-animation="fadeInUp" data-delay="0.4" data-duration="1.2"><img src="frontend/assets/images/client/4.webp" alt="business_invena"></a>
+                    <a href="#" data-animation="fadeInUp" data-delay="0.5" data-duration="1.2"><img src="frontend/assets/images/client/5.webp" alt="business_invena"></a>
+                    <a href="#" data-animation="fadeInUp" data-delay="0.6" data-duration="1.2"><img src="frontend/assets/images/client/6.webp" alt="business_invena"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- rts steps area start -->
+<div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-style-two center">
+                    <span class="bg-content">Professionals</span>
+                    <span class="pre">Hire Your Finance Professionals!</span>
+                    <h2 class="title rts-text-anime-style-1">Struggling to find top-notch finance professionals for your business?</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mb-5 text-center">
+            <div class="col-lg-12">
+                <p class="text-muted">We connect exceptional financial talent with companies that need it. The best minds <br> in finance are ready to work in modern, flexible ways.</p>
+            </div>
+        </div>
+
+        <!-- Steps Section -->
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="step-card text-center shadow-sm p-4 rounded-3 h-100 wow fadeInUp" data-wow-delay="0.1s" style="transition: all 0.3s ease;">
+                    <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; font-size: 24px;">1</div>
+                    <h5 class="fw-semibold mb-2">Understanding Your Business</h5>
+                    <p class="text-muted small">We begin by learning your goals, operations, and unique financial needs.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="step-card text-center shadow-sm p-4 rounded-3 h-100 wow fadeInUp" data-wow-delay="0.2s" style="transition: all 0.3s ease;">
+                    <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; font-size: 24px;">2</div>
+                    <h5 class="fw-semibold mb-2">Finding the Right Professionals</h5>
+                    <p class="text-muted small">We shortlist professionals with the right skills and experience for your team.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="step-card text-center shadow-sm p-4 rounded-3 h-100 wow fadeInUp" data-wow-delay="0.3s" style="transition: all 0.3s ease;">
+                    <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; font-size: 24px;">3</div>
+                    <h5 class="fw-semibold mb-2">Panel Interview & Selection</h5>
+                    <p class="text-muted small">Together we assess and select the most suitable candidates via a panel process.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="step-card text-center shadow-sm p-4 rounded-3 h-100 wow fadeInUp" data-wow-delay="0.4s" style="transition: all 0.3s ease;">
+                    <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; font-size: 24px;">4</div>
+                    <h5 class="fw-semibold mb-2">On-Job Placement & Training</h5>
+                    <p class="text-muted small">We ensure smooth onboarding and provide hands-on training during placement.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="step-card text-center shadow-sm p-4 rounded-3 h-100 wow fadeInUp" data-wow-delay="0.5s" style="transition: all 0.3s ease;">
+                    <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; font-size: 24px;">5</div>
+                    <h5 class="fw-semibold mb-2">Ongoing Support When Needed</h5>
+                    <p class="text-muted small">We’re here to support you and your team even after the hiring process ends.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- rts steps area end -->
+
+
+
+
+<!-- rts clients review area start -->
+<div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-area-between-wrapper" dir="ltr">
+                    <div class="title-style-two mb--40 left">
+                        <span class="bg-content">Review</span>
+                        <span class="pre">Our Testimonial</span>
+                        <h2 class="title ">Our Client Reviews
+                        </h2>
+                    </div>
+                    <div class="pagination-wrapper">
+                        <div class="swiper-pagination-fraction"></div>
+                        <div class="swiper-button-next"><i class="fa-sharp fa-regular fa-arrow-right"></i></div>
+                        <div class="swiper-button-prev"><i class="fa-sharp fa-regular fa-arrow-left"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="testimonials-wrapper-swiper-demo-2">
+                    <div class="swiper mySwiper-testimonials-dmeo-2">
                         <div class="swiper-wrapper">
+
                             <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/01.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">David Smith</h6>
-                                            </a>
-                                            <span>Web Developer</span>
+                                <div class="testimonials-main-wrapper-two">
+                                    <div class="left-thumbnail">
+                                        <img src="frontend/assets/images/testimonials/01.webp" alt="testimonials">
+                                    </div>
+                                    <div class="right-content-testimonials">
+                                        <p class="disc">
+                                            I can't recommend The Gourmet Haven enough. It's a place for special
+                                            occasions, date
+                                            nights, or whenever you're in the mood for a culinary adventure. The
+                                            combination of
+                                            exceptional.
+                                        </p>
+                                        <div class="name-desig">
+                                            <h6 class="title">William Henry</h6>
+                                            <p>Designer at <b>Vertex Agency</b></p>
                                         </div>
                                     </div>
-                                    <div class="review-body">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonials-main-wrapper-two">
+                                    <div class="left-thumbnail">
+                                        <img src="frontend/assets/images/testimonials/01.webp" alt="testimonials">
+                                    </div>
+                                    <div class="right-content-testimonials">
                                         <p class="disc">
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
+                                            I can't recommend The Gourmet Haven enough. It's a place for special
+                                            occasions, date
+                                            nights, or whenever you're in the mood for a culinary adventure. The
+                                            combination of
+                                            exceptional.
                                         </p>
+                                        <div class="name-desig">
+                                            <h6 class="title">William Henry</h6>
+                                            <p>Designer at <b>Vertex Agency</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonials-main-wrapper-two">
+                                    <div class="left-thumbnail">
+                                        <img src="frontend/assets/images/testimonials/01.webp" alt="testimonials">
+                                    </div>
+                                    <div class="right-content-testimonials">
+                                        <p class="disc">
+                                            I can't recommend The Gourmet Haven enough. It's a place for special
+                                            occasions, date
+                                            nights, or whenever you're in the mood for a culinary adventure. The
+                                            combination of
+                                            exceptional.
+                                        </p>
+                                        <div class="name-desig">
+                                            <h6 class="title">William Henry</h6>
+                                            <p>Designer at <b>Vertex Agency</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- rts clients review area end -->
+
+
+<!-- appoinment areas tart -->
+<div class="appoinment-area-start rts-section-gapBottom">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="appoinment-wrapper-one-start">
+                    <div class="title-style-two mb--40 left">
+                        <span class="bg-content">Hello</span>
+                        <span class="pre">Make An Appointment</span>
+                        <h2 class="title">Request a free quote</h2>
+                    </div>
+                    @if(session('success'))
+                    <div id="success-message" data-message="{{ session('success') }}"></div>
+                    @endif
+                    <form class="form__content" method="post" action="{{ route('contact') }}" id="contact-form">
+                        @csrf
+                        <div class="single-input-wrapper">
+                            <div class="single-input">
+                                <input type="text" name="name" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="single-input">
+                                <input type="number" name="phone" id="phone" placeholder="Number">
+                            </div>
+                        </div>
+                        <div class="single-input">
+                            <input type="email" name="email" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="single-input mb--30">
+                            <textarea placeholder="Type Your Message" name="message" id="message"></textarea>
+                        </div>
+                        <button class="rts-btn btn-primary" type="submit">Submit Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="appoinment-thumbnail">
+                    <img src="{{ asset('frontend/assets/images/cover/10.jpg') }}" alt="appoinment">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- appoinment areas end -->
+
+
+
+<!-- rts blog area start -->
+<div class="rts-blog-area rts-section-gapBottom ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-style-two center">
+                    <span class="bg-content">Blog</span>
+                    <span class="pre">Blog & News</span>
+                    <h2 class="title">Recent blog post
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5 mt--20">
+            <div class="col-lg-12">
+                <div class="blog-swiper-style-one">
+                    <div class="swiper mySwiper-blog-one">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide">
+                                <div class="single-blog-area-one">
+                                    <p>title></p>
+                                    <a >
+                                        <h4 class="title"></h4>
+                                    </a>
+                                    <div class="bottom-details">
                                         
                                     </div>
                                 </div>
-                                <!-- single client reviews End -->
                             </div>
-                            <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/02.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">Mark Jone</h6>
-                                            </a>
-                                            <span>Web Developer</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-body">
-                                        <p class="disc">
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                        </p>
-                                        
-                                    </div>
-                                </div>
-                                <!-- single client reviews End -->
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/03.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">Lord Korn</h6>
-                                            </a>
-                                            <span>Web Developer</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-body">
-                                        <p class="disc">
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                        </p>
-                                        
-                                    </div>
-                                </div>
-                                <!-- single client reviews End -->
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/01.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">David Smith</h6>
-                                            </a>
-                                            <span>Web Developer</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-body">
-                                        <p class="disc">
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                        </p>
-                                       
-                                    </div>
-                                </div>
-                                <!-- single client reviews End -->
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/02.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">Mark Jone</h6>
-                                            </a>
-                                            <span>Web Developer</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-body">
-                                        <p class="disc">
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                        </p>
-                                        
-                                    </div>
-                                </div>
-                                <!-- single client reviews End -->
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/03.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">Lord Korn</h6>
-                                            </a>
-                                            <span>Web Developer</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-body">
-                                        <p class="disc">
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                        </p>
-                                        
-                                    </div>
-                                </div>
-                                <!-- single client reviews End -->
-                            </div>
+                            
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
@@ -977,168 +1002,25 @@ Yes. We help enhance your current qualifications through internships, industry w
             </div>
         </div>
     </div>
-    <!-- start client review area end -->
+</div>
+<!-- rts blog area end -->
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function() {
+        setTimeout(() => {
+            window.location.reload();
+        }, 1000); // refresh 1 sec after submission
+    });
+
 
     
-
-    <div class="service-ribbon-wrapper">
-        <div class="service-ribbon-track">
-            <div class="service-ribbon-content">
-                <!-- Content Repeated Twice for Seamless Scroll -->
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture1.png"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture2.png"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture3.jpg"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture4.png"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture5.png"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture6.png"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture7.png"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture8.jpg"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture9.jpg"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture10.png"></div>
-
-                <!-- Repeat for infinite loop effect -->
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture1.png"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture2.png"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture3.jpg"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture4.png"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture5.png"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture6.png"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture7.png"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture8.jpg"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture9.jpg"></div>
-                <div class="icon-ribbon-item"><img src="frontend/assets/images/home/Picture10.png"></div>
-            </div>
-        </div>
-    </div>
+</script>
 
 
-     <div class="rts-client-area ptb--100 brand-bg-three bg_image">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="client-three-wrapper">
-                        <div class="single">
-                            <img src="frontend/assets/images/uni/uni1.webp" alt="Business_client">
-                        </div>
-                        <div class="single">
-                            <img src="frontend/assets/images/uni/uni2.png" alt="Business_client">
-                        </div>
-                        <div class="single">
-                              <img src="frontend/assets/images/uni/uni3.png" alt="Business_client">
-                        </div>
-                        <div class="single">
-                              <img src="frontend/assets/images/uni/uni4.png" alt="Business_client">
-                        </div>
-                        <div class="single">
-                             <img src="frontend/assets/images/uni/uni5.png" alt="Business_client">
-                        </div>
-                        <div class="single">
-                              <img src="frontend/assets/images/malaysia/Picture9.png" alt="Business_client">
-                        </div>
-                          <div class="single">
-                              <img src="frontend/assets/images/uni/uni7.png" alt="Business_client">
-                        </div>
-                          <div class="single">
-                              <img src="frontend/assets/images/malaysia/Picture10.png" alt="Business_client">
-                        </div>
-                          <div class="single">
-                              <img src="frontend/assets/images/uni/uni9.png" alt="Business_client">
-                        </div>
-                          <div class="single">
-                              <img src="frontend/assets/images/malaysia/Picture8.png" alt="Business_client">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    
-     
-    <!-- rts galllery area start -->
-    <div class="rts-gallery-area rts-section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="gallery-area-main-wrapper-4">
-                        <div class="row g-5">
-                            <div class="col-md-4">
-                                <div class="single-gallery">
-                                    <a href="frontend/assets/images/gallery/Picture1.png" class="thumbnail gallery-image">
-                                        <img src="frontend/assets/images/gallery/Picture1.png" alt="gallery">
-                                    </a>
-                                   
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="single-gallery">
-                                    <a href="frontend/assets/images/gallery/Picture2.png" class="thumbnail gallery-image">
-                                        <img src="frontend/assets/images/gallery/Picture2.png" alt="gallery">
-                                    </a>
-                                  
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="single-gallery">
-                                    <a href="frontend/assets/images/gallery/Picture3.png" class="thumbnail gallery-image">
-                                        <img src="frontend/assets/images/gallery/Picture3.png" alt="gallery">
-                                    </a>
-                                  
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="single-gallery">
-                                    <a href="frontend/assets/images/gallery/Picture4.png" class="thumbnail gallery-image">
-                                        <img src="frontend/assets/images/gallery/Picture4.png" alt="gallery">
-                                    </a>
-                          
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="single-gallery">
-                                    <a href="frontend/assets/images/gallery/Picture5.png" class="thumbnail gallery-image">
-                                        <img src="frontend/assets/images/gallery/Picture5.png" alt="gallery">
-                                    </a>
-                                  
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="single-gallery">
-                                    <a href="frontend/assets/images/gallery/Picture6.png" class="thumbnail gallery-image">
-                                        <img src="frontend/assets/images/gallery/Picture6.png" alt="gallery">
-                                    </a>
-                               
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- rts galllery area end -->
 
-     
-    <!-- rts cta area start -->
-    <div class="rts-cta-area-one rts-section-gapBottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="cta-main-area-wrapper-one bg_image">
-                        <div class="left-areas">
-                            <span class="pre" style="font-weight:bold; font-size:25px">Is your Progress on Hold?</span>
-                            <p style="font-weight:bold; font-size:20px">Don’t let family commitments and work barriers hold you back—your professional 
-                                journey deserves to keep moving forward, and at IWGC, we’re here to support you every step of the way</p>
-                        </div>
-                        <div class="right-area mt-2">
-                                <button class="rts-btn btn-primary">Get Started Now </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- rts cta area end -->
-
-    
 @endsection
+
+
+
+
