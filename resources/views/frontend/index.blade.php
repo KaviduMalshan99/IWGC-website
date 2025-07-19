@@ -127,9 +127,11 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
     height: 100%;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* very soft default shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
 }
 
+/* Program Image */
 .program-image {
     position: relative;
     height: 100%;
@@ -143,76 +145,64 @@
     border-radius: 15px;
 }
 
-.program-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-    z-index: 2;
-}
 
-.program-content h3 {
-    color: white;
-    font-weight: 800;
-    margin-bottom: 25px;
-}
-
-/* Overlay Styling */
-.overlay {
+.program-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3); /* less opacity for a cleaner look */
+    background: rgba(0, 0, 0, 0.3); 
     z-index: 1;
-    transition: background 0.3s ease;
     border-radius: 15px;
+    pointer-events: none;
+    transition: background 0.3s ease;
 }
 
-/* Button Style */
+
+.program-card:hover .program-overlay {
+    background: rgba(0, 0, 0, 0.56);
+}
+
+
+/* Content Container */
+.program-content {
+    position: absolute;
+    width:350px;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2; 
+    transition: bottom 0.4s ease, transform 0.4s ease;
+}
+
+.program-card:hover .program-content {
+    bottom: 50%;
+    transform: translate(-50%, 50%); 
+}
+
+.program-content h3 {
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
 .program-content .btn {
-    position: relative;
-    z-index: 2;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     border-radius: 30px;
     padding: 8px 20px;
-    margin-bottom: 25px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
 }
 
-/* Darker overlay on hover */
-.program-card:hover .overlay {
-    background: rgba(0, 0, 0, 0.6);
-}
-
-/* Slide up effect */
-.program-content {
-    bottom: -100px;
-    opacity: 0;
-    transition: bottom 0.4s ease, opacity 0.4s ease;
-}
-
-/* On hover, show the content */
-.program-card:hover .program-content {
-    bottom: 30px; /* Slide into view */
-    opacity: 1;
-}
-
-
-/* why choose iwgc section */
 .program-card:hover {
-    transform: scale(1.015);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* lighter and cleaner glow */
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
 }
 
-.program-card:hover .overlay {
-    background: #1b2954; /* slightly darker on hover */
-}
 
 .program-card:hover .btn-outline-light {
     background-color: #fff;
@@ -222,10 +212,59 @@
 
 
 .working-process-one {
-    background-color: #1b2954; /* deep navy blue */
+    background-color: #1b2954; 
 }
 
+/* Box Styles */
+.why-box {
+    background-color: #ffffffff;
+    padding: 35px;
+    padding-left: 50px;
+    border-radius: 15px;
+    height: 100%;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
+/* Hover Effect */
+.why-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Animation */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease-out forwards;
+}
+.why-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.why-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.why-list li i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: #ff4d4d; /* red tick */
+    font-size: 14px;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /* ------------------------------------------------our esteemed partners section ----------------------------------- */
 
 .logo-marquee-container {
@@ -474,7 +513,7 @@
 
 
 <!-- rts about area start -->
-<div class="rts-about-area-two rts-section-gap">
+<div class="rts-about-area-two mt--20 mb--100">
     <div class="container">
         <div class=" row d-flex flex-wrap align-items-center gap-5">
             <div class="col-lg-6 ">
@@ -560,13 +599,13 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row g-4 justify-content-center">
+         <div class="container mt-5">
+            <div class="row g-4 justify-content-center">
                 <div class="col-md-4">
-                    <a href="programs/mba-business-administration.php" class="program-card">
+                    <a href="{{ route('master_BA') }}" class="program-card">
                         <div class="program-image">
                             <img src="{{ asset('frontend/assets/images/avid/1mb.png') }}" alt="Master of Business Administration" class="img-fluid">
-                            <div class="overlay"></div>
+                            <div class="program-overlay"></div>
                             <div class="program-content">
                                 <h3>Master of Business Administration</h3>
                                 <span class="btn btn-outline-light">Explore Program<i class="fas fa-arrow-right ms-2"></i></span>
@@ -575,10 +614,10 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="/programs/master-educational-leadership.php" class="program-card">
+                    <a href="{{ route('master_ELM') }}" class="program-card">
                         <div class="program-image">
                             <img src="{{ asset('frontend/assets/images/avid/Master-of-Educational-Leadership-and-Management.jpg') }}" alt="Master of Educational Leadership and Management" class="img-fluid">
-                            <div class="overlay"></div>
+                            <div class="program-overlay"></div>
                             <div class="program-content">
                                 <h3>Master of Educational Leadership and Management</h3>
                                 <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
@@ -587,10 +626,10 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="/programs/bachelor-early-childhood-education.php" class="program-card">
+                    <a href="{{ route('bachelor_ECE') }}" class="program-card">
                         <div class="program-image">
                             <img src="{{ asset('frontend/assets/images/avid/Bachelor-of-Early-Childhood Education.jpg') }}" alt="Bachelor of Early Childhood Education" class="img-fluid">
-                            <div class="overlay"></div>
+                            <div class="program-overlay"></div>
                             <div class="program-content">
                                 <h3>Bachelor of Early Childhood Education (BECE)</h3>
                                 <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
@@ -599,10 +638,10 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="/programs/bachelor-teaching-primary.php" class="program-card">
+                    <a href="{{ route('bachelor_teaching') }}" class="program-card">
                         <div class="program-image">
                             <img src="{{ asset('frontend/assets/images/avid/Bachelor-of-Teaching-(Primary).jpg') }}" alt="Bachelor of Teaching (Primary)" class="img-fluid">
-                            <div class="overlay"></div>
+                            <div class="program-overlay"></div>
                             <div class="program-content">
                                 <h3>Bachelor of Teaching (Primary)</h3>
                                 <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
@@ -611,10 +650,10 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="/programs/Bachelor-of-Counseling.php" class="program-card">
+                    <a href="{{ route('bachelor_counseling') }}" class="program-card">
                         <div class="program-image">
                             <img src="{{ asset('frontend/assets/images/avid/Bachelor-of-Counseling.jpg') }}" alt="Bachelor of Counseling" class="img-fluid">
-                            <div class="overlay"></div>
+                            <div class="program-overlay"></div>
                             <div class="program-content">
                                 <h3>Bachelor of Counseling</h3>
                                 <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
@@ -623,10 +662,10 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="/programs/Bachelor-of-Counseling.php" class="program-card">
+                    <a href="{{ route('bachelor_psychology') }}" class="program-card">
                         <div class="program-image">
                             <img src="{{ asset('frontend/assets/images/avid/boc.jpg') }}" alt="Bachelor of Counseling" class="img-fluid">
-                            <div class="overlay"></div>
+                            <div class="program-overlay"></div>
                             <div class="program-content">
                                 <h3>Bachelor of Psychology</h3>
                                 <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
@@ -641,82 +680,101 @@
 
 
 <!-- working process area start -->
-<div class="working-process-one bg-main " style="padding:60px 0 ; margin-bottom: 20px;">
+<div class="working-process-one bg-main" style="padding: 60px 0; margin-bottom: 20px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="title-style-one center">
-                    <h2 class="title rts-text-anime-style-1">Why Choose IWGC</h2>
+                    <h2 class="title  rts-text-anime-style-1">Why Choose IWGC</h2>
                 </div>
             </div>
         </div>
-        <div class="row g-5 mt--30 align-items-center">
-            <!-- Box 1: Education for Everyone -->
-            <div class="col-lg-4">
+
+        <div class="row g-4 mt-4">
+            <!-- Box 1 -->
+            <div class="col-lg-4 col-md-6">
                 <div class="why-box red-box">
-                    <h4 style="color:white;">Education for Everyone</h4>
-                    <ul>
-                        <li>Comprehensive Accessibility</li>
-                        <li>Affordable Excellence</li>
-                        <li>Financial Assistance</li>
-                        <li>Early Enrollment Incentives</li>
-                        <li>Supportive Environment</li>
+                    <h4 class="title  rts-text-anime-style-1">Education for Everyone</h4>
+                    <ul class="why-list">
+                        <li><i class="fas fa-check-circle"></i> Comprehensive Accessibility</li>
+                        <li><i class="fas fa-check-circle"></i> Affordable Excellence</li>
+                        <li><i class="fas fa-check-circle"></i> Financial Assistance</li>
+                        <li><i class="fas fa-check-circle"></i> Early Enrollment Incentives</li>
+                        <li><i class="fas fa-check-circle"></i> Supportive Environment</li>
                     </ul>
-                    <h4 style="color:white; margin-top:40px">Advance Further with Us</h4>
-                    <ul>
-                        <li>Global Opportunities</li>
-                        <li>Expert Guidance</li>
-                        <li>Migration Support</li>
-                        <li>Professional Networks</li>
+
+                </div>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="why-box red-box">
+                    <h4 class="title  rts-text-anime-style-1">Advance Further with Us</h4>
+                    <ul class="why-list">
+                        <li><i class="fas fa-check-circle"></i>Global Opportunities</li>
+                        <li><i class="fas fa-check-circle"></i>Expert Guidance</li>
+                        <li><i class="fas fa-check-circle"></i>Migration Support</li>
+                        <li><i class="fas fa-check-circle"></i>Professional Networks</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Box 3: Tailor-Made Academic Pathways -->
-            <div class="col-lg-4">
+            <!-- Box 3 -->
+            <div class="col-lg-4 col-md-6">
                 <div class="why-box red-box">
-                    <h4 style="color:white;">Tailor-Made Academic Pathways</h4>
-                    <ul>
-                        <li>Customized Solutions</li>
-                        <li>Flexible Entry Points</li>
-                        <li>Guided Transitions</li>
-                        <li>Personalized Mentorship & Academic Advising</li>
-                    </ul>
-                    <h4 style="color:white; margin-top:40px">Placements (Coming Soon)</h4>
-                    <ul>
-                        <li>Career Launchpad</li>
-                        <li>Industry Integration</li>
-                        <li>Post-Graduation Support</li>
-                        <li>Resume & Interview Preparation</li>
+                    <h4 class="title  rts-text-anime-style-1">Tailor-Made Academic Pathways</h4>
+                    <ul class="why-list">
+                        <li><i class="fas fa-check-circle"></i>Customized Solutions</li>
+                        <li><i class="fas fa-check-circle"></i>Flexible Entry Points</li>
+                        <li><i class="fas fa-check-circle"></i>Guided Transitions</li>
+                        <li><i class="fas fa-check-circle"></i>Personalized Mentorship</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Box 2: A Learning Experience Tailored to Your Dynamic Lifestyle -->
-            <div class="col-lg-4">
+            <!-- Box 4 -->
+            <div class="col-lg-4 col-md-6">
                 <div class="why-box red-box">
-                    <h4 style="color:white;">A Learning Experience Tailored to Your Dynamic Lifestyle</h4>
-                    <ul>
-                        <li>Hybrid Learning Models</li>
-                        <li>On-Demand Resources</li>
-                        <li>Expert-Led Workshops</li>
-                        <li>Tech-Enhanced Learning</li>
-                    </ul>
-                    <h4 style="color:white; margin-top:40px">Internships</h4>
-                    <ul>
-                        <li>Real-World Integration</li>
-                        <li>Career-Centric Learning</li>
-                        <li>Corporate Partnerships</li>
-                        <li>Skill Development</li>
+                    <h4 class="title  rts-text-anime-style-1">Placements (Coming Soon)</h4>
+                    <ul class="why-list">
+                        <li><i class="fas fa-check-circle"></i>Career Launchpad</li>
+                        <li><i class="fas fa-check-circle"></i>Industry Integration</li>
+                        <li><i class="fas fa-check-circle"></i>Post-Graduation Support</li>
+                        <li><i class="fas fa-check-circle"></i>Resume Preparation</li>
                     </ul>
                 </div>
             </div>
 
-            
+            <!-- Box 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="why-box red-box">
+                    <h4 class="title  rts-text-anime-style-1">Dynamic Learning Experience</h4>
+                    <ul class="why-list">
+                        <li><i class="fas fa-check-circle"></i>Hybrid Learning Models</li>
+                        <li><i class="fas fa-check-circle"></i>On-Demand Resources</li>
+                        <li><i class="fas fa-check-circle"></i>Expert-Led Workshops</li>
+                        <li><i class="fas fa-check-circle"></i>Tech-Enhanced Learning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Box 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="why-box red-box">
+                    <h4 class="title  rts-text-anime-style-1">Internships</h4>
+                    <ul class="why-list">
+                        <li><i class="fas fa-check-circle"></i>Real-World Integration</li>
+                        <li><i class="fas fa-check-circle"></i>Career-Centric Learning</li>
+                        <li><i class="fas fa-check-circle"></i>Corporate Partnerships</li>
+                        <li><i class="fas fa-check-circle"></i>Skill Development</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <!-- working process area end -->
+
 
 
 <!-- rts faq area start -->
@@ -740,7 +798,7 @@
                             <img src="frontend/assets/images/faq/01.webp" alt="about">
                         </div>
                         <div class="small-image images-r">
-                            <img src="frontend/assets/images//FAQBoy.webp" alt="about">
+                            <img src="frontend/assets/images/faq/02.webp" alt="about">
                         </div>
                         <div class="poligon-shape images-r">
                             <img src="frontend/assets/images/faq/poligon-shape.svg" alt="">
@@ -760,7 +818,7 @@
                 </div>
                 <div class="col-lg-6 pl--50 pl_md--0 pl_sm--0 mt_md--50 mt_sm--80" data-animation="fadeInUp" data-delay="0.3">
                     <div class="accordion faq-wrapper-inner-page" id="accordionExample">
-                        <div class="accordion-item">
+                        <div class="accordion-item" style="border-color: gold;">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     01. What programs does the university offer?
@@ -772,7 +830,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item" style="border-color: gold;">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     02. How do I apply for admission?
@@ -784,7 +842,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item" style="border-color: gold;">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     03. What is the student to faculty ratio?
@@ -796,7 +854,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item" style="border-color: gold;">
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     04. I am unsure which course fits my career or migration goals. Can you help?
@@ -809,7 +867,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item" style="border-color: gold;">
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                     05. What if I am working or managing a family?
@@ -821,7 +879,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item" style="border-color: gold;">
                             <h2 class="accordion-header" id="headingsix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
                                     06. Can I improve the value of my current education?
@@ -843,12 +901,11 @@
 
 
 <!-- start client review area start -->
-<div class="rts-client-review-two bg-black-content pt-4 bg-client-r-h2">
-        <div class="container">
-            <div class="row mt--30">
+<div class="rts-client-review-two bg-black-content pt-4 pb-4 bg-client-r-h2">
+        <div class="container" >
+            <div class="row mt--30" >
                 <div class="title-style-three-between">
                     <div class="title-style-three left">
-                        <span class="pre">Our Testimonial</span>
                         <div class="bg-title">04</div>
                         <h2 class="title rts-text-anime-style-1">Student Testimonials
                         </h2>
@@ -858,7 +915,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row g-5 mt--20">
+            <div class="row g-5" >
                 <div class="col-12">
                     <div class="swiper mySwiperh2_clients">
                         <div class="swiper-wrapper">
@@ -876,11 +933,9 @@
                                             <span>Web Developer</span>
                                         </div>
                                     </div>
-                                    <div class="review-body">
-                                        <p class="disc">
+                                    <div class="review-body mt--20">
                                             “The course content was and easy to follow instructors were
                                     available answer questions”
-                                        </p>
                                         
                                     </div>
                                 </div>
@@ -900,12 +955,11 @@
                                             <span>Web Developer</span>
                                         </div>
                                     </div>
-                                    <div class="review-body">
-                                        <p class="disc">
+                                    <div class="review-body mt--20">
+                                       
                                             “The course content was and easy to follow instructors were
                                     available answer questions”
-                                        </p>
-                                        
+                                       
                                     </div>
                                 </div>
                                 <!-- single client reviews End -->
@@ -924,12 +978,11 @@
                                             <span>Web Developer</span>
                                         </div>
                                     </div>
-                                    <div class="review-body">
-                                        <p class="disc">
+                                    <div class="review-body mt--20">
+                                       
                                             “The course content was and easy to follow instructors were
                                     available answer questions”
-                                        </p>
-                                        
+                                       
                                     </div>
                                 </div>
                                 <!-- single client reviews End -->
@@ -948,11 +1001,10 @@
                                             <span>Web Developer</span>
                                         </div>
                                     </div>
-                                    <div class="review-body">
-                                        <p class="disc">
+                                    <div class="review-body mt--20">
+                                      
                                             “The course content was and easy to follow instructors were
                                     available answer questions”
-                                        </p>
                                        
                                     </div>
                                 </div>
@@ -972,12 +1024,11 @@
                                             <span>Web Developer</span>
                                         </div>
                                     </div>
-                                    <div class="review-body">
-                                        <p class="disc">
+                                    <div class="review-body mt--20">
+                                      
                                             “The course content was and easy to follow instructors were
                                     available answer questions”
-                                        </p>
-                                        
+                                       
                                     </div>
                                 </div>
                                 <!-- single client reviews End -->
@@ -996,12 +1047,11 @@
                                             <span>Web Developer</span>
                                         </div>
                                     </div>
-                                    <div class="review-body">
-                                        <p class="disc">
+                                    <div class="review-body mt--20">
+                                      
                                             “The course content was and easy to follow instructors were
                                     available answer questions”
-                                        </p>
-                                        
+                                       
                                     </div>
                                 </div>
                                 <!-- single client reviews End -->
@@ -1020,7 +1070,7 @@
 
 
 <!-- rts Esteemed Clients start -->
-<div class="rts-client-area ptb--100 brand-bg-three bg_image">
+<div class="rts-client-area ptb--100 brand-bg-three bg_image mt--20">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 pb-5">
