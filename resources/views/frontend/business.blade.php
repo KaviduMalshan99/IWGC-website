@@ -2,19 +2,110 @@
 @extends ('frontend.master')
 
 @section('content')
+
+<style>
+    
+
+    .program-card {
+    display: block;
+    overflow: hidden;
+    border-radius: 15px;
+    text-decoration: none;
+    height: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.program-image {
+    position: relative;
+    height: 100%;
+}
+
+.program-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    border-radius: 15px;
+    transition: background 0.3s ease;
+}
+
+/* Content Container */
+.program-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    
+}
+
+/* Course Name - Always visible */
+.program-content h3 {
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 15px;
+    opacity: 1;
+}
+
+/* Discover Button - Hidden initially */
+.program-content .btn {
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 8px 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Hover Effects */
+.program-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.program-card:hover .overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.program-card:hover .program-content .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+</style>
  
  <!-- partners area breadcrumb area wrapper -->
-    <div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/hero-3 - Copy.jpg') }}'); background-size: cover; background-position: center;">
+    <div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/bus.webp') }}'); background-size: cover; background-position: center;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-area-left center">
                         <span class="bg-title">Business</span>
                         <h1 class="title">
-    Faculty Of Business Management
+                            Faculty Of Business Management
                         </h1>
                          <h3 class="title">
-    “Developing Global Business Leaders”
+                            “Developing Global Business Leaders”
                         </h3>
                     </div>
                 </div>
@@ -51,84 +142,52 @@
 
 
 
- <!-- rts pricing area start -->
-    <div class="rts-pricing-area-one rts-section-gapBottom rts-section-gapTop  mt-dec-section-inner with-pricing">
-        <div class="container">
-            <div class="row  mt_sm--120">
-                <div class="col-10 mx-auto">
-                    <div class="title-area-left">
-                         <h3 style="color: #1b2954; font-weight: 600; margin-top:12%; margin-bottom:0;">
-                           Our Business Management Programs
-                        </h3>
-                         <p style="font-size: 16px; margin-bottom: 20px;">
-                        Explore our extensive selection of business courses crafted for aspiring leaders and future professionals.
-                    </p>
-                    </div>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <div class="row g-5">
-                                <!-- single pricing plane -->
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-12" >
-                                    <div class="pricing-wrapper-one" style="position: relative; background-image: url('{{ asset('frontend/assets/images/avid/1mb.png') }}'); background-size: cover; background-position: center;">
-                                        <!-- Black transparent overlay -->
-                                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
 
-                                        <!-- Actual content (above overlay) -->
-                                        <div style="position: relative; z-index: 2;">
-                                            <!-- pricing header -->
-                                            <div class="pricing-header-start">
-                                                <h4 class="title" style="color: white !important;">
-                                                    Bachelor of Business Administration (BBA)
-                                                </h4>
-                                            </div>
-                                            <!-- pricing header End -->
 
-                                            <!-- pricing body start -->
-                                            <div class="pricing-body">
-                                                <a class="rts-btn btn-primary" href="{{ route('bachelor_BA') }}">Explore Program</a>
-                                            </div>
-                                            <!-- pricing body end -->
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!-- single pricing plane -->
-                                <!-- single pricing plane -->
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--80">
-                                        <div class="pricing-wrapper-one" style="position: relative; background-image: url('{{ asset('frontend/assets/images/avid/1bb.png') }}'); background-size: cover; background-position: center;">
-                                        <!-- Black transparent overlay -->
-                                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
-
-                                        <!-- Actual content (above overlay) -->
-                                        <div style="position: relative; z-index: 2;">
-                                            <!-- pricing header -->
-                                            <div class="pricing-header-start">
-                                                <h4 class="title" style="color: white !important;">
-                                                    Master of Business Administration (MBA)
-                                                </h4>
-                                            </div>
-                                            <!-- pricing header End -->
-
-                                            <!-- pricing body start -->
-                                            <div class="pricing-body">
-                                                <a class="rts-btn btn-primary" href="{{ route('master_BA') }}">Explore Program</a>
-                                            </div>
-                                            <!-- pricing body end -->
-                                        </div>
-                                    </div>
-
-                                </div>
-                                </div>
-                                <!-- single pricing plane -->
-                            </div>
-                        </div>
-                        
-                    </div>
+<!-- rts steps area start -->
+<div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop bg-light">
+    <div class="container mb-4 pb-3">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-style-two center">
+                    <span class="bg-content">Programs</span>
+                    <h2 class="title rts-text-anime-style-1">Our Business Management Programs</h2>
+                    <span class="pre"> Explore our extensive selection of business courses crafted for aspiring leaders and future professionals.</span>
                 </div>
             </div>
         </div>
     </div>
-    <!-- rts pricing area end -->
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <a href="{{ route('bachelor_BA') }}" class="program-card">
+                        <div class="program-image">
+                            <img src="{{ asset('frontend/assets/images/avid/1mb.png') }}" alt="Master of Business Administration" class="img-fluid">
+                            <div class="overlay"></div>
+                            <div class="program-content">
+                                <h3>Bachelor of Business Administration (BBA)</h3>
+                                <span class="btn btn-outline-light">Explore Program<i class="fas fa-arrow-right ms-2"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="{{ route('master_BA') }}" class="program-card">
+                        <div class="program-image">
+                            <img src="{{ asset('frontend/assets/images/avid/1bb.png') }}" alt="Master of Educational Leadership and Management" class="img-fluid">
+                            <div class="overlay"></div>
+                            <div class="program-content">
+                                <h3>Master of Business Administration (MBA)</h3>
+                                <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+    </div>
+</div>
+<!-- rts steps area end -->
    
 
     <!-- rts faq area start -->
@@ -153,12 +212,12 @@
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                  Business at IWGC offers two key programs:<br><br>
-<strong>Bachelor of Business Administration (BBA) –</strong> An undergraduate program that
-provides a strong foundation in business, management, marketing, and finance.<br>
+                                    <strong>Bachelor of Business Administration (BBA) –</strong> An undergraduate program that
+                                    provides a strong foundation in business, management, marketing, and finance.<br>
 
-<strong>Master of Business Administration (MBA) – </strong>A postgraduate program that enhances
-leadership, strategic thinking, and decision-making skills for aspiring professionals
-and executives.
+                                    <strong>Master of Business Administration (MBA) – </strong>A postgraduate program that enhances
+                                    leadership, strategic thinking, and decision-making skills for aspiring professionals
+                                    and executives.
                                 </div>
                             </div>
                         </div>
@@ -170,10 +229,10 @@ and executives.
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-Yes, the business programs at Imperial Wisdom Graduate Campus are internationally recognized.
-Our qualifications are accepted by global credential evaluators like WES and UK ENIC, and
-align with standards recognized by the UGC and IAU, ensuring strong academic and
-professional value worldwide.
+                                        Yes, the business programs at Imperial Wisdom Graduate Campus are internationally recognized.
+                                        Our qualifications are accepted by global credential evaluators like WES and UK ENIC, and
+                                        align with standards recognized by the UGC and IAU, ensuring strong academic and
+                                        professional value worldwide.
                                 </div>
                             </div>
                         </div>
@@ -185,9 +244,9 @@ professional value worldwide.
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-Entry requirements vary depending on the level of the program. Additional qualifications or
-foundation programs may be accepted on a case-by-case basis. Our admissions team is happy to
-assist you in determining your eligibility.
+                                    Entry requirements vary depending on the level of the program. Additional qualifications or
+                                    foundation programs may be accepted on a case-by-case basis. Our admissions team is happy to
+                                    assist you in determining your eligibility.
                                 </div>
                             </div>
                         </div>
@@ -199,8 +258,7 @@ assist you in determining your eligibility.
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                 Yes. We welcome applications from mature students and working professionals. Recognition of
-Prior Learning (RPL) or work experience may be considered.
+                                 Yes. We welcome applications from mature students and working professionals. Recognition of Prior Learning (RPL) or work experience may be considered.
                                 </div>
                             </div>
                         </div>
@@ -211,9 +269,7 @@ Prior Learning (RPL) or work experience may be considered.
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-The graduation ceremony is typically held once a year. The exact date and venue will be
-announced by the Academic Affairs Office.
+                                <div class="accordion-body"> The graduation ceremony is typically held once a year. The exact date and venue will be announced by the Academic Affairs Office.
                                 </div>
                             </div>
                         </div>

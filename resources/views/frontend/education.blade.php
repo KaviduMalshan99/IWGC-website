@@ -4,18 +4,14 @@
 @section('content')
  
  <!-- partners area breadcrumb area wrapper -->
-    <div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/hero-3 - Copy.jpg') }}'); background-size: cover; background-position: center;">
+    <div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/edu.webp') }}'); background-size: cover; background-position: center;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-area-left center">
                         <span class="bg-title">Education</span>
-                        <h1 class="title">
-    Faculty Of Education
-                        </h1>
-                         <h3 class="title">
-   “Empowering the Educators of Tomorrow.”
-                        </h3>
+                        <h1 class="title" style="color:#1b2954;"> Faculty Of Education</h1>
+                         <h3 class="title">“Empowering the Educators of Tomorrow.”</h3>
                     </div>
                 </div>
             </div>

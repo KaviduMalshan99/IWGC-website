@@ -185,6 +185,24 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Darker overlay on hover */
+.program-card:hover .overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Slide up effect */
+.program-content {
+    bottom: -100px;
+    opacity: 0;
+    transition: bottom 0.4s ease, opacity 0.4s ease;
+}
+
+/* On hover, show the content */
+.program-card:hover .program-content {
+    bottom: 30px; /* Slide into view */
+    opacity: 1;
+}
+
 
 /* why choose iwgc section */
 .program-card:hover {
@@ -202,9 +220,106 @@
     border-color: #fff;
 }
 
-/* Main background */
+
 .working-process-one {
     background-color: #1b2954; /* deep navy blue */
+}
+
+
+/* ------------------------------------------------our esteemed partners section ----------------------------------- */
+
+.logo-marquee-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px 0;
+}
+
+.logo-marquee-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll-marquee 40s linear infinite;
+}
+
+.logo-marquee {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.logo-marquee img {
+    height: 70px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo-marquee img:hover {
+    transform: scale(1.1);
+    
+    opacity: 1;
+}
+
+/* Scrolling Animation */
+@keyframes scroll-marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* ------------------------------------------ Gallery section */
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 350px; /* fixed height for uniform look */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    display: block;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.image-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+.event-title {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -722,100 +837,339 @@
                 </div>
             </div>
         </div>
-    </div>
+</div>
     <!-- rts faq area end -->
 
 
 
-<div class="rts-trusted-client rts-section-gapBottom">
+<!-- start client review area start -->
+<div class="rts-client-review-two bg-black-content pt-4 bg-client-r-h2">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="title-area-client-client text-center">
-                        <p class="client-title">Our Trusted Clients</p>
+            <div class="row mt--30">
+                <div class="title-style-three-between">
+                    <div class="title-style-three left">
+                        <span class="pre">Our Testimonial</span>
+                        <div class="bg-title">04</div>
+                        <h2 class="title rts-text-anime-style-1">Student Testimonials
+                        </h2>
+                    </div>
+                    <div class="button-area">
+                        <a href="#" class="rts-btn btn-primary btn-white">See All Reviews</a>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="client-wrapper-one">
-                    <a href="#" data-animation="fadeInUp" data-delay="0.1" data-duration="1.2"><img src="frontend/assets/images/client/1.webp" alt="business_invena"></a>
-                    <a href="#" data-animation="fadeInUp" data-delay="0.2" data-duration="1.2"><img src="frontend/assets/images/client/2.webp" alt="business_invena"></a>
-                    <a href="#" data-animation="fadeInUp" data-delay="0.3" data-duration="1.2"><img src="frontend/assets/images/client/3.webp" alt="business_invena"></a>
-                    <a href="#" data-animation="fadeInUp" data-delay="0.4" data-duration="1.2"><img src="frontend/assets/images/client/4.webp" alt="business_invena"></a>
-                    <a href="#" data-animation="fadeInUp" data-delay="0.5" data-duration="1.2"><img src="frontend/assets/images/client/5.webp" alt="business_invena"></a>
-                    <a href="#" data-animation="fadeInUp" data-delay="0.6" data-duration="1.2"><img src="frontend/assets/images/client/6.webp" alt="business_invena"></a>
+            <div class="row g-5 mt--20">
+                <div class="col-12">
+                    <div class="swiper mySwiperh2_clients">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!-- single client reviews -->
+                                <div class="rts-client-reviews-h2">
+                                    <div class="review-header">
+                                        <a href="#" class="thumbnail">
+                                            <img src="frontend/assets/images/testimonials/avatar/01.webp" alt="testimonials_area">
+                                        </a>
+                                        <div class="discription">
+                                            <a href="#">
+                                                <h6 class="title">David Smith</h6>
+                                            </a>
+                                            <span>Web Developer</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-body">
+                                        <p class="disc">
+                                            “The course content was and easy to follow instructors were
+                                    available answer questions”
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                                <!-- single client reviews End -->
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- single client reviews -->
+                                <div class="rts-client-reviews-h2">
+                                    <div class="review-header">
+                                        <a href="#" class="thumbnail">
+                                            <img src="frontend/assets/images/testimonials/avatar/02.webp" alt="testimonials_area">
+                                        </a>
+                                        <div class="discription">
+                                            <a href="#">
+                                                <h6 class="title">Mark Jone</h6>
+                                            </a>
+                                            <span>Web Developer</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-body">
+                                        <p class="disc">
+                                            “The course content was and easy to follow instructors were
+                                    available answer questions”
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                                <!-- single client reviews End -->
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- single client reviews -->
+                                <div class="rts-client-reviews-h2">
+                                    <div class="review-header">
+                                        <a href="#" class="thumbnail">
+                                            <img src="frontend/assets/images/testimonials/avatar/03.webp" alt="testimonials_area">
+                                        </a>
+                                        <div class="discription">
+                                            <a href="#">
+                                                <h6 class="title">Lord Korn</h6>
+                                            </a>
+                                            <span>Web Developer</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-body">
+                                        <p class="disc">
+                                            “The course content was and easy to follow instructors were
+                                    available answer questions”
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                                <!-- single client reviews End -->
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- single client reviews -->
+                                <div class="rts-client-reviews-h2">
+                                    <div class="review-header">
+                                        <a href="#" class="thumbnail">
+                                            <img src="frontend/assets/images/testimonials/avatar/01.webp" alt="testimonials_area">
+                                        </a>
+                                        <div class="discription">
+                                            <a href="#">
+                                                <h6 class="title">David Smith</h6>
+                                            </a>
+                                            <span>Web Developer</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-body">
+                                        <p class="disc">
+                                            “The course content was and easy to follow instructors were
+                                    available answer questions”
+                                        </p>
+                                       
+                                    </div>
+                                </div>
+                                <!-- single client reviews End -->
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- single client reviews -->
+                                <div class="rts-client-reviews-h2">
+                                    <div class="review-header">
+                                        <a href="#" class="thumbnail">
+                                            <img src="frontend/assets/images/testimonials/avatar/02.webp" alt="testimonials_area">
+                                        </a>
+                                        <div class="discription">
+                                            <a href="#">
+                                                <h6 class="title">Mark Jone</h6>
+                                            </a>
+                                            <span>Web Developer</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-body">
+                                        <p class="disc">
+                                            “The course content was and easy to follow instructors were
+                                    available answer questions”
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                                <!-- single client reviews End -->
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- single client reviews -->
+                                <div class="rts-client-reviews-h2">
+                                    <div class="review-header">
+                                        <a href="#" class="thumbnail">
+                                            <img src="frontend/assets/images/testimonials/avatar/03.webp" alt="testimonials_area">
+                                        </a>
+                                        <div class="discription">
+                                            <a href="#">
+                                                <h6 class="title">Lord Korn</h6>
+                                            </a>
+                                            <span>Web Developer</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-body">
+                                        <p class="disc">
+                                            “The course content was and easy to follow instructors were
+                                    available answer questions”
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                                <!-- single client reviews End -->
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
         </div>
+</div>
+ <!-- start client review area end -->
+
+    
+
+
+
+<!-- rts Esteemed Clients start -->
+<div class="rts-client-area ptb--100 brand-bg-three bg_image">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pb-5">
+                <div class="title-style-two center">
+                    <span class="bg-content">Clients</span>
+                    <h2 class="title rts-text-anime-style-1">Our Esteemed Partners</h2>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="logo-marquee-container">
+        <div class="logo-marquee-track">
+            <!-- Repeat logos for seamless loop -->
+            <div class="logo-marquee">
+                <img src="frontend/assets/images/uni/uni1.webp" alt="Client 1">
+                <img src="frontend/assets/images/uni/uni2.png" alt="Client 2">
+                <img src="frontend/assets/images/uni/uni3.png" alt="Client 3">
+                <img src="frontend/assets/images/uni/uni4.png" alt="Client 4">
+                <img src="frontend/assets/images/uni/uni5.png" alt="Client 5">
+                <img src="frontend/assets/images/malaysia/Picture9.png" alt="Client 6">
+                <img src="frontend/assets/images/uni/uni7.png" alt="Client 7">
+                <img src="frontend/assets/images/malaysia/Picture10.png" alt="Client 8">
+                <img src="frontend/assets/images/uni/uni9.png" alt="Client 9">
+                <img src="frontend/assets/images/malaysia/Picture8.png" alt="Client 10">
+            </div>
+            
+        </div>
     </div>
+</div>
+<!-- rts galllery area end -->
 
-
-
-<!-- rts steps area start -->
-<div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop bg-light">
+    
+     
+<!-- rts gallery area start -->
+<div class="rts-gallery-area rts-section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pb-5">
+                <div class="title-style-two center">
+                    <span class="bg-content">Gallery</span>
+                    <h2 class="title rts-text-anime-style-1">Gallery & Events</h2>
+                </div>
+            </div>
+        </div>
+    </div>    
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="title-style-two center">
-                    <span class="bg-content">Professionals</span>
-                    <span class="pre">Hire Your Finance Professionals!</span>
-                    <h2 class="title rts-text-anime-style-1">Struggling to find top-notch finance professionals for your business?</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row mb-5 text-center">
-            <div class="col-lg-12">
-                <p class="text-muted">We connect exceptional financial talent with companies that need it. The best minds <br> in finance are ready to work in modern, flexible ways.</p>
-            </div>
-        </div>
-
-        <!-- Steps Section -->
-        <div class="row g-4 justify-content-center">
-            <div class="col-md-6 col-lg-4">
-                <div class="step-card text-center shadow-sm p-4 rounded-3 h-100 wow fadeInUp" data-wow-delay="0.1s" style="transition: all 0.3s ease;">
-                    <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; font-size: 24px;">1</div>
-                    <h5 class="fw-semibold mb-2">Understanding Your Business</h5>
-                    <p class="text-muted small">We begin by learning your goals, operations, and unique financial needs.</p>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="step-card text-center shadow-sm p-4 rounded-3 h-100 wow fadeInUp" data-wow-delay="0.2s" style="transition: all 0.3s ease;">
-                    <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; font-size: 24px;">2</div>
-                    <h5 class="fw-semibold mb-2">Finding the Right Professionals</h5>
-                    <p class="text-muted small">We shortlist professionals with the right skills and experience for your team.</p>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="step-card text-center shadow-sm p-4 rounded-3 h-100 wow fadeInUp" data-wow-delay="0.3s" style="transition: all 0.3s ease;">
-                    <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; font-size: 24px;">3</div>
-                    <h5 class="fw-semibold mb-2">Panel Interview & Selection</h5>
-                    <p class="text-muted small">Together we assess and select the most suitable candidates via a panel process.</p>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="step-card text-center shadow-sm p-4 rounded-3 h-100 wow fadeInUp" data-wow-delay="0.4s" style="transition: all 0.3s ease;">
-                    <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; font-size: 24px;">4</div>
-                    <h5 class="fw-semibold mb-2">On-Job Placement & Training</h5>
-                    <p class="text-muted small">We ensure smooth onboarding and provide hands-on training during placement.</p>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="step-card text-center shadow-sm p-4 rounded-3 h-100 wow fadeInUp" data-wow-delay="0.5s" style="transition: all 0.3s ease;">
-                    <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; font-size: 24px;">5</div>
-                    <h5 class="fw-semibold mb-2">Ongoing Support When Needed</h5>
-                    <p class="text-muted small">We’re here to support you and your team even after the hiring process ends.</p>
+                <div class="gallery-area-main-wrapper-4">
+                    <div class="row g-4">
+                        <!-- Repeat this block for each image -->
+                        <div class="col-md-4">
+                            <a href="/events" class="single-gallery event-box">
+                                <div class="image-wrapper">
+                                    <img src="frontend/assets/images/gallery/Picture1.png" alt="Event 1">
+                                    <div class="overlay">
+                                        <div class="event-title">Graduation Day</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="/events" class="single-gallery event-box">
+                                <div class="image-wrapper">
+                                    <img src="frontend/assets/images/gallery/Picture2.png" alt="Event 2">
+                                    <div class="overlay">
+                                        <div class="event-title">Workshop</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="/events" class="single-gallery event-box">
+                                <div class="image-wrapper">
+                                    <img src="frontend/assets/images/gallery/Picture3.png" alt="Event 3">
+                                    <div class="overlay">
+                                        <div class="event-title">Student Meetup</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="/events" class="single-gallery event-box">
+                                <div class="image-wrapper">
+                                    <img src="frontend/assets/images/gallery/Picture4.png" alt="Event 4">
+                                    <div class="overlay">
+                                        <div class="event-title">Cultural Day</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="/events" class="single-gallery event-box">
+                                <div class="image-wrapper">
+                                    <img src="frontend/assets/images/gallery/Picture5.png" alt="Event 5">
+                                    <div class="overlay">
+                                        <div class="event-title">Award Ceremony</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="/events" class="single-gallery event-box">
+                                <div class="image-wrapper">
+                                    <img src="frontend/assets/images/gallery/Picture6.png" alt="Event 6">
+                                    <div class="overlay">
+                                        <div class="event-title">Industry Visit</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Add more as needed -->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- rts steps area end -->
+<!-- rts gallery area end -->
+
+
+
+     
+    <!-- rts cta area start -->
+    <div class="rts-cta-area-one rts-section-gapBottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta-main-area-wrapper-one bg_image">
+                        <div class="left-areas">
+                            <span class="pre" style="font-weight:bold; font-size:25px">Is your Progress on Hold?</span>
+                            <p style="font-weight:bold; font-size:20px">Don’t let family commitments and work barriers hold you back—your professional 
+                                journey deserves to keep moving forward, and at IWGC, we’re here to support you every step of the way</p>
+                        </div>
+                        <div class="right-area mt-2">
+                                <button class="rts-btn btn-primary">Get Started Now </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rts cta area end -->
+
+
+
+
+
+
 
 
 
@@ -918,92 +1272,7 @@
 <!-- rts clients review area end -->
 
 
-<!-- appoinment areas tart -->
-<div class="appoinment-area-start rts-section-gapBottom">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <div class="appoinment-wrapper-one-start">
-                    <div class="title-style-two mb--40 left">
-                        <span class="bg-content">Hello</span>
-                        <span class="pre">Make An Appointment</span>
-                        <h2 class="title">Request a free quote</h2>
-                    </div>
-                    @if(session('success'))
-                    <div id="success-message" data-message="{{ session('success') }}"></div>
-                    @endif
-                    <form class="form__content" method="post" action="{{ route('contact') }}" id="contact-form">
-                        @csrf
-                        <div class="single-input-wrapper">
-                            <div class="single-input">
-                                <input type="text" name="name" id="name" placeholder="Your Name">
-                            </div>
-                            <div class="single-input">
-                                <input type="number" name="phone" id="phone" placeholder="Number">
-                            </div>
-                        </div>
-                        <div class="single-input">
-                            <input type="email" name="email" id="email" placeholder="Your Email">
-                        </div>
-                        <div class="single-input mb--30">
-                            <textarea placeholder="Type Your Message" name="message" id="message"></textarea>
-                        </div>
-                        <button class="rts-btn btn-primary" type="submit">Submit Message</button>
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="appoinment-thumbnail">
-                    <img src="{{ asset('frontend/assets/images/cover/10.jpg') }}" alt="appoinment">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- appoinment areas end -->
 
-
-
-<!-- rts blog area start -->
-<div class="rts-blog-area rts-section-gapBottom ">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="title-style-two center">
-                    <span class="bg-content">Blog</span>
-                    <span class="pre">Blog & News</span>
-                    <h2 class="title">Recent blog post
-                    </h2>
-                </div>
-            </div>
-        </div>
-        <div class="row g-5 mt--20">
-            <div class="col-lg-12">
-                <div class="blog-swiper-style-one">
-                    <div class="swiper mySwiper-blog-one">
-                        <div class="swiper-wrapper">
-                            
-                            <div class="swiper-slide">
-                                <div class="single-blog-area-one">
-                                    <p>title></p>
-                                    <a >
-                                        <h4 class="title"></h4>
-                                    </a>
-                                    <div class="bottom-details">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- rts blog area end -->
 
 <script>
     document.getElementById('contact-form').addEventListener('submit', function() {

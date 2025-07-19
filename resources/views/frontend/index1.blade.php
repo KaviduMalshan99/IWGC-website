@@ -688,114 +688,113 @@
 
     
 
-    <!-- rts faq area start -->
-    <div class="rts-faq-area rts-section-gapBottom">
-        <div class="container">
-            <div class="row">
-                 <div class="col-lg-12" style="padding-bottom:50px">
-                    <div class="title-style-one center">
-                        <span class="pre"></span>
-                        <h2 class="title rts-text-anime-style-1"> Frequently Asked Questions
+<!-- rts faq area start -->
+<div class="rts-faq-area rts-section-gapBottom">
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-12" style="padding-bottom:50px">
+                <div class="title-style-one center">
+                    <span class="pre"></span>
+                    <h2 class="title rts-text-anime-style-1"> Frequently Asked Questions
+                    </h2>
+                </div>
+            </div>
+            <div class="col-lg-6 pl--50 pr--50" data-animation="fadeInUp" data-delay="0.1">
+                <div class="thumbnail-about-right-4">
+                        <div class="large-iamge">
+                        <img src="frontend/assets/images/faq/01.webp" alt="about">
+                    </div>
+                    <div class="small-image images-r">
+                        <img src="frontend/assets/images/faq/03.jpg" alt="about">
+                    </div>
+                    <div class="poligon-shape images-r">
+                        <img src="frontend/assets/images/faq/poligon-shape.svg" alt="">
+                    </div>
+                    <div class="video-area">
+                        
+                        <div class="vedio-icone">
+                            <a class="video-play-button play-video popup-video" href="https://www.youtube.com/watch?v=vZE0j_WCRvI">
+                                <span></span>
+                            </a>
+                            <div class="video-overlay">
+                                <a href="#section1" class="video-overlay-close">×</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 pl--50 pl_md--0 pl_sm--0 mt_md--50 mt_sm--80" data-animation="fadeInUp" data-delay="0.3">
+                <div class="accordion faq-wrapper-inner-page" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                01. What programs does the university offer?
+                            </button>
                         </h2>
-                    </div>
-                </div>
-                <div class="col-lg-6 pl--50 pr--50" data-animation="fadeInUp" data-delay="0.1">
-                    <div class="thumbnail-about-right-4">
-                         <div class="large-iamge">
-                            <img src="frontend/assets/images/faq/01.webp" alt="about">
-                        </div>
-                        <div class="small-image images-r">
-                            <img src="frontend/assets/images/faq/03.jpg" alt="about">
-                        </div>
-                        <div class="poligon-shape images-r">
-                            <img src="frontend/assets/images/faq/poligon-shape.svg" alt="">
-                        </div>
-                        <div class="video-area">
-                           
-                            <div class="vedio-icone">
-                                <a class="video-play-button play-video popup-video" href="https://www.youtube.com/watch?v=vZE0j_WCRvI">
-                                    <span></span>
-                                </a>
-                                <div class="video-overlay">
-                                    <a href="#section1" class="video-overlay-close">×</a>
-                                </div>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                We offer a wide range of undergraduate, graduate, and professional programs in fields such as science, business, engineering, and education. Flexible formats are available to fit your schedule.
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 pl--50 pl_md--0 pl_sm--0 mt_md--50 mt_sm--80" data-animation="fadeInUp" data-delay="0.3">
-                    <div class="accordion faq-wrapper-inner-page" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    01. What programs does the university offer?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                  We offer a wide range of undergraduate, graduate, and professional programs in fields such as science, business, engineering, and education. Flexible formats are available to fit your schedule.
-                                </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                02. How do I apply for admission?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+        Our application process is simple. Choose your program, submit the required documents, and our team will assist you through every step. If you need help deciding, our advisors are here for you.
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    02. How do I apply for admission?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-            Our application process is simple. Choose your program, submit the required documents, and our team will assist you through every step. If you need help deciding, our advisors are here for you.
-                                </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                03. What is the student to faculty ratio?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+    We maintain a low student to faculty ratio to ensure personalized academic support, strong mentoring, and a collaborative learning environment.
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    03. What is the student to faculty ratio?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-        We maintain a low student to faculty ratio to ensure personalized academic support, strong mentoring, and a collaborative learning environment.
-                                </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                04. I am unsure which course fits my career or migration goals. Can you help?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                I am unsure which course fits my career or migration goals. Can you help?
+        Yes. Our expert counselors will help you select the right course based on your career plans or migration objectives.
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    04. I am unsure which course fits my career or migration goals. Can you help?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                  I am unsure which course fits my career or migration goals. Can you help?
-            Yes. Our expert counselors will help you select the right course based on your career plans or migration objectives.
-                                </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                05. What if I am working or managing a family?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+            We understand your responsibilities. That is why we offer flexible learning options including fully online and hybrid programs to fit your lifestyle.
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    05. What if I am working or managing a family?
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                We understand your responsibilities. That is why we offer flexible learning options including fully online and hybrid programs to fit your lifestyle.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingsix">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-                                    06. Can I improve the value of my current education?
-                                </button>
-                            </h2>
-                            <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                Yes. We help enhance your current qualifications through internships, industry workshops, additional learning modules, and practical training.
-                                </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingsix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                                06. Can I improve the value of my current education?
+                            </button>
+                        </h2>
+                        <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+            Yes. We help enhance your current qualifications through internships, industry workshops, additional learning modules, and practical training.
                             </div>
                         </div>
                     </div>
@@ -803,7 +802,8 @@
             </div>
         </div>
     </div>
-    <!-- rts faq area end -->
+</div>
+<!-- rts faq area end -->
 
     
      <!-- start client review area start -->
