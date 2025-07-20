@@ -49,7 +49,19 @@
     margin-left: 5px;
 }
 
+.partner-breadcrumb {
+    height: 400px;
+    position: relative;
+}
+
+
 </style>
+
+
+<!-- Banner Section -->
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/Bachelor of Business Management 01.webp') }}'); background-size: cover; background-position: center;">
+</div>
+
 
  <!-- about us area wrapper main -->
     <div class="rts-breadcrumb-area rts-section-gapBottom rts-section-gapTop pt--200">
@@ -63,24 +75,24 @@
                         </h1>
                         <p class="disc bread-td" style="max-width: 80%; margin: auto;">
                           The Bachelor of Business Administration (BBA) is a
-comprehensive undergraduate program designed to equip
-students with foundational and advanced knowledge in key areas
-of business such as management, marketing, finance, human
-resources, and entrepreneurship. This degree prepares students
-for dynamic careers in a global business environment by
-fostering critical thinking, strategic planning, and effective
-communication skills. Graduates are well-prepared to enter the
-workforce or pursue further studies in specialized business fields.
-<br><br>
-The Bachelor of Business Administration is a future-focused
-degree that prepares students to thrive in today’s competitive
-and interconnected global economy. Covering a broad range of
-subjects from organizational behavior to international marketing
-and financial management, the BBA emphasizes practical
-learning, leadership development, and real-world business
-applications. Graduates emerge with the knowledge and
-confidence to innovate, lead, and grow in diverse business
-sectors.
+                            comprehensive undergraduate program designed to equip
+                            students with foundational and advanced knowledge in key areas
+                            of business such as management, marketing, finance, human
+                            resources, and entrepreneurship. This degree prepares students
+                            for dynamic careers in a global business environment by
+                            fostering critical thinking, strategic planning, and effective
+                            communication skills. Graduates are well-prepared to enter the
+                            workforce or pursue further studies in specialized business fields.
+                            <br><br>
+                            The Bachelor of Business Administration is a future-focused
+                            degree that prepares students to thrive in today’s competitive
+                            and interconnected global economy. Covering a broad range of
+                            subjects from organizational behavior to international marketing
+                            and financial management, the BBA emphasizes practical
+                            learning, leadership development, and real-world business
+                            applications. Graduates emerge with the knowledge and
+                            confidence to innovate, lead, and grow in diverse business
+                            sectors.
                         </p>
                     </div>
                 </div>

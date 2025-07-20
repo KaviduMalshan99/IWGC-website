@@ -49,7 +49,16 @@
     margin-left: 5px;
 }
 
+.partner-breadcrumb {
+    height: 400px;
+    position: relative;
+}
+
 </style>
+
+<!-- Banner Section -->
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/Master of Business Asministration 03.webp') }}'); background-size: cover; background-position: center;">
+</div>
 
  <!-- about us area wrapper main -->
     <div class="rts-breadcrumb-area rts-section-gapBottom rts-section-gapTop pt--200">
