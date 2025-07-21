@@ -9694,7 +9694,7 @@ header.header--sticky.sticky .nav-area ul li.main-nav {
   top: 50%;
   left: -100px;
   transform: translateY(-50%);
-  max-width: 301px;
+  max-width: 200px;
   z-index: 10;
 }
 @media only screen and (max-width: 575px) {

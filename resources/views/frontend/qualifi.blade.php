@@ -62,27 +62,24 @@
 
 </style>
 
- <!-- partners area breadcrumb area wrapper -->
-    <div class="partner-breadcrumb"  style="background-image: url('{{ asset('frontend/assets/images/qualifi/qualifi1.jpg') }}'); background-size: cover; background-position: center;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-area-left center">
-                        <span class="bg-title">Qualifi – UK</span>
-                        <h1 class="title">
-                           Qualifi – UK
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- Banner Section -->
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/qualifi/qualifi1.jpg') }}'); background-size: cover; background-position: center;">
+</div>
+
+<!-- Title and Info Boxes -->
+<div class="container mt-5">
+    <div class="row text-center mb-5">
+        <h2 class="title rts-text-anime-style-1">Qualifi – UK</h2>
+        <p class="bg-content">  </p>
     </div>
-    <!-- partners area breadcrumb area end -->
+
+</div>
+
 
 
 
     <!-- project details area top -->
-    <div class="project-details-wrapper-image-top rts-section-gap">
+    <div class="project-details-wrapper-image-top">
         
         <div class="container mt--30">
             <div class="row mb--40">

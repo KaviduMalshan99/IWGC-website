@@ -2,25 +2,17 @@
 
 @section('content')
 
-  <div class="rts-breadcrumb-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-area-left center">
-                        <span class="bg-title">Contact</span>
-                        <h1 class="title rts-text-anime-style-1">
-                            Contact Us
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="shape-area">
-            <img src="frontend/assets/images/about/shape/01.png" alt="shape" class="one">
-            <img src="frontend/assets/images/about/shape/02.png" alt="shape" class="two">
-            <img src="frontend/assets/images/about/shape/03.png" alt="shape" class="three">
-        </div>
+<!-- Banner Section -->
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/about/Contact US.jpg') }}'); background-size: cover; background-position: center;  height: 400px;position: relative;">
+</div>
+<!-- Title and Info Boxes -->
+<div class="container mt--50 mb--100 pb-5">
+    <div class="row text-center mb-5">
+        <h2 class="title rts-text-anime-style-1">Contact Us</h2>
     </div>
+
+</div>
+
 
 
     <!-- contact areas main -->
@@ -28,7 +20,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4">
-                    <div class="contact-info-area-wrapper-p">
+                    <div class="contact-info-area-wrapper-p" style="border:2px solid gold;">
                         <div class="single-contact-info">
                             <div class="icon">
                                 <i class="fa-solid fa-phone-flip"></i>
@@ -62,7 +54,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="thumbnail-contact-form">
-                        <img src="frontend/assets/images/contact/01.webp" alt="contact">
+                        <img src="frontend/assets/images/iwgc/FAQBoy.jpg" alt="contact">
                     </div>
                 </div>
                 <div class="col-lg-4">

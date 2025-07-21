@@ -39,6 +39,9 @@
                 <div class="col-lg-12">
                     <div class="project-swiper-5-area">
                         <div class="swiper mySwiper-project-five">
+                                <div class="swiper-pagination-fraction"></div>
+                                <div class="swiper-button-next"><i class="fa-sharp fa-regular fa-arrow-right"></i></div>
+                                <div class="swiper-button-prev"><i class="fa-sharp fa-regular fa-arrow-left"></i></div>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide h-100">
                                     <div class="row g-5">
@@ -60,7 +63,7 @@ We are thrilled to have participated in such a dynamic event that brought togeth
 A big thank you to everyone who visited our booth and showed interest in our programs. Your energy and curiosity were truly inspiring! 
 Check out these snapshots from the event and feel free to tag yourself if you visited us! Stay tuned for more updates and opportunities to connect with Imperial Wisdom Private Limited. Let's shape the future of education together!
                                                     </p>
-                                                   <a href="#" style="color: #1b2954; font-style: italic; text-decoration: underline;">
+                                                   <a href="https://impwis.com/future-minds-exhibition-2024-june-23-at-kandy-city-center/" style="color: #315bdaff; font-style: italic; text-decoration: underline;">
                                                         https://impwis.com/future-minds-exhibition-2024-june-23-at-kandy-city-center/
                                                     </a>
 
@@ -93,7 +96,7 @@ This engagement reaffirmed the shared vision and commitment of both institutions
 We extend our gratitude to Mr. Musthaq for his insightful leadership and collaborative spirit, which continue to strengthen the foundation of our enduring partnership. Together, we are dedicated to shaping the future of education and empowering learners to excel in an ever-changing global landscape.
 
                                                     </p>
-                                                   <a href="#" style="color: #1b2954; font-style: italic; text-decoration: underline;">
+                                                   <a href="https://web.facebook.com/photo/?fbid=551304751005623&set=pcb.551305077672257" style="color: #315bdaff; font-style: italic; text-decoration: underline;">
                                                        https://web.facebook.com/photo/?fbid=551304751005623&set=pcb.551305077672257
                                                     </a>
 
@@ -126,7 +129,7 @@ This strategic accord signifies a profound alignment of our shared objectives an
 We extend our heartfelt appreciation to all who have supported and facilitated this significant milestone. We eagerly await the impactful outcomes that this alliance is poised to deliver.
 
                                                     </p>
-                                                   <a href="#" style="color: #1b2954; font-style: italic; text-decoration: underline;">
+                                                   <a href="https://web.facebook.com/photo?fbid=481180901351342&set=a.244870548315713" style="color: #315bdaff; font-style: italic; text-decoration: underline;">
                                                        https://web.facebook.com/photo?fbid=481180901351342&set=a.244870548315713
                                                     </a>
 
@@ -157,7 +160,7 @@ Together, we are dedicated to enhancing the educational landscape, providing stu
 Stay tuned as we embark on this exciting journey of academic excellence and collaborative transformation!
 
                                                     </p>
-                                                   <a href="#" style="color: #1b2954; font-style: italic; text-decoration: underline;">
+                                                   <a href="https://web.facebook.com/share/p/1932Y2uiun/" style="color: #315bdaff; font-style: italic; text-decoration: underline;">
                                                        https://web.facebook.com/share/p/1932Y2uiun/
                                                     </a>
 
@@ -187,7 +190,7 @@ We extend our sincere gratitude to UWE and Country Manager Haaziq Jaleel for orc
 We look forward to furthering our collaboration with UWE in empowering students to achieve their academic and professional aspirations.
 
                                                     </p>
-                                                   <a href="#" style="color: #1b2954; font-style: italic; text-decoration: underline;">
+                                                   <a href="https://web.facebook.com/photo?fbid=609565528512878&set=pcb.609565625179535" style="color: #315bdaff; font-style: italic; text-decoration: underline;">
                                                        https://web.facebook.com/photo?fbid=609565528512878&set=pcb.609565625179535
                                                     </a>
 
@@ -213,7 +216,7 @@ We look forward to furthering our collaboration with UWE in empowering students 
                                                     <p class="disc" style="text-align: justify">
                                                    Internship and practical exposure are essential components of the Psychology and Counseling undergraduate programs. At Imperial Wisdom Graduate Campus, we place significant emphasis on these vital elements and consistently seek innovative opportunities to provide our students with valuable experiences. To further enhance our students' professional competencies and fulfill their internship and practicum requirements, we are pleased to announce that we have signed a Memorandum of Understanding (M.O.U) with Mind Eye Counseling Services. This partnership will provide our students with invaluable exposure to the field and contribute to their development as competent professionals
                                                     </p>
-                                                   <a href="#" style="color: #1b2954; font-style: italic; text-decoration: underline;">
+                                                   <a href="https://web.facebook.com/photo?fbid=609565528512878&set=pcb.609565625179535" style="color: #315bdaff; font-style: italic; text-decoration: underline;">
                                                        https://web.facebook.com/photo?fbid=609565528512878&set=pcb.609565625179535
                                                     </a>
 
@@ -223,9 +226,7 @@ We look forward to furthering our collaboration with UWE in empowering students 
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-pagination-fraction"></div>
-                            <div class="swiper-button-next"><i class="fa-sharp fa-regular fa-arrow-right"></i></div>
-                            <div class="swiper-button-prev"><i class="fa-sharp fa-regular fa-arrow-left"></i></div>
+                            
                         </div>
                     </div>
 

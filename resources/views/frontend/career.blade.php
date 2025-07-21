@@ -3,40 +3,43 @@
 
 @section('content')
 
+<!-- Banner Section -->
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/about/careers.jpg') }}'); background-size: cover; background-position: center;  height: 400px;position: relative;">
+</div>
 
+<!-- Title and Info Boxes -->
+<div class="container mt-5">
+    <div class="row text-center mb-5">
+        <h2 class="title rts-text-anime-style-1">Careers</h2>
+        <p class="bg-content">  Welcome to the Career Opportunities at Imperial Wisdom Graduate Campus </p>
+    </div>
+    <div class="row g-4 mb-5">
+        <div class="col-lg-10 mx-auto">
+            <div class="single-project-info-wrapper-inner">
+                <p class="disc" style="font-size:18px; text-align:justify">
+At Imperial Wisdom Graduate Campus, we are committed to fostering an environment of excellence, innovation, and growth. 
+Our mission is to develop future leaders by providing a dynamic and supportive ac
+demic community, world-class research 
+opportunities, and holistic student development.<br><br>
+Whether you are a prospective student, a current student, or an esteemed alumnus, 
+we invite you to explore the diverse career pathways and professional development 
+opportunities available within our institution. Our campus values a culture of integrity, collaboration, and continuous improvement.<br><br>
+Join us in shaping the future—whether through academic pursuits, research endeavors, or impactful community engagement. 
+Browse our current openings, partner with us for internships or research collaborations, or 
+learn more about how we support career growth and development.<br><br>
+Imperial Wisdom Graduate Campus is dedicated to empowering individuals to achieve their 
+ambitions and make meaningful contributions to society. We look forward to welcoming passionate, 
+innovative, and driven individuals to our community.<br><br>
+For more information or to apply, please visit our Careers section or contact our Human Resources department.
 
-   <div class="rts-breadcrumb-area bg_primary career-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-area-left">
-                        <span class="bg-title">Career</span>
-                        <h1 class="title rts-text-anime-style-1">
-                            Careers at IWGC
-                        </h1>
-                    </div>
-                </div>
+                </p>
             </div>
         </div>
-        <div class="shape-area">
-            <img src="frontend/assets/images/about/shape/01.png" alt="shape" class="one">
-            <img src="frontend/assets/images/about/shape/02.png" alt="shape" class="two">
-            <img src="frontend/assets/images/about/shape/03.png" alt="shape" class="three">
-        </div>
     </div>
+</div>
 
 
-    <div class="large-thumbnail-career rts-section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="large-thumbnail-career" data-animation="zoomOut" data-delay="0.1">
-                        <img src="frontend/assets/images/job/job.jpg" alt="career">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <div class="career-gallery-area rts-section-gapBottom">
         <div class="container">

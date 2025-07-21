@@ -2,31 +2,22 @@
 @extends ('frontend.master')
 
 @section('content')
-   <!-- partners area breadcrumb area wrapper -->
-    <div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/job/humanities2.jpg') }}'); background-size: cover; background-position: center;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-area-left center">
-                        <span class="bg-title">Terms</span>
-                        <h1 class="title">
-                            Terms and Conditions
-                        </h1>
-                        <p class="disc">
-                             Effective Date: 01st February 2025
-                            </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- partners area breadcrumb area end -->
+<!-- Banner Section -->
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/hero-2.png') }}'); background-size: cover; background-position: top;  height: 400px;position: relative;">
+</div>
 
-    <div class="privacy-policy-wrapper rts-section-gapTop pb--40">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="inner-content">
+<!-- Title and Info Boxes -->
+<div class="container mt-5">
+    <div class="row text-center mb-5">
+        <h2 class="title rts-text-anime-style-1"> Terms and Conditions</h2>
+        <p class="bg-content">    Effective Date: 01st February 2025</p>
+    </div>
+    <div class="row g-4 mb-5">
+        <div class="col-lg-10 mx-auto">
+            <div class="single-project-info-wrapper-inner">
+                <p class="disc" style="font-size:18px; text-align:justify">
+                </p>
+                <div class="inner-content">
 
                         <div class="top">
                             <h3 class="title">Introduction</h3>
@@ -95,12 +86,12 @@ of the updated Terms.
                             </p>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
+</div>
 
-
+   
 
 
 @endsection

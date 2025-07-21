@@ -2,39 +2,74 @@
 @extends ('frontend.master')
 
 @section('content')
+<style>
+    /* ------------------------------------------------our esteemed partners section ----------------------------------- */
 
-<div class="breadcrumb-service-detals-one">
-        <div class="container-full">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="banner-inner-service-details-1 large-height" style="background-image: url('{{ asset('frontend/assets/images/hero/hero-2.jpg') }}'); background-size: cover; background-position: center;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="title-area-left">
-                                        <span class="bg-title ">Why Study in the UK? </span>
-                                        <h1 class="title rts-text-anime-style-1">
-                                            Why Study in the UK?
-                                        </h1>
-                                        <p class="disc">
-                                        Studying in the United Kingdom offers students an exceptional opportunity to receive world-class education, immerse themselves in rich cultural diversity, and gain unforgettable life experiences. The UK has long been a popular destination for international students, and here are compelling reasons why you should consider pursuing your higher education there.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+.logo-marquee-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px 0;
+}
+
+.logo-marquee-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll-marquee 40s linear infinite;
+}
+
+.logo-marquee {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.logo-marquee img {
+    height: 70px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo-marquee img:hover {
+    transform: scale(1.1);
+    
+    opacity: 1;
+}
+
+/* Scrolling Animation */
+@keyframes scroll-marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+</style>
+<!-- Banner Section -->
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/avid/qualifi.jpg') }}'); background-size: cover; background-position: center; height: 400px;position: relative;">
+</div>
+<!-- Title and Info Boxes -->
+<div class="container mt-5">
+    <div class="row text-center mb-5">
+        <h2 class="title rts-text-anime-style-1">Why Study in the UK?</h2>
+        <p class="bg-content"> </p>
     </div>
 
-  <!-- rts business details area left main -->
-<div class="rts-service-details-area-main-bottom">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <div class="service-details-left-area mt--0 rts-section-gapTop">
+    <div class="row g-4 mb-5">
+        <div class="col-lg-10 mx-auto">
+            <div class="single-project-info-wrapper-inner">
+                <p class="disc" style="font-size:18px; text-align:justify">
+                   Studying in the United Kingdom offers students an exceptional opportunity 
+                   to receive world-class education, immerse themselves in rich cultural diversity, 
+                   and gain unforgettable life experiences. The UK has long been a popular destination 
+                   for international students, and here are compelling reasons why you should consider
+                    pursuing your higher education there.
+                </p>
+                <div class="service-details-left-area mt--0 ">
 
                     <!-- Service 1 -->
                     <div class="" style="width: 100%; margin-bottom: 0px;">
@@ -168,7 +203,10 @@
         </div>
     </div>
 </div>
-<!-- rts business details area left main end -->
+
+
+
+
 
 
 <div class="container" style="padding-bottom: 120px;" >
@@ -234,44 +272,29 @@
 </div>
 
 
-  <div class="rts-client-area ptb--100 brand-bg-three bg_image">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="client-three-wrapper">
-                        <h3 style="margin-bottom: 20px; font-size: 20px; color: #ed3532; border-left: 5px solid #ed3532; padding-left: 10px;">
-                                Explore Your Dream Institutions
-                        </h3>
-                        <div class="single">
-                            <img src="frontend/assets/images/UK/Picture1.png" alt="Business_client">
-                        </div>
-                        <div class="single">
-                              <img src="frontend/assets/images/UK/Picture3.png" alt="Business_client">
-                        </div>
-                        <div class="single">
-                             <img src="frontend/assets/images/UK/Picture2.png" alt="Business_client">
-                        </div>
-                        <div class="single">
-                             <img src="frontend/assets/images/UK/Picture5.png" alt="Business_client">
-                        </div>
-                        <div class="single">
-                              <img src="frontend/assets/images/UK/Picture6.png" alt="Business_client">
-                        </div>
-                          <div class="single">
-                              <img src="frontend/assets/images/UK/Picture7.png" alt="Business_client">
-                        </div>
-                          <div class="single">
-                              <img src="frontend/assets/images/UK/Picture8.png" alt="Business_client">
-                        </div>
-                          <div class="single">
-                              <img src="frontend/assets/images/UK/Picture9.png" alt="Business_client">
-                        </div>
-                         
-                    </div>
-                </div>
+   <!-- rts Esteemed Clients start -->
+<div class="rts-client-area ptb--100 brand-bg-three bg_image mb--100">
+        <h3 style="text-align:center;margin-bottom: 30px; font-size: 20px; color: #ed3532;">
+                 Explore Your Dream Institutions
+        </h3>
+    <div class="logo-marquee-container">
+        <div class="logo-marquee-track">
+            <!-- Repeat logos for seamless loop -->
+            <div class="logo-marquee">
+                <img src="frontend/assets/images/UK/Picture1.png" alt="Picture 1">
+                <img src="frontend/assets/images/UK/Picture2.png" alt="Picture 2">
+                <img src="frontend/assets/images/UK/Picture3.png" alt="Picture 3">
+                <img src="frontend/assets/images/UK/Picture4.png" alt="Picture 4">
+                <img src="frontend/assets/images/UK/Picture5.png" alt="Picture 5">
+                <img src="frontend/assets/images/UK/Picture6.png" alt="Picture 6">
+                <img src="frontend/assets/images/UK/Picture7.png" alt="Picture 7">
+                <img src="frontend/assets/images/UK/Picture8.png" alt="Picture 8">
+                <img src="frontend/assets/images/UK/Picture9.png" alt="Picture 9">
             </div>
+            
         </div>
     </div>
-
+</div>
+<!-- rts galllery area end -->
 
 @endsection

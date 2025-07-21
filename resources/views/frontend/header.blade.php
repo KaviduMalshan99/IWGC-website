@@ -64,7 +64,7 @@
                     <div class="header-main-one-wrapper">
                         <div class="thumbnail">
                             <a href="{{ route('index') }}">
-                                <img src="{{ asset('logo.png') }}" alt="finbiz-logo" style="height:60px;">
+                                <img src="{{ asset('logo.png') }}" alt="IWGC" style="height:60px;">
                             </a>
                         </div>
                         <div class="main-header">
@@ -97,19 +97,19 @@
                                                                         <i class="fa-sharp fa-regular fa-chevron-right"></i> Avid College – Maldives
                                                                         </a>
                                                                         <a href="{{ route('business') }}" 
-                                                                        style="color:black; display:block; padding:8px 15px; transition:all 0.3s; margin-top: 5px;"
+                                                                        style="margin-left:40px;color:black; display:block; padding:8px 15px; transition:all 0.3s; margin-top: 5px;"
                                                                         onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
                                                                         onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
                                                                         <i class="fa-sharp fa-regular fa-chevron-right"></i> Faculty of Business Management
                                                                         </a>
                                                                         <a href="{{ route('education') }}" 
-                                                                        style="color:black; display:block; padding:8px 15px; transition:all 0.3s; margin-top: 5px;"
+                                                                        style="margin-left:40px;color:black; display:block; padding:8px 15px; transition:all 0.3s; margin-top: 5px;"
                                                                         onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
                                                                         onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
                                                                         <i class="fa-sharp fa-regular fa-chevron-right"></i> Faculty of Education
                                                                         </a>
                                                                         <a href="{{ route('humanities') }}" 
-                                                                        style="color:black; display:block; padding:8px 15px; transition:all 0.3s; margin-top: 5px;"
+                                                                        style="margin-left:40px;color:black; display:block; padding:8px 15px; transition:all 0.3s; margin-top: 5px;"
                                                                         onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
                                                                         onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
                                                                         <i class="fa-sharp fa-regular fa-chevron-right"></i> Faculty of Humanities

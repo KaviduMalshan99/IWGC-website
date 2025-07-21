@@ -112,6 +112,8 @@
 <div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/avid.jpg') }}'); background-size: cover; background-position: center;">
 </div>
 
+
+
 <!-- Title and Info Boxes -->
 <div class="container mt-5">
     <div class="row text-center mb-5">
