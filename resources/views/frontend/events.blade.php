@@ -22,6 +22,68 @@
     <!-- partners area breadcrumb area end -->
 
 
+<!-- tectimonisl-area start -->
+    <div class="rts-testimonials-area-five bg_image rts-section-gapBottom rts-section-gapTop">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="title-between-area">
+                        <div class="title-style-five">
+                           <h2 class="title rts-text-anime-style-1">Events
+                            </h2>
+                        </div>
+                        <div class="pagination-wrapper">
+                            <div class="swiper-button-prevs"><i class="fa-sharp fa-regular fa-arrow-left"></i></div>
+                            <div class="swiper-pagination-fractions"></div>
+                            <div class="swiper-button-nexts"><i class="fa-sharp fa-regular fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5 mt--10">
+                <div class="col-lg-10">
+                    <div class="swiper mySwiper-testimonials-5" style="">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="width: 100% !important;">
+                                <div class="single-testimonials-style-five">
+                                    <div class="thumbnail">
+                                       <img src="frontend/assets/images/events/Picture9.png" alt="project">
+                                    </div>
+                                    <div class="inner-content">
+                                        <h6 class="title">Recap of Future Minds 2024 - Kandy! </h6>
+                                        <p class="disc" style="text-align: justify">
+                                             Imperial Wisdom Private Limited had an amazing time at the Future Minds 2024 Education Fair held at Kandy City Center on 22nd and 23rd June 2024! 
+We are thrilled to have participated in such a dynamic event that brought together students, parents, and educators from across the region. Our team engaged with enthusiastic attendees, discussing our innovative educational solutions and career opportunities.
+A big thank you to everyone who visited our booth and showed interest in our programs. Your energy and curiosity were truly inspiring! 
+Check out these snapshots from the event and feel free to tag yourself if you visited us! Stay tuned for more updates and opportunities to connect with Imperial Wisdom Private Limited. Let's shape the future of education together!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="swiper-slide">
+                                <div class="single-testimonials-style-five">
+                                    <div class="thumbnail">
+                                       <img src="frontend/assets/images/events/Picture9.png" alt="project">
+                                    </div>
+                                    <div class="inner-content">
+                                        <h6 class="title">Recap of Future Minds 2024 - Kandy! </h6>
+                                        <p class="disc" style="text-align: justify">
+                                             Imperial Wisdom Private Limited had an amazing time at the Future Minds 2024 Education Fair held at Kandy City Center on 22nd and 23rd June 2024! 
+We are thrilled to have participated in such a dynamic event that brought together students, parents, and educators from across the region. Our team engaged with enthusiastic attendees, discussing our innovative educational solutions and career opportunities.
+A big thank you to everyone who visited our booth and showed interest in our programs. Your energy and curiosity were truly inspiring! 
+Check out these snapshots from the event and feel free to tag yourself if you visited us! Stay tuned for more updates and opportunities to connect with Imperial Wisdom Private Limited. Let's shape the future of education together!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tectimonisl-area end -->
 
 
 

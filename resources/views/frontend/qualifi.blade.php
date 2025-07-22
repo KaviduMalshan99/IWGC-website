@@ -222,7 +222,7 @@ academic transitions and support for migration or further studies.</li>
 
 
                 
-                <div class="row g-4 align-items-start">
+                <div class="row g-4 align-items-start mb--100" >
                     <h3 class="mt-0">Qualifi Programs</h3>
                         <!-- Left: Accordion -->
                         <div class="col-lg-7">

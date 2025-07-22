@@ -49,19 +49,84 @@
     margin-left: 5px;
 }
 
+.info-card {
+    padding: 10px;
+}
+
+
+.info-item {
+    box-shadow: 0 20px 40px rgba(8, 5, 100, 0.01);
+    background-color: #1b2954;
+    border: 2px solid #1b2954;
+    margin: 8px 0;
+    padding: 8px 30px;
+    font-size: 16px;
+    transition: all 0.3s ease; 
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(8, 5, 100, 0.2);
+    filter: brightness(1.05);
+}
+
+
+
+.label {
+    color: white;
+    font-weight: bold;
+}
+
+.highlight {
+    font-weight: bold;
+    color: white;
+}
+
+.pathways:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(6, 4, 73, 0.2);
+    filter: brightness(1.05);
+}
+
+.pathways {
+    border: 2px solid #1b2954;
+    box-shadow: 0 20px 40px rgba(8, 5, 100, 0.2);
+    margin-top: 16px;
+    padding: 0;
+    transition: all 0.3s ease; 
+}
+
+.pathway-header {
+    background-color: #1b2954;
+    color: white;
+    font-weight: bold;
+    padding: 8px 30px;
+    font-size: 16px;
+}
+
+.pathways ul {
+    list-style-type: disc;
+    margin: 10px 20px;
+   padding: 0px 30px;
+    color: #000;
+}
 </style>
 
- <!-- about us area wrapper main -->
-    <div class="rts-breadcrumb-area rts-section-gapBottom rts-section-gapTop pt--200">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-area-left center">
-                        <span class="bg-title">Education</span>
-                        <h1 class="title rts-text-anime-style-1">
-                          Bachelor of Teaching (Primary)
-                        </h1>
-                        <p class="disc bread-td" style="max-width: 80%; margin: auto;">
+
+<!-- Banner Section -->
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/avid/dec.jpg') }}'); background-size: cover; background-position: top;height: 400px;position: relative;">
+</div>
+
+<!-- Title and Info Boxes -->
+<div class="container mt-5">
+    <div class="row text-center mb-5">
+        <h2 class="title rts-text-anime-style-1">Bachelor of Teaching (Primary)</h2>
+    </div>
+
+    <div class="row g-4 mb-5">
+        <div class="col-lg-10 mx-auto">
+            <div class="single-project-info-wrapper-inner">
+                <p class="disc" style="font-size:18px; text-align:justify">
 The Bachelor of Teaching (Primary) is a comprehensive
 undergraduate degree designed to prepare future educators to
 teach and inspire children from Foundation (Prep) to Year 6.
@@ -77,26 +142,40 @@ management, assessment strategies, and differentiated
 instruction. Extensive professional placements in primary school
 settings ensure graduates are classroom-ready and capable of
 meeting the diverse needs of today’s students.
-                        </p>
-                    </div>
-                </div>
+                </p>
             </div>
         </div>
-        <div class="shape-area">
-            <img src="frontend/assets/images/about/shape/01.png" alt="shape" class="one">
-            <img src="frontend/assets/images/about/shape/02.png" alt="shape" class="two">
-            <img src="frontend/assets/images/about/shape/03.png" alt="shape" class="three">
-        </div>
     </div>
-    <!-- about us area wrapper main end -->
+</div>
+
+
+
 
     <!-- team details area main wrapper -->
     <div class="team-details-top-wrapper-about rts-section-gapTop rts-section-gapBottom mt-dec-section-inner pt--150">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="thumbnail-team-details" data-animation="zoomOut" data-delay="0.2" data-duration="1.2">
-                        <img src="frontend/assets/images/avid/Bachelor-of-Teaching-(Primary).jpg" alt="team">
+                   <div class="info-card">
+                        <div class="info-item"data-animation="fadeInUp" data-delay="0.2"><span class="label">Level - </span><span class="highlight">Bachelors</span></div>
+                        <div class="info-item"data-animation="fadeInUp" data-delay="0.2"><span class="label">Department – </span><span class="highlight">Education</span></div>
+                        <div class="info-item"data-animation="fadeInUp" data-delay="0.2"><span class="label">Credits – </span><span class="highlight">120</span></div>
+                        <div class="info-item"data-animation="fadeInUp" data-delay="0.2"><span class="label">Awarding Body – </span><span class="highlight">Avid College</span></div>
+                        <div class="info-item"data-animation="fadeInUp" data-delay="0.2"><span class="label">Learning Methods - </span><span class="highlight">Online</span></div>
+
+                        <div class="pathways" data-animation="fadeInUp" data-delay="0.2">
+                            <div class="pathway-header">Professional Pathways</div>
+                            <ul>
+                                <li>Primary School Teacher (Foundation to Year 6)</li>
+                                <li>Education Officer in Museums, Zoos, or Cultural Centres</li>
+                                <li>Student Engagement Officer</li>
+                                <li>Research Assistant / Educational Researcher</li>
+                                <li>Assistant Principal</li>
+                                <li>Curriculum Developer</li>
+                                <li>Corporate Trainer</li>
+                                <li>NGO or Development Program Educator (e.g., UNICEF, Save the Children)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 pl--35 pl_sm--15 mt_md--30 mt_sm--50">

@@ -890,48 +890,28 @@
       });
       $(document).ready(function () {
         var swiper = new Swiper(".mySwiper-testimonials-5", {
-          slidesPerView: 2,
-          spaceBetween: 30,
-          slidesPerGroup: 1,
-          loop: true,
-          loopFillGroupWithBlank: true,
-          pagination: {
+        slidesPerView: 1, // Show only 1 slide always
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
             el: '.swiper-pagination-fractions',
             type: 'fraction',
             formatFractionCurrent: function (number) {
-              return '0' + number;
+                return number < 10 ? '0' + number : number;
             },
             formatFractionTotal: function (number) {
-              return '0' + number;
+                return number < 10 ? '0' + number : number;
             }
-          },
-          navigation: {
+        },
+        navigation: {
             nextEl: ".swiper-button-nexts",
             prevEl: ".swiper-button-prevs",
-          },
-          autoplay: {
+        },
+        autoplay: {
             delay: 3000,
-          },
-          breakpoints: {
-            1500: {
-              slidesPerView: 2,
-            },
-            1300: {
-              slidesPerView: 2,
-            },
-            1199: {
-              slidesPerView: 2,
-
-            },
-            767: {
-              slidesPerView: 2,
-            },
-            575: {
-              slidesPerView: 1,
-            },
-            0: {
-              slidesPerView: 1,
-            }
+        
           },
         });
       });

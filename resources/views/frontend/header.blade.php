@@ -16,6 +16,8 @@
         /* Slightly larger for category headings */
         font-weight: bold;
     }
+
+
 </style>
 
 <header class="header-one header--sticky">
@@ -37,13 +39,12 @@
                             </div>
                         </div>
                         <div class="right">
-                            <!-- <ul class="top-nav">
-                                <li>
-                                    <a>
-                                        <i class="fas fa-phone-alt" style="margin-right: 8px;"></i> +94 77 995 4063
-                                    </a>
-                                </li>
-                            </ul> -->
+                            <ul class="top-nav">
+                                <li><a href="{{ route('enroll') }}" class="nav-button">ENROLL</a></li>
+                                <li><a href="faq.html" class="nav-button">LMS</a></li>
+                                <li><a href="contact.html" class="nav-button">PAY ONLINE</a></li>
+                            </ul>
+
                             <ul class="social-wrapper-one">
                                 <li><a href=""><i class="fab fa-facebook-f" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>

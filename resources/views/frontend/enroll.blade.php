@@ -70,20 +70,42 @@
 
 </style>
 
-<!-- partners area breadcrumb area wrapper -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/breadcrumb.jpg') }}'); background-size: cover; background-position: center;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="title-area-left center">
-                    <span class="bg-title">Enroll</span>
-                    <h1 class="title">How to Enroll</h1>
-                </div>
+<!-- Banner Section -->
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/Bachelor of Business Management 01.webp') }}'); background-size: cover; background-position: center;  height: 400px;position: relative;">
+</div>
+
+<!-- Title and Info Boxes -->
+<div class="container mt-5">
+    <div class="row text-center mb-5">
+        <h2 class="title rts-text-anime-style-1">Enroll</h2>
+        <p class="bg-content">Application Process for Imperial Wisdom Graduate Campus (IWGC)</p>
+    </div>
+
+    <div class="row g-4 mb-5">
+        <div class="col-lg-10 mx-auto">
+            <div class="single-project-info-wrapper-inner">
+                <p class="disc" style="font-size:18px; text-align:justify">
+                  We appreciate your interest in pursuing your education at Imperial Wisdom Graduate Campus (IWGC) 
+                  and are excited to help you embark on a promising future. To initiate your application, 
+                  please select the program(s) that best align with your academic and career aspirations, 
+                  ensuring that you adhere to our admission criteria.<br><br>
+In addition to fulfilling the general admission standards set by IWGC, you may be required to demonstrate 
+proficiency in specific subject areas or to provide a personal profile or statement of interest that highlights 
+your motivations and goals.<br><br>
+Your application will be reviewed upon the successful completion of the application form, accompanied by all 
+requested supporting documents submitted to our admissions team. It is essential to provide comprehensive
+ documentation for all secondary and post-secondary education that you have undertaken, 
+ alongside relevant work experience, if applicable.<br><br>
+For a detailed overview of the application process, including necessary documents and additional steps, please refer to the information provided. We eagerly anticipate welcoming you to the IWGC community and supporting you on your educational journey.
+
+                </p>
             </div>
         </div>
     </div>
 </div>
-<!-- partners area breadcrumb area end -->
+
+
+
 
 <div class="container mt--30">
     <div class="row mb--40">
@@ -94,30 +116,26 @@
                 <div class="step" id="step1">
                     <div class="row align-items-center">
                         <!-- Text Left -->
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <div class="step-header">
-                                <h2>Step 1: Complete Your Application</h2>
+                                <h2>Step 1: E-mail your application & Supporting Documents</h2>
                             </div>
                             <div class="step-body">
-                                <p class="m-0"><strong>Choose your program:</strong> Browse our wide selection of internationally aligned programs and select the one that matches your academic and career goals.</p>
-                                <p class="m-0"><strong>Fill out the application form:</strong> Download or access the form from our official website or request it via email.</p>
-                                <p class="m-0"><strong>Prepare your documents:</strong> Ensure the following are included:</p>
-                                <ul class="tick-list" style="list-style: none; padding-left: 0;">
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>A completed application form</li>
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>Copies of all academic transcripts (O/L, A/L, diplomas, degrees, etc.)</li>
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>Copy of National ID or Passport</li>
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>Statement of Purpose (if required)</li>
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>CV or prior work experience records (if applicable)</li>
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>English language proficiency documentation (if applicable)</li>
-                                </ul>
-                                <p class="m-0"><strong>Submit via email:</strong> Email your full application to: <a href="mailto:admissions@iwgc.lk" style="color:red">admissions@iwgc.lk</a>.</p>
-                                <p class="m-0" style="font-style:italic">You will receive an acknowledgement email confirming receipt</p>
+                                <p class="m-0"><strong>Please select your preferred program(s) and 
+                                    complete the application form along with the supporting documents 
+                                    as outlined in the checklist. Kindly submit these materials via email 
+                                    to <span class="text-danger">admissions@iwgc.lk</span>. After your submission, you will receive 
+                                    a confirmation email from the admissions team regarding the status 
+                                    of your application. During this initial review phase, you may be 
+                                    requested to provide additional supporting documents to assist the 
+                                    admissions team in their decision-making process. </strong> </p>
                             </div>
                         </div>
-                        <!-- Image Right -->
-                        <div class="col-lg-6 text-center">
-                            <img src="frontend/assets/images/avid/enroll/step1.jpg" alt="Step 1" class="img-fluid rounded">
+                         <!-- Image  -->
+                        <div class="col-lg-12 text-center mt-4">
+                            <img src="frontend/assets/images/hero/image-1.png" alt="Step 1" style="box-shadow: none; height:170px">
                         </div>
+                       
                     </div>
                 </div>
 
@@ -125,28 +143,17 @@
                 <div class="step" id="step2">
                     <div class="row align-items-center flex-row-reverse">
                         <!-- Text Right -->
-                        <div class="col-lg-6">
+                         <div class="col-lg-12">
                             <div class="step-header">
-                                <h2>Step 2: Application Review & Acceptance</h2>
+                                <h2>Step 2:	Upon approval, pay your course fees</h2>
                             </div>
                             <div class="step-body">
-                                <p class="m-0"><strong>Review by the admissions team:</strong> Our team will assess your application based on program requirements and overall eligibility. You may be asked to submit further documents or attend a brief interview if necessary.</p>
-                                <p class="m-0"><strong>Conditional or full offer:</strong> If you meet the requirements, you will receive either:</p>
-                                <ul style="list-style: none; padding-left: 0;">
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>A Full Offer Letter, OR</li>
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>A Conditional Offer Letter requesting additional steps</li>
-                                </ul>
-                                <p class="m-0"><strong>Course fee details:</strong> Once accepted, you will receive an official email outlining:</p>
-                                <ul style="list-style: none; padding-left: 0;">
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>Course tuition fees</li>
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>Payment structure (full or installment options)</li>
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>Enrollment deadlines</li>
-                                </ul>
+                                <p class="m-0"><strong>Upon acceptance into the selected course, you will receive an email acknowledgment that includes the course fee structure. You will also receive instructions on how to proceed with the payment of the course fees </strong> </p>
                             </div>
                         </div>
-                        <!-- Image Left -->
-                        <div class="col-lg-6 text-center">
-                            <img src="frontend/assets/images/avid/enroll/step2.jpg" alt="Step 2" class="img-fluid rounded">
+                         <!-- Image  -->
+                        <div class="col-lg-12 text-center mt-4">
+                            <img src="frontend/assets/images/hero/image-2.png" alt="Step 2" style="box-shadow: none; height:170px">
                         </div>
                     </div>
                 </div>
@@ -155,54 +162,33 @@
                 <div class="step" id="step3">
                     <div class="row align-items-center">
                         <!-- Text Left -->
-                        <div class="col-lg-6">
+                         <div class="col-lg-12">
                             <div class="step-header">
-                                <h2>Step 3: Finalize Enrollment & Receive Materials</h2>
+                                <h2>Step 3:	 Confirmation OF Enrollment & Class schedule</h2>
                             </div>
                             <div class="step-body">
-                                <p class="m-0"><strong>Pay your tuition:</strong> You can complete your payment:</p>
-                                <ul style="list-style: none; padding-left: 0;">
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>Online via bank transfer</li>
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>In-person at the IWGC office (cash or card)</li>
-                                </ul>
-                                <p class="m-0"><strong>Receive your acceptance kit:</strong> After payment confirmation, we will provide you with:</p>
-                                <ul style="list-style: none; padding-left: 0;">
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>Letter of Acceptance</li>
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>Official Enrollment Confirmation</li>
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>Class Timetable or Lecture Schedule</li>
-                                    <li><i class="fas fa-check-circle me-2" style="color: green;"></i>Orientation details</li>
-                                </ul>
-                                <p>You are now officially enrolled and ready to begin your program!</p>
+                                <p class="m-0"><strong>Upon receipt of your payment, we will promptly send you the letter of acceptance along with the lecture schedule for your selected program(s). </strong> </p>
                             </div>
                         </div>
-                        <!-- Image Right -->
-                        <div class="col-lg-6 text-center">
-                            <img src="frontend/assets/images/avid/enroll/step3.jpg" alt="Step 3" class="img-fluid rounded">
+                         <!-- Image  -->
+                        <div class="col-lg-12 text-center mt-4">
+                            <img src="frontend/assets/images/hero/image-3.png" alt="Step 3" style="box-shadow: none; height:170px">
                         </div>
                     </div>
                 </div>
 
-                <!-- OPTIONAL WALK-IN SECTION -->
+              <!-- OPTIONAL WALK-IN SECTION -->
                 <div class="step" id="step4" style="background-color: white; text-align:center">
                     <div class="step-header">
-                        <h2>Optional: Walk-in Enrollment Support</h2>
+                        <h2>Visit our corporate office</h2>
                     </div>
                     <div class="step-body">
-                        <p>Prefer face-to-face guidance? Visit our main campus:</p>
-                        <p class="m-0"><strong>Imperial Wisdom Graduate Campus</strong></p>
+                        <p>Alternatively, you are welcome to visit our corporate office to complete your enrollment. Please ensure that you bring all required documents. We accept both cash and card payments during the enrollment process.</p>
+                        <p class="m-0"><strong>Location: Imperial Wisdom Graduate Campus</strong></p>
                         <p class="m-0"><strong>85 - 1/3 Galle Road, Dehiwala - 10350</strong></p>
                         <p class="m-0"><strong>Monday to Friday | 9:00 AM – 5:00 PM</strong></p>
-                        <p>Our team is happy to assist you with program selection, document submission, or payment processing.</p>
-                        
-                        <p class="m-0"><strong>Have Questions? Contact the Admissions Office</strong></p>
-                        <p class="m-0">
-                            <i class="fas fa-envelope" style="color: #1b2954; margin-right: 8px;"></i>
-                            <a href="mailto:admissions@iwgc.lk" style="color: #1b2954; text-decoration: none;">admissions@iwgc.lk</a>
-                        </p>
-                        <p class="m-0">
-                            <i class="fas fa-phone-alt" style="color: #1b2954; margin-right: 8px;"></i>
-                            <a href="tel:+94112345678" style="color: #1b2954; text-decoration: none;">+94 11 234 5678</a>
-                        </p>
+                        <p>We look forward to assisting you!.</p>
+                      
                     </div>
                 </div>
 

@@ -17,8 +17,6 @@
         <div class="col-lg-10 mx-auto">
             <div class="single-project-info-wrapper-inner">
                 <p class="disc" style="font-size:18px; text-align:justify">
-
-
                 </p>
                 <div class="inner-content">
 

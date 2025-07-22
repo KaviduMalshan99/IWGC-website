@@ -143,7 +143,7 @@
 </div>
 
 <!-- Faculties Section -->
-<div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop working-process-one">
+<div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop mb--100 working-process-one">
     <div class="container mb-4 pb-3">
         <div class="row">
             <div class="col-lg-12">
@@ -155,7 +155,7 @@
     </div>
 
     <div class="container">
-        <div class="row g-4 justify-content-center">
+        <div class="row g-4 justify-content-center ">
             <div class="col-md-4">
                 <a href="{{ route('business') }}" class="program-card">
                     <div class="program-image">

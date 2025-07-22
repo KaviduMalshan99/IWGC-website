@@ -778,10 +778,10 @@
 
 
 <!-- rts faq area start -->
-<div class="rts-faq-area rts-section-gapBottom " style="margin-top: 80px;">
+<div class="rts-faq-area rts-section-gapBottom" style="margin-top: 80px;background-image: url('{{ asset('frontend/assets/images/iwgc/FAQBoy.webp') }}'); height:900px;background-size: cover;background-position: center;position: relative;">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 pb-5">
+            <div class="col-lg-12 pt-5 pb-5">
                 <div class="title-style-two center">
                     <span class="bg-content">F.A.Q</span>
                     <h2 class="title rts-text-anime-style-1">Frequently Asked Questions</h2>
@@ -794,12 +794,7 @@
                 
                 <div class="col-lg-6 pl--50 pr--50" data-animation="fadeInUp" data-delay="0.1">
                     <div class="thumbnail-about-right-4">
-                         <div class="large-iamge">
-                            <img src="frontend/assets/images/faq/01.webp" alt="about">
-                        </div>
-                        <div class="small-image images-r">
-                            <img src="frontend/assets/images/faq/02.webp" alt="about">
-                        </div>
+                        
                         <div class="poligon-shape images-r">
                             <img src="frontend/assets/images/faq/poligon-shape.svg" alt="">
                         </div>
@@ -818,7 +813,7 @@
                 </div>
                 <div class="col-lg-6 pl--50 pl_md--0 pl_sm--0 mt_md--50 mt_sm--80" data-animation="fadeInUp" data-delay="0.3">
                     <div class="accordion faq-wrapper-inner-page" id="accordionExample">
-                        <div class="accordion-item" style="border-color: gold;">
+                        <div class="accordion-item" style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     01. What programs does the university offer?
@@ -830,7 +825,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item" style="border-color: gold;">
+                        <div class="accordion-item" style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     02. How do I apply for admission?
@@ -842,7 +837,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item" style="border-color: gold;">
+                        <div class="accordion-item" style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     03. What is the student to faculty ratio?
@@ -854,7 +849,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item" style="border-color: gold;">
+                        <div class="accordion-item" style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     04. I am unsure which course fits my career or migration goals. Can you help?
@@ -867,7 +862,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item" style="border-color: gold;">
+                        <div class="accordion-item" style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                     05. What if I am working or managing a family?
@@ -879,7 +874,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item" style="border-color: gold;">
+                        <div class="accordion-item" style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                             <h2 class="accordion-header" id="headingsix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
                                     06. Can I improve the value of my current education?
@@ -901,12 +896,12 @@
 
 
 <!-- start client review area start -->
-<div class="rts-client-review-two bg-black-content pt-4 pb-4 bg-client-r-h2">
+<div class="rts-client-review-two bg-black-content mt--100 pt-4 pb-4 bg-client-r-h2">
         <div class="container" >
             <div class="row mt--30" >
                 <div class="title-style-three-between">
                     <div class="title-style-three left">
-                        <div class="bg-title">04</div>
+                        <div class="bg-title"></div>
                         <h2 class="title rts-text-anime-style-1">Student Testimonials
                         </h2>
                     </div>

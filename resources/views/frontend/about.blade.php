@@ -9,7 +9,15 @@
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.vision-mission-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 123, 255, 0.5); 
+}
+
 
 .vision-mission-box .title {
     color: #ffffff;
@@ -121,7 +129,7 @@ Every learner who walks through our doors becomes part of a journey marked by in
                         <div class="title-style-two mb--40 left">
                            
                         </div>
-                        <div class="signle-consultancy mb--30 vision-mission-box">
+                            <div class="signle-consultancy mb--30 vision-mission-box">
                                 <div class="icon">
                                     <img src="frontend/assets/images/about/icons/01.svg" alt="">
                                 </div>
@@ -165,7 +173,9 @@ Every learner who walks through our doors becomes part of a journey marked by in
 
    <!-- rts Esteemed Clients start -->
 <div class="rts-client-area ptb--100 brand-bg-three bg_image mt--20 mb--100">
-      
+        <h4 style="text-align:center;margin-bottom: 30px; color: #ed3532;">
+              Partners' / Accreditations 
+        </h4>
     <div class="logo-marquee-container">
         <div class="logo-marquee-track">
             <!-- Repeat logos for seamless loop -->
