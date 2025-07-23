@@ -1188,27 +1188,6 @@
 
 
 
-     
-    <!-- rts cta area start -->
-    <div class="rts-cta-area-one rts-section-gapBottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="cta-main-area-wrapper-one bg_image">
-                        <div class="left-areas">
-                            <span class="pre" style="font-weight:bold; font-size:25px">Is your Progress on Hold?</span>
-                            <p style="font-weight:bold; font-size:20px">Don’t let family commitments and work barriers hold you back—your professional 
-                                journey deserves to keep moving forward, and at IWGC, we’re here to support you every step of the way</p>
-                        </div>
-                        <div class="right-area mt-2">
-                                <button class="rts-btn btn-primary">Get Started Now </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- rts cta area end -->
 
 
 

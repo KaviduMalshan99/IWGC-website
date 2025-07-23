@@ -1,12 +1,37 @@
-<div class="rts-footer-area pt--100 pb--100 pt_sm--50 pb_sm--40  footer-two " style="background-color: #1b2954;">
-        <div class="container" >
-            <div class="row" >
+     
+
+<div class="rts-cta-area-one" style="position: relative; z-index: 2; margin-bottom: -100px; margin-top:50px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="cta-main-area-wrapper-one bg_image" >
+                    <div class="left-areas">
+                        <span class="pre" style="font-weight:bold; font-size:25px">Is your Progress on Hold?</span>
+                        <p style="font-weight:500; font-size:18px; margin-top: 10px;">
+                            Don’t let family commitments and work barriers hold you back—your professional journey deserves to keep moving forward, and at IWGC, we’re here to support you every step of the way.
+                        </p>
+                    </div>
+                    <div class="right-area mt-2">
+                        <button class="rts-btn btn-primary" style="padding: 12px 28px; font-size: 16px; border-radius: 8px;">Get Started Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+<div class="rts-footer-area footer-two mt-dec-footer-map  pt--120 pb--100 pt_sm--50 pb_sm--40" style="background-image: url(frontend/assets/images/footer/new.jpg);background-repeat: no-repeat;
+  background-size: cover; z-index: 1;">
+    <div class="container">
+        <div class="row">
                 <!-- single wized -->
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 " >
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 mt-5" >
                     <div class="footer-two-single-wized left">
                         <div class="widget-head">
                                     <a href="index.php">
-                                        <img src="{{ asset('logo-golden.png') }}" alt="IWGC Logo" style="width:300px">
+                                        <img src="{{ asset('logo-golden.png') }}" alt="IWGC Logo" style="width:350px">
                                     </a>
                                 </div>
                     
@@ -22,7 +47,7 @@
                       
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--50">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--50 mt-5">
                     <div class="footer-two-single-wized two">
                         <div class="wized-title-area">
                             <h5 class="wized-title" style="color: white !important">Handy Links</h5>
@@ -37,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--50">
+                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--50 mt-5">
                     <div class="footer-two-single-wized two">
                         <div class="wized-title-area">
                             <h5 class="wized-title" style="color: white !important">Learning</h5>
@@ -53,7 +78,7 @@
                     </div>
                 </div>
                 <!-- single wized -->
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--30 mt_md--30">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--30 mt_md--30 mt-5">
                     <div class="footer-two-single-wized">
                         <div class="wized-title-area">
                             <h5 class="wized-title" style="color: white !important">Contact Us</h5>
@@ -85,59 +110,12 @@
                 </div>
                 <!-- single wized -->
 
-                <!-- mobile menu area start -->
-        <div class="mobile-menu d-block d-xl-none">
-            <nav class="nav-main mainmenu-nav mt--30">
-                <ul class="mainmenu metismenu" id="mobile-menu-active">
-                    <li>
-                        <a href="#" class="main" aria-expanded="false">Home</a>
-                    </li>
-                    <li class="has-droupdown">
-                        <a href="#" class="main" aria-expanded="false">Services</a>
-                        <ul class="submenu mm-collapse" style="height: 0px;">
-                            <li><a class="mobile-menu-link" >CFO Services</a></li>
-                            <li><a class="mobile-menu-link" >Accounting & Bookkeeping</a></li>
-
-                        </ul>
-                    </li>
-                    <li >
-                        <a  class="main" aria-expanded="false">Careers</a>
-                    </li>
-                    
-                </ul>
-            </nav>
-
-            <div class="social-wrapper-one">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- mobile menu area end -->
+               
                 
             </div>
         </div>
     </div>
-    <div class="rts-copy-right-1 ptb--10">
+    <div class="rts-copy-right-1 ptb--5" ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -150,9 +128,9 @@
                                 )
                             </script>. All rights reserved.
                         </p>
-                        <div class="right">
+                        <div class="right" >
                             <ul>
-                                <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
+                                <li><a href="{{ route('privacy-policy') }}" >Privacy Policy</a></li>
                                 <li><a href="{{ route('Cookies-Policy') }}">Cookies Policy</a></li>
                                 <li><a href="{{ route('Terms-and-Conditions') }}">Terms & Conditions</a></li>
                             </ul>
