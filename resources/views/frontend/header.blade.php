@@ -21,7 +21,7 @@
 </style>
 
 <header class="header-one header--sticky">
-    <div class="header-top-area-wrapper">
+    <div class="header-top-area-wrapper" style="background-color: #1b2954 !important">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
