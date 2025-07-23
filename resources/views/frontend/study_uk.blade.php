@@ -209,13 +209,13 @@
 
 
 
-<div class="container" style="padding-bottom: 120px;" >
-    <div  style="padding: 50px; background-color: #f9f9f9; font-family: Arial, sans-serif; color: #1b2954;">
+<div class="container" style="padding-bottom: 120px;">
+    <div style="padding: 50px; background-color: #f9f9f9; font-family: Arial, sans-serif; color: #1b2954;">
         
         <!-- Intro Section -->
         <h2 style="color: #1b2954; margin-bottom: 10px;">Excited to begin your academic adventure in the UK?</h2>
         <p style="font-size: 16px; line-height: 1.6; margin-bottom: 30px;">
-          Choosing to study in the UK is a strategic decision that combines high-quality education, cultural diversity, and numerous opportunities for personal and professional growth. Whether you aim for a leading university experience, a shorter degree path, or an enriching cultural journey, the UK stands out as an ideal destination for international students. Embark on your academic adventure and unlock your future today!
+            Choosing to study in the UK is a strategic decision that combines high-quality education, cultural diversity, and numerous opportunities for personal and professional growth. Whether you aim for a leading university experience, a shorter degree path, or an enriching cultural journey, the UK stands out as an ideal destination for international students. Embark on your academic adventure and unlock your future today!
         </p>
 
         <!-- Section Title -->
@@ -223,53 +223,67 @@
             Essential Info Kit
         </h3>
 
-        <!-- Link List -->
-        <ul style="list-style: none; padding-left: 0;">
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.gov.uk/student-visa" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    Study Pass
+        <!-- Link List with Boxes -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding-left: 0;">
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.gov.uk/student-visa" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Study Pass</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Find out how to apply for a student visa to study in the UK and understand the requirements.</p>
                 </a>
-            </li>
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.gov.uk/graduate-visa/apply" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    Graduate Pass
+            </div>
+
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.gov.uk/graduate-visa/apply" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Graduate Pass</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Explore how you can apply for a Graduate Visa in the UK to stay and work after completing your studies.</p>
                 </a>
-            </li>
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.ukcisa.org.uk/student-advice/life-in-the-uk/" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    Life in the UK
+            </div>
+
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.ukcisa.org.uk/student-advice/life-in-the-uk/" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Life in the UK</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Gain insights into life as an international student in the UK, from culture to daily life.</p>
                 </a>
-            </li>
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.ukcisa.org.uk/student-advice/working/student-work/" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    Student Work
+            </div>
+
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.ukcisa.org.uk/student-advice/working/student-work/" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Student Work</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Understand the rules and opportunities for working part-time or full-time while studying in the UK.</p>
                 </a>
-            </li>
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.ukcisa.org.uk/student-advice/life-in-the-uk/accommodation/" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    Accommodation
+            </div>
+
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.ukcisa.org.uk/student-advice/life-in-the-uk/accommodation/" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Accommodation</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Find the best options for student accommodation in the UK, from halls to private rentals.</p>
                 </a>
-            </li>
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.ukcisa.org.uk/student-advice/life-in-the-uk/healthcare/?q=health&ExactMatch=False" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    Healthcare
+            </div>
+
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.ukcisa.org.uk/student-advice/life-in-the-uk/healthcare/?q=health&ExactMatch=False" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Healthcare</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Learn about the healthcare system in the UK, including NHS registration and how to access healthcare services.</p>
                 </a>
-            </li>
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.ukcisa.org.uk/news/" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    News Updates
+            </div>
+
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.ukcisa.org.uk/news/" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">News Updates</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Stay updated with the latest news, regulations, and announcements for international students in the UK.</p>
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>
+
 
 
    <!-- rts Esteemed Clients start -->

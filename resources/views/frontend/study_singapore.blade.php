@@ -195,14 +195,13 @@
 
 
 
-
-<div class="container" style="padding-bottom: 120px;" >
-    <div  style="padding: 50px; background-color: #f9f9f9; font-family: Arial, sans-serif; color: #1b2954;">
+<div class="container" style="padding-bottom: 120px;">
+    <div style="padding: 50px; background-color: #f9f9f9; font-family: Arial, sans-serif; color: #1b2954;">
         
         <!-- Intro Section -->
         <h2 style="color: #1b2954; margin-bottom: 10px;">Start your journey today and experience the educational excellence and vibrant life that Singapore has to offer!</h2>
         <p style="font-size: 16px; line-height: 1.6; margin-bottom: 30px;">
-          Studying in Singapore provides more than just academic knowledge; it opens doors to international networking, cultural diversity, and career growth. Whether you’re interested in technology, business, science, or the arts, Singapore’s global outlook, innovative environment, and high-quality education make it an ideal choice for students aspiring to make a mark in the world.
+            Studying in Singapore provides more than just academic knowledge; it opens doors to international networking, cultural diversity, and career growth. Whether you’re interested in technology, business, science, or the arts, Singapore’s global outlook, innovative environment, and high-quality education make it an ideal choice for students aspiring to make a mark in the world.
         </p>
 
         <!-- Section Title -->
@@ -210,33 +209,40 @@
             Essential Info Kit
         </h3>
 
-        <!-- Link List -->
-        <ul style="list-style: none; padding-left: 0;">
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.ica.gov.sg/reside/STP/apply" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    Student Pass
+        <!-- Link List with Boxes -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding-left: 0;">
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.ica.gov.sg/reside/STP/apply" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Student Pass</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Learn how to apply for a student pass in Singapore and the necessary requirements for international students.</p>
                 </a>
-            </li>
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.moe.gov.sg/international-students/studying-in-singapore" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    Facts to Consider
+            </div>
+
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.moe.gov.sg/international-students/studying-in-singapore" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Facts to Consider</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Discover essential facts and tips about studying in Singapore, including the education system and life as an international student.</p>
                 </a>
-            </li>
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.mom.gov.sg/passes-and-permits/work-pass-exemption-for-foreign-students" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                   Work Pass Requirements
+            </div>
+
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.mom.gov.sg/passes-and-permits/work-pass-exemption-for-foreign-students" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Work Pass Requirements</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Find out about work pass exemptions for foreign students and other regulations regarding employment in Singapore.</p>
                 </a>
-            </li>
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.ica.gov.sg/news-and-publications/newsroom?page=1&year=2025&month=0&category=" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    News Updates
+            </div>
+
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.ica.gov.sg/news-and-publications/newsroom?page=1&year=2025&month=0&category=" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">News Updates</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Stay informed about the latest immigration news and updates that affect international students in Singapore.</p>
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>
 

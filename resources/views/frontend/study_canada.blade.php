@@ -208,8 +208,8 @@
  
 
 
-<div class="container" style="padding-bottom: 120px;" >
-    <div  style="padding: 50px; background-color: #f9f9f9; font-family: Arial, sans-serif; color: #1b2954;">
+<div class="container" style="padding-bottom: 120px;">
+    <div style="padding: 50px; background-color: #f9f9f9; font-family: Arial, sans-serif; color: #1b2954;">
         
         <!-- Intro Section -->
         <h2 style="color: #1b2954; margin-bottom: 10px;">Ready to embark on your Canada study journey?</h2>
@@ -224,50 +224,63 @@
         </h3>
 
         <!-- Link List -->
-        <ul style="list-style: none; padding-left: 0;">
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    Study Permit
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding-left: 0;">
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Study Permit</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Learn everything about the process of obtaining a study permit to study in Canada.</p>
                 </a>
-            </li>
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    PGWP (Post-Graduation Work Permit)
+            </div>
+
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">PGWP (Post-Graduation Work Permit)</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Explore the opportunities available to work in Canada after graduation with a PGWP.</p>
                 </a>
-            </li>
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/settle-canada.html" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    Settling in Canada
+            </div>
+
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/settle-canada.html" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Settling in Canada</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Information and resources on how to settle and adapt to life in Canada.</p>
                 </a>
-            </li>
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work.html" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    Student Work
+            </div>
+
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work.html" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Student Work</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Explore your options for working while studying in Canada.</p>
                 </a>
-            </li>
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.educanada.ca/study-plan-etudes/before-avant/housing-logement.aspx?lang=eng" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    Accommodation
+            </div>
+
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.educanada.ca/study-plan-etudes/before-avant/housing-logement.aspx?lang=eng" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Accommodation</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Find out about housing options before you arrive in Canada.</p>
                 </a>
-            </li>
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.canada.ca/en/health-canada/services/canada-health-care-system.html" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    Healthcare
+            </div>
+
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.canada.ca/en/health-canada/services/canada-health-care-system.html" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Healthcare</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Learn about the healthcare system in Canada and how to access services.</p>
                 </a>
-            </li>
-            <li style="margin-bottom: 12px;">
-                <a href="https://www.canada.ca/en/news.html" 
-                style="color: #1b2954; text-decoration: underline; font-style: italic;">
-                    New Updates
+            </div>
+
+            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <a href="https://www.canada.ca/en/news.html" target="blank"
+                style="color: #1b2954; text-decoration: none;">
+                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">New Updates</h4>
+                    <p style="font-size: 16px; line-height: 1.6;">Stay updated with the latest news and announcements in Canada.</p>
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>
 
