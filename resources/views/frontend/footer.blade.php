@@ -22,7 +22,7 @@
 
 
     
-<div class="rts-footer-area footer-two mt-dec-footer-map  pt--120 pb--100 pt_sm--50 pb_sm--40" style="background-image: url(frontend/assets/images/footer/new.jpg);background-repeat: no-repeat;
+<div class="rts-footer-area footer-two mt-dec-footer-map  pt--120 pb--100 pt_sm--50 pb_sm--40" style="background-image: url('{{ asset('frontend/assets/images/footer/new.jpg') }}');background-repeat: no-repeat;
   background-size: cover; z-index: 1;">
     <div class="container">
         <div class="row">
