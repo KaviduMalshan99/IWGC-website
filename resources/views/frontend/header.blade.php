@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="header-top-one-wrapper">
+                    <div class="header-top-one-wrapper" style="background-color: #1b2954 !important">
                         <div class="left">
                             <div class="mail">
                                 <a href="mailto:info@iwgc.lk"><i class="fal fa-envelope"></i>
