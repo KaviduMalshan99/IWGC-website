@@ -22,9 +22,9 @@
 
 <header class="header-one header--sticky">
     <div class="header-top-area-wrapper" style="background-color: #1b2954 !important">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+        <div class="container" style="background-color: #1b2954 !important">
+            <div class="row" style="background-color: #1b2954 !important">
+                <div class="col-lg-12" style="background-color: #1b2954 !important">
                     <div class="header-top-one-wrapper" style="background-color: #1b2954 !important">
                         <div class="left">
                             <div class="mail">
