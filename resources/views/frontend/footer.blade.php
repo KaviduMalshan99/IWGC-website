@@ -12,7 +12,7 @@
                         </p>
                     </div>
                     <div class="right-area mt-2">
-                        <button class="rts-btn btn-primary" style="padding: 12px 28px; font-size: 16px; border-radius: 8px;">Get Started Now</button>
+                        <button class="rts-btn btn-primary" style="padding: 12px 28px; font-size: 16px; border-radius: 8px;"><a href="{{ route('contact') }}">Get Started Now</a> </button>
                     </div>
                 </div>
             </div>

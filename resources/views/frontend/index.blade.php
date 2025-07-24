@@ -77,7 +77,6 @@
         display: flex;
         align-items: center;
         border-bottom: 1px solid #ccc;
-
     }
 
     .service-ribbon-track {
@@ -544,7 +543,6 @@
                         <a href="{{ route('contact') }}" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn" style="background:#1b2954;">View 
                                         Programs</a>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -857,8 +855,7 @@
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                  I am unsure which course fits my career or migration goals. Can you help?
-            Yes. Our expert counselors will help you select the right course based on your career plans or migration objectives.
+                                    Yes. Our expert counselors will help you select the right course based on your career plans or migration objectives.
                                 </div>
                             </div>
                         </div>
