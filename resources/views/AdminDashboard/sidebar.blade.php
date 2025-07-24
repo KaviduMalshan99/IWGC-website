@@ -100,33 +100,20 @@
                             </ul>
                         </li>
 
-                       <!--<li class="sidebar-list">
+                        <li class="sidebar-list">
                         <a class="sidebar-link sidebar-title" href="#">
-                        <svg width="20" height="20" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="3" />
-                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 
-                                    2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33
-                                    1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 
-                                    1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06
-                                    a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 
-                                    .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09
-                                    a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06
-                                    a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9
-                                    a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 
-                                    1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06
-                                    a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 
-                                    1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09
-                                    a1.65 1.65 0 0 0-1.51 1z" />
-                        </svg>
-                         <span>Services</span>
+                            <svg class="stroke-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Testimonials</span>
                         </a>
-                         <ul class="sidebar-submenu">
-                                <li> <a href="{{ route('services.index') }}">Services</a></li>
-                            </ul>
-                       
-                    </li>-->
+                        <ul class="sidebar-submenu">
+                            <li><a href="{{ route('testimonial.index') }}">Testimonial List</a></li>
+                            <li><a href="{{ route('testimonial.create') }}">Add Testimonial</a></li>
+                        </ul>
+                    </li>
 
 
                 </ul>
