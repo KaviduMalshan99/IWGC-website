@@ -74,9 +74,10 @@
 
               <!-- Deadline Date -->
               <div class="col-md-6 mb-3">
-                <label class="form-label">Deadline Date</label>
-                <input type="date" name="deadline_date" class="form-control" value="{{ old('deadline_date', $career->deadline_date) }}">
-                @error('deadline_date') <small class="text-danger">{{ $message }}</small> @enderror
+                  <label class="form-label">Deadline Date</label>
+                  <input type="date" name="deadline_date" class="form-control" 
+                        value="{{ old('deadline_date', $career->deadline_date ? \Carbon\Carbon::parse($career->deadline_date)->format('Y-m-d') : '') }}">
+                  @error('deadline_date') <small class="text-danger">{{ $message }}</small> @enderror
               </div>
 
             </div>

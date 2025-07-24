@@ -35,7 +35,7 @@
               <thead>
                 <tr>
                   <th>Name</th>
-                  <th>Image</th>
+                  <th>Email</th>
                   <th>Message</th>
                 </tr>
               </thead>
