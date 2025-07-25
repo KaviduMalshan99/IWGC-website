@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="cta-main-area-wrapper-one bg_image" >
+                <div class="cta-main-area-wrapper-one" style="background-color: #20282D;" >
                     <div class="left-areas">
                         <span class="pre" style="font-weight:bold; font-size:25px">Is your Progress on Hold?</span>
                         <p style="font-weight:500; font-size:18px; margin-top: 10px;">
