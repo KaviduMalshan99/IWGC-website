@@ -12,7 +12,7 @@
     </div>
 </div>
 
-<div class="blog-details-area-main-wrapper mt-dec-180">
+<div class="blog-details-area-main-wrapper mt-dec-180 rts-section-gapBottom mb-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
