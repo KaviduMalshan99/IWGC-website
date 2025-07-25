@@ -67,9 +67,10 @@
                         <div class="col-lg-6 col-md-12">
                             <div class="details-tag">
                                 <h6>Tags:</h6>
-                                @foreach($blog->tags as $tag)
-                                <button>{{ $tag }}</button>
+                               @foreach(collect($blog->tags)->take(3) as $tag)
+                                    <button>{{ $tag }}</button>
                                 @endforeach
+
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12">

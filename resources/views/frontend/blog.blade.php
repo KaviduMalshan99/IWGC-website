@@ -69,9 +69,10 @@
                                 <a class="blog-title" href="{{ route('blog-details', $blog->id) }}">
                                     <h3 class="title animated fadeIn">{{ $blog->title }}</h3>
                                 </a>
-                                <p class="disc text-truncate-3-lines" style="text-align:justify">
-                                    {{ $blog->description }}
-                                </p>
+                               <div class="disc text-truncate-3-lines" style="text-align:justify">
+                                    {!! $blog->description !!}
+                                </div>
+
                                 <a class="rts-btn btn-primary" href="{{ route('blog-details', $blog->id) }}">Read Details</a>
                             </div>
                         </div>
