@@ -907,152 +907,38 @@
                     </div>
                 </div>
             </div>
-            <div class="row g-5" >
+           <div class="row g-5">
                 <div class="col-12">
                     <div class="swiper mySwiperh2_clients">
                         <div class="swiper-wrapper">
+                            @foreach($testimonials as $testimonial)
                             <div class="swiper-slide">
-                                <!-- single client reviews -->
+                                <!-- single client review -->
                                 <div class="rts-client-reviews-h2">
                                     <div class="review-header">
                                         <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/01.webp" alt="testimonials_area">
+                                            <img src="{{ asset('storage/' . $testimonial->avatar) }}" alt="testimonial image" style="width:75px">
                                         </a>
                                         <div class="discription">
                                             <a href="#">
-                                                <h6 class="title">David Smith</h6>
+                                                <h6 class="title">{{ $testimonial->name }}</h6>
                                             </a>
-                                            <span>Web Developer</span>
+                                            <span>{{ $testimonial->designation }}</span>
                                         </div>
                                     </div>
                                     <div class="review-body mt--20">
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                        
+                                        “{{ $testimonial->review }}”
                                     </div>
                                 </div>
-                                <!-- single client reviews End -->
+                                <!-- single client review End -->
                             </div>
-                            <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/02.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">Mark Jone</h6>
-                                            </a>
-                                            <span>Web Developer</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-body mt--20">
-                                       
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                       
-                                    </div>
-                                </div>
-                                <!-- single client reviews End -->
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/03.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">Lord Korn</h6>
-                                            </a>
-                                            <span>Web Developer</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-body mt--20">
-                                       
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                       
-                                    </div>
-                                </div>
-                                <!-- single client reviews End -->
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/01.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">David Smith</h6>
-                                            </a>
-                                            <span>Web Developer</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-body mt--20">
-                                      
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                       
-                                    </div>
-                                </div>
-                                <!-- single client reviews End -->
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/02.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">Mark Jone</h6>
-                                            </a>
-                                            <span>Web Developer</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-body mt--20">
-                                      
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                       
-                                    </div>
-                                </div>
-                                <!-- single client reviews End -->
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/03.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">Lord Korn</h6>
-                                            </a>
-                                            <span>Web Developer</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-body mt--20">
-                                      
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                       
-                                    </div>
-                                </div>
-                                <!-- single client reviews End -->
-                            </div>
+                            @endforeach
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
+
         </div>
 </div>
  <!-- start client review area end -->

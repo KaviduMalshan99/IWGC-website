@@ -120,8 +120,14 @@ class BlogController extends Controller
     public function blogs()
     {
         $blogs = Blog::latest()->paginate(5); 
-        return view('frontend.blog', compact('blogs'));
+        $recentPosts = Blog::latest()->take(3)->get();
+        $categories = Blog::select('category')->distinct()->pluck('category');
+        $tags = Blog::pluck('tags')->flatten()->unique()->values();
+
+        return view('frontend.blog', compact('blogs', 'recentPosts', 'categories', 'tags'));
     }
+
+ 
 
     public function show($id)
     {

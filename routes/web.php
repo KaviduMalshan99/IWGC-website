@@ -9,10 +9,9 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\TestimonialController;
+use App\Http\Controllers\HomeController;
 
-Route::get('/', function () {
-    return view('frontend.index');
-})->name('index');
+Route::get('/', [HomeController::class, 'index'])->name('index');
 
 Route::get('/about', function () {
     return view('frontend.about');

@@ -17,7 +17,13 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="blog-details-area-inner-content">
-                    <div class="blog-details-top-wrapper">
+                     @if($blog->main_image)
+                    <div class="thumbnail-large">
+                        <img src="{{ asset('storage/'.$blog->main_image) }}" alt="{{ $blog->title }}">
+                    </div>
+                    @endif
+
+                    <div class="blog-details-top-wrapper mt-4">
                         <div class="single">
                             <i class="fa-regular fa-circle-user"></i>
                             <span>by {{ $blog->author }}</span>
@@ -33,15 +39,9 @@
                     </div>
                     <h2 class="title">{{ $blog->title }}</h2>
                     
-                    <div class="blog-content">
+                    <div class="blog-content" style="text-align:justify">
                         {!! $blog->description !!}
                     </div>
-
-                    @if($blog->main_image)
-                    <div class="thumbnail-large">
-                        <img src="{{ asset('storage/'.$blog->main_image) }}" alt="{{ $blog->title }}">
-                    </div>
-                    @endif
 
                     @if($blog->subimage1 || $blog->subimage2)
                     <div class="row align-items-center mt-4">
@@ -89,21 +89,6 @@
             </div>
             <div class="col-xl-4 col-md-12 col-sm-12 col-12 mt_lg--60 blog-list-style pl--30 pl_md--10 pl_sm--10">
                 
-
-                <!-- Categories Widget -->
-                <div class="rts-single-wized Categories">
-                    <div class="wized-header">
-                        <h5 class="title">Categories</h5>
-                    </div>
-                    <div class="wized-body">
-                        @foreach(\App\Models\Blog::distinct()->pluck('category') as $category)
-                        <ul class="single-categories">
-                            <li><a href="#">{{ $category }} <i class="far fa-long-arrow-right"></i></a></li>
-                        </ul>
-                        @endforeach
-                    </div>
-                </div>
-
                 <!-- Recent Posts Widget -->
                 <div class="rts-single-wized Recent-post">
                     <div class="wized-header">
@@ -115,7 +100,7 @@
                             @if($recentBlog->main_image)
                             <div class="thumbnail">
                                 <a href="{{ route('blog-details', $recentBlog->id) }}">
-                                    <img src="{{ asset('storage/'.$recentBlog->main_image) }}" alt="{{ $recentBlog->title }}">
+                                    <img src="{{ asset('storage/'.$recentBlog->main_image) }}" alt="{{ $recentBlog->title }}" style="width:90px">
                                 </a>
                             </div>
                             @endif
@@ -130,20 +115,6 @@
                             </div>
                         </div>
                         @endforeach
-                    </div>
-                </div>
-
-                <!-- Tags Widget -->
-                <div class="rts-single-wized tags">
-                    <div class="wized-header">
-                        <h5 class="title">Popular Tags</h5>
-                    </div>
-                    <div class="wized-body">
-                        <div class="tags-wrapper">
-                            @foreach(\App\Models\Blog::all()->pluck('tags')->flatten()->unique()->take(10) as $tag)
-                            <a href="#">{{ $tag }}</a>
-                            @endforeach
-                        </div>
                     </div>
                 </div>
 
