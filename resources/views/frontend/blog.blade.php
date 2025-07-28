@@ -143,7 +143,7 @@
                                 <div class="recent-post-single">
                                     <div class="thumbnail">
                                         <a href="{{ route('blog-details', $post->id) }}">
-                                            <img src="{{ asset('storage/' . $post->main_image) }}" alt="{{ $post->title }}" style="width:90px">
+                                            <img src="{{ asset('storage/app/public/' . $post->main_image) }}" alt="{{ $post->title }}" style="width:90px">
                                         </a>
                                     </div>
                                     <div class="content-area">
