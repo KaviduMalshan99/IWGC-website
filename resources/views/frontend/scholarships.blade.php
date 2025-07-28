@@ -151,7 +151,7 @@ journey.
     </div>
     <!-- project details area top -->
 <!-- rts faq area start -->
-<div class="rts-faq-area rts-section-gapBottom" style="margin-top: 40px; background-image: url('{{ asset('frontend/assets/images/iwgc/FAQBoy.webp') }}'); height: 900px; background-size: cover; background-position: center; position: relative;">
+<div class="rts-faq-area rts-section-gapBottom" style="margin-top: 40px; background-image: url('{{ asset('public/frontend/assets/images/iwgc/FAQBoy.webp') }}'); height: 900px; background-size: cover; background-position: center; position: relative;">
 
     <!-- Overlay -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
