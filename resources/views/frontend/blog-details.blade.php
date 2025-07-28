@@ -101,7 +101,7 @@
                             @if($recentBlog->main_image)
                             <div class="thumbnail">
                                 <a href="{{ route('blog-details', $recentBlog->id) }}">
-                                    <img src="{{ asset('storage/'.$recentBlog->main_image) }}" alt="{{ $recentBlog->title }}" style="width:90px">
+                                    <img src="{{ asset('storage/app/public/'.$recentBlog->main_image) }}" alt="{{ $recentBlog->title }}" style="width:90px">
                                 </a>
                             </div>
                             @endif
