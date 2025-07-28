@@ -49,7 +49,7 @@
                     @foreach($blogs as $blog)
                         <div class="blog-single-post-listing" data-animation="fadeInUp" data-delay="0.2" style="border-color: #1b2954; box-shadow: 0 4px 10px rgba(27, 41, 84, 0.2);">
                             <div class="thumbnail">
-                                <img src="{{ asset('storage/' . $blog->main_image) }}" alt="{{ $blog->title }}" style="height:600px">
+                                <img src="{{ asset('storage/app/public/blogs/' . $blog->main_image) }}" alt="{{ $blog->title }}" style="height:600px">
                             </div>
                             <div class="blog-listing-content">
                                 <div class="user-info">
