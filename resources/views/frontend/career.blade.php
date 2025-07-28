@@ -52,16 +52,16 @@ For more information or to apply, please visit our Careers section or contact ou
             </div>
             <div class="row g-5 mt--5">
                 <div class="col-lg-6 ">
-                    <a href="frontend/assets/images//Picture1.jpg" class="gallery-image" data-animation="fadeInUp" data-delay="0.1">
+                    <a href="{{ asset('frontend/assets/images/Picture1.jpg') }}" class="gallery-image" data-animation="fadeInUp" data-delay="0.1">
                         <div class="thumbnail">
-                            <img src="frontend/assets/images/Picture1.jpg" alt="gallery-image">
+                            <img src="{{ asset('frontend/assets/images/Picture1.jpg') }}" alt="gallery-image">
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <a href="frontend/assets/images/Picture2.jpg" class="gallery-image" data-animation="fadeInUp" data-delay="0.2">
+                    <a href="{{ asset('frontend/assets/images/Picture2.jpg') }}" class="gallery-image" data-animation="fadeInUp" data-delay="0.2">
                         <div class="thumbnail">
-                            <img src="frontend/assets/images/Picture2.jpg" alt="gallery-image">
+                            <img src="{{ asset('frontend/assets/images/Picture2.jpg') }}" alt="gallery-image">
                         </div>
                     </a>
                 </div>
