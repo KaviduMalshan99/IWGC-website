@@ -66,6 +66,25 @@
 .accordion-header{
     background-color: #1b2954;
 }
+.why-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.why-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.why-list li i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: #e91212ff; 
+    font-size: 14px;
+}
 </style>
 
 <!-- Banner Section -->
@@ -107,12 +126,12 @@
                             global economy.
                         </p>
                                     <span style="font-weight: bold; font-size:18px;">Key features include:</span>
-                                    <ul style="padding-left: 20px; margin-top: 10px;">
-                                        <li>Regulated UK Awarding Organization (Ofqual Recognized RN5160)</li>
-                                        <li>Strict assessment standards ensuring consistency and quality</li>
-                                        <li>A diverse portfolio of regulated and bespoke qualifications</li>
-                                        <li>International applicability and recognition</li>
-                                        <li>Vocational training pathways and university degree routes</li>
+                                    <ul class="why-list" style="padding-left: 20px; margin-top: 10px;">
+                                        <li><i class="fas fa-check-circle"></i>Regulated UK Awarding Organization (Ofqual Recognized RN5160)</li>
+                                        <li><i class="fas fa-check-circle"></i>Strict assessment standards ensuring consistency and quality</li>
+                                        <li><i class="fas fa-check-circle"></i>A diverse portfolio of regulated and bespoke qualifications</li>
+                                        <li><i class="fas fa-check-circle"></i>International applicability and recognition</li>
+                                        <li><i class="fas fa-check-circle"></i>Vocational training pathways and university degree routes</li>
                                     </ul>
                          
 
@@ -134,14 +153,14 @@
                        <div class="row g-4">
                             <div class="col-lg-8">
                                 <div class="single-project-info">
-                                    <ul style="padding-left: 20px; margin-top: 10px; ">
-                                        <li>Career-ready diplomas across various industries</li>
-                                        <li>Online access and part-time options</li>
-                                        <li>Ideal for migration, study abroad, or professional advancement</li>
-                                        <li>Direct entry to UK Top-Up Bachelor's and MBA programs</li>
-                                        <li>QUALIFI diplomas from Level 3 to Level 7</li>
-                                        <li>Affordable and recognized worldwide</li>
-                                        <li>Available Study Abroad Opportunities Upon Program Completion</li>
+                                    <ul class="why-list" style="padding-left: 20px; margin-top: 10px; ">
+                                        <li><i class="fas fa-check-circle"></i>Career-ready diplomas across various industries</li>
+                                        <li><i class="fas fa-check-circle"></i>Online access and part-time options</li>
+                                        <li><i class="fas fa-check-circle"></i>Ideal for migration, study abroad, or professional advancement</li>
+                                        <li><i class="fas fa-check-circle"></i>Direct entry to UK Top-Up Bachelor's and MBA programs</li>
+                                        <li><i class="fas fa-check-circle"></i>QUALIFI diplomas from Level 3 to Level 7</li>
+                                        <li><i class="fas fa-check-circle"></i>Affordable and recognized worldwide</li>
+                                        <li><i class="fas fa-check-circle"></i>Available Study Abroad Opportunities Upon Program Completion</li>
                                     </ul>
                                 </div>
                             </div>
@@ -210,14 +229,14 @@ education with global standards. Here’s a quick look at how these levels compa
 professional development routes:
                                 </p>
 
-                                            <ul style="padding-left: 20px; margin-top: 10px; ">
-                                                <li><strong>Top-Up Degrees:</strong> Advance to final-year Bachelor&#39;s or Master&#39;s degrees at UK or
+                                            <ul class="why-list" style="padding-left: 20px; margin-top: 10px; ">
+                                                <li><i class="fas fa-check-circle"></i><strong>Top-Up Degrees:</strong> Advance to final-year Bachelor&#39;s or Master&#39;s degrees at UK or
 international universities.</li>
-                                               <li><strong>MBA & Master’s Entry:</strong> Use your QUALIFI Level 7 diploma as a direct entry
+                                               <li><i class="fas fa-check-circle"></i><strong>MBA & Master’s Entry:</strong> Use your QUALIFI Level 7 diploma as a direct entry
 route to prestigious MBA and MSc programs worldwide.</li>
-                                               <li><strong>Career Advancement:</strong>  Gain the practical knowledge and credentials to move
+                                               <li><i class="fas fa-check-circle"></i><strong>Career Advancement:</strong>  Gain the practical knowledge and credentials to move
 forward in your career, whether locally or abroad.</li>
-                                               <li><strong>Study Abroad & Migration:</strong> QUALIFI’s global recognition ensures smooth
+                                               <li><i class="fas fa-check-circle"></i><strong>Study Abroad & Migration:</strong> QUALIFI’s global recognition ensures smooth
 academic transitions and support for migration or further studies.</li>
                                               
                                             </ul>

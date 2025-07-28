@@ -152,7 +152,7 @@
                                                                         <p class="hega-menu-head" style="color: black;"> Other</p>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="project-details.html" 
+                                                                        <a href="" 
                                                                         style="color:black; display:block; padding:8px 15px; transition:all 0.3s;"
                                                                         onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
                                                                         onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">

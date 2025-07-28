@@ -107,6 +107,26 @@
         width: 90%;
     }
 }
+
+.why-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.why-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.why-list li i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: #e91212ff; 
+    font-size: 14px;
+}
 </style>
 
 <!-- Banner Section -->
@@ -133,11 +153,11 @@
                 </p>
 
                 <span style="font-weight: bold; font-size:18px;">Why Study Business with Us?</span>
-                <ul style="padding-left: 20px; margin-top: 10px;">
-                    <li><strong>Hands-On Learning:</strong> Case studies, simulations & live projects</li>
-                    <li><strong>Designed for Entrepreneurs & Professionals</strong></li>
-                    <li><strong>Clear Career Roadmaps: </strong>From diploma to MBA</li>
-                    <li><strong>Flexible Study Options: </strong>Ideal for working individuals</li>
+                <ul class="why-list" style="padding-left: 20px; margin-top: 10px;">
+                    <li><i class="fas fa-check-circle"></i><strong>Hands-On Learning:</strong> Case studies, simulations & live projects</li>
+                    <li><i class="fas fa-check-circle"></i><strong>Designed for Entrepreneurs & Professionals</strong></li>
+                    <li><i class="fas fa-check-circle"></i><strong>Clear Career Roadmaps: </strong>From diploma to MBA</li>
+                    <li><i class="fas fa-check-circle"></i><strong>Flexible Study Options: </strong>Ideal for working individuals</li>
                 </ul>
             </div>
         </div>
@@ -145,7 +165,7 @@
 </div>
 
 <!-- Faculties Section -->
-<div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop working-process-one">
+<div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop working-process-one bg-main" style="background-color: #06427eff;">
     <div class="container mb-4 pb-3">
         <div class="row">
             <div class="col-lg-12">
@@ -156,7 +176,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container ">
         <div class="row g-4 justify-content-center">
             
 
@@ -201,7 +221,7 @@
             </div>
             <div class="col-lg-10 pl--50 pl_md--0 pl_sm--0 mt_md--50 mt_sm--80 mx-auto" data-animation="fadeInUp" data-delay="0.3">
                 <div class="accordion faq-wrapper-inner-page" id="accordionExample">
-                    <div class="accordion-item">
+                    <div class="accordion-item"  style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 01. What programs are offered under the Faculty of Business?
@@ -220,7 +240,7 @@ and executives.
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item"  style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 02. Are the business programs recognized internationally?
@@ -235,7 +255,7 @@ professional value worldwide.
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item"  style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 03. What are the entry requirements for business programs?
@@ -249,7 +269,7 @@ assist you in determining your eligibility.
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item"  style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                         <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                 04. Can working Professionals apply?
@@ -262,7 +282,7 @@ Prior Learning (RPL) or work experience may be considered.
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item"  style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                         <h2 class="accordion-header" id="headingFive">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                 05. When is the graduation ceremony held?

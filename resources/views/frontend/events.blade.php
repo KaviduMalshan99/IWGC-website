@@ -46,7 +46,7 @@
                         <div class="swiper-wrapper">
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954; gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
-                                       <div class="thumbnail" style="flex: 0.8; width: 300px; height: 500px; overflow: hidden;">
+                                       <div class="thumbnail" style="flex: 0.8; width: 300px; height: 600px; overflow: hidden; margin-top:20px">
                                             <img src="frontend/assets/images/events/kandy.jpg" alt="project" 
                                                 style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
@@ -66,7 +66,7 @@
 
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954; gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
-                                        <div class="thumbnail" style="flex: 0.8; width: 300px; height: 500px; overflow: hidden;">
+                                        <div class="thumbnail" style="flex: 0.8; width: 300px; height: 600px; overflow: hidden; margin-top:20px">
                                             <img src="frontend/assets/images/events/maldives.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
@@ -92,10 +92,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                
 
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954;gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
-                                         <div class="thumbnail" style="flex: 0.8; width: 300px; height: 500px; overflow: hidden;">
+                                         <div class="thumbnail" style="flex: 0.8; width: 300px; height: 600px; overflow: hidden; margin-top:20px">
                                             <img src="frontend/assets/images/events/strategic alliance.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
@@ -125,7 +126,7 @@
 
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954;gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
-                                         <div class="thumbnail" style="flex: 0.8; width: 300px; height: 500px; overflow: hidden;">
+                                         <div class="thumbnail" style="flex: 0.8; width: 300px; height: 600px; overflow: hidden;margin-top:20px">
                                             <img src="frontend/assets/images/events/partnership.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
@@ -151,7 +152,7 @@
 
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954;gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
-                                        <div class="thumbnail" style="flex: 0.8; width: 300px; height: 500px; overflow: hidden;">
+                                        <div class="thumbnail" style="flex: 0.8; width: 300px; height: 600px; overflow: hidden;margin-top:20px">
                                             <img src="frontend/assets/images/events/agent meet.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
@@ -177,7 +178,7 @@
 
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954;gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
-                                        <div class="thumbnail" style="flex: 0.8; width: 300px; height: 500px; overflow: hidden;">
+                                        <div class="thumbnail" style="flex: 0.8; width: 300px; height: 600px; overflow: hidden;margin-top:20px">
                                             <img src="frontend/assets/images/events/mind eye.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
@@ -187,11 +188,63 @@
                                             </p>
                                             
                                             <!-- Facebook Button -->
-                                            <a href="https://web.facebook.com/photo?fbid=609565528512878&set=pcb.609565625179535" target="_blank" style="margin-top: 20px; display: inline-flex; align-items: center; background-color: #1877f2; color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500; width: fit-content;">
+                                            <a href="https://web.facebook.com/photo?fbid=654240794045351&amp;set=a.244870548315713" target="_blank" style="margin-top: 20px; display: inline-flex; align-items: center; background-color: #1877f2; color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500; width: fit-content;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#fff" style="margin-right: 8px;">
                                                     <path d="M22.675 0h-21.35C.597 0 0 .6 0 1.338v21.325C0 23.4.597 24 1.325 24H12.82v-9.294H9.692V11.31h3.128V8.414c0-3.1 1.894-4.788 4.66-4.788 1.325 0 2.464.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.716-1.796 1.764v2.314h3.587l-.467 3.396h-3.12V24h6.116C23.403 24 24 23.4 24 22.662V1.338C24 .6 23.403 0 22.675 0z"/>
                                                 </svg>
                                                 View on Facebook
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide" style="width: 100% !important;">
+                                    <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954;gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
+                                         <div class="thumbnail" style="flex: 0.8; width: 300px; height: 600px; overflow: hidden; margin-top:20px">
+                                            <img src="frontend/assets/images/events/INTI-9.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
+                                        </div>
+                                        <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+                                            <h3 class="title" style="color:white">INTI University Postgraduate Scholarship Introduction Event</h3>
+                                            <p class="disc" style="text-align: justify; color:white">
+                                               We are thrilled to share the success of our recent Introduction Session on July 9th, 2024, highlighting the
+esteemed “100% Postgraduate Scholarship Program” offered by INTI University Malaysia.
+This event marked a significant milestone as we welcomed selected candidates from a pool of over 50
+applications, alongside esteemed guests:
+<br>
+<i><strong>Distinguished Speakers</strong></i>
+
+We extend our heartfelt appreciation to Ms. Hazelyn Eliza, Regional Executive of INTI University’s
+International Sales Office, and Dr. KalahariePitigala, Senior Lecturer in Psychology, for their invaluable
+insights and contributions.
+<br>
+<i><strong>Key Discussion Topics:</strong></i>
+The session delved deep into crucial themes such as scholarship opportunities, avenues for cutting-edge
+research, and the profound impact of pursuing advanced studies. Participants gained profound insights
+into how INTI University Malaysia champions academic and professional excellence.
+<br>
+
+<i><strong>Next Steps:</strong></i>
+
+We urge all attendees and interested individuals to stay tuned for forthcoming details on application
+deadlines and additional facets of this prestigious scholarship initiative.
+<br>
+<i><strong>Gratitude:</strong></i>
+
+Once again, we extend our sincere gratitude to our esteemed speakers and all participants for enriching
+this enlightening and dynamic session.
+As we continue to nurture a culture of educational distinction and career advancement, connect with
+Imperial Wisdom Pvt Ltd for further opportunities to elevate your academic journey.
+
+                                            </p>
+                                
+
+                                            <!-- Facebook Button -->
+                                            <a href="https://impwis.com/inti-university-postgraduate-scholarship-introduction-event/" target="_blank" style="margin-top: 20px; display: inline-flex; align-items: center; background-color: #1877f2; color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500; width: fit-content;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#fff" style="margin-right: 8px;">
+                                                    <path d="M22.675 0h-21.35C.597 0 0 .6 0 1.338v21.325C0 23.4.597 24 1.325 24H12.82v-9.294H9.692V11.31h3.128V8.414c0-3.1 1.894-4.788 4.66-4.788 1.325 0 2.464.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.716-1.796 1.764v2.314h3.587l-.467 3.396h-3.12V24h6.116C23.403 24 24 23.4 24 22.662V1.338C24 .6 23.403 0 22.675 0z"/>
+                                                </svg>
+                                                View
                                             </a>
                                         </div>
                                     </div>

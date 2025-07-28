@@ -60,7 +60,7 @@
     </div>
 
     <div class="row g-4 mb-5">
-        <div class="col-lg-10 mx-auto">
+        <div class="col-lg-12 mx-auto">
             <div class="single-project-info-wrapper-inner">
                 <p class="disc" style="font-size:18px; text-align:justify">
                    Studying in the United Kingdom offers students an exceptional opportunity 
@@ -209,7 +209,7 @@
 
 
 
-<div class="container" style="padding-bottom: 120px;">
+<div class="container" style="padding-bottom: 30px;">
     <div style="padding: 50px; background-color: #f9f9f9; font-family: Arial, sans-serif; color: #1b2954;">
         
         <!-- Intro Section -->
@@ -299,7 +299,7 @@
 
    <!-- rts Esteemed Clients start -->
 <div class="rts-client-area ptb--100 brand-bg-three bg_image mb--100">
-        <h3 style="text-align:center;margin-bottom: 30px; font-size: 20px; color: #ed3532;">
+        <h3 style="text-align:center;margin-bottom: 30px; font-size: 25px; color: #ed3532;">
                  Explore Your Dream Institutions
         </h3>
     <div class="logo-marquee-container">

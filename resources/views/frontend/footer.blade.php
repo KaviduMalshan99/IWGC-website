@@ -121,13 +121,9 @@
                 <div class="col-lg-12">
                     <div class="copyright-h-2-wrapper p-4">
                        <p class="disc mb-0" style="font-size: 17px;">
-                            IWGC - Copyright 
-                            <script>document.write(new Date().getFullYear())</script>. 
-                            All rights reserved. &nbsp;|&nbsp;
-                            <span style="font-size: 15px;">
-                                Project by 
-                                <a href="https://www.facebook.com/share/1DKGndfjw6/?mibextid=wwXIfr" target="_blank" style="color: #7366FF; font-weight: 500;">Centival</a>
-                            </span>
+                            IWGC - Copyright ©
+                            <script>document.write(new Date().getFullYear())</script>
+                             <a href="https://www.facebook.com/share/1DKGndfjw6/?mibextid=wwXIfr" target="_blank"> Centival</a>. All rights reserved. 
                         </p>
                         <div class="right">
                             <ul style="display: flex; gap: 15px; list-style: none; margin: 0; padding: 0; font-size: 14px;">

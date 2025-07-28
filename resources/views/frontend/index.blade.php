@@ -254,7 +254,7 @@
     position: absolute;
     left: 0;
     top: 3px;
-    color: #ff4d4d; /* red tick */
+    color: #e91212ff; /* red tick */
     font-size: 14px;
 }
 
@@ -678,12 +678,13 @@
 
 
 <!-- working process area start -->
-<div class="working-process-one bg-main " style="padding: 60px 0; margin-bottom: 20px;">
+<div class="working-process-one " style="background-image: url('{{ asset('frontend/assets/images/footer/new.jpg') }}');background-repeat: no-repeat;
+  background-size: cover; z-index: 1; padding: 60px 0; margin-bottom: 20px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="title-style-one center">
-                    <h2 class="title  rts-text-anime-style-1">Why Choose IWGC ?</h2>
+                    <h2 class="title  rts-text-anime-style-1" style="color:white">Why Choose IWGC ?</h2>
                 </div>
             </div>
         </div>
