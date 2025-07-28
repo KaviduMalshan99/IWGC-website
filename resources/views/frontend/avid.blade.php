@@ -143,7 +143,7 @@
 </div>
 
 <!-- Faculties Section -->
-<div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop mb--100 working-process-one bg-main">
+<div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop mb--100 working-process-one">
     <div class="container mb-4 pb-3">
         <div class="row">
             <div class="col-lg-12">
