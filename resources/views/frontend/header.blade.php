@@ -17,6 +17,20 @@
         font-weight: bold;
     }
 
+.top-nav .highlight {
+    display: inline-block;
+    width:55px;
+    background-color: #FF0003;
+    color: #fff !important;
+    text-align:center;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top:5px;
+    line-height: 1.2;
+    height: auto;
+    vertical-align: middle;
+    text-decoration: none;
+}
 
 </style>
 
@@ -39,15 +53,14 @@
                             </div>
                         </div>
                         <div class="right">
-                            <ul class="top-nav">
+                           <ul class="top-nav">
                                 <li><a href="{{ route('enroll') }}" class="nav-button">ENROLL</a></li>
-                                <li><a href="faq.html" class="nav-button">LMS</a></li>
                                 <li><a href="contact.html" class="nav-button">PAY ONLINE</a></li>
+                                <li><a href="faq.html" class="nav-button highlight">LMS</a></li>
                             </ul>
 
                             <ul class="social-wrapper-one">
                                 <li><a href=""><i class="fab fa-facebook-f" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
                                 <li><a href="#"><i class="fab fa-instagram" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
                                 <li><a class="mr--0" href="#"><i class="fab fa-linkedin-in" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
                             </ul>

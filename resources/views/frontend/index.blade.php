@@ -678,12 +678,12 @@
 
 
 <!-- working process area start -->
-<div class="working-process-one bg-main" style="padding: 60px 0; margin-bottom: 20px;">
+<div class="working-process-one bg-main " style="padding: 60px 0; margin-bottom: 20px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="title-style-one center">
-                    <h2 class="title  rts-text-anime-style-1">Why Choose IWGC</h2>
+                    <h2 class="title  rts-text-anime-style-1">Why Choose IWGC ?</h2>
                 </div>
             </div>
         </div>
@@ -776,18 +776,21 @@
 
 
 <!-- rts faq area start -->
-<div class="rts-faq-area rts-section-gapBottom" style="margin-top: 80px;background-image: url('{{ asset('frontend/assets/images/iwgc/FAQBoy.webp') }}'); height:900px;background-size: cover;background-position: center;position: relative;">
-    <div class="container">
+<div class="rts-faq-area rts-section-gapBottom" style="margin-top: 80px; background-image: url('{{ asset('frontend/assets/images/iwgc/FAQGirl.webp') }}'); height: 900px; background-size: cover; background-position: center; position: relative;">
+
+    <!-- Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                background-color: rgba(0, 0, 0, 0.35); z-index: 1;"></div>
+    <div class="container" style="position: relative; z-index: 2; padding: 30px; color: white;">
         <div class="row">
             <div class="col-lg-12 pt-5 pb-5">
                 <div class="title-style-two center">
-                    <span class="bg-content">F.A.Q</span>
-                    <h2 class="title rts-text-anime-style-1">Frequently Asked Questions</h2>
+                    <h2 class="title rts-text-anime-style-1" style="color: white !important;">Frequently Asked Questions</h2>
                 </div>
             </div>
         </div>
     </div>    
-    <div class="container">
+    <div class="container" style="position: relative; z-index: 2; padding: 30px; ">
         <div class="row">
                 
                 <div class="col-lg-6 pl--50 pr--50" data-animation="fadeInUp" data-delay="0.1">

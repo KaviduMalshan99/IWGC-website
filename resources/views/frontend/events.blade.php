@@ -46,9 +46,11 @@
                         <div class="swiper-wrapper">
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954; gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
-                                        <div class="thumbnail" style="flex: 0.8;">
-                                            <img src="frontend/assets/images/events/kandy.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
+                                       <div class="thumbnail" style="flex: 0.8; width: 300px; height: 500px; overflow: hidden;">
+                                            <img src="frontend/assets/images/events/kandy.jpg" alt="project" 
+                                                style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
+
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
                                             <h3 class="title" style="color:white">Recap of Future Minds 2024 - Kandy!</h3>
                                             <p class="disc" style="text-align: justify;color:white">
@@ -64,7 +66,7 @@
 
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954; gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
-                                        <div class="thumbnail" style="flex: 0.8;">
+                                        <div class="thumbnail" style="flex: 0.8; width: 300px; height: 500px; overflow: hidden;">
                                             <img src="frontend/assets/images/events/maldives.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
@@ -93,7 +95,7 @@
 
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954;gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
-                                        <div class="thumbnail" style="flex: 0.8;">
+                                         <div class="thumbnail" style="flex: 0.8; width: 300px; height: 500px; overflow: hidden;">
                                             <img src="frontend/assets/images/events/strategic alliance.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
@@ -123,7 +125,7 @@
 
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954;gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
-                                        <div class="thumbnail" style="flex: 0.8;">
+                                         <div class="thumbnail" style="flex: 0.8; width: 300px; height: 500px; overflow: hidden;">
                                             <img src="frontend/assets/images/events/partnership.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
@@ -149,7 +151,7 @@
 
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954;gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
-                                        <div class="thumbnail" style="flex: 0.8;">
+                                        <div class="thumbnail" style="flex: 0.8; width: 300px; height: 500px; overflow: hidden;">
                                             <img src="frontend/assets/images/events/agent meet.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
@@ -175,7 +177,7 @@
 
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954;gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
-                                        <div class="thumbnail" style="flex: 0.8;">
+                                        <div class="thumbnail" style="flex: 0.8; width: 300px; height: 500px; overflow: hidden;">
                                             <img src="frontend/assets/images/events/mind eye.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">

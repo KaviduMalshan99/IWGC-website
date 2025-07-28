@@ -27,7 +27,7 @@
     <div class="container">
         <div class="row">
                 <!-- single wized -->
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 mt-5" >
+                <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12 mt-5" >
                     <div class="footer-two-single-wized left">
                         <div class="widget-head">
                                     <a href="index.php">
@@ -47,7 +47,7 @@
                       
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--50 mt-5">
+                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--50 mt-5">
                     <div class="footer-two-single-wized two">
                         <div class="wized-title-area">
                             <h5 class="wized-title" style="color: white !important">Handy Links</h5>
@@ -142,50 +142,70 @@
     </div>
 
 
-      <div id="side-bar" class="side-bar header-two">
+    <div id="side-bar" class="side-bar header-two">
         <button class="close-icon-menu"><i class="far fa-times"></i></button>
+
         <!-- inner menu area desktop start -->
         <div class="rts-sidebar-menu-desktop">
-            <a class="logo-1" href="index.html"><img class="logo" src="{{ asset('logo.png') }}" alt="finbiz_logo"></a>
+            <a class="logo-1" href="index.html">
+                <img class="logo" src="{{ asset('logo.png') }}" alt="finbiz_logo">
+            </a>
+
             <div class="body d-none d-xl-block">
-                <p class="disc">
-                    
-                </p>
-                <div class="get-in-touch">
+                <p class="disc"></p>
+
+                <div class="get-in-touch" style="margin-top: 20px;">
                     <!-- title -->
-                    <div class="h6 title">Get In Touch</div>
-                    <!-- title End -->
+                    <div class="h6 title" style="font-size: 18px; font-weight: bold; margin-bottom: 15px;">Get In Touch</div>
+
                     <div class="wrapper">
-                        <!-- single -->
-                        <div class="single">
-                            <i class="fas fa-phone-alt"></i>
-                            <a href="#">+(94) 766 888 184</a>  <br>
-                            <a href="#" style="margin-left:30px">+(94) 114 686 767</a>
+
+                        <!-- Phone -->
+                        <div class="single" style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                            <div style="width: 30px; min-width: 30px; text-align: center;">
+                                <i class="fas fa-phone-alt" style="font-size: 16px; color: #ff6666ff; margin-top: 4px;"></i>
+                            </div>
+                            <div class="contact-text">
+                                <a href="tel:+94766888184" style="display: block; color: #333; text-decoration: none; margin-bottom: 5px;">+(94) 766 888 184</a>
+                                <a href="tel:+94114686767" style="display: block; color: #333; text-decoration: none;">+(94) 114 686 767</a>
+                            </div>
                         </div>
-                        <!-- single ENd -->
-                        <!-- single -->
-                        <div class="single">
-                            <i class="fas fa-envelope"></i>
-                            <a href="#">info@iwgc.lk</a>
+
+                        <!-- Email -->
+                        <div class="single" style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                            <div style="width: 30px; min-width: 30px; text-align: center;">
+                                <i class="fas fa-envelope" style="font-size: 16px; color: #ff6666ff; margin-top: 4px;"></i>
+                            </div>
+                            <div class="contact-text">
+                                <a href="mailto:info@iwgc.lk" style="color: #333; text-decoration: none;">info@iwgc.lk</a>
+                            </div>
                         </div>
-                        <!-- single ENd -->
-                        <!-- single -->
-                        <div class="single">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <a href="#">No. 85 -1/3, Galle Road, Dehiwala, Sri Lanka</a>
+
+                        <!-- Address -->
+                        <div class="single" style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                            <div style="width: 30px; min-width: 30px; text-align: center;">
+                                <i class="fas fa-map-marker-alt" style="font-size: 16px; color: #ff6666ff; margin-top: 4px;"></i>
+                            </div>
+                            <div class="contact-text">
+                                <a href="#" style="color: #333; text-decoration: none;">
+                                    No. 85 -1/3, Galle Road,<br>Dehiwala, Sri Lanka
+                                </a>
+                            </div>
                         </div>
-                        <!-- single ENd -->
+
                     </div>
-                    <div class="social-wrapper-two menu">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
+
+                    <!-- Social links -->
+                    <div class="social-wrapper-two menu" style="margin-top: 30px; margin-left:20px">
+                        <a href="#" style="margin-right: 45px;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="margin-right: 45px;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="margin-right: 45px;"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
         <!-- mobile menu area start -->
         <div class="mobile-menu d-block d-xl-none">
             <nav class="nav-main mainmenu-nav mt--30">
@@ -227,11 +247,6 @@
                     <li>
                         <a href="#">
                             <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
                         </a>
                     </li>
                     <li>
