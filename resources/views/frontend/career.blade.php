@@ -14,7 +14,7 @@
         <p class="bg-content">  Welcome to the Career Opportunities at Imperial Wisdom Graduate Campus </p>
     </div>
     <div class="row g-4 mb-5">
-        <div class="col-lg-10 mx-auto">
+        <div class="col-lg-12 mx-auto">
             <div class="single-project-info-wrapper-inner">
                 <p class="disc" style="font-size:18px; text-align:justify">
 At Imperial Wisdom Graduate Campus, we are committed to fostering an environment of excellence, innovation, and growth. 
@@ -45,45 +45,23 @@ For more information or to apply, please visit our Careers section or contact ou
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="title-style-five center mb--40">
-                        <span class="pre">Gallery</span>
-                        <h2 class="title rts-text-anime-style-1">Life At IWGC</h2>
+                    <div class="title-style-five center mb--20">
+                        <h2 class="title rts-text-anime-style-1">Current Opportunities</h2>
                     </div>
                 </div>
             </div>
             <div class="row g-5 mt--5">
-                <div class="col-lg-4 offset-lg-1">
-                    <a href="frontend/assets/images/gallery/Picture1.png" class="gallery-image" data-animation="fadeInUp" data-delay="0.1">
+                <div class="col-lg-6 ">
+                    <a href="frontend/assets/images//Picture1.jpg" class="gallery-image" data-animation="fadeInUp" data-delay="0.1">
                         <div class="thumbnail">
-                            <img src="frontend/assets/images/gallery/Picture1.png" alt="gallery-image">
+                            <img src="frontend/assets/images/Picture1.jpg" alt="gallery-image">
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <a href="frontend/assets/images/gallery/Picture3.png" class="gallery-image" data-animation="fadeInUp" data-delay="0.2">
+                    <a href="frontend/assets/images/Picture2.jpg" class="gallery-image" data-animation="fadeInUp" data-delay="0.2">
                         <div class="thumbnail">
-                            <img src="frontend/assets/images/gallery/Picture3.png" alt="gallery-image">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a href="frontend/assets/images/gallery/Picture4.png" class="gallery-image" data-animation="fadeInUp" data-delay="0.3">
-                        <div class="thumbnail">
-                            <img src="frontend/assets/images/gallery/Picture4.png" alt="gallery-image">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a href="frontend/assets/images/gallery/Picture5.png" class="gallery-image" data-animation="fadeInUp" data-delay="0.4">
-                        <div class="thumbnail">
-                            <img src="frontend/assets/images/gallery/Picture5.png" alt="gallery-image">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a href="frontend/assets/images/gallery/Picture6.png" class="gallery-image" data-animation="fadeInUp" data-delay="0.5">
-                        <div class="thumbnail">
-                            <img src="frontend/assets/images/gallery/Picture6.png" alt="gallery-image">
+                            <img src="frontend/assets/images/Picture2.jpg" alt="gallery-image">
                         </div>
                     </a>
                 </div>
@@ -92,7 +70,7 @@ For more information or to apply, please visit our Careers section or contact ou
     </div>
 
 
-<!-- current opening area start -->
+<!-- current opening area start 
 <div class="current-opening-area bg_primary rts-section-gap mb--100">
     <div class="container">
         <div class="row">
@@ -139,7 +117,7 @@ For more information or to apply, please visit our Careers section or contact ou
         </div>
     </div>
 </div>
-<!-- current opening area end -->
+current opening area end -->
 
 
         

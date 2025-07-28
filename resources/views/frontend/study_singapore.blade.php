@@ -197,7 +197,7 @@
 
 <div class="container" style="padding-bottom: 120px;">
     <div style="padding: 50px; background-color: #f9f9f9; font-family: Arial, sans-serif; color: #1b2954;">
-        
+
         <!-- Intro Section -->
         <h2 style="color: #1b2954; margin-bottom: 10px;">Start your journey today and experience the educational excellence and vibrant life that Singapore has to offer!</h2>
         <p style="font-size: 16px; line-height: 1.6; margin-bottom: 30px;">
@@ -205,46 +205,65 @@
         </p>
 
         <!-- Section Title -->
-        <h3 style="margin-bottom: 20px; font-size: 20px; color: #ed3532; border-left: 5px solid #ed3532; padding-left: 10px;">
+        <h3 style="
+            margin-bottom: 30px;
+            font-size: 22px;
+            background: linear-gradient(90deg, #ed3532, #f5b100, #1b2954);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-left: 5px solid #ed3532;
+            padding-left: 12px;
+        ">
             Essential Info Kit
         </h3>
 
-        <!-- Link List with Boxes -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding-left: 0;">
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://www.ica.gov.sg/reside/STP/apply" target="blank"
-                style="color: #1b2954; text-decoration: none;">
+        <!-- Info Cards Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+            <!-- Student Pass -->
+            <div class="info-box" style="background-color: #ffffff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s ease; border-top: 4px solid #ed3532;">
+                <a href="https://www.ica.gov.sg/reside/STP/apply" target="_blank" style="text-decoration: none; color: inherit;">
                     <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Student Pass</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Learn how to apply for a student pass in Singapore and the necessary requirements for international students.</p>
+                    <p style="font-size: 15px; line-height: 1.6;">Learn how to apply for a student pass in Singapore and the necessary requirements for international students.</p>
                 </a>
             </div>
 
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://www.moe.gov.sg/international-students/studying-in-singapore" target="blank"
-                style="color: #1b2954; text-decoration: none;">
-                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Facts to Consider</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Discover essential facts and tips about studying in Singapore, including the education system and life as an international student.</p>
+            <!-- Facts to Consider -->
+            <div class="info-box" style="background-color: #ffffff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s ease; border-top: 4px solid #f5b100;">
+                <a href="https://www.moe.gov.sg/international-students/studying-in-singapore" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h4 style="font-size: 18px; color: #f5b100; font-weight: bold; margin-bottom: 10px;">Facts to Consider</h4>
+                    <p style="font-size: 15px; line-height: 1.6;">Discover essential facts and tips about studying in Singapore, including the education system and life as an international student.</p>
                 </a>
             </div>
 
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://www.mom.gov.sg/passes-and-permits/work-pass-exemption-for-foreign-students" target="blank"
-                style="color: #1b2954; text-decoration: none;">
-                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Work Pass Requirements</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Find out about work pass exemptions for foreign students and other regulations regarding employment in Singapore.</p>
+            <!-- Work Pass Requirements -->
+            <div class="info-box" style="background-color: #ffffff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s ease; border-top: 4px solid #1b2954;">
+                <a href="https://www.mom.gov.sg/passes-and-permits/work-pass-exemption-for-foreign-students" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h4 style="font-size: 18px; color: #1b2954; font-weight: bold; margin-bottom: 10px;">Work Pass Requirements</h4>
+                    <p style="font-size: 15px; line-height: 1.6;">Find out about work pass exemptions for foreign students and other regulations regarding employment in Singapore.</p>
                 </a>
             </div>
 
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://www.ica.gov.sg/news-and-publications/newsroom?page=1&year=2025&month=0&category=" target="blank"
-                style="color: #1b2954; text-decoration: none;">
+            <!-- News Updates -->
+            <div class="info-box" style="background-color: #ffffff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s ease; border-top: 4px solid #ed3532;">
+                <a href="https://www.ica.gov.sg/news-and-publications/newsroom" target="_blank" style="text-decoration: none; color: inherit;">
                     <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">News Updates</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Stay informed about the latest immigration news and updates that affect international students in Singapore.</p>
+                    <p style="font-size: 15px; line-height: 1.6;">Stay informed about the latest immigration news and updates that affect international students in Singapore.</p>
                 </a>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Hover animation -->
+<style>
+    .info-box:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+</style>
+
 
 
    <!-- rts Esteemed Clients start -->
