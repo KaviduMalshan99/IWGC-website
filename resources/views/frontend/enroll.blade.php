@@ -201,7 +201,7 @@ For a detailed overview of the application process, including necessary document
                                 Please fill it out completely and submit it along with the required documents.
                             </p>
 
-                            <a href="{{ asset('Fillable - IMPWIS_Student_Application.pdf') }}" 
+                            <a href="{{ asset('public/Fillable - IMPWIS_Student_Application.pdf') }}" 
                             class="btn btn-primary" 
                             style="padding: 12px 24px; font-size: 16px; border-radius: 30px; background-color: #ba1e1eff; border: none;" 
                             download>
