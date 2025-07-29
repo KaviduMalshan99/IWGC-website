@@ -50,7 +50,7 @@
 
 </style>
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/avid/qualifi.jpg') }}'); background-size: cover; background-position: center; height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/04.3.webp') }}'); background-size: cover; background-position: center; height: 400px;position: relative;">
 </div>
 <!-- Title and Info Boxes -->
 <div class="container mt-5">
