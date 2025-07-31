@@ -515,16 +515,18 @@
 <div class="rts-about-area-two mt--20 mb--100">
     <div class="container">
         <div class=" row d-flex flex-wrap align-items-center gap-5">
-            <div class="col-lg-6 ">
+            <div class="col-lg-7 ">
                 <div class="left-thumbnail-about-area-two">
-                    <img src="{{ asset('frontend/assets/images/about/01.webp') }}" style="border-radius:10px" alt="about">
-                    <div class="small-image">
-                        <img src="{{ asset('frontend/assets/images/about/02.webp') }}" style="border-radius:10px" alt="small">
-                    </div>
+                    
+                    <video controls width="100%" style="border-radius:10px;">
+                        <source src="{{ asset('frontend/assets/images/about/iwgc.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
                     
                 </div>
             </div>
-            <div class="col-lg-5 mt_sm--80 mt_md--80 ">
+            <div class="col-lg-4 mt_sm--80 mt_md--80 ">
                 <div class="about-inner-content-two">
                     <div class="title-style-two left">
                         <span class="bg-content">About Us</span>
