@@ -5,7 +5,7 @@
             <div class="form-group w-100">
               <div class="Typeahead Typeahead--twitterUsers">
                 <div class="u-posRelative">
-                  <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search Cuba .." name="q" title="" autofocus>
+                  <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search IWGC .." name="q" title="" autofocus>
                   <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
                 </div>
                 <div class="Typeahead-menu"></div>
@@ -37,19 +37,7 @@
                 </div>
               </li>
 
-              <li class="onhover-dropdown">
-                <div class="notification-box">
-                  <svg>
-                    <use href="{{ asset('backend/assets/svg/icon-sprite.svg#notification') }}"></use>
-                  </svg><span class="badge rounded-pill badge-secondary">4 </span>
-                </div>
-                <div class="onhover-show-div notification-dropdown">
-                  <h6 class="f-18 mb-0 dropdown-title">Notitications                               </h6>
-                  <ul>
-                    
-                  </ul>
-                </div>
-              </li>
+              
               <li class="profile-nav onhover-dropdown pe-0 py-0">
                     <div class="media profile-media">
                         <img class="b-r-10" src="{{ asset('backend/assets/images/user/user.png') }}" alt="">
@@ -62,7 +50,7 @@
                         </div>
                     </div>
                     <ul class="profile-dropdown onhover-show-div">
-                        <li><a href="#"><i data-feather="user"></i><span>Account</span></a></li>
+                        
                         {{-- ✅ Logout Link --}}
                         <li>
                             <a href="#"

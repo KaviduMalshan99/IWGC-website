@@ -50,7 +50,7 @@
 
 </style>
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/avid/qualifi.jpg') }}'); background-size: cover; background-position: center; height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/04.3.webp') }}'); background-size: cover; background-position: center; height: 400px;position: relative;">
 </div>
 <!-- Title and Info Boxes -->
 <div class="container mt-5">
@@ -60,7 +60,7 @@
     </div>
 
     <div class="row g-4 mb-5">
-        <div class="col-lg-10 mx-auto">
+        <div class="col-lg-12 mx-auto">
             <div class="single-project-info-wrapper-inner">
                 <p class="disc" style="font-size:18px; text-align:justify">
                    Studying in the United Kingdom offers students an exceptional opportunity 
@@ -209,7 +209,7 @@
 
 
 
-<div class="container" style="padding-bottom: 120px;">
+<div class="container" style="padding-bottom: 30px;">
     <div style="padding: 50px; background-color: #f9f9f9; font-family: Arial, sans-serif; color: #1b2954;">
         
         <!-- Intro Section -->
@@ -219,76 +219,87 @@
         </p>
 
         <!-- Section Title -->
-        <h3 style="margin-bottom: 20px; font-size: 20px; color: #ed3532; border-left: 5px solid #ed3532; padding-left: 10px;">
+        <h3 style="
+            margin-bottom: 30px;
+            font-size: 22px;
+            background: linear-gradient(90deg, #ed3532, #f5b100, #1b2954);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-left: 5px solid #ed3532;
+            padding-left: 12px;
+        ">
             Essential Info Kit
         </h3>
 
-        <!-- Link List with Boxes -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding-left: 0;">
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://www.gov.uk/student-visa" target="blank"
-                style="color: #1b2954; text-decoration: none;">
+        <!-- Info Cards Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+            <div class="info-box" style="background-color: #fff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 4px solid #ed3532;">
+                <a href="https://www.gov.uk/student-visa" target="_blank" style="text-decoration: none; color: inherit;">
                     <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Study Pass</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Find out how to apply for a student visa to study in the UK and understand the requirements.</p>
+                    <p style="font-size: 15px; line-height: 1.6;">Find out how to apply for a student visa to study in the UK and understand the requirements.</p>
                 </a>
             </div>
 
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://www.gov.uk/graduate-visa/apply" target="blank"
-                style="color: #1b2954; text-decoration: none;">
-                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Graduate Pass</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Explore how you can apply for a Graduate Visa in the UK to stay and work after completing your studies.</p>
+            <div class="info-box" style="background-color: #fff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 4px solid #f5b100;">
+                <a href="https://www.gov.uk/graduate-visa/apply" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h4 style="font-size: 18px; color: #f5b100; font-weight: bold; margin-bottom: 10px;">Graduate Pass</h4>
+                    <p style="font-size: 15px; line-height: 1.6;">Explore how you can apply for a Graduate Visa in the UK to stay and work after completing your studies.</p>
                 </a>
             </div>
 
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://www.ukcisa.org.uk/student-advice/life-in-the-uk/" target="blank"
-                style="color: #1b2954; text-decoration: none;">
-                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Life in the UK</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Gain insights into life as an international student in the UK, from culture to daily life.</p>
+            <div class="info-box" style="background-color: #fff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 4px solid #1b2954;">
+                <a href="https://www.ukcisa.org.uk/student-advice/life-in-the-uk/" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h4 style="font-size: 18px; color: #1b2954; font-weight: bold; margin-bottom: 10px;">Life in the UK</h4>
+                    <p style="font-size: 15px; line-height: 1.6;">Gain insights into life as an international student in the UK, from culture to daily life.</p>
                 </a>
             </div>
 
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://www.ukcisa.org.uk/student-advice/working/student-work/" target="blank"
-                style="color: #1b2954; text-decoration: none;">
+            <div class="info-box" style="background-color: #fff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 4px solid #ed3532;">
+                <a href="https://www.ukcisa.org.uk/student-advice/working/student-work/" target="_blank" style="text-decoration: none; color: inherit;">
                     <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Student Work</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Understand the rules and opportunities for working part-time or full-time while studying in the UK.</p>
+                    <p style="font-size: 15px; line-height: 1.6;">Understand the rules and opportunities for working part-time or full-time while studying in the UK.</p>
                 </a>
             </div>
 
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://www.ukcisa.org.uk/student-advice/life-in-the-uk/accommodation/" target="blank"
-                style="color: #1b2954; text-decoration: none;">
-                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Accommodation</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Find the best options for student accommodation in the UK, from halls to private rentals.</p>
+            <div class="info-box" style="background-color: #fff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 4px solid #f5b100;">
+                <a href="https://www.ukcisa.org.uk/student-advice/life-in-the-uk/accommodation/" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h4 style="font-size: 18px; color: #f5b100; font-weight: bold; margin-bottom: 10px;">Accommodation</h4>
+                    <p style="font-size: 15px; line-height: 1.6;">Find the best options for student accommodation in the UK, from halls to private rentals.</p>
                 </a>
             </div>
 
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://www.ukcisa.org.uk/student-advice/life-in-the-uk/healthcare/?q=health&ExactMatch=False" target="blank"
-                style="color: #1b2954; text-decoration: none;">
-                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Healthcare</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Learn about the healthcare system in the UK, including NHS registration and how to access healthcare services.</p>
+            <div class="info-box" style="background-color: #fff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 4px solid #1b2954;">
+                <a href="https://www.ukcisa.org.uk/student-advice/life-in-the-uk/healthcare/?q=health&ExactMatch=False" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h4 style="font-size: 18px; color: #1b2954; font-weight: bold; margin-bottom: 10px;">Healthcare</h4>
+                    <p style="font-size: 15px; line-height: 1.6;">Learn about the healthcare system in the UK, including NHS registration and how to access healthcare services.</p>
                 </a>
             </div>
 
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://www.ukcisa.org.uk/news/" target="blank"
-                style="color: #1b2954; text-decoration: none;">
+            <div class="info-box" style="background-color: #fff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 4px solid #ed3532;">
+                <a href="https://www.ukcisa.org.uk/news/" target="_blank" style="text-decoration: none; color: inherit;">
                     <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">News Updates</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Stay updated with the latest news, regulations, and announcements for international students in the UK.</p>
+                    <p style="font-size: 15px; line-height: 1.6;">Stay updated with the latest news, regulations, and announcements for international students in the UK.</p>
                 </a>
             </div>
         </div>
     </div>
 </div>
 
+<!-- Hover animation -->
+<style>
+    .info-box:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+</style>
+
 
 
    <!-- rts Esteemed Clients start -->
 <div class="rts-client-area ptb--100 brand-bg-three bg_image mb--100">
-        <h3 style="text-align:center;margin-bottom: 30px; font-size: 20px; color: #ed3532;">
+        <h3 style="text-align:center;margin-bottom: 30px; font-size: 25px; color: #ed3532;">
                  Explore Your Dream Institutions
         </h3>
     <div class="logo-marquee-container">

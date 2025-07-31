@@ -77,7 +77,6 @@
         display: flex;
         align-items: center;
         border-bottom: 1px solid #ccc;
-
     }
 
     .service-ribbon-track {
@@ -255,7 +254,7 @@
     position: absolute;
     left: 0;
     top: 3px;
-    color: #ff4d4d; /* red tick */
+    color: #e91212ff; /* red tick */
     font-size: 14px;
 }
 
@@ -544,7 +543,6 @@
                         <a href="{{ route('contact') }}" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn" style="background:#1b2954;">View 
                                         Programs</a>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -680,12 +678,13 @@
 
 
 <!-- working process area start -->
-<div class="working-process-one bg-main" style="padding: 60px 0; margin-bottom: 20px;">
+<div class="working-process-one " style="background-image: url('{{ asset('frontend/assets/images/footer/new.jpg') }}');background-repeat: no-repeat;
+  background-size: cover; z-index: 1; padding: 60px 0; margin-bottom: 20px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="title-style-one center">
-                    <h2 class="title  rts-text-anime-style-1">Why Choose IWGC</h2>
+                    <h2 class="title  rts-text-anime-style-1" style="color:white">Why Choose IWGC ?</h2>
                 </div>
             </div>
         </div>
@@ -778,18 +777,21 @@
 
 
 <!-- rts faq area start -->
-<div class="rts-faq-area rts-section-gapBottom" style="margin-top: 80px;background-image: url('{{ asset('frontend/assets/images/iwgc/FAQBoy.webp') }}'); height:900px;background-size: cover;background-position: center;position: relative;">
-    <div class="container">
+<div class="rts-faq-area rts-section-gapBottom" style="margin-top: 80px; background-image: url('{{ asset('frontend/assets/images/iwgc/FAQGirl.webp') }}'); height: 900px; background-size: cover; background-position: center; position: relative;">
+
+    <!-- Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                background-color: rgba(0, 0, 0, 0.35); z-index: 1;"></div>
+    <div class="container" style="position: relative; z-index: 2; padding: 30px; color: white;">
         <div class="row">
             <div class="col-lg-12 pt-5 pb-5">
                 <div class="title-style-two center">
-                    <span class="bg-content">F.A.Q</span>
-                    <h2 class="title rts-text-anime-style-1">Frequently Asked Questions</h2>
+                    <h2 class="title rts-text-anime-style-1" style="color: white !important;">Frequently Asked Questions</h2>
                 </div>
             </div>
         </div>
     </div>    
-    <div class="container">
+    <div class="container" style="position: relative; z-index: 2; padding: 30px; ">
         <div class="row">
                 
                 <div class="col-lg-6 pl--50 pr--50" data-animation="fadeInUp" data-delay="0.1">
@@ -857,8 +859,7 @@
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                  I am unsure which course fits my career or migration goals. Can you help?
-            Yes. Our expert counselors will help you select the right course based on your career plans or migration objectives.
+                                    Yes. Our expert counselors will help you select the right course based on your career plans or migration objectives.
                                 </div>
                             </div>
                         </div>
@@ -910,152 +911,38 @@
                     </div>
                 </div>
             </div>
-            <div class="row g-5" >
+           <div class="row g-5">
                 <div class="col-12">
                     <div class="swiper mySwiperh2_clients">
                         <div class="swiper-wrapper">
+                            @foreach($testimonials as $testimonial)
                             <div class="swiper-slide">
-                                <!-- single client reviews -->
+                                <!-- single client review -->
                                 <div class="rts-client-reviews-h2">
                                     <div class="review-header">
                                         <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/01.webp" alt="testimonials_area">
+                                            <img src="{{ asset('storage/' . $testimonial->avatar) }}" alt="testimonial image" style="width:75px">
                                         </a>
                                         <div class="discription">
                                             <a href="#">
-                                                <h6 class="title">David Smith</h6>
+                                                <h6 class="title">{{ $testimonial->name }}</h6>
                                             </a>
-                                            <span>Web Developer</span>
+                                            <span>{{ $testimonial->designation }}</span>
                                         </div>
                                     </div>
                                     <div class="review-body mt--20">
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                        
+                                        “{{ $testimonial->review }}”
                                     </div>
                                 </div>
-                                <!-- single client reviews End -->
+                                <!-- single client review End -->
                             </div>
-                            <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/02.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">Mark Jone</h6>
-                                            </a>
-                                            <span>Web Developer</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-body mt--20">
-                                       
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                       
-                                    </div>
-                                </div>
-                                <!-- single client reviews End -->
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/03.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">Lord Korn</h6>
-                                            </a>
-                                            <span>Web Developer</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-body mt--20">
-                                       
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                       
-                                    </div>
-                                </div>
-                                <!-- single client reviews End -->
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/01.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">David Smith</h6>
-                                            </a>
-                                            <span>Web Developer</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-body mt--20">
-                                      
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                       
-                                    </div>
-                                </div>
-                                <!-- single client reviews End -->
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/02.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">Mark Jone</h6>
-                                            </a>
-                                            <span>Web Developer</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-body mt--20">
-                                      
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                       
-                                    </div>
-                                </div>
-                                <!-- single client reviews End -->
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- single client reviews -->
-                                <div class="rts-client-reviews-h2">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                            <img src="frontend/assets/images/testimonials/avatar/03.webp" alt="testimonials_area">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">Lord Korn</h6>
-                                            </a>
-                                            <span>Web Developer</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-body mt--20">
-                                      
-                                            “The course content was and easy to follow instructors were
-                                    available answer questions”
-                                       
-                                    </div>
-                                </div>
-                                <!-- single client reviews End -->
-                            </div>
+                            @endforeach
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
+
         </div>
 </div>
  <!-- start client review area end -->
@@ -1122,7 +1009,7 @@
                                 <div class="image-wrapper">
                                     <img src="frontend/assets/images/gallery/Picture1.png" alt="Event 1">
                                     <div class="overlay">
-                                        <div class="event-title">Graduation Day</div>
+                                        
                                     </div>
                                 </div>
                             </a>
@@ -1132,7 +1019,7 @@
                                 <div class="image-wrapper">
                                     <img src="frontend/assets/images/gallery/Picture2.png" alt="Event 2">
                                     <div class="overlay">
-                                        <div class="event-title">Workshop</div>
+                                       
                                     </div>
                                 </div>
                             </a>
@@ -1142,7 +1029,7 @@
                                 <div class="image-wrapper">
                                     <img src="frontend/assets/images/gallery/Picture3.png" alt="Event 3">
                                     <div class="overlay">
-                                        <div class="event-title">Student Meetup</div>
+                                        
                                     </div>
                                 </div>
                             </a>
@@ -1152,7 +1039,7 @@
                                 <div class="image-wrapper">
                                     <img src="frontend/assets/images/gallery/Picture4.png" alt="Event 4">
                                     <div class="overlay">
-                                        <div class="event-title">Cultural Day</div>
+                                        
                                     </div>
                                 </div>
                             </a>
@@ -1162,7 +1049,7 @@
                                 <div class="image-wrapper">
                                     <img src="frontend/assets/images/gallery/Picture5.png" alt="Event 5">
                                     <div class="overlay">
-                                        <div class="event-title">Award Ceremony</div>
+                                        
                                     </div>
                                 </div>
                             </a>
@@ -1172,7 +1059,7 @@
                                 <div class="image-wrapper">
                                     <img src="frontend/assets/images/gallery/Picture6.png" alt="Event 6">
                                     <div class="overlay">
-                                        <div class="event-title">Industry Visit</div>
+                                      
                                     </div>
                                 </div>
                             </a>
@@ -1188,27 +1075,6 @@
 
 
 
-     
-    <!-- rts cta area start -->
-    <div class="rts-cta-area-one rts-section-gapBottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="cta-main-area-wrapper-one bg_image">
-                        <div class="left-areas">
-                            <span class="pre" style="font-weight:bold; font-size:25px">Is your Progress on Hold?</span>
-                            <p style="font-weight:bold; font-size:20px">Don’t let family commitments and work barriers hold you back—your professional 
-                                journey deserves to keep moving forward, and at IWGC, we’re here to support you every step of the way</p>
-                        </div>
-                        <div class="right-area mt-2">
-                                <button class="rts-btn btn-primary">Get Started Now </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- rts cta area end -->
 
 
 

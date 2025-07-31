@@ -17,15 +17,63 @@
         font-weight: bold;
     }
 
+.top-nav .highlight {
+    display: inline-block;
+    width:55px;
+    background-color: #FF0003;
+    color: #fff !important;
+    text-align:center;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top:5px;
+    line-height: 1.2;
+    height: auto;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+
+    .top-nav .nav-button {
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #1b2954;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .top-nav .nav-button:hover {
+        transform: translateY(-3px);
+    }
+
+    .top-nav .highlight {
+        background-color: #E60022;
+        color: #1b2954;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+
+    .top-nav .highlight:hover {
+        background-color: #E60022;
+        color: #111;
+        transform: translateY(-3px);
+    }
+
+    .top-nav {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        padding: 0;
+    }
 
 </style>
 
 <header class="header-one header--sticky">
-    <div class="header-top-area-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="header-top-one-wrapper">
+    <div class="header-top-area-wrapper" style="background-color: #1b2954 !important">
+        <div class="container" style="background-color: #1b2954 !important">
+            <div class="row" style="background-color: #1b2954 !important">
+                <div class="col-lg-12" style="background-color: #1b2954 !important">
+                    <div class="header-top-one-wrapper" style="background-color: #1b2954 !important">
                         <div class="left">
                             <div class="mail">
                                 <a href="mailto:info@iwgc.lk"><i class="fal fa-envelope"></i>
@@ -39,15 +87,17 @@
                             </div>
                         </div>
                         <div class="right">
+    
+
                             <ul class="top-nav">
                                 <li><a href="{{ route('enroll') }}" class="nav-button">ENROLL</a></li>
-                                <li><a href="faq.html" class="nav-button">LMS</a></li>
                                 <li><a href="contact.html" class="nav-button">PAY ONLINE</a></li>
+                                <li><a href="faq.html" class="nav-button highlight">LMS</a></li>
                             </ul>
+
 
                             <ul class="social-wrapper-one">
                                 <li><a href=""><i class="fab fa-facebook-f" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
                                 <li><a href="#"><i class="fab fa-instagram" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
                                 <li><a class="mr--0" href="#"><i class="fab fa-linkedin-in" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
                             </ul>
@@ -139,7 +189,7 @@
                                                                         <p class="hega-menu-head" style="color: black;"> Other</p>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="project-details.html" 
+                                                                        <a href="" 
                                                                         style="color:black; display:block; padding:8px 15px; transition:all 0.3s;"
                                                                         onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
                                                                         onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">

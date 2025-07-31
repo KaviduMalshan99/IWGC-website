@@ -77,7 +77,7 @@
 
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/about/about.jpg') }}'); background-size: cover; background-position: center;  height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/About Us 06.webp') }}'); background-size: cover; background-position: center;  height: 400px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->
@@ -121,7 +121,7 @@ Every learner who walks through our doors becomes part of a journey marked by in
 
 
     <!-- rts business goal area start -->
-    <div class="business-goal-area-2 rts-section-gapBottom" style="padding-top:20px">
+    <div class="business-goal-area-2" style="padding-top:20px">
         <div class="container pt--30">
             <div class="row">
                 <div class="col-lg-7">
@@ -160,7 +160,7 @@ Every learner who walks through our doors becomes part of a journey marked by in
                 <div class="col-lg-5">
                     <div class="">
                         <div class="large-thumbnail">
-                            <img src="frontend/assets/images/business-goal/02.webp" alt="">
+                            <img src="frontend/assets/images/hero/b1.jpg" alt="">
                         </div>
                        
                     </div>
@@ -172,9 +172,9 @@ Every learner who walks through our doors becomes part of a journey marked by in
    
 
    <!-- rts Esteemed Clients start -->
-<div class="rts-client-area ptb--100 brand-bg-three bg_image mt--20 mb--100">
+<div class="rts-client-area ptb--100 brand-bg-three bg_image mt--50 mb--100">
         <h4 style="text-align:center;margin-bottom: 30px; color: #ed3532;">
-              Partners' / Accreditations 
+             Our Partners’ Accreditations
         </h4>
     <div class="logo-marquee-container">
         <div class="logo-marquee-track">

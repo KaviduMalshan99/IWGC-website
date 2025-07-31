@@ -119,13 +119,13 @@
 
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/Bachelor of Business Management 01.webp') }}'); background-size: cover; background-position: center;height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Bachelor of Business Management 01.webp') }}'); background-size: cover; background-position: center;height: 400px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->
 <div class="container mt-5">
     <div class="row text-center mb-5">
-        <h2 class="title rts-text-anime-style-1"> Bachelor of Business Administration</h2>
+        <h2 class="title rts-text-anime-style-1"> Bachelor of Business Administration (BBA)</h2>
     </div>
 
     <div class="row g-4 mb-5">

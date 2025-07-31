@@ -192,6 +192,27 @@ For a detailed overview of the application process, including necessary document
                     </div>
                 </div>
 
+                <!-- Download Application Form Section -->
+                    <div class="step" id="application-download" style="background-color: #F6F8FA; padding: 40px 20px; border-radius: 12px; margin-top: 40px;">
+                        <div class="text-center">
+                            <h3 style="color: #1b2954;">Download Student Application Form</h3>
+                            <p class="mb-4" style="color: #555; font-size: 16px;">
+                                Click below to download the official IWGC student application form. 
+                                Please fill it out completely and submit it along with the required documents.
+                            </p>
+
+                            <a href="{{ asset('public/Fillable - IMPWIS_Student_Application.pdf') }}" 
+                            class="btn btn-primary" 
+                            style="padding: 12px 24px; font-size: 16px; border-radius: 30px; background-color: #ba1e1eff; border: none;" 
+                            download>
+                                📄 Download Application Form (PDF)
+                            </a>
+
+                            <p class="mt-3" style="font-size: 14px; color: #888;">PDF format | Approx. 5MB</p>
+                        </div>
+                    </div>
+
+
             </div>
         </div>
     </div>

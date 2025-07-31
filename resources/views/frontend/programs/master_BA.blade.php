@@ -118,13 +118,13 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/Master of Business Asministration 03.webp') }}'); background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Master of Business Asministration 03.webp') }}'); background-size: cover; background-position: center;">
 </div>
 
 <!-- Title and Info Boxes -->
 <div class="container mt-5">
     <div class="row text-center mb-5">
-        <h2 class="title rts-text-anime-style-1">   Master of Business Administration</h2>
+        <h2 class="title rts-text-anime-style-1">   Master of Business Administration (MBA)</h2>
     </div>
 
     <div class="row g-4 mb-5">

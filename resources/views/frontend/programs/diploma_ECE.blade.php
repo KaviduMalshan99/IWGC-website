@@ -114,7 +114,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/avid/ppt.jpg') }}'); background-size: cover; background-position: top; height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Diploma in ECE 03.webp') }}'); background-size: cover; background-position: top; height: 400px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->

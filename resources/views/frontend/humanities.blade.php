@@ -107,11 +107,31 @@
         width: 90%;
     }
 }
+
+.why-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.why-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.why-list li i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: #e91212ff; 
+    font-size: 14px;
+}
 </style>
  
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/psy.webp') }}'); background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Faculty of Humanities 02.webp') }}'); background-size: cover; background-position: center;">
 </div>
 
 <!-- Title and Info Boxes -->
@@ -131,12 +151,12 @@
                 </p>
 
                 <span style="font-weight: bold; font-size:18px;">Why Choose Imperial Wisdom Graduate Campus?</span>
-                <ul style="padding-left: 20px; margin-top: 10px;">
-                <li><strong>Scientific & Research-Based Approach</strong> to social sciences</li>
-                    <li><strong>Psychology & Mental Health Focused Tracks</strong></li>
-                    <li><strong>Globally Recognized UK Qualifications</strong></li>
-                    <li><strong>Real-World Application: </strong>Internships, case studies & workshops</li>
-                    <li><strong>Career-Focused Pathways: </strong>Counseling, HR, community service & more</li>
+                <ul class="why-list" style="padding-left: 20px; margin-top: 10px;">
+                <li><i class="fas fa-check-circle"></i><strong>Scientific & Research-Based Approach</strong> to social sciences</li>
+                    <li><i class="fas fa-check-circle"></i><strong>Psychology & Mental Health Focused Tracks</strong></li>
+                    <li><i class="fas fa-check-circle"></i><strong>Globally Recognized UK Qualifications</strong></li>
+                    <li><i class="fas fa-check-circle"></i><strong>Real-World Application: </strong>Internships, case studies & workshops</li>
+                    <li><i class="fas fa-check-circle"></i><strong>Career-Focused Pathways: </strong>Counseling, HR, community service & more</li>
                 </ul>
             </div>
         </div>
@@ -144,7 +164,7 @@
 </div>
 
 <!-- Faculties Section -->
-<div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop working-process-one">
+<div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop working-process-one bg-main" style="background-image: url('{{ asset('public/frontend/assets/images/cta/01.webp') }}'); background-color: #06427eff;">
     <div class="container mb-4 pb-3">
         <div class="row">
             <div class="col-lg-12">
@@ -215,7 +235,7 @@
             </div>
             <div class="col-lg-10 pl--50 pl_md--0 pl_sm--0 mt_md--50 mt_sm--80 mx-auto" data-animation="fadeInUp" data-delay="0.3">
                 <div class="accordion faq-wrapper-inner-page" id="accordionExample">
-                    <div class="accordion-item">
+                    <div class="accordion-item" style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 01. What are the entry requirements for a Psychology degree?
@@ -229,7 +249,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item" style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 02. Can I apply for Psychology if I don’t have a science background?
@@ -243,7 +263,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item" style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 03. Are practical experiences or internships included in the programs?
@@ -257,7 +277,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item" style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                         <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                 04. Can I become a counselor with a Bachelor’s degree in Counseling?
@@ -271,7 +291,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item" style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                         <h2 class="accordion-header" id="headingFive">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                 05. Will I be qualified as a licensed psychologist after the degree?

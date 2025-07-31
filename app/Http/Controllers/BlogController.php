@@ -19,42 +19,44 @@ class BlogController extends Controller
     }
 
 
-        public function store(Request $request)
+    public function store(Request $request)
     {
+        //dd($request);
         $request->validate([
             'title' => 'required|string|max:255',
             'author' => 'required|string|max:255',
             'date' => 'required|date',
             'category' => 'required|string|max:100',
-            'tags' => 'nullable|string', // comma-separated
+            'tags' => 'nullable|string', // still comma-separated input
             'description' => 'required|string',
-            'main_image' => 'nullable|image',
-            'subimage1' => 'nullable|image',
-            'subimage2' => 'nullable|image',
+            'main_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'subimage1' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'subimage2' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
-
-        // Image upload
+    
+        // Handle Image Uploads
         $mainImagePath = $request->file('main_image')?->store('blogs', 'public');
         $subImage1Path = $request->file('subimage1')?->store('blogs', 'public');
         $subImage2Path = $request->file('subimage2')?->store('blogs', 'public');
-
+    
+        // Prepare Tags (if you want to store as string)
+        $tags = $request->tags ? implode(',', array_map('trim', explode(',', $request->tags))) : null;
+    
         \App\Models\Blog::create([
             'title' => $request->title,
             'author' => $request->author,
             'date' => $request->date,
             'category' => $request->category,
-            'tags' => $request->tags
-                ? array_map('trim', explode(',', $request->tags))
-                : [],
-            'description' => $request->description,
+            'tags' => $tags, // Save as string. If JSON, json_encode here.
+            'description' => $request->description, // HTML from Quill
             'main_image' => $mainImagePath,
             'subimage1' => $subImage1Path,
             'subimage2' => $subImage2Path,
         ]);
-
+    
         return redirect()->route('blogs.index')->with('success', 'Blog created successfully.');
     }
-
+    
 
 
     public function edit(Blog $blog)
@@ -118,8 +120,14 @@ class BlogController extends Controller
     public function blogs()
     {
         $blogs = Blog::latest()->paginate(5); 
-        return view('frontend.blog', compact('blogs'));
+        $recentPosts = Blog::latest()->take(3)->get();
+        $categories = Blog::select('category')->distinct()->pluck('category');
+        $tags = Blog::pluck('tags')->flatten()->unique()->values();
+
+        return view('frontend.blog', compact('blogs', 'recentPosts', 'categories', 'tags'));
     }
+
+ 
 
     public function show($id)
     {

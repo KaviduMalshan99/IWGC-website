@@ -49,8 +49,17 @@
 
 
 </style>
+
+<!-- Hover animation -->
+<style>
+    .info-box:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+</style>
+
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/avid/mba.jpg') }}'); background-size: cover; background-position: top; height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/03.4.webp') }}'); background-size: cover; background-position: top; height: 400px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->
@@ -63,7 +72,7 @@
     <div class="row g-4 mb-5">
         
 
-        <div class="col-lg-10 mx-auto">
+        <div class="col-lg-12 mx-auto">
             <div class="single-project-info-wrapper-inner">
                 <p class="disc" style="font-size:18px; text-align:justify">
                  Malaysia has emerged as a premier destination for international students seeking high-quality education, 
@@ -208,76 +217,80 @@ Moreover, Malaysia’s multicultural society—comprising Malays, Chinese, India
 <!-- rts business details area left main end -->
 
 
-<div class="container" style="padding-bottom: 120px;">
+<div class="container" style="padding-bottom: 30px;">
     <div style="padding: 50px; background-color: #f9f9f9; font-family: Arial, sans-serif; color: #1b2954;">
-        
+
         <!-- Intro Section -->
         <h2 style="color: #1b2954; margin-bottom: 10px;">Ready to explore your study options?</h2>
         <p style="font-size: 16px; line-height: 1.6; margin-bottom: 30px;">
-            Malaysia combines affordability, quality education, cultural richness, and strategic location, making it an excellent choice for students aiming to gain international exposure and skills. Whether you’re pursuing undergraduate, postgraduate, or professional development, Malaysia offers a vibrant, inclusive, and growth-oriented environment to achieve your academic and career goals.
-            <strong style="color: #ed3532;">Contact us today </strong> to discover top universities and programs in Malaysia tailored to your ambitions!
+            Malaysia combines affordability, quality education, cultural richness, and strategic location, making it an excellent choice for students aiming to gain international exposure and skills.
+            <strong style="color: #ed3532;"> Contact us today </strong> to discover top universities and programs in Malaysia tailored to your ambitions!
         </p>
 
         <!-- Section Title -->
-        <h3 style="margin-bottom: 20px; font-size: 20px; color: #ed3532; border-left: 5px solid #ed3532; padding-left: 10px;">
+        <h3 style="
+            margin-bottom: 30px; 
+            font-size: 22px; 
+            background: linear-gradient(90deg, #ed3532, #f5b100, #1b2954);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-left: 5px solid #ed3532;
+            padding-left: 12px;
+        ">
             Essential Info Kit
         </h3>
 
-        <!-- Link List with Boxes -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding-left: 0;">
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://www.imi.gov.my/index.php/en/main-services/pass/student-pass/" target="blank"
-                style="color: #1b2954; text-decoration: none;">
+        <!-- Info Cards Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+            <!-- Card Items -->
+            <div class="info-box" style="background-color: #ffffff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s ease; border-top: 4px solid #ed3532;">
+                <a href="https://www.imi.gov.my/index.php/en/main-services/pass/student-pass/" target="_blank" style="text-decoration: none; color: inherit;">
                     <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Study Pass</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Find out how to apply for a student pass to study in Malaysia and the requirements for international students.</p>
+                    <p style="font-size: 15px; line-height: 1.6;">Find out how to apply for a student pass and the requirements for international students in Malaysia.</p>
                 </a>
             </div>
 
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://visa.educationmalaysia.gov.my/graduate-pass" target="blank"
-                style="color: #1b2954; text-decoration: none;">
-                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Graduate Pass</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Learn about the Graduate Pass for international students who wish to stay and work in Malaysia after completing their studies.</p>
+            <div class="info-box" style="background-color: #ffffff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s ease; border-top: 4px solid #f5b100;">
+                <a href="https://visa.educationmalaysia.gov.my/graduate-pass" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h4 style="font-size: 18px; color: #f5b100; font-weight: bold; margin-bottom: 10px;">Graduate Pass</h4>
+                    <p style="font-size: 15px; line-height: 1.6;">Learn about the Graduate Pass for international students staying to work after studies.</p>
                 </a>
             </div>
 
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://educationmalaysia.gov.my/plan-your-studies/discover-malaysia/malaysia-at-a-glance" target="blank"
-                style="color: #1b2954; text-decoration: none;">
-                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Malaysia at a Glance</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Get an overview of Malaysia, its culture, and why it’s a great place for international students to live and study.</p>
+            <div class="info-box" style="background-color: #ffffff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s ease; border-top: 4px solid #1b2954;">
+                <a href="https://educationmalaysia.gov.my/plan-your-studies/discover-malaysia/malaysia-at-a-glance" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h4 style="font-size: 18px; color: #1b2954; font-weight: bold; margin-bottom: 10px;">Malaysia at a Glance</h4>
+                    <p style="font-size: 15px; line-height: 1.6;">Overview of Malaysia’s culture, lifestyle, and why it’s ideal for international students.</p>
                 </a>
             </div>
 
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://educationmalaysia.gov.my/living-in-malaysia/careers/paths-after-university" target="blank"
-                style="color: #1b2954; text-decoration: none;">
+            <div class="info-box" style="background-color: #ffffff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s ease; border-top: 4px solid #ed3532;">
+                <a href="https://educationmalaysia.gov.my/living-in-malaysia/careers/paths-after-university" target="_blank" style="text-decoration: none; color: inherit;">
                     <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Pathway After University</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Explore the various career pathways and opportunities available for international students after completing their studies in Malaysia.</p>
+                    <p style="font-size: 15px; line-height: 1.6;">Explore career pathways and work options after graduating in Malaysia.</p>
                 </a>
             </div>
 
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://educationmalaysia.gov.my/living-in-malaysia/tips-on-everyday-life/accommodation-for-students" target="blank"
-                style="color: #1b2954; text-decoration: none;">
-                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Accommodation</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Learn about housing options and find the best places to live as an international student in Malaysia.</p>
+            <div class="info-box" style="background-color: #ffffff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s ease; border-top: 4px solid #f5b100;">
+                <a href="https://educationmalaysia.gov.my/living-in-malaysia/tips-on-everyday-life/accommodation-for-students" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h4 style="font-size: 18px; color: #f5b100; font-weight: bold; margin-bottom: 10px;">Accommodation</h4>
+                    <p style="font-size: 15px; line-height: 1.6;">Learn about student housing options and how to find a place to stay in Malaysia.</p>
                 </a>
             </div>
 
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://educationmalaysia.gov.my/plan-your-studies/plan-your-budget/cost-of-living" target="blank"
-                style="color: #1b2954; text-decoration: none;">
-                    <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">Cost of Living</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Get detailed information on the cost of living in Malaysia, including food, transport, and housing expenses.</p>
+            <div class="info-box" style="background-color: #ffffff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s ease; border-top: 4px solid #1b2954;">
+                <a href="https://educationmalaysia.gov.my/plan-your-studies/plan-your-budget/cost-of-living" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h4 style="font-size: 18px; color: #1b2954; font-weight: bold; margin-bottom: 10px;">Cost of Living</h4>
+                    <p style="font-size: 15px; line-height: 1.6;">Understand living expenses in Malaysia including food, housing, and daily costs.</p>
                 </a>
             </div>
 
-            <div class="info-box" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <a href="https://educationmalaysia.gov.my/get-in-touch/news" target="blank"
-                style="color: #1b2954; text-decoration: none;">
+            <div class="info-box" style="background-color: #ffffff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s ease; border-top: 4px solid #ed3532;">
+                <a href="https://educationmalaysia.gov.my/get-in-touch/news" target="_blank" style="text-decoration: none; color: inherit;">
                     <h4 style="font-size: 18px; color: #ed3532; font-weight: bold; margin-bottom: 10px;">News Updates</h4>
-                    <p style="font-size: 16px; line-height: 1.6;">Stay updated with the latest news, announcements, and important events related to education in Malaysia.</p>
+                    <p style="font-size: 15px; line-height: 1.6;">Stay updated on education news, announcements, and insights from Malaysia.</p>
                 </a>
             </div>
         </div>
@@ -289,7 +302,7 @@ Moreover, Malaysia’s multicultural society—comprising Malays, Chinese, India
 
    <!-- rts Esteemed Clients start -->
 <div class="rts-client-area ptb--100 brand-bg-three bg_image mb--100">
-        <h3 style="text-align:center;margin-bottom: 30px; font-size: 20px; color: #ed3532;">
+        <h3 style="text-align:center;margin-bottom: 30px; font-size: 25px; color: #ed3532;">
                  Explore Your Dream Institutions
         </h3>
     <div class="logo-marquee-container">

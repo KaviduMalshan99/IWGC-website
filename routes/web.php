@@ -8,10 +8,10 @@ use App\Http\Controllers\JobController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\TestimonialController;
+use App\Http\Controllers\HomeController;
 
-Route::get('/', function () {
-    return view('frontend.index');
-})->name('index');
+Route::get('/', [HomeController::class, 'index'])->name('index');
 
 Route::get('/about', function () {
     return view('frontend.about');
@@ -182,7 +182,19 @@ Route::middleware([App\Http\Middleware\AdminAuth::class])->group(function () {
 
     Route::get('/Inquiries', [InquiryController::class, 'index'])->name('inquiries.index');
 
+    // Testimonials Management (Admin)
+    Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonial.index');
+    Route::get('/testimonials/create', [TestimonialController::class, 'create'])->name('testimonial.create');
+    Route::post('/testimonials', [TestimonialController::class, 'store'])->name('testimonial.store');
+    Route::get('/testimonials/{id}/edit', [TestimonialController::class, 'edit'])->name('testimonial.edit');
+    Route::put('/testimonials/{id}', [TestimonialController::class, 'update'])->name('testimonial.update');
+    Route::delete('/testimonials/{id}', [TestimonialController::class, 'destroy'])->name('testimonial.destroy');
+
+
 });
+
+
+
 
 
 
