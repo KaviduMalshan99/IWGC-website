@@ -122,23 +122,23 @@
 <!-- Title and Info Boxes -->
 <div class="container mt-5">
     <div class="row text-center mb-5">
-        <h2 class="title rts-text-anime-style-1"> Diploma in Counselling</h2>
+        <h2 class="title rts-text-anime-style-1"> Diploma in Counseling</h2>
     </div>
 
     <div class="row g-4 mb-5">
         <div class="col-lg-10 mx-auto">
             <div class="single-project-info-wrapper-inner">
                 <p class="disc" style="font-size:18px; text-align:justify">
-                 The Diploma in Counselling is a comprehensive and practical
+                 The Diploma in Counseling is a comprehensive and practical
 program designed for individuals who wish to develop the
 skills, knowledge, and self-awareness required to support
 others through life’s challenges. Grounded in psychological
 theory and ethical practice, this course provides students with
-a strong foundation in counselling techniques, communication
+a strong foundation in Counseling techniques, communication
 skills, and emotional intelligence.
 <br><br>
 Whether you're looking to begin a professional career in
-counselling or enhance your current role in education,
+Counseling or enhance your current role in education,
 healthcare, social work, or human resources, this diploma
 equips you with the tools to make a real difference in people’s
 lives.
@@ -182,19 +182,19 @@ lives.
                         <div class="title-area" data-animation="fadeInUp" data-delay="0.2">
                             <h3 class="title animated fadeIn">Modules</h3>
                             <ol class="styled-modules-list">
-                                <li>Approaches to Counselling ( Theoretical Perspectives)-1</li>
+                                <li>Approaches to Counseling ( Theoretical Perspectives)-1</li>
                                 <li>English language skills-1</li>
-                                <li>Counselling skills & Planning treatment -1</li>
+                                <li>Counseling skills & Planning treatment -1</li>
                                 <li>Introduction to psychology -1</li>
                                 <li>Abnormal Psycology-1</li>
                                 <li>Substance Abuse & Addition</li>
                                 <li>Self development -1</li>
-                                <li>Ethics in Counselling</li>
+                                <li>Ethics in Counseling</li>
                                 <li>Personality Development-1 </li>
                                 <li>Creative Arts Skills </li>
-                                <li>School Counselling </li>
-                                <li>Counselling Practicum </li>
-                                <li>Relationship Counselling </li>
+                                <li>School Counseling </li>
+                                <li>Counseling Practicum </li>
+                                <li>Relationship Counseling </li>
                             </ol>
                         </div>
                     </div>

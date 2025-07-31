@@ -113,7 +113,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/avid/boc.jpg') }}'); background-size: cover; background-position: top;height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Bachelor of Psychology 01.webp') }}'); background-size: cover; background-position: top;height: 400px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->
@@ -126,7 +126,7 @@
         <div class="col-lg-10 mx-auto">
             <div class="single-project-info-wrapper-inner">
                 <p class="disc" style="font-size:18px; text-align:justify">
-The Bachelor of Counselling is a specialised undergraduate
+The Bachelor of Counseling is a specialised undergraduate
 degree designed to prepare individuals for a rewarding career in
 supporting mental health and emotional well-being. Rooted in
 psychological theory, ethical practice, and person-centred
@@ -135,12 +135,12 @@ knowledge required to effectively help individuals, families, and
 communities navigate life’s challenges.
 <br><br>
 Throughout the course, students explore key areas such as
-counselling techniques, developmental psychology,
+Counseling techniques, developmental psychology,
 trauma-informed care, mental health, cultural sensitivity, and
 ethical frameworks. A strong emphasis is placed on
 self-awareness, empathy, and reflective practice. Practical
 training through supervised placements ensures that graduates
-are well-prepared for real-world counselling settings.
+are well-prepared for real-world Counseling settings.
                 </p>
             </div>
         </div>

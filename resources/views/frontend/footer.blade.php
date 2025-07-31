@@ -1,6 +1,14 @@
-     
 
-<div class="rts-cta-area-one" style="position: relative; z-index: 2; margin-bottom: -100px; margin-top:50px;">
+<style>
+    @media (max-width: 608px) {
+    .rts-cta-area-one {
+        margin-bottom: -20px !important;
+    }
+}
+
+</style>
+
+<div class="rts-cta-area-one" style="position: relative; z-index: 2; margin-bottom: -80px; margin-top:50px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -20,18 +28,16 @@
     </div>
 </div>
 
-
-    
-<div class="rts-footer-area footer-two mt-dec-footer-map  pt--120 pb--100 pt_sm--50 pb_sm--40" style="background-image: url('{{ asset('frontend/assets/images/footer/new.jpg') }}');background-repeat: no-repeat;
+<div class="rts-footer-area pt--140 pb--100 pt_sm--50 pb_sm--40  footer-two "style="background-image: url('{{ asset('frontend/assets/images/footer/new.jpg') }}');background-repeat: no-repeat;
   background-size: cover; z-index: 1;">
-    <div class="container">
-        <div class="row">
+        <div class="container" >
+            <div class="row" >
                 <!-- single wized -->
-                <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12 mt-5" >
+                <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12 " >
                     <div class="footer-two-single-wized left">
                         <div class="widget-head">
                                     <a href="index.php">
-                                        <img src="{{ asset('logo-golden.png') }}" alt="IWGC Logo" style="width:350px">
+                                        <img src="{{ asset('logo-golden.png') }}" alt="IWGC Logo" style="width:300px">
                                     </a>
                                 </div>
                     
@@ -47,7 +53,7 @@
                       
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--50 mt-5">
+                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--50">
                     <div class="footer-two-single-wized two">
                         <div class="wized-title-area">
                             <h5 class="wized-title" style="color: white !important">Handy Links</h5>
@@ -62,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--50 mt-5">
+                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--50">
                     <div class="footer-two-single-wized two">
                         <div class="wized-title-area">
                             <h5 class="wized-title" style="color: white !important">Learning</h5>
@@ -78,7 +84,7 @@
                     </div>
                 </div>
                 <!-- single wized -->
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--30 mt_md--30 mt-5">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--30 mt_md--30">
                     <div class="footer-two-single-wized">
                         <div class="wized-title-area">
                             <h5 class="wized-title" style="color: white !important">Contact Us</h5>
@@ -110,23 +116,26 @@
                 </div>
                 <!-- single wized -->
 
-               
+                
                 
             </div>
         </div>
     </div>
-    <div class="rts-copy-right-1 ptb--5" ">
+    <div class="rts-copy-right-1 ptb--10">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="copyright-h-2-wrapper p-4">
-                       <p class="disc mb-0" style="font-size: 17px;">
-                            IWGC - Copyright ©
-                            <script>document.write(new Date().getFullYear())</script>
-                             <a href="https://www.facebook.com/share/1DKGndfjw6/?mibextid=wwXIfr" target="_blank"> Centival</a>. All rights reserved. 
+                    <div class="copyright-h-2-wrapper">
+                        <p class="disc">
+                             IWGC - Copyright
+                            <script>
+                                document.write(
+                                    new Date().getFullYear()
+                                )
+                            </script>. All rights reserved.
                         </p>
                         <div class="right">
-                            <ul style="display: flex; gap: 15px; list-style: none; margin: 0; padding: 0; font-size: 14px;">
+                            <ul>
                                 <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
                                 <li><a href="{{ route('Cookies-Policy') }}">Cookies Policy</a></li>
                                 <li><a href="{{ route('Terms-and-Conditions') }}">Terms & Conditions</a></li>
@@ -139,70 +148,50 @@
     </div>
 
 
-    <div id="side-bar" class="side-bar header-two">
+      <div id="side-bar" class="side-bar header-two">
         <button class="close-icon-menu"><i class="far fa-times"></i></button>
-
         <!-- inner menu area desktop start -->
         <div class="rts-sidebar-menu-desktop">
-            <a class="logo-1" href="index.html">
-                <img class="logo" src="{{ asset('logo.png') }}" alt="finbiz_logo">
-            </a>
-
+            <a class="logo-1" href="index.html"><img class="logo" src="{{ asset('logo.png') }}" alt="finbiz_logo"></a>
             <div class="body d-none d-xl-block">
-                <p class="disc"></p>
-
-                <div class="get-in-touch" style="margin-top: 20px;">
+                <p class="disc">
+                    
+                </p>
+                <div class="get-in-touch">
                     <!-- title -->
-                    <div class="h6 title" style="font-size: 18px; font-weight: bold; margin-bottom: 15px;">Get In Touch</div>
-
+                    <div class="h6 title">Get In Touch</div>
+                    <!-- title End -->
                     <div class="wrapper">
-
-                        <!-- Phone -->
-                        <div class="single" style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-                            <div style="width: 30px; min-width: 30px; text-align: center;">
-                                <i class="fas fa-phone-alt" style="font-size: 16px; color: #ff6666ff; margin-top: 4px;"></i>
-                            </div>
-                            <div class="contact-text">
-                                <a href="tel:+94766888184" style="display: block; color: #333; text-decoration: none; margin-bottom: 5px;">+(94) 766 888 184</a>
-                                <a href="tel:+94114686767" style="display: block; color: #333; text-decoration: none;">+(94) 114 686 767</a>
-                            </div>
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="#">+(94) 766 888 184</a>  <br>
+                            <a href="#" style="margin-left:30px">+(94) 114 686 767</a>
                         </div>
-
-                        <!-- Email -->
-                        <div class="single" style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-                            <div style="width: 30px; min-width: 30px; text-align: center;">
-                                <i class="fas fa-envelope" style="font-size: 16px; color: #ff6666ff; margin-top: 4px;"></i>
-                            </div>
-                            <div class="contact-text">
-                                <a href="mailto:info@iwgc.lk" style="color: #333; text-decoration: none;">info@iwgc.lk</a>
-                            </div>
+                        <!-- single ENd -->
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-envelope"></i>
+                            <a href="#">info@iwgc.lk</a>
                         </div>
-
-                        <!-- Address -->
-                        <div class="single" style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-                            <div style="width: 30px; min-width: 30px; text-align: center;">
-                                <i class="fas fa-map-marker-alt" style="font-size: 16px; color: #ff6666ff; margin-top: 4px;"></i>
-                            </div>
-                            <div class="contact-text">
-                                <a href="#" style="color: #333; text-decoration: none;">
-                                    No. 85 -1/3, Galle Road,<br>Dehiwala, Sri Lanka
-                                </a>
-                            </div>
+                        <!-- single ENd -->
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="#">No. 85 -1/3, Galle Road, Dehiwala, Sri Lanka</a>
                         </div>
-
+                        <!-- single ENd -->
                     </div>
-
-                    <!-- Social links -->
-                    <div class="social-wrapper-two menu" style="margin-top: 30px; margin-left:20px">
-                        <a href="#" style="margin-right: 45px;"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" style="margin-right: 45px;"><i class="fab fa-instagram"></i></a>
-                        <a href="#" style="margin-right: 45px;"><i class="fab fa-whatsapp"></i></a>
+                    <div class="social-wrapper-two menu">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
         <!-- mobile menu area start -->
         <div class="mobile-menu d-block d-xl-none">
             <nav class="nav-main mainmenu-nav mt--30">
@@ -244,6 +233,11 @@
                     <li>
                         <a href="#">
                             <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
                         </a>
                     </li>
                     <li>
