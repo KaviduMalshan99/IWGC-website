@@ -114,9 +114,10 @@
                 <div class="col-lg-12">
                     <div class="header-main-one-wrapper">
                         <div class="thumbnail">
-                            <a href="{{ route('index') }}">
-                                <img src="{{ asset('logo.png') }}" alt="IWGC" style="height:60px;">
+                           <a href="{{ route('index') }}">
+                                <img src="{{ asset('logo.png') }}" alt="IWGC" style="max-height: 60px; height: auto; width: auto;">
                             </a>
+
                         </div>
                         <div class="main-header">
                             <div class="nav-area">
