@@ -171,6 +171,7 @@
             <div class="col-lg-12">
                 <div class=" center">
                     <h2 class="title rts-text-anime-style-1 text-white">Our Programs</h2>
+                    <p>Explore our extensive selection of business courses crafted for aspiring leaders and future professionals.</p>
                 </div>
             </div>
         </div>

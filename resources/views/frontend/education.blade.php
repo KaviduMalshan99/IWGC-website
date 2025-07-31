@@ -176,6 +176,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="title rts-text-anime-style-1 text-white">Explore Our Educational Programs</h2>
+                <p>Select from a variety of specialized learning opportunities tailored to your interests</p>
             </div>
         </div>
     </div>
