@@ -1009,7 +1009,7 @@
                                 <div class="image-wrapper">
                                     <img src="frontend/assets/images/gallery/Picture1.png" alt="Event 1">
                                     <div class="overlay">
-                                        <div class="event-title">Graduation Day</div>
+                                        
                                     </div>
                                 </div>
                             </a>
@@ -1019,7 +1019,7 @@
                                 <div class="image-wrapper">
                                     <img src="frontend/assets/images/gallery/Picture2.png" alt="Event 2">
                                     <div class="overlay">
-                                        <div class="event-title">Workshop</div>
+                                       
                                     </div>
                                 </div>
                             </a>
@@ -1029,7 +1029,7 @@
                                 <div class="image-wrapper">
                                     <img src="frontend/assets/images/gallery/Picture3.png" alt="Event 3">
                                     <div class="overlay">
-                                        <div class="event-title">Student Meetup</div>
+                                        
                                     </div>
                                 </div>
                             </a>
@@ -1039,7 +1039,7 @@
                                 <div class="image-wrapper">
                                     <img src="frontend/assets/images/gallery/Picture4.png" alt="Event 4">
                                     <div class="overlay">
-                                        <div class="event-title">Cultural Day</div>
+                                        
                                     </div>
                                 </div>
                             </a>
@@ -1049,7 +1049,7 @@
                                 <div class="image-wrapper">
                                     <img src="frontend/assets/images/gallery/Picture5.png" alt="Event 5">
                                     <div class="overlay">
-                                        <div class="event-title">Award Ceremony</div>
+                                        
                                     </div>
                                 </div>
                             </a>
@@ -1059,7 +1059,7 @@
                                 <div class="image-wrapper">
                                     <img src="frontend/assets/images/gallery/Picture6.png" alt="Event 6">
                                     <div class="overlay">
-                                        <div class="event-title">Industry Visit</div>
+                                      
                                     </div>
                                 </div>
                             </a>

@@ -32,6 +32,40 @@
     text-decoration: none;
 }
 
+
+    .top-nav .nav-button {
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #1b2954;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .top-nav .nav-button:hover {
+        transform: translateY(-3px);
+    }
+
+    .top-nav .highlight {
+        background-color: #E60022;
+        color: #1b2954;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+
+    .top-nav .highlight:hover {
+        background-color: #E60022;
+        color: #111;
+        transform: translateY(-3px);
+    }
+
+    .top-nav {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        padding: 0;
+    }
+
 </style>
 
 <header class="header-one header--sticky">
@@ -53,11 +87,14 @@
                             </div>
                         </div>
                         <div class="right">
-                           <ul class="top-nav">
+    
+
+                            <ul class="top-nav">
                                 <li><a href="{{ route('enroll') }}" class="nav-button">ENROLL</a></li>
                                 <li><a href="contact.html" class="nav-button">PAY ONLINE</a></li>
                                 <li><a href="faq.html" class="nav-button highlight">LMS</a></li>
                             </ul>
+
 
                             <ul class="social-wrapper-one">
                                 <li><a href=""><i class="fab fa-facebook-f" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
