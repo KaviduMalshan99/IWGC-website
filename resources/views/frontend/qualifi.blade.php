@@ -178,6 +178,7 @@
 education with global standards. Here’s a quick look at how these levels compare:
                     </p>
                     
+                <div class="table-responsive">
                    <table class="level-table">
                         <thead>
                             <tr>
@@ -219,7 +220,7 @@ education with global standards. Here’s a quick look at how these levels compa
                             </tr>
                         </tbody>
                     </table>
-
+                    <div>
                     <div class="row mb--40">
                         <div class="col-lg-12">
                             <div class="single-project-info-wrapper-inner">
