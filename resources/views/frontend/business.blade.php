@@ -184,7 +184,7 @@
             <div class="col-md-6">
                 <a href="{{ route('bachelor_BA') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('frontend/assets/images/avid/1mb.png') }}" alt="Master of Business Administration" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/avid/1bb.png') }}" alt="Master of Business Administration" class="img-fluid">
                         <div class="overlay"></div>
                         <div class="program-content">
                             <h3>Bachelor of Business Administration (BBA)</h3>
@@ -197,7 +197,7 @@
             <div class="col-md-6">
                 <a href="{{ route('master_BA') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('frontend/assets/images/avid/1bb.png') }}" alt="Master of Educational Leadership and Management" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/avid/1mb.png') }}" alt="Master of Educational Leadership and Management" class="img-fluid">
                         <div class="overlay"></div>
                         <div class="program-content">
                             <h3>Master of Business Administration (MBA)</h3>

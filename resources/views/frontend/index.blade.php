@@ -361,6 +361,32 @@
 }
 
 
+.custom-video {
+    width: 130%;
+    max-height: 900px;
+    height: auto;
+    z-index:2;
+    border-radius: 12px;
+    border: 4px solid gold;
+    padding: 4px;
+    background-color: #fff; 
+    box-shadow: 0 20px 40px rgba(255, 215, 0, 0.25);
+}
+
+/* Responsive fallback for smaller screens */
+@media (max-width: 992px) {
+    .custom-video {
+        width: 100%;
+    }
+}
+
+/* Make it responsive on smaller screens */
+@media (max-width: 992px) {
+    .custom-video {
+        width: 100%;
+    }
+}
+
 
 </style>
 
@@ -507,55 +533,49 @@
         <img src="frontend/assets/images/about/shape/02.svg" alt="shape" class="two">
     </div>
 </div>
-<!-- rts 1st boxes area end -->
 
 
 
 <!-- rts about area start -->
-<div class="rts-about-area-two mt--20 mb--100">
-    <div class="container">
-        <div class=" row d-flex flex-wrap align-items-center gap-5">
-            <div class="col-lg-7 ">
-                <div class="left-thumbnail-about-area-two">
-                    
-                    <video controls width="100%" style="border-radius:10px;">
-                        <source src="{{ asset('frontend/assets/images/about/iwgc.mp4') }}" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    
-                    
+    <div class="rts-about-area about-bg-four bg_image  rts-section-gapBottom">
+        <div class="container pt--50">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-12">
+                    <div class="left-thumbnail-about-area-two">
+                        <video id="mainVideo" autoplay muted playsinline controls class="custom-video">
+                            <source src="{{ asset('frontend/assets/images/about/iwgc.mp4') }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 mt_sm--80 mt_md--80 ">
-                <div class="about-inner-content-two">
-                    <div class="title-style-two left">
-                        <span class="bg-content">About Us</span>
-                        <h2 class="title rts-text-anime-style-1">Discover More About IWGC
 
-                        </h2>
-                    </div>
-                    <div class="about-between-wrapper">
-                        <p class="disc" style="text-align: justify;">
-                        Imperial Wisdom Graduate Campus stands as Sri Lanka’s premier center for innovative higher education, combining academic excellence with industry relevance. Our comprehensive programs are designed with flexibility to accommodate diverse student needs, ensuring they are future-ready with global competencies and critical thinking skills. Led by a team of experienced faculty, we emphasize personal growth and professional development, preparing students to excel in a competitive global marketplace. With a student-centric approach and a commitment to holistic education, Imperial Wisdom Graduate Campus offers a strategic advantage for those seeking a transformative academic experience in Sri Lanka.
-                        </p>
-                        
-                    </div>
-                    <div class="call-and-sign-area two mt--10">
-                        <div class="call-area">
-                        <a href="{{ route('contact') }}" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn" style="background:#1b2954;">View 
-                                        Programs</a>
+                <div class="col-lg-5">
+                        <div class="about-inner-content-two">
+                            <div class="title-style-two left">
+                                <span class="bg-content">About Us</span>
+                                <h2 class="title rts-text-anime-style-1 mt-3">Discover More About IWGC
+
+                                </h2>
+                            </div>
+                            <div class="about-between-wrapper">
+                                <p class="disc" style="text-align: justify;">
+                                Imperial Wisdom Graduate Campus stands as Sri Lanka’s premier center for innovative higher education, combining academic excellence with industry relevance. Our comprehensive programs are designed with flexibility to accommodate diverse student needs, ensuring they are future-ready with global competencies and critical thinking skills. Led by a team of experienced faculty, we emphasize personal growth and professional development, preparing students to excel in a competitive global marketplace. With a student-centric approach and a commitment to holistic education, Imperial Wisdom Graduate Campus offers a strategic advantage for those seeking a transformative academic experience in Sri Lanka.
+                                </p>
+                                
+                            </div>
+                            <div class="call-and-sign-area two mt--10">
+                                <div class="call-area">
+                                <a href="{{ route('contact') }}" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn" style="background:#1b2954;">View 
+                                                Programs</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
-    <div class="shape-area">
-        <img src="frontend/assets/images/about/shape/01.svg" alt="shape" class="one">
-        <img src="frontend/assets/images/about/shape/02.svg" alt="shape" class="two">
-    </div>
-</div>
-<!-- rts about area end -->
+    <!-- rts about area end -->
+
 
 
 <!-- rts service area start -->
@@ -830,6 +850,8 @@
     }
 }
 </style>
+
+
 
 
 <!-- rts faq area start -->

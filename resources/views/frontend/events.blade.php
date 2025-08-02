@@ -59,6 +59,11 @@
                                                 A big thank you to everyone who visited our booth and showed interest in our programs. Your energy and curiosity were truly inspiring! 
                                                 Check out these snapshots from the event and feel free to tag yourself if you visited us! Stay tuned for more updates and opportunities to connect with Imperial Wisdom Private Limited. Let's shape the future of education together!
                                             </p>
+                                             <!-- Facebook Button -->
+                                            <a href="https://impwis.com/future-minds-exhibition-2024-june-23-at-kandy-city-center/" target="_blank" style="margin-top: 20px; display: inline-flex; align-items: center; background-color: #1877f2; color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500; width: fit-content;">
+                                               
+                                                View
+                                            </a>
                                             
                                         </div>
                                     </div>
@@ -97,7 +102,7 @@
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954;gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
                                          <div class="thumbnail" style="flex: 0.8; width: 300px; height: 600px; overflow: hidden; margin-top:20px">
-                                            <img src="frontend/assets/images/events/strategic alliance.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
+                                            <img src="frontend/assets/images/events/innovatus.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
                                             <h3 class="title" style="color:white">Imperial Wisdom Pvt. Ltd. and Innovatus Campus Pvt. Ltd. strike Strategic Alliance</h3>
