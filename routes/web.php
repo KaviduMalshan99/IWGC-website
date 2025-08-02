@@ -67,6 +67,10 @@ Route::get('/avid-college-maldives', function () {
     return view('frontend.avid');
 })->name('avid');
 
+Route::get('/Diploma-in-Business-Administration', function () {
+    return view('frontend.programs.diploma_BA');
+})->name('diploma_BA');
+
 Route::get('/Bachelor-of-Business-Administration', function () {
     return view('frontend.programs.bachelor_BA');
 })->name('bachelor_BA');

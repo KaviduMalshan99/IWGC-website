@@ -181,7 +181,20 @@
         <div class="row g-4 justify-content-center">
             
 
-            <div class="col-md-6">
+         <div class="col-md-4">
+                <a href="{{ route('diploma_BA') }}" class="program-card">
+                    <div class="program-image">
+                        <img src="{{ asset('public/frontend/assets/images/avid/dip_in_BA.jpg') }}" alt="Master of Business Administration" class="img-fluid">
+                        <div class="overlay"></div>
+                        <div class="program-content">
+                            <h3>Diploma in Business Administration</h3>
+                            <span class="btn btn-outline-light">Explore Program<i class="fas fa-arrow-right ms-2"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
                 <a href="{{ route('bachelor_BA') }}" class="program-card">
                     <div class="program-image">
                         <img src="{{ asset('frontend/assets/images/avid/1bb.png') }}" alt="Master of Business Administration" class="img-fluid">
@@ -194,7 +207,7 @@
                 </a>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <a href="{{ route('master_BA') }}" class="program-card">
                     <div class="program-image">
                         <img src="{{ asset('frontend/assets/images/avid/1mb.png') }}" alt="Master of Educational Leadership and Management" class="img-fluid">
