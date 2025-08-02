@@ -999,7 +999,7 @@
                                 <div class="rts-client-reviews-h2">
                                     <div class="review-header">
                                         <a href="#" class="thumbnail">
-                                            <img src="{{ asset('storage/app/public' . $testimonial->avatar) }}" alt="testimonial image" style="width:75px">
+                                            <img src="{{ asset('storage/app/public/' . $testimonial->avatar) }}" alt="testimonial image" style="width:75px">
                                         </a>
                                         <div class="discription">
                                             <a href="#">
