@@ -543,7 +543,7 @@
                 <div class="col-lg-7 col-md-12">
                     <div class="left-thumbnail-about-area-two">
                         <video id="mainVideo" autoplay muted playsinline controls class="custom-video">
-                            <source src="{{ asset('frontend/assets/images/about/iwgc.mp4') }}" type="video/mp4">
+                            <source src="{{ asset('public/frontend/assets/images/about/iwgc.mp4') }}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
