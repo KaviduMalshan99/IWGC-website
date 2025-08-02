@@ -60,6 +60,59 @@
 }
 
 
+/* Base styles */
+
+
+/* Make the FAQ section height smaller on tablets */
+@media (max-width: 992px) {
+    .rts-faq-area {
+        height: 1100px;
+    }
+
+    .faq-wrapper-inner-page {
+        padding-top: 20px;
+    }
+}
+
+/* Make the FAQ section height auto and stack columns for mobile */
+@media (max-width: 768px) {
+    .rts-faq-area {
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    .rts-faq-area .col-lg-6 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin-top: 40px;
+    }
+
+    .faq-wrapper-inner-page {
+        margin-top: 10px;
+    }
+
+    .title-style-two h2 {
+        font-size: 24px !important;
+        text-align: center;
+    }
+
+    .accordion-button {
+        font-size: 15px!important;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+    }
+
+    .video-area {
+        text-align: center;
+    }
+
+    .vedio-icone {
+        display: inline-block;
+    }
+}
+
 </style>
 
  <!-- partners area breadcrumb area wrapper -->
@@ -107,37 +160,39 @@ journey.
                     <p class="mb-4">
                     </p>
                     
-                   <table class="level-table">
-                        <thead>
-                            <tr>
-                                <th>Program</th>
-                                <th>Duration</th>
-                                <th>Scholarship Remark</th>
-                                <th>Discount (LKR)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Associate Degree</td>
-                                <td>18 Months</td>
-                                <td>High Achievers</td>
-                                <td>100,000</td>
-                            </tr>
-                             <tr>
-                                <td>Bachelor’s (Top-up)</td>
-                                <td>12 Months</td>
-                                <td>High Achievers</td>
-                                <td>175,000</td>
-                            </tr>
-                             <tr>
-                                <td>Master’s</td>
-                                <td>12 Months</td>
-                                <td>High Achievers</td>
-                                <td>150,000</td>
-                            </tr>
-                        </tbody>
-                        
-                    </table>
+                   <div class="table-responsive">
+                        <table class="level-table table">
+                            <thead>
+                                <tr>
+                                    <th>Program</th>
+                                    <th>Duration</th>
+                                    <th>Scholarship Remark</th>
+                                    <th>Discount (LKR)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Associate Degree</td>
+                                    <td>18 Months</td>
+                                    <td>High Achievers</td>
+                                    <td>100,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Bachelor’s (Top-up)</td>
+                                    <td>12 Months</td>
+                                    <td>High Achievers</td>
+                                    <td>175,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Master’s</td>
+                                    <td>12 Months</td>
+                                    <td>High Achievers</td>
+                                    <td>150,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
 
             <p class="disc" style="font-style:italic;color:red">
                             * T & C applied
@@ -158,14 +213,14 @@ journey.
                 background-color: rgba(0, 0, 0, 0.35); z-index: 1;"></div>
     <div class="container" style="position: relative; z-index: 2; padding: 30px; color: white;">
         <div class="row">
-            <div class="col-lg-12 pt-5 pb-5">
+            <div class="col-lg-12 pb-0">
                 <div class="title-style-two center">
                     <h2 class="title rts-text-anime-style-1" style="color: white !important;">Frequently Asked Questions</h2>
                 </div>
             </div>
         </div>
     </div>    
-    <div class="container" style="position: relative; z-index: 2; padding: 30px; ">
+    <div class="container" style="position: relative; z-index: 2; padding: 0px; margin-top:0">
         <div class="row">
                 
                 <div class="col-lg-4 pl--50 pr--50" data-animation="fadeInUp" data-delay="0.1">
