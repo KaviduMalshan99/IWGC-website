@@ -6,6 +6,25 @@
     }
 }
 
+@media (max-width: 608px) {
+    .cta-main-area-wrapper-one {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+    }
+    .right-area {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .left-areas {
+        margin-bottom: 10px;
+    }
+
+    .rts-footer-area{
+        padding-left: 50px !important;
+    }
+}
 </style>
 
 <div class="rts-cta-area-one" style="position: relative; z-index: 2; margin-bottom: -80px; margin-top:50px;">
@@ -127,12 +146,12 @@
                 <div class="col-lg-12">
                     <div class="copyright-h-2-wrapper">
                         <p class="disc">
-                             IWGC - Copyright
+                             IWGC - Copyright ©
                             <script>
                                 document.write(
                                     new Date().getFullYear()
                                 )
-                            </script>. All rights reserved.
+                            </script> Centival . All rights reserved.
                         </p>
                         <div class="right">
                             <ul>
