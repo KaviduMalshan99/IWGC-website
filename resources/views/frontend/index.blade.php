@@ -973,6 +973,32 @@
     <!-- rts faq area end -->
 
 
+<style>
+    .testimonial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%; /* Fills height of container */
+    padding: 20px;
+    background: #fff; /* Optional: background for better visibility */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Optional: subtle card effect */
+    border-radius: 10px;
+}
+
+/* Optional: container around all slides */
+.swiper-slide {
+    height: auto; /* Let content define height */
+    display: flex;
+}
+
+/* Let Swiper rows align properly */
+.swiper-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+</style>
 
 <!-- start client review area start -->
 <div class="rts-client-review-two bg-black-content mt--100 pt-4 pb-4 bg-client-r-h2">
@@ -997,7 +1023,7 @@
                             @foreach($testimonials as $testimonial)
                             <div class="swiper-slide">
                                 <!-- single client review -->
-                                <div class="rts-client-reviews-h2 pt-5" style="height: 350px; display: flex; flex-direction: column; justify-content: space-between;">
+                                <div class="rts-client-reviews-h2 pt-5 testimonial-card">
                                     <div class="review-header">
                                         <a href="#" class="thumbnail">
                                            <img src="{{ asset('storage/app/public/' . $testimonial->avatar) }}"
