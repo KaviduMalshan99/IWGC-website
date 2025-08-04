@@ -978,13 +978,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100%; /* Fills height of container */
+    min-height: 100%; 
 
 }
 
-/* Optional: container around all slides */
+
 .swiper-slide {
-    height: auto; /* Let content define height */
+    height: auto; 
     display: flex;
 }
 
