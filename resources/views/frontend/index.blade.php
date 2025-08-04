@@ -984,9 +984,10 @@
                         <h2 class="title rts-text-anime-style-1">Student Testimonials
                         </h2>
                     </div>
+                    <!--
                     <div class="button-area">
                         <a href="#" class="rts-btn btn-primary btn-white">See All Reviews</a>
-                    </div>
+                    </div>-->
                 </div>
             </div>
            <div class="row g-5">
