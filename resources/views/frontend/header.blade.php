@@ -236,7 +236,7 @@
                                 <div class="loader-section section-right"></div>
                             </div>
                             <div class="button-area">
-                                <a href="{{ route('contact') }}" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn" style="background:#ed3532;">View 
+                                <a href="{{ route('avid') }}" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn" style="background:#ed3532;">View 
                                         Programs</a>
                                 <button id="menu-btn" class="menu-btn menu ml--20 ml_sm--5">
                                     <img class="menu-light" src="{{ asset('frontend/assets/images/icons/01.svg') }}" alt="Menu-icon">
