@@ -996,10 +996,12 @@
                             @foreach($testimonials as $testimonial)
                             <div class="swiper-slide">
                                 <!-- single client review -->
-                                <div class="rts-client-reviews-h2">
+                                <div class="rts-client-reviews-h2 pt-5" style="height: 350px; display: flex; flex-direction: column; justify-content: space-between;">
                                     <div class="review-header">
                                         <a href="#" class="thumbnail">
-                                            <img src="{{ asset('storage/app/public/' . $testimonial->avatar) }}" alt="testimonial image" style="width:75px">
+                                           <img src="{{ asset('storage/app/public/' . $testimonial->avatar) }}"
+                                            alt="testimonial image"
+                                            style="width:85px; height:85px; object-fit: cover; border-radius: 50%;">
                                         </a>
                                         <div class="discription">
                                             <a href="#">
@@ -1008,7 +1010,7 @@
                                             <span>{{ $testimonial->designation }}</span>
                                         </div>
                                     </div>
-                                    <div class="review-body mt--20">
+                                    <div class="review-body mt--20" style="text-align: justify; font-size: 16px; line-height: 1.5;">
                                         “{{ $testimonial->review }}”
                                     </div>
                                 </div>
