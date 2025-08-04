@@ -979,10 +979,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 100%; /* Fills height of container */
-    padding: 20px;
-    background: #fff; /* Optional: background for better visibility */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Optional: subtle card effect */
-    border-radius: 10px;
+
 }
 
 /* Optional: container around all slides */
@@ -991,12 +988,6 @@
     display: flex;
 }
 
-/* Let Swiper rows align properly */
-.swiper-wrapper {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
 
 </style>
 
