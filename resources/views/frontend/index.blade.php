@@ -1029,7 +1029,7 @@
                                         </div>
                                     </div>
                                     <div class="review-body mt--20" style="text-align: justify; font-size: 16px; line-height: 1.5;">
-                                        “{{ $testimonial->review }}”
+                                        {{ $testimonial->review }}
                                     </div>
                                 </div>
                                 <!-- single client review End -->
