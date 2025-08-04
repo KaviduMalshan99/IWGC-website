@@ -126,7 +126,7 @@
                                 <div class="disc">
                                     <span style="color: white !important">Work with us</span>
                                     <a href="#" style="color: white !important">info@iwgc.lk</a>
-                                     <a href="#" style="color: white !important">admissions@iwgc.com</a>
+                                     <a href="#" style="color: white !important">admissions@iwgc.lk</a>
                                 </div>
                             </div>
                            
