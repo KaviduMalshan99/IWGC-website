@@ -97,9 +97,9 @@
 
 
                             <ul class="social-wrapper-one">
-                                <li><a href=""><i class="fab fa-facebook-f" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
-                                <li><a class="mr--0" href="#"><i class="fab fa-linkedin-in" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
+                                <li><a href="https://www.facebook.com/impwis" target="_blank"><i class="fab fa-facebook-f" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
+                                <li><a href="https://www.instagram.com/imperialwisdom" target="_blank"><i class="fab fa-instagram" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
+                                <li><a class="mr--0" href="https://www.linkedin.com/company/imperial-wisdom/"  target="_blank"><i class="fab fa-linkedin-in" style="color: white; transition: all 0.3s ease;" onmouseover="this.style.color='#ed3532'; this.style.transform='translateY(-3px) scale(1.1)';" onmouseout="this.style.color='white'; this.style.transform='none';"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -190,12 +190,9 @@
                                                                         <p class="hega-menu-head" style="color: black;"> Other</p>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="" 
-                                                                        style="color:black; display:block; padding:8px 15px; transition:all 0.3s;"
-                                                                        onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
-                                                                        onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
+                                                                        
                                                                         <i class="fa-sharp fa-regular fa-chevron-right"></i> CPD – UK
-                                                                        </a>
+                                                                      
                                                                     </li>
                                                                 </ul>
                                                             </div>

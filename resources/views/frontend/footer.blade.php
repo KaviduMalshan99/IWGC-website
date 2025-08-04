@@ -202,10 +202,13 @@
                         <!-- single ENd -->
                     </div>
                     <div class="social-wrapper-two menu">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/impwis" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/imperialwisdom" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/imperial-wisdom/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/94766888184" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
                         <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
                     </div>
                 </div>
@@ -250,25 +253,19 @@
             <div class="social-wrapper-one">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/impwis" target="_blank">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
+                        <a href="https://www.linkedin.com/company/imperial-wisdom/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i></a>
                     </li>
+                    
                     <li>
-                        <a href="#">
-                            <i class="fa-brands fa-youtube"></i>
+                        <a href="https://www.instagram.com/imperialwisdom" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>

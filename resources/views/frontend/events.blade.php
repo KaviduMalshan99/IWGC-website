@@ -60,9 +60,11 @@
                                                 Check out these snapshots from the event and feel free to tag yourself if you visited us! Stay tuned for more updates and opportunities to connect with Imperial Wisdom Private Limited. Let's shape the future of education together!
                                             </p>
                                              <!-- Facebook Button -->
-                                            <a href="https://impwis.com/future-minds-exhibition-2024-june-23-at-kandy-city-center/" target="_blank" style="margin-top: 20px; display: inline-flex; align-items: center; background-color: #1877f2; color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500; width: fit-content;">
-                                               
-                                                View
+                                            <a href="https://www.facebook.com/impwis/posts/pfbid0EzVaUW6XhsVnsBzaCPwYbWaTG2ABifasY48gUvL3zgWYKkDUFTwK98SL7czAxKtdl" target="_blank" style="margin-top: 20px; display: inline-flex; align-items: center; background-color: #1877f2; color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500; width: fit-content;">
+                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#fff" style="margin-right: 8px;">
+                                                    <path d="M22.675 0h-21.35C.597 0 0 .6 0 1.338v21.325C0 23.4.597 24 1.325 24H12.82v-9.294H9.692V11.31h3.128V8.414c0-3.1 1.894-4.788 4.66-4.788 1.325 0 2.464.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.716-1.796 1.764v2.314h3.587l-.467 3.396h-3.12V24h6.116C23.403 24 24 23.4 24 22.662V1.338C24 .6 23.403 0 22.675 0z"/>
+                                                </svg>
+                                               View on Facebook
                                             </a>
                                             
                                         </div>
@@ -158,7 +160,7 @@
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954;gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
                                         <div class="thumbnail" style="flex: 0.8; width: 300px; height: 600px; overflow: hidden;margin-top:20px">
-                                            <img src="frontend/assets/images/events/agent meet.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
+                                            <img src="public/frontend/assets/images/events/uwe.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
                                             <h3 class="title" style="color:white">Imperial Wisdom Graduate Campus at the UWE Agent Meet 2025</h3>
