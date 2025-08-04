@@ -45,7 +45,7 @@
                                     <td>{{ $index + 1 }}</td>
                                     <td>
                                         @if ($testimonial->avatar)
-                                            <img src="{{ asset('storage/' . $testimonial->avatar) }}" width="60" class="rounded-circle">
+                                            <img src="{{ asset('storage/public/app' . $testimonial->avatar) }}" width="60" class="rounded-circle">
                                         @else
                                             <span class="text-muted">No Image</span>
                                         @endif
