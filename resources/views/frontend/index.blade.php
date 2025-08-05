@@ -882,11 +882,7 @@
     }
 }
 
-@media (max-width: 768px) {
-    .faq-banner {
-        background-position: left center !important; 
-    }
-}
+
 
 </style>
 
