@@ -74,7 +74,7 @@
 <script src="{{ asset('frontend/assets/js/plugins/swiper.js') }}"></script>
 <script src="{{ asset('frontend/assets/js/plugins/contact.form.js') }}"></script>
 
-<script src="{{ asset('frontend/assets/js/main.js') }}"></script>
+<script src="{{ asset('public/frontend/assets/js/main.js') }}"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
