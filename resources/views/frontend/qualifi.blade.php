@@ -98,7 +98,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/qualifi.WEBP') }}'); height: 300px; position: relative; background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Qualifi.WEBP') }}'); height: 300px; position: relative; background-size: cover; background-position: center;">
 </div>
 
 <!-- Title and Info Boxes -->
