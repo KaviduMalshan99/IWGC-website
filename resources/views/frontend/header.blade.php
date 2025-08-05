@@ -91,8 +91,8 @@
 
                             <ul class="top-nav">
                                 <li><a href="{{ route('enroll') }}" class="nav-button">ENROLL</a></li>
-                                <li><a href="contact.html" class="nav-button">PAY ONLINE</a></li>
-                                <li><a href="faq.html" class="nav-button highlight">LMS</a></li>
+                                <li><a href="" class="nav-button">PAY ONLINE</a></li>
+                                <li><a href="" class="nav-button highlight">LMS</a></li>
                             </ul>
 
 

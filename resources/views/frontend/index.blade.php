@@ -388,6 +388,38 @@
 }
 
 
+@media (max-width: 768px) {
+    .rts-banner-area-two {
+        background-size: cover  !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        height: 55vh !important; /* Make the banner take full screen height */
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .banner-inner-two-content h1.title {
+        font-size: 24px !important;
+        line-height: 1.0 !important;
+    }
+
+    .banner-inner-two-content p.disc,
+    .banner-inner-two-content p.pre-title {
+        font-size: 14px !important;
+    }
+
+    .banner-inner-two-content a.rts-btn {
+        font-size: 14px !important;
+        padding: 10px 20px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none; /* Optional */
+    }
+}
+
+
 </style>
 
 <!-- Banner area start -->

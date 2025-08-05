@@ -247,6 +247,15 @@
                     <li >
                         <a href="{{ route('contact') }}" class="main" aria-expanded="false">Contact Us</a>
                     </li>
+                     <li >
+                        <a href="{{ route('enroll') }}" class="main" aria-expanded="false">Enroll</a>
+                    </li>
+                     <li >
+                        <a href="" class="main" aria-expanded="false">Pay Online</a>
+                    </li>
+                     <li >
+                        <a href="" class="main" aria-expanded="false">LMS</a>
+                    </li>
                 </ul>
             </nav>
 

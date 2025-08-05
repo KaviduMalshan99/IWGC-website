@@ -73,6 +73,17 @@
 }
 
 
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .partner-breadcrumb {
+        background-size: cover !important;  
+        background-position: center !important;  
+        height: 35vh !important; 
+    }
+}
+
+
 </style>
 
 
