@@ -1174,7 +1174,7 @@
 
 
 
-<script src="{{ asset('public/frontend/assets/js/main.js') }}"></script>
+
 <script>
     document.getElementById('contact-form').addEventListener('submit', function() {
         setTimeout(() => {
@@ -1182,7 +1182,45 @@
         }, 1000); // refresh 1 sec after submission
     });
 
+ $(document).ready(function () {
+        var swiper = new Swiper(".mySwiperh2_clients", {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          slidesPerGroup: 1,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          autoplay: {
+            delay: 3000,
+          },
+          breakpoints: {
+            1500: {
+              slidesPerView: 2,
+            },
+            1300: {
+              slidesPerView: 2,
+            },
+            1199: {
+              slidesPerView: 1,
 
+            },
+            767: {
+              slidesPerView: 1,
+            },
+            575: {
+              slidesPerView: 1,
+            },
+            0: {
+              slidesPerView: 1,
+            }
+          },
+        });
+      });
     
 </script>
 
