@@ -118,7 +118,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/Avid College.webp') }}'); height: 300px; position: relative; background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Avid College.webp') }}'); height: 300px; position: relative; background-size: cover; background-position: center;">
 </div>
 
 
