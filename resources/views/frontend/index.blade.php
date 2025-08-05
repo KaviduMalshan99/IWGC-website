@@ -1321,9 +1321,52 @@
 
 
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
-<script src="{{ asset('public/frontend/assets/js/main.js') }}"></script>
+<script>
+    $(document).ready(function () {
+        var swiper = new Swiper(".mySwiperh2_clients", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                1500: {
+                    slidesPerView: 3,
+                },
+                1300: {
+                    slidesPerView: 3,
+                },
+                1199: {
+                    slidesPerView: 2,
+                },
+                767: {
+                    slidesPerView: 1,
+                },
+                575: {
+                    slidesPerView: 1,
+                },
+                0: {
+                    slidesPerView: 1,
+                }
+            },
+        });
+    });
+</script>
+
 <script>
     document.getElementById('contact-form').addEventListener('submit', function() {
         setTimeout(() => {

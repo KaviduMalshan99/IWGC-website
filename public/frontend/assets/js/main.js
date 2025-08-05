@@ -849,45 +849,7 @@
           },
         });
       });
-      $(document).ready(function () {
-        var swiper = new Swiper(".mySwiperh2_clients", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          slidesPerGroup: 1,
-          loop: true,
-          pagination: {
-            el: ".swiper-pagination",
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          autoplay: {
-            delay: 3000,
-          },
-          breakpoints: {
-            1500: {
-              slidesPerView: 3,
-            },
-            1300: {
-              slidesPerView: 3,
-            },
-            1199: {
-              slidesPerView: 2,
-
-            },
-            767: {
-              slidesPerView: 1,
-            },
-            575: {
-              slidesPerView: 1,
-            },
-            0: {
-              slidesPerView: 1,
-            }
-          },
-        });
-      });
+     
       $(document).ready(function () {
         var swiper = new Swiper(".mySwiper-testimonials-5", {
         slidesPerView: 1, // Show only 1 slide always
