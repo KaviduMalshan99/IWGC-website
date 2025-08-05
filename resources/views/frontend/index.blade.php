@@ -828,9 +828,9 @@
 </div>
 <!-- working process area end -->
 
-<style>
-/* Base styles */
 
+
+<style>
 
 /* Make the FAQ section height smaller on tablets */
 @media (max-width: 992px) {
@@ -881,13 +881,20 @@
         display: inline-block;
     }
 }
+
+@media (max-width: 768px) {
+    .faq-banner {
+        background-position: left center !important; 
+    }
+}
+
 </style>
 
 
 
 
 <!-- rts faq area start -->
-<div class="rts-faq-area rts-section-gapBottom" style="margin-top: 80px; background-image: url('{{ asset('frontend/assets/images/iwgc/FAQGirl.webp') }}'); height: 900px; background-size: cover; background-position: center; position: relative;">
+<div class="rts-faq-area rts-section-gapBottom faq-banner" style="margin-top: 80px; background-image: url('{{ asset('frontend/assets/images/iwgc/FAQGirl.webp') }}'); height: 900px; background-size: cover; background-position: center; position: relative;">
 
     <!-- Overlay -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
@@ -1006,21 +1013,132 @@
 
 
 <style>
-    .testimonial-card {
+.testimonial-card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 100%; 
-
+    align-items: center;
+    padding: 60px 30px 40px;
+    border-radius: 0;
+    background: linear-gradient(135deg, #000000, #0f1862ff);
+    transition: transform 0.4s, box-shadow 0.4s;
+    text-align: center;
+    overflow: visible;
+    min-height: 100%;
 }
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    border-image: linear-gradient(135deg, blue, gold, red) 1;
+}
+
+.testimonial-logo {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 45px;
+    height: auto;
+    z-index: 2;
+}
+
+/* Centered image overlapping top */
+.testimonial-card .thumbnail {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 5px;
+    background: gold; /* border ring */
+}
+
+.testimonial-card .thumbnail img {
+    width: 100%;
+    z-index:4;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff; /* inner white gap */
+}
+
+/* Name and designation */
+.testimonial-card .discription {
+    margin-top: 70px;
+}
+
+.testimonial-card .discription h6.title {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.testimonial-card .discription span {
+    font-size: 14px;
+    color: white;
+}
+
+/* Review text with quotes */
+.testimonial-card .review-body {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: white;
+    position: relative;
+    padding: 0 15px;
+}
+
+.testimonial-card .review-body::before,
+.testimonial-card .review-body::after {
+    font-size: 40px;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(45deg, blue, gold, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: absolute;
+}
+
+.testimonial-card .review-body::before {
+    content: "“";
+    top: -10px;
+    left: -5px;
+}
+
+.testimonial-card .review-body::after {
+    content: "”";
+    bottom: -30px;
+    right: -5px;
+}
+
+
+@media (max-width: 576px) {
+    .testimonial-card {
+        padding-top: 80px;
+    }
+
+    .testimonial-card .thumbnail {
+        top: -25px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .testimonial-card .discription {
+        margin-top: 60px;
+    }
+}
+
 </style>
 
 <!-- start client review area start -->
-<div class="rts-client-review-two bg-black-content mt--100 pt-4 pb-4 bg-client-r-h2">
+<div class="mt--100 pt-2 pb-4"> 
         <div class="container" >
             <div class="row mt--30" >
                 <div class="title-style-three-between">
-                    <div class="title-style-three left">
+                    <div class="title-style-three left mb-3">
                         <div class="bg-title"></div>
                         <h2 class="title rts-text-anime-style-1">Student Testimonials
                         </h2>
@@ -1034,30 +1152,29 @@
            <div class="row g-5">
                 <div class="col-12">
                     <div class="swiper mySwiperh2_clients">
-                        <div class="swiper-wrapper">
+                        <div class="swiper-wrapper pt-5">
                             @foreach($testimonials as $testimonial)
-                            <div class="swiper-slide" style="height: auto; display: flex;">
+                            <div class="swiper-slide" style="height: auto; display: flex; justify-content: center;">
                                 <!-- single client review -->
-                                <div class="rts-client-reviews-h2 pt-5 testimonial-card">
-                                    <div class="review-header">
-                                        <a href="#" class="thumbnail">
-                                           <img src="{{ asset('storage/app/public/' . $testimonial->avatar) }}"
-                                            alt="testimonial image"
-                                            style="width:85px; height:85px; object-fit: cover; border-radius: 50%;">
-                                        </a>
-                                        <div class="discription">
-                                            <a href="#">
-                                                <h6 class="title">{{ $testimonial->name }}</h6>
-                                            </a>
-                                            <span>{{ $testimonial->designation }}</span>
-                                        </div>
+                                <div class="rts-client-reviews-h2 testimonial-card">
+                                    <img src="{{ asset('logo2.png') }}" alt="Logo" class="testimonial-logo">
+
+                                    <a href="#" class="thumbnail">
+                                        <img src="{{ asset('storage/app/public/' . $testimonial->avatar) }}" alt="testimonial image">
+                                    </a>
+
+                                    <div class="discription">
+                                        <h6 class="title">{{ $testimonial->name }}</h6>
+                                        <span>{{ $testimonial->designation }}</span>
                                     </div>
-                                    <div class="review-body mt--20" style="text-align: justify; font-size: 16px; line-height: 1.5;">
+
+                                    <div class="review-body">
                                         {{ $testimonial->review }}
                                     </div>
                                 </div>
                                 <!-- single client review End -->
                             </div>
+
                             @endforeach
                         </div>
                         <div class="swiper-pagination"></div>

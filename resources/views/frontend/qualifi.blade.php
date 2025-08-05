@@ -94,29 +94,29 @@
         height: 14vh !important; 
     }
 }
+
 </style>
-</style>
+
+<!-- Banner Section 
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/Qualifi.WEBP') }}'); 
+position: relative; background-size: contain; background-position: center;">
+</div>-->
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Qualifi.WEBP') }}'); height: 300px; position: relative; background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="
+    background-image: url('{{ asset('public/frontend/assets/images/Qualifi.WEBP') }}'); 
+    background-repeat: no-repeat; 
+    background-size: 100% auto; 
+    background-position: top center;
+    height: 300px; ">
 </div>
-
-<!-- Title and Info Boxes -->
-<div class="container mt-5">
-    <div class="row text-center mb-5">
-        <h2 class="title rts-text-anime-style-1">Qualifi – UK</h2>
-        <p class="bg-content">  </p>
-    </div>
-
-</div>
-
 
 
 
     <!-- project details area top -->
-    <div class="project-details-wrapper-image-top">
-        
+    <div class="project-details-wrapper-image-top mt-2">
         <div class="container mt--30">
+              <h2 class="title rts-text-anime-style-1 text-center">Qualifi – UK</h2>
             <div class="row mb--40">
                 <div class="col-lg-12">
                     <div class="single-project-info-wrapper-inner">

@@ -851,7 +851,7 @@
       });
       $(document).ready(function () {
         var swiper = new Swiper(".mySwiperh2_clients", {
-          slidesPerView: 2,
+          slidesPerView: 3,
           spaceBetween: 30,
           slidesPerGroup: 1,
           loop: true,
@@ -867,13 +867,13 @@
           },
           breakpoints: {
             1500: {
-              slidesPerView: 2,
+              slidesPerView: 3,
             },
             1300: {
-              slidesPerView: 2,
+              slidesPerView: 3,
             },
             1199: {
-              slidesPerView: 1,
+              slidesPerView: 2,
 
             },
             767: {
