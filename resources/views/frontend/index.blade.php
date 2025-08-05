@@ -1323,7 +1323,7 @@
 
 
 
-
+<script src="{{ asset('public/frontend/assets/js/main.js') }}"></script>
 <script>
     document.getElementById('contact-form').addEventListener('submit', function() {
         setTimeout(() => {
