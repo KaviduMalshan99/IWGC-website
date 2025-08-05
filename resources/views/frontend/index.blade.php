@@ -981,14 +981,6 @@
     min-height: 100%; 
 
 }
-
-
-.swiper-slide {
-    height: auto; 
-    display: flex;
-}
-
-
 </style>
 
 <!-- start client review area start -->
@@ -1012,7 +1004,7 @@
                     <div class="swiper mySwiperh2_clients">
                         <div class="swiper-wrapper">
                             @foreach($testimonials as $testimonial)
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" style="height: auto; display: flex;">
                                 <!-- single client review -->
                                 <div class="rts-client-reviews-h2 pt-5 testimonial-card">
                                     <div class="review-header">
@@ -1182,7 +1174,7 @@
 
 
 
-
+<script src="{{ asset('public/frontend/assets/js/main.js') }}"></script>
 <script>
     document.getElementById('contact-form').addEventListener('submit', function() {
         setTimeout(() => {
