@@ -313,15 +313,15 @@
         <div class="logo-marquee-track">
             <!-- Repeat logos for seamless loop -->
             <div class="logo-marquee">
-                <img src="frontend/assets/images/UK/Picture1.png" alt="Picture 1">
-                <img src="frontend/assets/images/UK/Picture2.png" alt="Picture 2">
-                <img src="frontend/assets/images/UK/Picture3.png" alt="Picture 3">
-                <img src="frontend/assets/images/UK/Picture4.png" alt="Picture 4">
-                <img src="frontend/assets/images/UK/Picture5.png" alt="Picture 5">
-                <img src="frontend/assets/images/UK/Picture6.png" alt="Picture 6">
-                <img src="frontend/assets/images/UK/Picture7.png" alt="Picture 7">
-                <img src="frontend/assets/images/UK/Picture8.png" alt="Picture 8">
-                <img src="frontend/assets/images/UK/Picture9.png" alt="Picture 9">
+                <img src="public/frontend/assets/images/UK/Picture1.png" alt="Picture 1">
+                <img src="public/frontend/assets/images/UK/Picture2.png" alt="Picture 2">
+                <img src="public/frontend/assets/images/UK/Picture3.png" alt="Picture 3">
+                <img src="public/frontend/assets/images/UK/Picture4.png" alt="Picture 4">
+                <img src="public/frontend/assets/images/UK/Picture5.png" alt="Picture 5">
+                <img src="public/frontend/assets/images/UK/Picture6.png" alt="Picture 6">
+                <img src="public/frontend/assets/images/UK/Picture7.png" alt="Picture 7">
+                <img src="public/frontend/assets/images/UK/Picture8.png" alt="Picture 8">
+                <img src="public/frontend/assets/images/UK/Picture9.png" alt="Picture 9">
             </div>
             
         </div>

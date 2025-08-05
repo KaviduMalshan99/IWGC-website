@@ -282,12 +282,12 @@
         <div class="logo-marquee-track">
             <!-- Repeat logos for seamless loop -->
             <div class="logo-marquee">
-                <img src="frontend/assets/images/singapore/Picture1.png" alt="Picture 1">
-                <img src="frontend/assets/images/singapore/Picture2.png" alt="Picture 2">
-                <img src="frontend/assets/images/singapore/Picture3.png" alt="Picture 3">
-                <img src="frontend/assets/images/singapore/Picture4.png" alt="Picture 4">
-                <img src="frontend/assets/images/singapore/Picture5.png" alt="Picture 5">
-                <img src="frontend/assets/images/singapore/Picture6.png" alt="Picture 6">
+                <img src="public/frontend/assets/images/singapore/Picture1.png" alt="Picture 1">
+                <img src="public/frontend/assets/images/singapore/Picture2.png" alt="Picture 2">
+                <img src="public/frontend/assets/images/singapore/Picture3.png" alt="Picture 3">
+                <img src="public/frontend/assets/images/singapore/Picture4.png" alt="Picture 4">
+                <img src="public/frontend/assets/images/singapore/Picture5.png" alt="Picture 5">
+                <img src="public/frontend/assets/images/singapore/Picture6.png" alt="Picture 6">
             </div>
             
         </div>

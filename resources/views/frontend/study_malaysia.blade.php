@@ -318,16 +318,16 @@ Moreover, Malaysia’s multicultural society—comprising Malays, Chinese, India
         <div class="logo-marquee-track">
             <!-- Repeat logos for seamless loop -->
             <div class="logo-marquee">
-                <img src="frontend/assets/images/malaysia/Picture1.png" alt="Picture 1">
-                <img src="frontend/assets/images/malaysia/Picture2.png" alt="Picture 2">
-                <img src="frontend/assets/images/malaysia/Picture3.png" alt="Picture 3">
-                <img src="frontend/assets/images/malaysia/Picture4.png" alt="Picture 4">
-                <img src="frontend/assets/images/malaysia/Picture5.png" alt="Picture 5">
-                <img src="frontend/assets/images/malaysia/Picture6.png" alt="Picture 6">
-                <img src="frontend/assets/images/malaysia/Picture7.png" alt="Picture 7">
-                <img src="frontend/assets/images/malaysia/Picture8.png" alt="Picture 8">
-                <img src="frontend/assets/images/malaysia/Picture9.png" alt="Picture 9">
-                <img src="frontend/assets/images/malaysia/Picture10.png" alt="Picture 10">
+                <img src="public/frontend/assets/images/malaysia/Picture1.png" alt="Picture 1">
+                <img src="public/frontend/assets/images/malaysia/Picture2.png" alt="Picture 2">
+                <img src="public/frontend/assets/images/malaysia/Picture3.png" alt="Picture 3">
+                <img src="public/frontend/assets/images/malaysia/Picture4.png" alt="Picture 4">
+                <img src="public/frontend/assets/images/malaysia/Picture5.png" alt="Picture 5">
+                <img src="public/frontend/assets/images/malaysia/Picture6.png" alt="Picture 6">
+                <img src="public/frontend/assets/images/malaysia/Picture7.png" alt="Picture 7">
+                <img src="public/frontend/assets/images/malaysia/Picture8.png" alt="Picture 8">
+                <img src="public/frontend/assets/images/malaysia/Picture9.png" alt="Picture 9">
+                <img src="public/frontend/assets/images/malaysia/Picture10.png" alt="Picture 10">
             </div>
             
         </div>
