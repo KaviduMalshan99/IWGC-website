@@ -1,12 +1,31 @@
 
 <style>
-    @media (max-width: 608px) {
+@media (max-width: 768px) {
     .rts-cta-area-one {
         margin-bottom: -20px !important;
     }
+
+    .rts-cta-area-one .left-areas .pre {
+        font-size: 18px !important;
+    }
+
+    .rts-cta-area-one .left-areas p {
+        font-size: 14px !important;
+        line-height: 1.5;
+    }
+
+    .rts-cta-area-one .right-area .rts-btn {
+        font-size: 14px !important;
+        padding: 10px 20px !important;
+    }
+
+    .rts-cta-area-one .right-area .rts-btn a {
+        font-size: 14px !important;
+    }
 }
 
-@media (max-width: 608px) {
+
+@media (max-width: 768px) {
     .cta-main-area-wrapper-one {
         flex-direction: column !important;
         align-items: center !important;
@@ -23,6 +42,12 @@
 
     .rts-footer-area{
         padding-left: 50px !important;
+    }
+
+    .rts-copy-right-1 .right ul li ,
+    .disc {
+        font-size: 14px !important;
+
     }
 }
 </style>
@@ -72,7 +97,7 @@
                       
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--50">
+                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-6 mt_sm--50">
                     <div class="footer-two-single-wized two">
                         <div class="wized-title-area">
                             <h5 class="wized-title" style="color: white !important">Handy Links</h5>
@@ -87,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--50">
+                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-6 mt_sm--50">
                     <div class="footer-two-single-wized two">
                         <div class="wized-title-area">
                             <h5 class="wized-title" style="color: white !important">Learning</h5>

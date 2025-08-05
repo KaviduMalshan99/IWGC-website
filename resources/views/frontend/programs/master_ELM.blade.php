@@ -109,10 +109,19 @@
    padding: 0px 30px;
     color: #000;
 }
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .partner-breadcrumb {
+        background-size: cover !important;  
+        background-position: center !important;  
+        height: 35vh !important; 
+    }
+}
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/Master of Business Asministration 03.webp') }}'); background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/hero/Master of Business Asministration 03.webp') }}'); background-size: cover; background-position: center;">
 </div>
 
 <!-- Title and Info Boxes -->

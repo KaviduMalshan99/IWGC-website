@@ -2,6 +2,16 @@
 @extends ('frontend.master')
 
 @section('content')
+<style>
+        /* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .partner-breadcrumb {
+        background-size: cover !important;  
+        background-position: center !important;  
+        height: 35vh !important; 
+    }
+}
+</style>
 <!-- Banner Section -->
 <div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/hero-2.png') }}'); background-size: cover; background-position: top;  height: 400px;position: relative;">
 </div>

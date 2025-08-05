@@ -56,6 +56,15 @@
         transform: translateY(-6px);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
+
+        /* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .partner-breadcrumb {
+        background-size: cover !important;  
+        background-position: center !important;  
+        height: 25vh !important; 
+    }
+}
 </style>
 
 <!-- Banner Section -->

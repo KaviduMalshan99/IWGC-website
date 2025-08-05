@@ -3,9 +3,57 @@
 @extends ('frontend.master')
 
 @section('content')
- 
+ <style>
+    /* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .partner-breadcrumb {
+        background-size: cover !important;  
+        background-position: center !important;  
+        height: 20vh !important; 
+    }
+}
+
+@media (max-width: 768px) {
+    .single-testimonials-style-five {
+        flex-direction: column !important; /* Stack image and text vertically */
+        padding: 20px;
+    }
+
+    .single-testimonials-style-five .thumbnail {
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 0 !important;
+    }
+
+    .single-testimonials-style-five .thumbnail img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover;
+    }
+
+    .single-testimonials-style-five .inner-content {
+        padding: 20px !important;
+    }
+
+    .single-testimonials-style-five .inner-content h3.title {
+        font-size: 20px !important;
+        line-height: 1.3 !important;
+    }
+
+    .single-testimonials-style-five .inner-content p.disc {
+        font-size: 14px !important;
+        line-height: 1.6;
+    }
+
+    .single-testimonials-style-five .inner-content a {
+        font-size: 14px !important;
+        padding: 8px 16px !important;
+    }
+}
+
+</style>
  <!-- partners area breadcrumb area wrapper -->
-    <div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Event.webp') }}'); background-size: cover; background-position: center;">
+    <div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/Event.webp') }}'); background-size: cover; background-position: center;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

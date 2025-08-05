@@ -3,7 +3,9 @@
 
 @section('content')
 
+<style>
 
+</style>
 
       <!-- Blog Details Banner -->
 <div class="blog-details-banner-large-image bg-dark text-center" style="display: flex; align-items: center; justify-content: center; background-size: cover; background-position: center;">

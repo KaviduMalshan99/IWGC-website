@@ -47,7 +47,14 @@
     }
 }
 
-
+        /* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .partner-breadcrumb {
+        background-size: cover !important;  
+        background-position: center !important;  
+        height: 25vh !important; 
+    }
+}
 </style>
 <!-- Banner Section -->
 <div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/02.2.webp') }}'); background-size: cover; background-position: top; height: 400px;position: relative;">

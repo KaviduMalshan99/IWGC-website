@@ -106,6 +106,15 @@
         width: 90%;
     }
 }
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .partner-breadcrumb {
+        background-size: cover !important;  
+        background-position: center !important;  
+        height: 14vh !important; 
+    }
+}
 </style>
 
 <!-- Banner Section -->

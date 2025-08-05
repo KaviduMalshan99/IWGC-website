@@ -110,11 +110,20 @@
    padding: 0px 30px;
     color: #000;
 }
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .partner-breadcrumb {
+        background-size: cover !important;  
+        background-position: center !important;  
+        height: 35vh !important; 
+    }
+}
 </style>
 
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/avid/dec.jpg') }}'); background-size: cover; background-position: top;height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/avid/dec.jpg') }}'); background-size: cover; background-position: top;height: 400px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->

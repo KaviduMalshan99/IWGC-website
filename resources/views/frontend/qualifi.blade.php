@@ -85,6 +85,16 @@
     color: #e91212ff; 
     font-size: 14px;
 }
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .partner-breadcrumb {
+        background-size: cover !important;  
+        background-position: center !important;  
+        height: 14vh !important; 
+    }
+}
+</style>
 </style>
 
 <!-- Banner Section -->

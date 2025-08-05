@@ -3,6 +3,17 @@
 
 @section('content')
 
+<style>
+    /* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .partner-breadcrumb {
+        background-size: cover !important;  
+        background-position: center !important;  
+        height: 35vh !important; 
+    }
+}
+</style>
+
 <!-- Banner Section -->
 <div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/job/humanities2.jpg') }}'); background-size: cover; background-position: top;  height: 400px;position: relative;">
 </div>
@@ -24,7 +35,7 @@
 
                         <div class="top">
                             <h3 class="title">Introduction</h3>
-                            <p class="disc">
+                            <p class="disc" style="text-align:justify">
                                Imperial Wisdom Graduate Campus Pvt. Ltd. (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is committed to protecting your privacy
                                 and ensuring the security of your personal data. This Privacy Policy explains how we collect, use,
                                 disclose, and safeguard your information when you visit our website and use our Learning
@@ -33,7 +44,7 @@
                             </p>
 
                             <h3 class="title">Information We Collect</h3>
-                            <p class="disc">
+                            <p class="disc" style="text-align:justify">
                               We collect information to provide better educational services and to comply with legal obligations. The
                             types of information collected include:
                             <br>Personal Identification Information: Full name, date of birth, gender, nationality, national
@@ -52,7 +63,7 @@
                             </p>
 
                             <h3 class="title">How We Use Your Information</h3>
-                            <p class="disc">
+                            <p class="disc" style="text-align:justify">
                                Your personal data is used for the following purposes:
 
                             <br> To process admissions, registrations, and course enrollments.
@@ -68,7 +79,7 @@
                             </p>
 
                             <h3 class="title">Legal Basis for Processing</h3>
-                            <p class="disc">
+                            <p class="disc" style="text-align:justify">
                               We process your personal data based on the following legal grounds:
 <br> Your consent (where required).
 <br> Performance of a contract (e.g., enrollment agreements).
@@ -78,7 +89,7 @@ educational services).
                             </p>
 
                             <h3 class="title">Data Sharing and Disclosure</h3>
-                            <p class="disc">
+                            <p class="disc" style="text-align:justify">
                             We do not sell or rent your personal data. However, your information may be shared with:
 <br> Government Authorities: For compliance with laws, audits, and reporting (e.g., Ministry of
 Education, UGC).
@@ -90,19 +101,19 @@ Wisdom Graduate Campus Pvt. Ltd. or others.
                             </p>
 
                             <h3 class="title">Data Retention</h3>
-                            <p class="disc">We retain your personal data only for as long as necessary to fulfill the purposes outlined in this policy
+                            <p class="disc" style="text-align:justify">We retain your personal data only for as long as necessary to fulfill the purposes outlined in this policy
 or as required by law. Academic records are typically retained permanently or as per regulatory
 requirements.
                             </p>
 
                             <h3 class="title">Data Security</h3>
-                            <p class="disc">We employ appropriate technical and organizational measures to protect your data against
+                            <p class="disc" style="text-align:justify">We employ appropriate technical and organizational measures to protect your data against
 unauthorized access, alteration, disclosure, or destruction. These include encryption, access controls,
 secure servers, and regular security audits.
                             </p>
 
                             <h3 class="title">Your Rights</h3>
-                            <p class="disc">Under Sri Lankan law, you have the right to:
+                            <p class="disc" style="text-align:justify">Under Sri Lankan law, you have the right to:
 <br> Access your personal data held by us.
 <br> Request correction or update of inaccurate or incomplete data.
 <br> Request deletion or restriction of processing under certain circumstances.
@@ -113,17 +124,17 @@ To exercise these rights, please contact our Privacy Officer at support@iwgc.lk.
                             </p>
 
                             <h3 class="title">International Transfers</h3>
-                            <p class="disc">If your data is transferred outside Sri Lanka (e.g., to cloud service providers), we ensure adequate
+                            <p class="disc" style="text-align:justify">If your data is transferred outside Sri Lanka (e.g., to cloud service providers), we ensure adequate
 protections are in place consistent with Sri Lankan data protection standards.
                             </p>
 
                             <h3 class="title">Children’s Privacy</h3>
-                            <p class="disc">Our services are intended for students aged 18 and above. For minors, parental or guardian consent
+                            <p class="disc" style="text-align:justify">Our services are intended for students aged 18 and above. For minors, parental or guardian consent
 is required for data processing.
                             </p>
 
                              <h3 class="title">Changes to This Policy</h3>
-                            <p class="disc">We may update this Privacy Policy periodically. Changes will be notified via our website and LMS,
+                            <p class="disc" style="text-align:justify">We may update this Privacy Policy periodically. Changes will be notified via our website and LMS,
 with the updated effective date.
                             </p>
                         </div>

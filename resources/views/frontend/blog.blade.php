@@ -10,10 +10,18 @@
     overflow: hidden;
 }
 
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .partner-breadcrumb {
+        background-size: cover !important;  
+        background-position: center !important;  
+        height: 35vh !important; 
+    }
+}
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Blog 04.webp') }}'); background-size: cover; background-position: center;  height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/Blog 04.webp') }}'); background-size: cover; background-position: center;  height: 400px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->
