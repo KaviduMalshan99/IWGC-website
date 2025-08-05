@@ -16,7 +16,7 @@
 
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/Contact us 01.webp') }}'); background-size: cover; background-position: center;  height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Contact us 01.webp') }}'); background-size: cover; background-position: center;  height: 400px;position: relative;">
 </div>
 <!-- Title and Info Boxes -->
 <div class="container mt--50 mb--100 pb-5">
