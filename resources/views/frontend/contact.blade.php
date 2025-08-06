@@ -67,7 +67,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="thumbnail-contact-form">
-                        <img src="frontend/assets/images/iwgc/FAQBoy.jpg" alt="contact">
+                        <img src="public/frontend/assets/images/iwgc/Contact Us.webp" alt="contact">
                     </div>
                 </div>
                 <div class="col-lg-4">
