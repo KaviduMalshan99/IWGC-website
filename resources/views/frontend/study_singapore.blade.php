@@ -287,11 +287,12 @@
                 <img src="public/frontend/assets/images/singapore/Picture3.png" alt="Picture 3">
                 <img src="public/frontend/assets/images/singapore/Picture4.png" alt="Picture 4">
                 <img src="public/frontend/assets/images/singapore/Picture5.png" alt="Picture 5">
-                <img src="public/frontend/assets/images/singapore/Picture6.png" alt="Picture 6">
             </div>
             
         </div>
     </div>
 </div>
 <!-- rts galllery area end -->
+
+
 @endsection

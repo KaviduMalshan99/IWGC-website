@@ -125,7 +125,7 @@
 </style>
 
  <!-- partners area breadcrumb area wrapper -->
-    <div class="partner-breadcrumb"  style="background-image: url('{{ asset('public/frontend/assets/images/Scholaship 02.webp') }}'); background-size: cover; background-position: center;">
+    <div class="partner-breadcrumb"  style="background-image: url('{{ asset('public/frontend/assets/images/Scholaship 01.2.webp') }}'); height: 300px; position: relative; background-size: cover; background-position: center;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
