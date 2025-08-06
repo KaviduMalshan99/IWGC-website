@@ -227,14 +227,14 @@ Every learner who walks through our doors becomes part of a journey marked by in
             <div class="logo-marquee-track" id="logoTrack">
                 <div class="logo-marquee">
                     <img src="public/frontend/assets/images/home/Picture1.png" alt="Picture 1">
-                    <img src="public/assets/images/home/Picture2.png" alt="Picture 2">
-                    <img src="public/frontend/assets/images/home/Picture3.jpg" alt="Picture 3">
+                    <img src="public/frontend/assets/images/home/Picture2.png" alt="Picture 2">
+                    <img src="public/frontend/assets/images/home/Picture3.png" alt="Picture 3">
                     <img src="public/frontend/assets/images/home/Picture4.png" alt="Picture 4">
                     <img src="public/frontend/assets/images/home/Picture5.png" alt="Picture 5">
                     <img src="public/frontend/assets/images/home/Picture6.png" alt="Picture 6">
                     <img src="public/frontend/assets/images/home/Picture7.png" alt="Picture 7">
-                    <img src="public/frontend/assets/images/home/Picture8.jpg" alt="Picture 8">
-                    <img src="public/frontend/assets/images/home/Picture9.jpg" alt="Picture 9">
+                    <img src="public/frontend/assets/images/home/Picture8.png" alt="Picture 8">
+                    <img src="public/frontend/assets/images/home/Picture9.png" alt="Picture 9">
                     <img src="public/frontend/assets/images/home/Picture10.png" alt="Picture 10">
                 </div>
             </div>
