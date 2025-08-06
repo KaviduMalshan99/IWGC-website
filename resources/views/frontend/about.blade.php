@@ -233,7 +233,7 @@ Every learner who walks through our doors becomes part of a journey marked by in
                     <img src="public/frontend/assets/images/home/Picture5.png" alt="Picture 5">
                     <img src="public/frontend/assets/images/home/Picture6.png" alt="Picture 6">
                     <img src="public/frontend/assets/images/home/Picture7.png" alt="Picture 7">
-                    <img src="public/frontend/assets/images/home/Picture8.png" alt="Picture 8">
+                    <img src="frontend/assets/images/home/Picture8.png" alt="Picture 8">
                     <img src="public/frontend/assets/images/home/Picture9.png" alt="Picture 9">
                     <img src="public/frontend/assets/images/home/Picture10.png" alt="Picture 10">
                 </div>
