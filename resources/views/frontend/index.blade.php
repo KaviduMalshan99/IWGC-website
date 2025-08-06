@@ -1236,11 +1236,11 @@
             <div class="logo-marquee-track" id="logoTrack">
             <!-- Repeat logos for seamless loop -->
             <div class="logo-marquee">
-                <img src="public/frontend/assets/images/uni/uni1.webp" alt="Client 1">
+                <img src="frontend/assets/images/uni/uni1.webp" alt="Client 1">
                 <img src="public/frontend/assets/images/uni/uni2.png" alt="Client 2">
                 <img src="public/frontend/assets/images/uni/uni3.png" alt="Client 3">
                 <img src="public/frontend/assets/images/uni/uni4.png" alt="Client 4">
-                <img src="public/frontend/assets/images/uni/uni5.png" alt="Client 5">
+                <img src="public/frontend/assets/images/malaysia/Picture4.png" alt="Picture 4">
                 <img src="public/frontend/assets/images/malaysia/Picture9.png" alt="Client 6">
                 <img src="public/frontend/assets/images/uni/uni7.png" alt="Client 7">
                 <img src="public/frontend/assets/images/malaysia/Picture10.png" alt="Client 8">
