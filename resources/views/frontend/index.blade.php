@@ -264,21 +264,36 @@
         transform: translateY(0);
     }
 }
-/* ------------------------------------------------our esteemed partners section ----------------------------------- */
 
-.logo-marquee-container {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-color: transparent;
-    padding: 20px 0;
+
+
+
+        .marquee-wrapper-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0 20px;
+    gap: 20px;
 }
 
 .logo-marquee-track {
     display: flex;
-    width: fit-content;
-    animation: scroll-marquee 40s linear infinite;
+    width: max-content;
+    transition: transform 0.3s ease;
 }
+
+.logo-marquee-container {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;    
+}
+
+.logo-marquee-container::-webkit-scrollbar {
+    display: none;            
+}
+
 
 .logo-marquee {
     display: flex;
@@ -294,11 +309,25 @@
 
 .logo-marquee img:hover {
     transform: scale(1.1);
-    
     opacity: 1;
 }
 
-/* Scrolling Animation */
+.marquee-arrow {
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.marquee-arrow:hover {
+    background-color: #ed3532;
+    color: white;
+}
+
 @keyframes scroll-marquee {
     0% {
         transform: translateX(0%);
@@ -1198,8 +1227,13 @@
             </div>
         </div>
     </div>    
-    <div class="logo-marquee-container">
-        <div class="logo-marquee-track">
+    <div class="marquee-wrapper-outer">
+        <div class="marquee-arrow left" onclick="scrollLogos(-1)">
+            &#10094;
+        </div>
+
+        <div class="logo-marquee-container" id="logoContainer">
+            <div class="logo-marquee-track" id="logoTrack">
             <!-- Repeat logos for seamless loop -->
             <div class="logo-marquee">
                 <img src="public/frontend/assets/images/uni/uni1.webp" alt="Client 1">
@@ -1214,6 +1248,10 @@
                 <img src="public/frontend/assets/images/malaysia/Picture8.png" alt="Client 10">
             </div>
             
+        </div>
+    </div>
+     <div class="marquee-arrow right" onclick="scrollLogos(1)">
+            &#10095;
         </div>
     </div>
 </div>
@@ -1374,7 +1412,50 @@
     
 </script>
 
+<script>
+    const container = document.getElementById('logoContainer');
+    let autoScrollInterval;
 
+    function getSingleLogoScrollWidth() {
+        const logo = container.querySelector('.logo-marquee img');
+        if (!logo) return 200; 
+        const style = getComputedStyle(logo);
+        const marginRight = parseInt(style.marginRight || 0);
+        const gap = 80; 
+        return logo.offsetWidth + gap;
+    }
+
+    function startAutoScroll() {
+        stopAutoScroll(); 
+        autoScrollInterval = setInterval(() => {
+            container.scrollBy({ left: 1, behavior: 'smooth' });
+        }, 20);
+    }
+
+    function stopAutoScroll() {
+        clearInterval(autoScrollInterval);
+    }
+
+    function scrollLogos(direction) {
+        const scrollAmount = getSingleLogoScrollWidth();
+        container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+
+        // Restart auto-scroll after short pause
+        stopAutoScroll();
+        setTimeout(startAutoScroll, 1000);
+    }
+
+    // Start auto-scroll on page load
+    window.addEventListener('DOMContentLoaded', startAutoScroll);
+
+    container.addEventListener('mouseenter', stopAutoScroll);
+    container.addEventListener('mouseleave', startAutoScroll);
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') scrollLogos(-1);
+        if (e.key === 'ArrowRight') scrollLogos(1);
+    });
+</script>
 
 
 @endsection
