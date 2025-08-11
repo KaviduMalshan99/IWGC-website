@@ -121,14 +121,14 @@
     .partner-breadcrumb {
         background-size: cover !important;  
         background-position: center !important;  
-        height: 35vh !important; 
+        height: 30vh !important; 
     }
 }
 </style>
 
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Bachelor of Business Management 01.webp') }}'); background-size: cover; background-position: center;height: 300px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Diploma In Business Admnistration ( Banner 400 x 1900 ).webp') }}'); background-size: cover; background-position: center;height: 300px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->

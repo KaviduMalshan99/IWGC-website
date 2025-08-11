@@ -193,7 +193,7 @@
          <div class="col-md-4">
                 <a href="{{ route('diploma_BA') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('public/frontend/assets/images/avid/dip_in_BA.jpg') }}" alt="Master of Business Administration" class="img-fluid">
+                        <img src="{{ asset('public/frontend/assets/images/Diploma In Business Admnistration ( Thumbnail ).webp') }}" alt="Master of Business Administration" class="img-fluid">
                         <div class="overlay"></div>
                         <div class="program-content">
                             <h3>Diploma in Business Administration</h3>
