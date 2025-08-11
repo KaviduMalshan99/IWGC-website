@@ -66,6 +66,18 @@
 .accordion-header{
     background-color: #1b2954;
 }
+
+/* Hover effect on degree list items */
+.degree-list li:hover {
+  color: #1b2954;
+  text-shadow: 1px 1px 3px #1b2954;
+  cursor: pointer;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+
+
+
 .why-list {
     list-style: none;
     padding-left: 0;

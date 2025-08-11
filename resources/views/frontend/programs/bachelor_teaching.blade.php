@@ -123,7 +123,7 @@
 
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/avid/dec.jpg') }}'); background-size: cover; background-position: top;height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Bachelor Of Teaching Primary ( 400 x 1900 ).webp') }}'); background-size: cover; background-position: top;height: 300px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->

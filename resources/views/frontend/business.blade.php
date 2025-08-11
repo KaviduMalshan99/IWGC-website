@@ -139,7 +139,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Faculty of Business Management 01.webp') }}'); background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Faculty of Business Management 01.webp') }}'); height: 300px;position: relative;background-size: cover; background-position: center;">
 </div>
 
 <!-- Title and Info Boxes -->
@@ -178,8 +178,8 @@
     <div class="container mb-4 pb-3">
         <div class="row">
             <div class="col-lg-12">
-                <div class=" center">
-                    <h2 class="title rts-text-anime-style-1 text-white">Our Programs</h2>
+                <div class="col-lg-12 text-center">
+                    <h2 class="title rts-text-anime-style-1 text-white">Our offerings to excel your Business Mastery</h2>
                     <p>Explore our extensive selection of business courses crafted for aspiring leaders and future professionals.</p>
                 </div>
             </div>

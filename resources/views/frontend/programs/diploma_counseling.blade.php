@@ -123,7 +123,7 @@
 
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Diploma in Counseling 01.webp') }}'); background-size: cover; background-position: center; height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Diploma in Counseling 01.webp') }}'); background-size: cover; background-position: center; height: 300px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->

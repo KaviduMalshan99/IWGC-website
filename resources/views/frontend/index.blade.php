@@ -1156,11 +1156,42 @@
     }
 }
 
+.small-arrow {
+  width: 30px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  top: 45%;
+  color: white;
+  --swiper-navigation-size: 20px; 
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.small-arrow:hover {
+  background: red;
+  color: black;
+}
+
+.swiper-button-prev.small-arrow::after,
+.swiper-button-next.small-arrow::after {
+  font-size: 20px; 
+  font-weight: bold;
+}
+
+.swiper-button-prev.small-arrow {
+  left: 5px;
+}
+
+.swiper-button-next.small-arrow {
+  right: 5px;
+}
+
 </style>
 
 <!-- start client review area start -->
 <div class="mt--100 pt-2 pb-4"> 
-        <div class="container" >
+        <div class="container">
             <div class="row mt--30" >
                 <div class="title-style-three-between">
                     <div class="title-style-three left mb-3">
@@ -1202,6 +1233,10 @@
 
                             @endforeach
                         </div>
+                        <!-- Swiper arrows -->
+                        <div class="swiper-button-prev small-arrow"></div>
+                        <div class="swiper-button-next small-arrow"></div>
+
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
