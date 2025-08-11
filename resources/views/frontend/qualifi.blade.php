@@ -794,7 +794,7 @@ academic transitions and support for migration or further studies.</li>
 
                         <!-- Right: Image -->
                        <div class="col-lg-5">
-                            <img src="frontend/assets/images/avid/e1.jpg" alt="Business Degrees" class="img-fluid rounded shadow" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="public/frontend/assets/images/Qualifi ( 500 x 1170 ).webp" alt="Business Degrees" class="img-fluid rounded shadow" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
 
                     </div>
