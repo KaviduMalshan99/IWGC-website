@@ -134,7 +134,7 @@
 <!-- Title and Info Boxes -->
 <div class="container mt-5">
     <div class="row text-center mb-5">
-        <h2 class="title rts-text-anime-style-1"> Diploma in Business Administration</h2>
+        <h2 class="title rts-text-anime-style-1"> Diploma ina Business Administration</h2>
     </div>
 
     <div class="row g-4 mb-5">
