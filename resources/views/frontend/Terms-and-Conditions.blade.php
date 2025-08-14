@@ -13,7 +13,7 @@
 }
 </style>
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/images/hero/hero-2.png') }}'); background-size: cover; background-position: top;  height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Terms And Conditions.webp') }}'); background-size: cover; background-position: top;  height: 300px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->
