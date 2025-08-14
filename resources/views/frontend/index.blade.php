@@ -912,6 +912,45 @@
 }
 
 
+.faq-top-image {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .rts-faq-area {
+        background-image: none !important;
+        height: auto !important;
+    }
+
+    /* Show the top image */
+    .faq-top-image {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .faq-top-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+@media (max-width: 768px) {
+    .faq-overlay {
+        display: none !important;
+    }
+   .fq-box {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(0, 102, 255, 1));
+}
+     .empty-col {
+        display: none !important;
+    }
+    .testimonials-box{
+        margin-top:0px !important;
+    }
+}
 
 </style>
 
@@ -922,9 +961,9 @@
 <div class="rts-faq-area rts-section-gapBottom faq-banner" style="margin-top: 80px; background-image: url('{{ asset('frontend/assets/images/iwgc/FAQGirl.webp') }}'); height: 900px; background-size: cover; background-position: center; position: relative;">
 
     <!-- Overlay -->
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    <div class="faq-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
                 background-color: rgba(0, 0, 0, 0.35); z-index: 1;"></div>
-    <div class="container" style="position: relative; z-index: 2; padding: 10px; color: white;">
+    <div class="container fq-box" style="position: relative; z-index: 2; padding: 10px; color: white;">
         <div class="row">
             <div class="col-lg-12 pt-5 pb-0">
                 <div class="title-style-two center">
@@ -933,27 +972,17 @@
             </div>
         </div>
     </div>    
-    <div class="container" style="position: relative; z-index: 2; padding: 0px; margin-top:0">
+    <!-- Put this image inside the container before the FAQ for mobile -->
+        <div class="faq-top-image">
+            <img src="{{ asset('frontend/assets/images/iwgc/FAQGirl.webp') }}" alt="FAQ" />
+        </div>
+ 
+    <div class="container fq-box" style="position: relative; z-index: 2; padding: 0px; margin-top:0">
+        
         <div class="row">
                 
-                <div class="col-lg-6 pl--50 pr--50" data-animation="fadeInUp" data-delay="0.1">
-                    <div class="thumbnail-about-right-4">
-                        
-                        <div class="poligon-shape images-r">
-                            <img src="frontend/assets/images/faq/poligon-shape.svg" alt="">
-                        </div>
-                        <div class="video-area">
-                           
-                            <div class="vedio-icone">
-                                <a class="video-play-button play-video popup-video" href="https://www.youtube.com/watch?v=vZE0j_WCRvI">
-                                    <span></span>
-                                </a>
-                                <div class="video-overlay">
-                                    <a href="#section1" class="video-overlay-close">×</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-6 pl--50 pr--50 empty-col" data-animation="fadeInUp" data-delay="0.1">
+                    
                 </div>
                 <div class="col-lg-6 pl--50 pl_md--0 pl_sm--0 " data-animation="fadeInUp" data-delay="0.3">
                     <div class="accordion faq-wrapper-inner-page" id="accordionExample">
@@ -1190,7 +1219,7 @@
 </style>
 
 <!-- start client review area start -->
-<div class="mt--100 pt-2 pb-4"> 
+<div class="mt--100 pt-2 pb-4 testimonials-box"> 
         <div class="container">
             <div class="row mt--30" >
                 <div class="title-style-three-between">
