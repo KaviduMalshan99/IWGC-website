@@ -122,7 +122,7 @@
                                  <li><a href="{{ route('scholarships') }}" style="color: white !important"><i class="fal fa-chevron-double-right"></i>Scholarships</a></li>
                                 <li><a href="{{ route('enroll') }}" style="color: white !important"><i class="fal fa-chevron-double-right"></i>Enroll</a></li>
                                 <li><a href="service-details.html" style="color: white !important"><i class="fal fa-chevron-double-right"></i>Pay Online</a></li>
-                                <li><a href="http://lms.iwgc.lkl" style="color: white !important"><i class="fal fa-chevron-double-right"></i>LMS</a></li>
+                                <li><a href="http://lms.iwgc.lkl" target="_blank" style="color: white !important"><i class="fal fa-chevron-double-right"></i>LMS</a></li>
                             </ul>
                         </div>
                     </div>
@@ -279,7 +279,7 @@
                         <a href="" class="main" aria-expanded="false">Pay Online</a>
                     </li>
                      <li >
-                        <a href="http://lms.iwgc.lk" class="main" aria-expanded="false">LMS</a>
+                        <a href="http://lms.iwgc.lk" target="_blank" class="main" aria-expanded="false">LMS</a>
                     </li>
                 </ul>
             </nav>
