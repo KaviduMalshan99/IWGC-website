@@ -217,22 +217,22 @@ education with global standards. Here’s a quick look at how these levels compa
                             </tr>
                             <tr>
                                 <td>Level 4</td>
-                                <td>First year of Bachelor's Degree /HNC</td>
+                                <td>First year of Bachelor's Degree / HNC / Diploma</td>
                                 <td>Undergraduate (Year 1)</td>
                             </tr>
                             <tr>
                                 <td>Level 5</td>
-                                <td>Second year of Bachelor's Degree/ HND</td>
+                                <td>Second year of Bachelor's Degree / HND</td>
                                 <td>Undergraduate (Year 2)</td>
                             </tr>
                             <tr>
                                 <td>Level 6</td>
-                                <td>Bachelor’s Degree /Final Year</td>
-                                <td>Full Undergraduate Degree/Undergraduate (Year 3)</td>
+                                <td>Bachelor’s Degree / Final Year</td>
+                                <td>Full Undergraduate Degree / Undergraduate (Year 3)</td>
                             </tr>
                             <tr>
                                 <td>Level 7</td>
-                                <td>Postgraduate Diploma / Master’sLevel Entry</td>
+                                <td>Postgraduate Diploma / Master’s Level Entry</td>
                                 <td>Pre-Master's or MBA entry</td>
                             </tr>
                             <tr>
@@ -376,7 +376,7 @@ academic transitions and support for migration or further studies.</li>
                                               <ul class="degree-list">
                                                     <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-diploma-in-psychology" target="_blank">Qualifi Level 4 Diploma in Psychology (610/2149/0)</a></li>
                                                     <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-5-diploma-in-psychology" target="_blank">Qualifi Level 5 Diploma in Psychology (610/2124/6)</a></li>
-                                                    <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-5-extended-diploma-in-psychology" target="_blank">Qualifi Level 5 Extended Diploma in Psychology (610/3465/4)</a></li>
+                                                    <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/level-5-extended-diploma-in-psychology/" target="_blank">Qualifi Level 5 Extended Diploma in Psychology (610/3465/4)</a></li>
                                                     <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-7-diploma-in-psychology" target="_blank">Qualifi Level 7 Diploma in Psychology (610/2064/3)</a></li>
                                                 </ul>
                                             </div>
@@ -440,7 +440,7 @@ academic transitions and support for migration or further studies.</li>
                                         <div id="collapseseven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                             <div class="accordion-body custom-accordion-body">
                                                <ul class="degree-list">
-                                                    <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-7-diploma-in-human-resource-management" target="_blank">Qualifi Level 7 Diploma in Human Resource Management (603/0722/5)</a></li>
+                                                    <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/level-7-diploma-in-human-resource-management/" target="_blank">Qualifi Level 7 Diploma in Human Resource Management (603/0722/5)</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -479,11 +479,11 @@ academic transitions and support for migration or further studies.</li>
                                             <div id="collapseLaw" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body custom-accordion-body">
                                                     <ul class="degree-list">
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-diploma-in-law" target="_blank">Qualifi Level 3 Diploma in Law (610/1282/8)</a></li>
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-diploma-in-law" target="_blank">Qualifi Level 4 Diploma in Law (610/1091/1)</a></li>
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-5-diploma-in-law" target="_blank">Qualifi Level 5 Diploma in Law (610/1092/3)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualif-level-3-diploma-in-law/" target="_blank">Qualifi Level 3 Diploma in Law (610/1282/8)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualif-level-4-diploma-in-law" target="_blank">Qualifi Level 4 Diploma in Law (610/1091/1)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/level-5-extended-diploma-in-law/" target="_blank">Qualifi Level 5 Diploma in Law (610/1092/3)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-extended-diploma-in-business-and-law" target="_blank">Qualifi Level 3 Extended Diploma in Business and Law (610/5595/5)</a></li>
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-5-extended-diploma-in-law" target="_blank">Qualifi Level 5 Extended Diploma in Law (610/3349/2)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/level-5-extended-diploma-in-law/" target="_blank">Qualifi Level 5 Extended Diploma in Law (610/3349/2)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-7-diploma-in-law" target="_blank">Qualifi Level 7 Diploma in Law (610/2558/6)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-7-diploma-in-international-business-law" target="_blank">Qualifi Level 7 Diploma in International Business Law (603/4199/3)</a></li>
                                                     </ul>
@@ -506,7 +506,7 @@ academic transitions and support for migration or further studies.</li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-diploma-in-information-technology" target="_blank">Qualifi Level 4 Diploma in Information Technology (603/4781/8)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-diploma-in-it-networking" target="_blank">Qualifi Level 4 Diploma in IT – Networking (603/4782/X)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-diploma-in-it-web-design" target="_blank">Qualifi Level 4 Diploma in IT – Web Design (603/4783/1)</a></li>
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-diploma-in-it-e-commerce" target="_blank">Qualifi Level 4 Diploma in IT – E-commerce (603/4786/7)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/level-4-diploma-in-it-e-commerce/" target="_blank">Qualifi Level 4 Diploma in IT – E-commerce (603/4786/7)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-diploma-in-internet-of-things-smart-home" target="_blank">Qualifi Level 4 Diploma in Internet of Things (Smart Home) (610/5031/3)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-5-diploma-in-information-technology" target="_blank">Qualifi Level 5 Diploma in Information Technology (603/4791/0)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-5-diploma-in-it-networking" target="_blank">Qualifi Level 5 Diploma in IT – Networking (603/4792/2)</a></li>
@@ -535,8 +535,8 @@ academic transitions and support for migration or further studies.</li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-diploma-in-data-science" target="_blank">Qualifi Level 3 Diploma in Data Science (610/1950/1)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-extended-diploma-in-it-and-data-science" target="_blank">Qualifi Level 3 Extended Diploma in IT and Data Science (610/5600/5)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-diploma-in-artificial-intelligence" target="_blank">Qualifi Level 4 Diploma in Artificial Intelligence (610/3934/2)</a></li>
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-5-diploma-in-artificial-intelligence" target="_blank">Qualifi Level 5 Diploma in Artificial Intelligence (610/3935/4)</a></li>
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-7-diploma-in-data-science" target="_blank">Qualifi Level 7 Diploma in Data Science (603/6693/X)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-qualifi-level-5-diploma-in-artificial-intelligence/" target="_blank">Qualifi Level 5 Diploma in Artificial Intelligence (610/3935/4)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-7-diploma-data-science/" target="_blank">Qualifi Level 7 Diploma in Data Science (603/6693/X)</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -551,7 +551,7 @@ academic transitions and support for migration or further studies.</li>
                                             <div id="collapseCyberSecurity" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body custom-accordion-body">
                                                     <ul class="degree-list">
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-2-diploma-in-business-beginners-in-cyber-security" target="_blank">Qualifi Level 2 Diploma in Business Beginners in Cyber Security (603/3329/7)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-2-diploma-in-cyber-security-management-and-operations" target="_blank">Qualifi Level 2 Diploma in Business Beginners in Cyber Security (603/3329/7)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-diploma-in-cyber-security-management-and-operations" target="_blank">Qualifi Level 3 Diploma in Cyber Security Management and Operations (603/3334/0)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-extended-diploma-in-it-and-cyber-security" target="_blank">Qualifi Level 3 Extended Diploma in IT and Cyber Security (610/5598/0)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-diploma-in-cyber-security" target="_blank">Qualifi Level 4 Diploma in Cyber Security (603/3331/5)</a></li>
@@ -587,7 +587,7 @@ academic transitions and support for migration or further studies.</li>
                                             <div id="collapseEarlyYears" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body custom-accordion-body">
                                                     <ul class="degree-list">
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-diploma-in-early-years-education-and-care-early-years-educator" target="_blank">Qualifi Level 3 Diploma in Early Years Education and Care (Early Years Educator) (610/0013/6)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-diploma-early-years-education-and-care-early-years-educator/" target="_blank">Qualifi Level 3 Diploma in Early Years Education and Care (Early Years Educator) (610/0013/6)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-diploma-in-specialist-support-for-teaching-and-learning-in-schools" target="_blank">Qualifi Level 3 Diploma in Specialist Support for Teaching and Learning in Schools (603/7690/9)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-diploma-in-early-learning-and-childcare" target="_blank">Qualifi Level 4 Diploma in Early Learning and Childcare (610/0227/6)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-5-diploma-in-early-learning-and-childcare" target="_blank">Qualifi Level 5 Diploma in Early Learning and Childcare (610/0226/4)</a></li>
@@ -605,7 +605,7 @@ academic transitions and support for migration or further studies.</li>
                                             <div id="collapseEducationTraining" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body custom-accordion-body">
                                                     <ul class="degree-list">
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-award-in-education-and-training" target="_blank">Qualifi Level 3 Award in Education and Training (603/5680/7)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-award-in-education-and-training-specification/" target="_blank">Qualifi Level 3 Award in Education and Training (603/5680/7)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-certificate-in-education-and-training" target="_blank">Qualifi Level 4 Certificate in Education and Training (603/6042/2)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-diploma-in-education-and-training" target="_blank">Qualifi Level 4 Diploma in Education and Training (610/3647/X)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-5-diploma-in-education-and-training" target="_blank">Qualifi Level 5 Diploma in Education and Training (603/6055/0)</a></li>
@@ -625,8 +625,8 @@ academic transitions and support for migration or further studies.</li>
                                             <div id="collapseTeachingCoaching" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body custom-accordion-body">
                                                     <ul class="degree-list">
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-certificate-in-teaching-english-as-a-foreign-language-tefl-the-tefl-academy" target="_blank">Qualifi Level 3 Certificate in Teaching English as a Foreign Language (TEFL) (The TEFL Academy) (603/7201/1)</a></li>
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-5-certificate-in-observed-teaching-practice-tefl-the-tefl-academy" target="_blank">Qualifi Level 5 Certificate in Observed Teaching Practice (TEFL) (The TEFL Academy) (603/4315/1)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/level-3-certificate-in-teaching-english-as-a-foreign-language-tefl-the-tefl-academy/" target="_blank">Qualifi Level 3 Certificate in Teaching English as a Foreign Language (TEFL) (The TEFL Academy) (603/7201/1)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/level-5-certificate-in-observed-teaching-practice-tefl-the-tefl-academy/" target="_blank">Qualifi Level 5 Certificate in Observed Teaching Practice (TEFL) (The TEFL Academy) (603/4315/1)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-5-diploma-in-teaching-english-as-a-foreign-language-tefl-the-tefl-academy" target="_blank">Qualifi Level 5 Diploma in Teaching English as a Foreign Language (TEFL) (The TEFL Academy) (603/3835/0)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-5-diploma-in-teaching-english-to-speakers-of-other-languages-tesol-the-tefl-academy" target="_blank">Qualifi Level 5 Diploma in Teaching English to Speakers of Other Languages (TESOL) (The TEFL Academy) (610/3864/7)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-5-certificate-in-teaching-english-as-a-foreign-language-with-practice-certtefl-the-tefl-academy" target="_blank">Qualifi Level 5 Certificate in Teaching English as a Foreign Language with Practice (CertTEFL) (The TEFL Academy) (603/5428/8)</a></li>
@@ -634,7 +634,7 @@ academic transitions and support for migration or further studies.</li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-6-diploma-in-global-teaching-practice" target="_blank">Qualifi Level 6 Diploma in Global Teaching Practice (603/6814/7)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-6-extended-diploma-in-global-teaching-practice" target="_blank">Qualifi Level 6 Extended Diploma in Global Teaching Practice (603/6815/9)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-diploma-in-coaching" target="_blank">Qualifi Level 4 Diploma in Coaching (603/1280/4)</a></li>
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-7-diploma-in-integrative-sport-and-exercise-nutrition" target="_blank">Qualifi Level 7 Diploma in Integrative Sport and Exercise Nutrition (610/3609/2)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/level-7-diploma-in-integrative-sport-and-exercise-nutrition/" target="_blank">Qualifi Level 7 Diploma in Integrative Sport and Exercise Nutrition (610/3609/2)</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -649,7 +649,7 @@ academic transitions and support for migration or further studies.</li>
                                             <div id="collapseSportsCoaching" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body custom-accordion-body">
                                                     <ul class="degree-list">
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-diploma-in-the-principles-of-cricket-coaching-r66t-academy" target="_blank">Qualifi Level 3 Diploma in the Principles of Cricket Coaching (R66T Academy) (610/3153/7)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/level-3-diploma-in-the-principles-of-cricket-coaching-r66t-academy/" target="_blank">Qualifi Level 3 Diploma in the Principles of Cricket Coaching (R66T Academy) (610/3153/7)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-certificate-in-activating-high-performance-in-soccer-coaching" target="_blank">Qualifi Level 3 Certificate in Activating High Performance in Soccer Coaching (610/3527/0)</a></li>
                                                     </ul>
                                                 </div>
@@ -665,8 +665,8 @@ academic transitions and support for migration or further studies.</li>
                                             <div id="collapseAestheticPractice" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body custom-accordion-body">
                                                     <ul class="degree-list">
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-award-in-basic-life-support-and-management-of-anaphylaxis-in-clinical-practice" target="_blank">Qualifi Level 3 Award in Basic Life Support and Management of Anaphylaxis in Clinical Practice (610/5316/8)</a></li>
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-certificate-in-anatomy-and-physiology-for-aesthetics-practice" target="_blank">Qualifi Level 4 Certificate in Anatomy and Physiology for Aesthetics Practice (603/7469/X)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/level-3-award-in-basic-life-support-and-management-of-anaphylaxis-in-clinical-practice/" target="_blank">Qualifi Level 3 Award in Basic Life Support and Management of Anaphylaxis in Clinical Practice (610/5316/8)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/level-4-certificate-in-anatomy-and-physiology-for-aesthetics-practice/" target="_blank">Qualifi Level 4 Certificate in Anatomy and Physiology for Aesthetics Practice (603/7469/X)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-certificate-in-plasma-skin-rejuvenation" target="_blank">Qualifi Level 4 Certificate in Plasma Skin Rejuvenation (603/7775/6)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-certificate-in-microblading-to-enhance-eyebrows" target="_blank">Qualifi Level 4 Certificate in Microblading to Enhance Eyebrows (603/7797/5)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-certificate-in-micropigmentation-to-enhance-eyebrows" target="_blank">Qualifi Level 4 Certificate in Micropigmentation to Enhance Eyebrows (603/7851/7)</a></li>
@@ -733,7 +733,7 @@ academic transitions and support for migration or further studies.</li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-2-certificate-in-colour-and-lighten-hair-services" target="_blank">Qualifi Level 2 Certificate in Colour and Lighten Hair Services (603/7728/8)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-2-certificate-in-set-style-and-finish-hair-services" target="_blank">Qualifi Level 2 Certificate in Set, Style, and Finish Hair Services (603/7729/X)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-2-certificate-in-smoothing-and-straightening-hair-services" target="_blank">Qualifi Level 2 Certificate in Smoothing and Straightening Hair Services (603/7730/6)</a></li>
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-2-diploma-in-barbering" target="_blank">Qualifi Level 2 Diploma in Barbering (GBBA) (610/0691/9)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-2-diploma-in-barbering-gbba/" target="_blank">Qualifi Level 2 Diploma in Barbering (GBBA) (610/0691/9)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-diploma-in-advanced-and-creative-hairdressing" target="_blank">Qualifi Level 3 Diploma in Advanced and Creative Hairdressing (610/0503/4)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-certificate-in-advanced-and-creative-hairdressing" target="_blank">Qualifi Level 3 Certificate in Advanced and Creative Hairdressing (610/0502/2)</a></li>
                                                     </ul>
@@ -777,8 +777,8 @@ academic transitions and support for migration or further studies.</li>
                                                     <ul class="degree-list">
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-3-certificate-in-assessing-vocational-achievement" target="_blank">Qualifi Level 3 Certificate in Assessing Vocational Achievement (603/5650/9)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-award-in-understanding-the-principles-and-practices-of-internally-assuring-the-quality-of-assessment" target="_blank">Qualifi Level 4 Award in Understanding the Principles and Practices of Internally Assuring the Quality of Assessment (603/6792/1)</a></li>
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-award-in-the-internal-quality-assurance-of-assessment-processes-and-practice" target="_blank">Qualifi Level 4 Award in the Internal Quality Assurance of Assessment Processes and Practice (603/5651/0)</a></li>
-                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-award-in-understanding-the-external-quality-assurance-of-assessment-processes-and-practice" target="_blank">Qualifi Level 4 Award in Understanding the External Quality Assurance of Assessment Processes and Practice (603/6878/0)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/level-4-award-in-the-internal-quality-assurance-of-assessment-processes-and-practice/" target="_blank">Qualifi Level 4 Award in the Internal Quality Assurance of Assessment Processes and Practice (603/5651/0)</a></li>
+                                                        <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/level-4-award-in-understanding-the-external-quality-assurance-of-assessment-processes-and-practice/" target="_blank">Qualifi Level 4 Award in Understanding the External Quality Assurance of Assessment Processes and Practice (603/6878/0)</a></li>
                                                         <li><i class="fas fa-graduation-cap me-2"></i><a href="https://qualifi.net/qualifi-level-4-award-in-the-external-quality-assurance-of-assessment-processes-and-practice" target="_blank">Qualifi Level 4 Award in the External Quality Assurance of Assessment Processes and Practice (603/6877/9)</a></li>
                                                     </ul>
                                                 </div>

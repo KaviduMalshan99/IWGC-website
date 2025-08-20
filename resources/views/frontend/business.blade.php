@@ -145,7 +145,7 @@
 <!-- Title and Info Boxes -->
 <div class="container mt-5">
     <div class="row text-center mb-5">
-        <h2 class="title rts-text-anime-style-1">Faculty Of Business Management</h2>
+        <h2 class="title rts-text-anime-style-1">Faculty of Business Management</h2>
         <p class="bg-content">“Developing Global Business Leaders”</p>
     </div>
 

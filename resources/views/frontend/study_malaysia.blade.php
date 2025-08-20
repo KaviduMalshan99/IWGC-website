@@ -237,7 +237,7 @@ Moreover, Malaysia’s multicultural society—comprising Malays, Chinese, India
             </div>
 
             <div class="info-box" style="background-color: #ffffff; padding: 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s ease; border-top: 4px solid #f5b100;">
-                <a href="https://educationmalaysia.gov.my/living-in-malaysia/tips-on-everyday-life/accommodation-for-students" target="_blank" style="text-decoration: none; color: inherit;">
+                <a href="https://educationmalaysia.gov.my/plan-your-studies/start-to-prepare/accomodation-for-students" target="_blank" style="text-decoration: none; color: inherit;">
                     <h4 style="font-size: 18px; color: #f5b100; font-weight: bold; margin-bottom: 10px;">Accommodation</h4>
                     <p style="font-size: 15px; line-height: 1.6;">Learn about student housing options and how to find a place to stay in Malaysia.</p>
                 </a>
