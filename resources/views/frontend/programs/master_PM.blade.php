@@ -127,7 +127,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Master of Business Asministration 03.webp') }}');  height: 300px;position: relative;background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Master of Project Management  ( Banner ).webp') }}');  height: 300px;position: relative;background-size: cover; background-position: center;">
 </div>
 
 <!-- Title and Info Boxes -->
