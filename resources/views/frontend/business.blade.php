@@ -228,6 +228,45 @@
                     </div>
                 </a>
             </div>
+
+            <div class="col-md-4">
+                <a href="{{ route('bachelor_PM') }}" class="program-card">
+                    <div class="program-image">
+                        <img src="{{ asset('public/frontend/assets/images/Bachelor of Project Management  ( Thumbnail ).webp') }}" alt="Bachelor of Project Management" class="img-fluid">
+                        <div class="overlay"></div>
+                        <div class="program-content">
+                            <h3>Bachelor of Project Management</h3>
+                            <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="{{ route('master_CM') }}" class="program-card">
+                    <div class="program-image">
+                        <img src="{{ asset('public/frontend/assets/images/Master of Construction Management ( Thumbnail ).webp') }}" alt="Master of Construction Management" class="img-fluid">
+                        <div class="overlay"></div>
+                        <div class="program-content">
+                            <h3>Master of Construction Management (MCM)</h3>
+                            <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="{{ route('master_PM') }}" class="program-card">
+                    <div class="program-image">
+                        <img src="{{ asset('public/frontend/assets/images/Master of Project Management  ( Thumbnail ).webp') }}" alt="Master of Project Management" class="img-fluid">
+                        <div class="overlay"></div>
+                        <div class="program-content">
+                            <h3>Master of Project Management (MPM)</h3>
+                            <span class="btn btn-outline-light">Explore Program <i class="fas fa-arrow-right ms-2"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>

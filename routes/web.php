@@ -79,6 +79,19 @@ Route::get('/Master-of-Business-Administration', function () {
     return view('frontend.programs.master_BA');
 })->name('master_BA');
 
+Route::get('/Bachelor-of-Project-Management', function () {
+    return view('frontend.programs.bachelor_PM');
+})->name('bachelor_PM');
+
+Route::get('/Master-of-Construction-Management', function () {
+    return view('frontend.programs.master_CM');
+})->name('master_CM');
+
+Route::get('/Master-of-Project-Management', function () {
+    return view('frontend.programs.master_PM');
+})->name('master_PM');
+
+
 
 
 Route::get('/Diploma-in-Early-childhood-Education', function () {
