@@ -121,7 +121,7 @@
     .partner-breadcrumb {
         background-size: cover !important;  
         background-position: center !important;  
-        height: 35vh !important; 
+        height: 30vh !important; 
     }
 }
 </style>
