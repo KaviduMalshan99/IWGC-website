@@ -419,32 +419,37 @@
 
 @media (max-width: 768px) {
     .rts-banner-area-two {
-        background-size: cover  !important;
+        background-size: cover !important;
         background-repeat: no-repeat !important;
         background-position: center !important;
-        height: 55vh !important; /* Make the banner take full screen height */
+        height: 45vh !important;
         padding-top: 60px;
         padding-bottom: 60px;
     }
 
     .banner-inner-two-content h1.title {
-        font-size: 24px !important;
-        line-height: 1.0 !important;
+        font-size: 20px !important;
+        line-height: 1.2 !important;
+        max-width: 90% !important;
     }
 
     .banner-inner-two-content p.disc,
     .banner-inner-two-content p.pre-title {
-        font-size: 14px !important;
+        font-size: 12px !important;
+        max-width: 90% !important;  /* reduce paragraph width */
+        margin: 0 auto;            /* center align paragraph */
+        line-height: 1.4 !important;
     }
 
     .banner-inner-two-content a.rts-btn {
-        font-size: 14px !important;
-        padding: 10px 20px;
+        font-size: 10px !important;
+        padding: 6px 12px !important; /* reduce button padding */
+        margin-top: 10px;
     }
 
     .swiper-button-next,
     .swiper-button-prev {
-        display: none; /* Optional */
+        display: none; /* hide nav arrows on mobile */
     }
 }
 
@@ -455,6 +460,29 @@
 <div class="banner-swiper-two">
     <div class="swiper mySwiper-banner-two">
         <div class="swiper-wrapper">
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="rts-banner-area-two rts-section-gap" style="position: relative; background-image: url('{{ asset('frontend/assets/images/iwgc/Hero04.png') }}'); background-size: cover; background-position: center;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+                    <div class="container" style="position: relative; z-index: 2;">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="banner-inner-two-content">
+                                    <p class="pre-title" style="color: #fff;"><span style="color: #fff;">Welcome!</span> </p>
+                                    <h1 class="title" style="color: #fff;">Designed to Suit Your Lifestyle</h1>
+                                    <p class="disc" style="color: rgba(255,255,255,0.8);">
+                                    Learn anytime, anywhere with our flexible online platform. Study at your own pace with a custom curriculum, get regular feedback, and receive dedicated support every step of the way.
+                                        </p>
+                                    </p>
+                                    <a href="{{ route('scholarships') }}" class="rts-btn btn-primary btn-white" style="background:#ed3532;">Apply for Scholarships </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Shape elements -->
+                </div>
+            </div>
+
             <!-- Slide 1 -->
             <div class="swiper-slide">
                 <div class="rts-banner-area-two rts-section-gap" style="position: relative; background-image: url('{{ asset('frontend/assets/images/iwgc/Hero02.webp') }}'); background-size: cover; background-position: center;">
@@ -500,28 +528,7 @@
                 </div>
             </div>
 
-            <!-- Slide 3 -->
-            <div class="swiper-slide">
-                <div class="rts-banner-area-two rts-section-gap" style="position: relative; background-image: url('{{ asset('frontend/assets/images/iwgc/Hero04.png') }}'); background-size: cover; background-position: center;">
-                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
-                    <div class="container" style="position: relative; z-index: 2;">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="banner-inner-two-content">
-                                    <p class="pre-title" style="color: #fff;"><span style="color: #fff;">Welcome!</span> </p>
-                                    <h1 class="title" style="color: #fff;">Designed to Suit Your Lifestyle</h1>
-                                    <p class="disc" style="color: rgba(255,255,255,0.8);">
-                                    Learn anytime, anywhere with our flexible online platform. Study at your own pace with a custom curriculum, get regular feedback, and receive dedicated support every step of the way.
-                                        </p>
-                                    </p>
-                                    <a href="{{ route('scholarships') }}" class="rts-btn btn-primary btn-white" style="background:#ed3532;">Apply for Scholarships </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Shape elements -->
-                </div>
-            </div>
+            
         </div>
         <div class="swiper-button-next"><i class="fa-light fa-chevron-right"></i></div>
         <div class="swiper-button-prev"><i class="fa-light fa-chevron-left"></i></div>
