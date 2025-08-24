@@ -32,7 +32,6 @@
     .wized-2-body ul li a {
         font-size: 14px !important;
     }
-
     .contact-info-1 .disc span {
         font-size: 14px !important;
     }
@@ -40,39 +39,18 @@
     .contact-info-1 .disc a {
         font-size: 13px !important;
     }
+    .contact-info-1 .icon {
+        width: 25px !important;
+        height: 25px !important;
+        font-size: 12px !important;
+    }
 
     .contact-info-1 {
-        display: flex;
-        flex-direction: column; /* stack icon above text */
-        align-items: center;    /* center icon and text */
-        text-align: center;
         gap: 5px !important;
         margin-bottom: 10px !important;
     }
 
-    /* move icons on top and increase size */
-    .contact-info-1 .icon {
-        display: block !important;
-        width: 40px !important;
-        height: 40px !important;
-        font-size: 20px !important;
-        margin-bottom: 5px;
-    }
-
-    /* two-column layout for Call Us and Work With Us */
-    .wized-2-body {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-    }
-
-    .wized-2-body .contact-info-1 {
-        flex: 1 1 48%; /* two columns */
-        min-width: 140px;
-    }
 }
-
 
 @media (max-width: 768px) {
     .widget-head a img {

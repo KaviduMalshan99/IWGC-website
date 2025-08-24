@@ -55,6 +55,19 @@
     }
 }
 
+@media (max-width: 768px) {
+
+    /* Center each card */
+    .business-goal-area-2 .signle-consultancy {
+        width: 100% !important;
+        max-width: 350px !important; /* optional card width */
+        margin: 0 auto 20px auto !important; /* center with spacing */
+    }
+
+ 
+
+ 
+}
 
 </style>
 
