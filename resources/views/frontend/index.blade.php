@@ -1315,15 +1315,15 @@
             <div class="logo-marquee-track">
                 <div class="logo-marquee">
                     <img src="frontend/assets/images/uni/uni1.webp" alt="Client 1">
-                    <img src="/frontend/assets/images/uni/uni2.png" alt="Client 2">
-                    <img src="/frontend/assets/images/uni/uni3.png" alt="Client 3">
-                    <img src="/frontend/assets/images/uni/uni4.png" alt="Client 4">
-                    <img src="/frontend/assets/images/malaysia/Picture4.png" alt="Picture 4">
-                    <img src="/frontend/assets/images/malaysia/Picture9.png" alt="Client 6">
-                    <img src="/frontend/assets/images/uni/uni7.png" alt="Client 7">
-                    <img src="/frontend/assets/images/malaysia/Picture10.png" alt="Client 8">
-                    <img src="/frontend/assets/images/uni/uni9.png" alt="Client 9">
-                    <img src="/frontend/assets/images/malaysia/Picture8.png" alt="Client 10">
+                    <img src="public/frontend/assets/images/uni/uni2.png" alt="Client 2">
+                    <img src="public/frontend/assets/images/uni/uni3.png" alt="Client 3">
+                    <img src="public/frontend/assets/images/uni/uni4.png" alt="Client 4">
+                    <img src="public/frontend/assets/images/malaysia/Picture4.png" alt="Picture 4">
+                    <img src="public/frontend/assets/images/malaysia/Picture9.png" alt="Client 6">
+                    <img src="public/frontend/assets/images/uni/uni7.png" alt="Client 7">
+                    <img src="public/frontend/assets/images/malaysia/Picture10.png" alt="Client 8">
+                    <img src="public/frontend/assets/images/uni/uni9.png" alt="Client 9">
+                    <img src="public/frontend/assets/images/malaysia/Picture8.png" alt="Client 10">
                 </div>
             </div>
         </div>
@@ -1333,109 +1333,6 @@
 </div>
 
 
-<script>
-const container = document.getElementById('logoContainer');
-const leftArrow = document.querySelector('.marquee-arrow.left');
-const rightArrow = document.querySelector('.marquee-arrow.right');
-
-let autoScrollRAF;
-let scrollSpeed = 0.5;
-let scrollMultiplier = 1;
-
-// ----- Auto Scroll -----
-function startAutoScroll() {
-    function step() {
-        container.scrollLeft += scrollSpeed * scrollMultiplier;
-        if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
-            container.scrollLeft = 0;
-        }
-        autoScrollRAF = requestAnimationFrame(step);
-    }
-    autoScrollRAF = requestAnimationFrame(step);
-}
-
-function stopAutoScroll() {
-    cancelAnimationFrame(autoScrollRAF);
-}
-
-// ----- Arrow Buttons (desktop only) -----
-function arrowBoost(direction) {
-    scrollMultiplier = 30 * direction;
-}
-
-function arrowRelease() {
-    scrollMultiplier = 1;
-}
-
-leftArrow.addEventListener('mousedown', () => arrowBoost(-1));
-leftArrow.addEventListener('mouseup', arrowRelease);
-leftArrow.addEventListener('mouseleave', arrowRelease);
-
-rightArrow.addEventListener('mousedown', () => arrowBoost(1));
-rightArrow.addEventListener('mouseup', arrowRelease);
-rightArrow.addEventListener('mouseleave', arrowRelease);
-
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') arrowBoost(-1);
-    if (e.key === 'ArrowRight') arrowBoost(1);
-});
-document.addEventListener('keyup', arrowRelease);
-
-// ----- Desktop Mouse Drag -----
-let isDragging = false;
-let startX = 0;
-let scrollStart = 0;
-
-container.addEventListener('pointerdown', (e) => {
-    if (e.pointerType !== 'mouse') return;
-    isDragging = true;
-    startX = e.clientX;
-    scrollStart = container.scrollLeft;
-    container.style.cursor = 'grabbing';
-    container.style.scrollBehavior = 'auto'; // disable smooth scroll during drag
-    e.preventDefault();
-    container.setPointerCapture(e.pointerId);
-});
-
-container.addEventListener('pointermove', (e) => {
-    if (!isDragging) return;
-    const delta = e.clientX - startX;
-    container.scrollLeft = scrollStart - delta;
-});
-
-container.addEventListener('pointerup', (e) => {
-    if (!isDragging) return;
-    isDragging = false;
-    container.style.cursor = 'grab';
-    container.style.scrollBehavior = 'smooth'; // re-enable smooth scroll
-    container.releasePointerCapture(e.pointerId);
-});
-
-// ----- Mobile Touch Drag -----
-let touchStartX = 0;
-let touchScrollStart = 0;
-
-container.addEventListener('touchstart', (e) => {
-    if (e.touches.length !== 1) return;
-    touchStartX = e.touches[0].clientX;
-    touchScrollStart = container.scrollLeft;
-    container.style.scrollBehavior = 'auto'; // disable smooth scroll while dragging
-});
-
-container.addEventListener('touchmove', (e) => {
-    if (e.touches.length !== 1) return;
-    const delta = e.touches[0].clientX - touchStartX;
-    container.scrollLeft = touchScrollStart - delta;
-    e.preventDefault(); // prevent page scrolling
-});
-
-container.addEventListener('touchend', () => {
-    container.style.scrollBehavior = 'smooth'; // restore smooth scroll
-});
-
-// ----- Start Auto Scroll -----
-window.addEventListener('DOMContentLoaded', startAutoScroll);
-</script>
 
 
 
