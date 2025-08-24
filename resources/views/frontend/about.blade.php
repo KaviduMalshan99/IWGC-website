@@ -241,26 +241,26 @@ Every learner who walks through our doors becomes part of a journey marked by in
         <div class="partner-ribbon-track" id="partnerTrack">
             <div class="partner-ribbon-content">
                 <!-- logos repeated twice for seamless loop -->
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture1.png" alt="Client 1"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture2.png" alt="Client 2"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture3.png" alt="Client 3"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture4.png" alt="Client 4"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture5.png" alt="Client 5"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture6.png" alt="Client 6"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture7.png" alt="Client 7"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture9.png" alt="Client 8"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture10.png" alt="Client 9"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture1.png" alt="Client 1"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture2.png" alt="Client 2"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture3.png" alt="Client 3"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture4.png" alt="Client 4"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture5.png" alt="Client 5"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture6.png" alt="Client 6"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture7.png" alt="Client 7"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture9.png" alt="Client 8"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture10.png" alt="Client 9"></div>
 
                     <!-- repeat again for seamless loop -->
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture1.png" alt="Client 1"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture2.png" alt="Client 2"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture3.png" alt="Client 3"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture4.png" alt="Client 4"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture5.png" alt="Client 5"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture6.png" alt="Client 6"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture7.png" alt="Client 7"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture9.png" alt="Client 8"></div>
-                    <div class="partner-ribbon-item"><img src="/frontend/assets/images/home/Picture10.png" alt="Client 9"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture1.png" alt="Client 1"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture2.png" alt="Client 2"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture3.png" alt="Client 3"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture4.png" alt="Client 4"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture5.png" alt="Client 5"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture6.png" alt="Client 6"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture7.png" alt="Client 7"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture9.png" alt="Client 8"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/home/Picture10.png" alt="Client 9"></div>
             </div>
         </div>
 
