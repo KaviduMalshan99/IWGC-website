@@ -422,16 +422,19 @@
         background-size: cover !important;
         background-repeat: no-repeat !important;
         background-position: center !important;
-        height: 45vh !important;
+        height: 38vh !important;
         padding-top: 60px;
         padding-bottom: 60px;
     }
 
     .banner-inner-two-content h1.title {
-        font-size: 20px !important;
+        font-size: 18px !important;
         line-height: 1.2 !important;
         max-width: 90% !important;
+        margin: 0 auto !important;     
+        text-align: center !important;  /* center the text */
     }
+
 
     .banner-inner-two-content p.disc,
     .banner-inner-two-content p.pre-title {
@@ -443,8 +446,8 @@
 
     .banner-inner-two-content a.rts-btn {
         font-size: 10px !important;
-        padding: 6px 12px !important; /* reduce button padding */
-        margin-top: 10px;
+        padding: 0px 12px !important; /* reduce button padding */
+        margin-top: 15px;
     }
 
     .swiper-button-next,
