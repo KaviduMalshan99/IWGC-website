@@ -73,14 +73,69 @@
     .partner-breadcrumb {
         background-size: cover !important;  
         background-position: center !important;  
-        height: 23vh !important; 
+        height: 16vh !important; 
+    }
+
+    
+           h3.title {
+        font-size: 22px !important;
+    }
+
+     p.disc {
+        font-size: 14px !important; 
+        text-align: justify;
+        text-justify: inter-word; 
+        word-break: break-word;   
+        hyphens: auto;            
+    }
+
+    .why-list li{
+         font-size: 15px !important; 
+    }
+
+      .level-table {
+        font-size: 13px; 
+    }
+
+    .level-table th,
+    .level-table td {
+        padding: 8px 6px; 
+    }
+
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+   
+
+    h3 {
+        font-size: 18px;
+    }
+
+    ul.degree-list li {
+        font-size: 15px;
+    }
+
+    .accordion-button {
+        font-size: 16px !important; /* question font */
+        padding: 8px 12px !important; /* optional: reduce padding */
+    }
+
+    .accordion-body {
+        font-size: 15px !important; /* answer font */
+        line-height: 1.4; /* optional: tighter line spacing */
+    }
+     .col-lg-12.text-center.mt-4 img {
+        height: 90px !important; /* adjust as needed */
+        max-width: 100%; /* ensures it scales properly */
     }
 }
 
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Enroll Now ( 400 x 1900 ).webp') }}'); background-size: cover; background-position: center;  height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('/frontend/assets/images/Enroll Now ( 400 x 1900 ).webp') }}'); background-size: cover; background-position: center;  height: 400px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->
@@ -130,7 +185,7 @@ For a detailed overview of the application process, including necessary document
                                 <h2>Step 1: E-mail your application & Supporting Documents</h2>
                             </div>
                             <div class="step-body">
-                                <p class="m-0"><strong>Please select your preferred program(s) and 
+                                <p class="m-0 disc"><strong>Please select your preferred program(s) and 
                                     complete the application form along with the supporting documents 
                                     as outlined in the checklist. Kindly submit these materials via email 
                                     to <span class="text-danger">admissions@iwgc.lk</span>. After your submission, you will receive 
@@ -157,7 +212,7 @@ For a detailed overview of the application process, including necessary document
                                 <h2>Step 2:	Upon approval, pay your course fees</h2>
                             </div>
                             <div class="step-body">
-                                <p class="m-0"><strong>Upon acceptance into the selected course, you will receive an email acknowledgment that includes the course fee structure. You will also receive instructions on how to proceed with the payment of the course fees </strong> </p>
+                                <p class="m-0 disc"><strong>Upon acceptance into the selected course, you will receive an email acknowledgment that includes the course fee structure. You will also receive instructions on how to proceed with the payment of the course fees </strong> </p>
                             </div>
                         </div>
                          <!-- Image  -->
@@ -176,7 +231,7 @@ For a detailed overview of the application process, including necessary document
                                 <h2>Step 3:	 Confirmation OF Enrollment & Class schedule</h2>
                             </div>
                             <div class="step-body">
-                                <p class="m-0"><strong>Upon receipt of your payment, we will promptly send you the letter of acceptance along with the lecture schedule for your selected program(s). </strong> </p>
+                                <p class="m-0 disc"><strong>Upon receipt of your payment, we will promptly send you the letter of acceptance along with the lecture schedule for your selected program(s). </strong> </p>
                             </div>
                         </div>
                          <!-- Image  -->
