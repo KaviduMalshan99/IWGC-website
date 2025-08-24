@@ -4,7 +4,33 @@
 @section('content')
 
 <style>
+       
+@media (max-width: 768px) {
+    .rts-single-wized.contact .wized-header img {
+        width: 160px; /* smaller logo */
+    }
 
+      h5.title {
+        font-size: 20px !important;
+    }
+
+     .disc {
+        font-size: 14px !important; 
+        text-align: justify;
+        text-justify: inter-word; 
+        word-break: break-word;   
+        hyphens: auto;            
+    }
+
+    .rts-single-wized.contact .rts-btn {
+        font-size: 12px; /* smaller button text */
+        padding: 6px 12px; /* smaller button padding */
+    }
+
+    .rts-single-wized.contact {
+        padding: 10px; /* optional: reduce overall padding */
+    }
+}
 </style>
 
       <!-- Blog Details Banner -->
@@ -41,7 +67,7 @@
                     </div>
                     <h2 class="title">{{ $blog->title }}</h2>
                     
-                    <div class="blog-content" style="text-align:justify">
+                    <div class="disc blog-content" style="text-align:justify">
                         {!! $blog->description !!}
                     </div>
 

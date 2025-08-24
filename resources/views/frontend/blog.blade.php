@@ -15,13 +15,39 @@
     .partner-breadcrumb {
         background-size: cover !important;  
         background-position: center !important;  
-        height: 35vh !important; 
+        height: 25vh !important; 
+    }
+    
+           h5.title {
+        font-size: 20px !important;
+    }
+
+     p.disc {
+        font-size: 14px !important; 
+        text-align: justify;
+        text-justify: inter-word; 
+        word-break: break-word;   
+        hyphens: auto;            
+    }
+}
+@media (max-width: 768px) {
+    .rts-single-wized.contact .wized-header img {
+        width: 160px; /* smaller logo */
+    }
+
+    .rts-single-wized.contact .rts-btn {
+        font-size: 12px; /* smaller button text */
+        padding: 6px 12px; /* smaller button padding */
+    }
+
+    .rts-single-wized.contact {
+        padding: 10px; /* optional: reduce overall padding */
     }
 }
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Blog 04.webp') }}'); background-size: cover; background-position: center;  height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Blog 04.webp') }}'); background-size: cover; background-position: center;  height: 300px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->

@@ -39,7 +39,19 @@
     .partner-breadcrumb {
         background-size: cover !important;  
         background-position: center !important;  
-        height: 35vh !important; 
+        height: 25vh !important; 
+    }
+    
+           h3.title {
+        font-size: 22px !important;
+    }
+
+     p.disc {
+        font-size: 14px !important; 
+        text-align: justify;
+        text-justify: inter-word; 
+        word-break: break-word;   
+        hyphens: auto;            
     }
 }
 
@@ -48,7 +60,7 @@
 
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/About Us 06.webp') }}'); background-size: cover; background-position: center;  height: 400px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/About Us 06.webp') }}'); background-size: cover; background-position: center;  height: 300px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->
