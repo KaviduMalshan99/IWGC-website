@@ -1225,74 +1225,56 @@
     
 
 <style>
-.marquee-wrapper-outer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    padding: 0 20px;
-    gap: 20px;
+.partner-ribbon-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 40px;
 }
 
-.logo-marquee-track {
-    display: flex;
-    width: max-content;
-}
-
-.logo-marquee-container {
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none; 
-    scrollbar-width: none;    
-}
-
-.logo-marquee-container::-webkit-scrollbar {
-    display: none;            
-}
-
-.logo-marquee {
+.partner-ribbon-track {
     display: flex;
     gap: 80px;
     align-items: center;
+    width: max-content;
 }
 
-.logo-marquee img {
+.partner-ribbon-item img {
     height: 70px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
 
-.logo-marquee img:hover {
+.partner-ribbon-item img:hover {
     transform: scale(1.1);
-    opacity: 1;
 }
 
-.marquee-arrow {
-    font-size: 30px;
-    background-color: rgba(255, 255, 255, 0.7);
+/* Arrows */
+.scroll-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
     border: none;
     cursor: pointer;
-    padding: 10px 15px;
+    font-size: 28px;
+    padding: 8px 12px;
     border-radius: 50%;
-    transition: background-color 0.3s ease;
-    z-index: 2;
+    transition: background 0.3s ease, color 0.3s ease;
+    z-index: 10;
 }
 
-.marquee-arrow:hover {
-    background-color: #ed3532;
-    color: white;
+.scroll-arrow:hover {
+    background: #ff0000;
+    color: #fff;
 }
+
+.scroll-left { left: 5px; }
+.scroll-right { right: 5px; }
 
 @media (max-width: 768px) {
-    .logo-marquee {
-        gap: 40px;
-    }
-    .logo-marquee img {
-        height: 50px;
-    }
-    .marquee-arrow {
-        display: none;
-    }
+    .partner-ribbon-track { gap: 40px; }
+    .partner-ribbon-item img { height: 50px; }
 }
 </style>
 
@@ -1308,125 +1290,76 @@
         </div>
     </div>    
 
-    <div class="marquee-wrapper-outer">
-        <div class="marquee-arrow left">&#10094;</div>
+    <!-- Arrows -->
+    <button class="scroll-arrow scroll-left">&#10094;</button>
+    <button class="scroll-arrow scroll-right">&#10095;</button>
 
-        <div class="logo-marquee-container" id="logoContainer">
-            <div class="logo-marquee-track">
-                <div class="logo-marquee">
-                    <img src="frontend/assets/images/uni/uni1.webp" alt="Client 1">
-                    <img src="/frontend/assets/images/uni/uni2.png" alt="Client 2">
-                    <img src="/frontend/assets/images/uni/uni3.png" alt="Client 3">
-                    <img src="/frontend/assets/images/uni/uni4.png" alt="Client 4">
-                    <img src="/frontend/assets/images/malaysia/Picture4.png" alt="Picture 4">
-                    <img src="/frontend/assets/images/malaysia/Picture9.png" alt="Client 6">
-                    <img src="/frontend/assets/images/uni/uni7.png" alt="Client 7">
-                    <img src="/frontend/assets/images/malaysia/Picture10.png" alt="Client 8">
-                    <img src="/frontend/assets/images/uni/uni9.png" alt="Client 9">
-                    <img src="/frontend/assets/images/malaysia/Picture8.png" alt="Client 10">
-                </div>
-            </div>
+    <div class="partner-ribbon-wrapper" id="partnerRibbon">
+        <div class="partner-ribbon-track" id="partnerTrack">
+            <!-- logos repeated twice for seamless scroll -->
+            <div class="partner-ribbon-item"><img src="frontend/assets/images/uni/uni1.webp" alt="Client 1"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni2.png" alt="Client 2"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni3.png" alt="Client 3"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni4.png" alt="Client 4"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture4.png" alt="Client 5"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture9.png" alt="Client 6"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni7.png" alt="Client 7"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture10.png" alt="Client 8"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni9.png" alt="Client 9"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture8.png" alt="Client 10"></div>
+
+            <!-- duplicate for smooth infinite effect -->
+            <div class="partner-ribbon-item"><img src="frontend/assets/images/uni/uni1.webp" alt="Client 1"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni2.png" alt="Client 2"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni3.png" alt="Client 3"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni4.png" alt="Client 4"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture4.png" alt="Client 5"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture9.png" alt="Client 6"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni7.png" alt="Client 7"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture10.png" alt="Client 8"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni9.png" alt="Client 9"></div>
+            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture8.png" alt="Client 10"></div>
         </div>
-
-        <div class="marquee-arrow right">&#10095;</div>
     </div>
 </div>
 
-
 <script>
-const container = document.getElementById('logoContainer');
-const leftArrow = document.querySelector('.marquee-arrow.left');
-const rightArrow = document.querySelector('.marquee-arrow.right');
+const ribbon = document.getElementById("partnerRibbon");
+const track = document.getElementById("partnerTrack");
+const leftArrow = document.querySelector(".scroll-left");
+const rightArrow = document.querySelector(".scroll-right");
 
-let autoScrollRAF;
-let scrollSpeed = 0.5;   // base speed
-let scrollMultiplier = 1;
-let isPaused = false;
+let speed = 0.5; // auto scroll speed
+let scrollPos = 0;
+let requestId;
 
-// ----- Auto Scroll -----
-function startAutoScroll() {
-    cancelAnimationFrame(autoScrollRAF);
-
-    function step() {
-        if (!isPaused) {
-            container.scrollLeft += scrollSpeed * scrollMultiplier;
-
-            // reset loop
-            if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
-                container.scrollLeft = 0;
-            }
-        }
-        autoScrollRAF = requestAnimationFrame(step);
-    }
-    autoScrollRAF = requestAnimationFrame(step);
+// Auto scroll function
+function autoScroll() {
+    scrollPos += speed;
+    if (scrollPos >= track.scrollWidth / 2) scrollPos = 0; // reset at half
+    ribbon.scrollLeft = scrollPos;
+    requestId = requestAnimationFrame(autoScroll);
 }
 
-// ----- Arrow Buttons -----
-function arrowBoost(direction) {
-    scrollMultiplier = 30 * direction;
-}
-function arrowRelease() {
-    scrollMultiplier = 1;
-}
+// Start auto scroll
+requestId = requestAnimationFrame(autoScroll);
 
-[leftArrow, rightArrow].forEach((arrow, idx) => {
-    if (!arrow) return;
-    const dir = idx === 0 ? -1 : 1;
-    arrow.addEventListener('mousedown', () => arrowBoost(dir));
-    arrow.addEventListener('mouseup', arrowRelease);
-    arrow.addEventListener('mouseleave', arrowRelease);
+// Arrow click
+leftArrow.addEventListener("click", () => {
+    scrollPos -= 200;
+    ribbon.scrollLeft = scrollPos;
 });
 
-// ----- Pause while dragging (Desktop + Mobile) -----
-let dragStartX = 0;
-let dragScrollStart = 0;
-
-function startDrag(x) {
-    isPaused = true; // pause auto-scroll
-    dragStartX = x;
-    dragScrollStart = container.scrollLeft;
-}
-
-function moveDrag(x) {
-    const delta = x - dragStartX;
-    container.scrollLeft = dragScrollStart - delta;
-}
-
-function endDrag() {
-    isPaused = false; // resume auto-scroll
-}
-
-// Desktop mouse drag
-container.addEventListener('pointerdown', (e) => {
-    if (e.pointerType === 'mouse') {
-        startDrag(e.clientX);
-        container.setPointerCapture(e.pointerId);
-    }
-});
-container.addEventListener('pointermove', (e) => {
-    if (e.pointerType === 'mouse' && isPaused) moveDrag(e.clientX);
-});
-container.addEventListener('pointerup', (e) => {
-    if (e.pointerType === 'mouse') endDrag();
+rightArrow.addEventListener("click", () => {
+    scrollPos += 200;
+    ribbon.scrollLeft = scrollPos;
 });
 
-// Mobile touch drag
-container.addEventListener('touchstart', (e) => {
-    if (e.touches.length === 1) {
-        startDrag(e.touches[0].clientX);
-    }
-});
-container.addEventListener('touchmove', (e) => {
-    if (e.touches.length === 1 && isPaused) {
-        moveDrag(e.touches[0].clientX);
-    }
-});
-container.addEventListener('touchend', endDrag);
-
-// ----- Start -----
-window.addEventListener('DOMContentLoaded', startAutoScroll);
-
+// Pause auto scroll on hover
+ribbon.addEventListener("mouseenter", () => cancelAnimationFrame(requestId));
+ribbon.addEventListener("mouseleave", () => requestId = requestAnimationFrame(autoScroll));
 </script>
+
 
 
 
