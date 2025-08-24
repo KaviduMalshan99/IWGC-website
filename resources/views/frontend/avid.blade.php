@@ -114,6 +114,18 @@
         background-position: center !important;  
         height: 13vh !important; 
     }
+    
+           h3.title {
+        font-size: 22px !important;
+    }
+
+     p.disc {
+        font-size: 14px !important; 
+        text-align: justify;
+        text-justify: inter-word; 
+        word-break: break-word;   
+        hyphens: auto;            
+    }
 }
 </style>
 
@@ -134,7 +146,7 @@
         <div class="col-md-6">
             <div class="info-box">
                 <h5> Our International Education Partner</h5>
-                <p style="text-align:justify">
+                <p class="disc" style="text-align:justify">
                     At Imperial Wisdom Graduate Campus, we are committed to delivering globally recognized higher education. One of our key international collaborations is with Avid College, a renowned private higher education institution based in the Maldives. This strategic partnership empowers our students with enhanced academic pathways, international mobility, and globally accredited qualifications.
                 </p>
             </div>

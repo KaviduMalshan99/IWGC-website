@@ -121,9 +121,60 @@
     .partner-breadcrumb {
         background-size: cover !important;  
         background-position: center !important;  
-        height: 30vh !important; 
+        height: 25vh !important; 
     }
 }
+@media (max-width: 768px) {
+    /* Adjust info card */
+    .info-card {
+        padding: 10px !important;
+    }
+
+    .info-card .info-item .label,
+    .info-card .info-item .highlight {
+        font-size: 13px !important;
+    }
+
+    .info-card .pathways .pathway-header {
+        font-size: 14px !important;
+    }
+
+    .info-card .pathways ul li {
+        font-size: 12px !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Adjust modules list */
+    .team-details-right-inner .title {
+        font-size: 16px !important;
+    }
+
+    .styled-modules-list li {
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+    }
+
+      .styled-modules-list li::before {
+        width: 25px !important;       
+        height: 25px !important;     
+        font-size: 12px !important; 
+    }
+
+    /* Reduce spacing/padding */
+    .pl--35 {
+        padding-left: 10px !important;
+    }
+
+    .pl_sm--15 {
+        padding-left: 10px !important;
+    }
+
+    .mt_md--30,
+    .mt_sm--50 {
+        margin-top: 15px !important;
+    }
+}
+
 </style>
 
 
