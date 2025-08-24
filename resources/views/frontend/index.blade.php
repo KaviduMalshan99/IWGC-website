@@ -1335,14 +1335,11 @@
 
 <script>
 const container = document.getElementById('logoContainer');
-const leftArrow = document.querySelector('.marquee-arrow.left');
-const rightArrow = document.querySelector('.marquee-arrow.right');
-
 let autoScrollRAF;
 let scrollSpeed = 0.5;
 let scrollMultiplier = 1;
 
-// ----- Auto Scroll -----
+// Auto scroll function (works on mobile too)
 function startAutoScroll() {
     function step() {
         container.scrollLeft += scrollSpeed * scrollMultiplier;
@@ -1351,37 +1348,32 @@ function startAutoScroll() {
         }
         autoScrollRAF = requestAnimationFrame(step);
     }
+    cancelAnimationFrame(autoScrollRAF);
     autoScrollRAF = requestAnimationFrame(step);
 }
 
-function stopAutoScroll() {
-    cancelAnimationFrame(autoScrollRAF);
-}
-
-// ----- Arrow Buttons (desktop only) -----
+// Arrow Boost
 function arrowBoost(direction) {
     scrollMultiplier = 30 * direction;
 }
-
 function arrowRelease() {
     scrollMultiplier = 1;
 }
 
-leftArrow.addEventListener('mousedown', () => arrowBoost(-1));
-leftArrow.addEventListener('mouseup', arrowRelease);
-leftArrow.addEventListener('mouseleave', arrowRelease);
+// Attach arrow events (desktop only)
+const leftArrow = document.querySelector('.marquee-arrow.left');
+const rightArrow = document.querySelector('.marquee-arrow.right');
+if(leftArrow && rightArrow){
+    leftArrow.addEventListener('mousedown', () => arrowBoost(-1));
+    leftArrow.addEventListener('mouseup', arrowRelease);
+    leftArrow.addEventListener('mouseleave', arrowRelease);
 
-rightArrow.addEventListener('mousedown', () => arrowBoost(1));
-rightArrow.addEventListener('mouseup', arrowRelease);
-rightArrow.addEventListener('mouseleave', arrowRelease);
+    rightArrow.addEventListener('mousedown', () => arrowBoost(1));
+    rightArrow.addEventListener('mouseup', arrowRelease);
+    rightArrow.addEventListener('mouseleave', arrowRelease);
+}
 
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') arrowBoost(-1);
-    if (e.key === 'ArrowRight') arrowBoost(1);
-});
-document.addEventListener('keyup', arrowRelease);
-
-// ----- Desktop Mouse Drag -----
+// Desktop Drag
 let isDragging = false;
 let startX = 0;
 let scrollStart = 0;
@@ -1392,7 +1384,7 @@ container.addEventListener('pointerdown', (e) => {
     startX = e.clientX;
     scrollStart = container.scrollLeft;
     container.style.cursor = 'grabbing';
-    container.style.scrollBehavior = 'auto'; // disable smooth scroll during drag
+    container.style.scrollBehavior = 'auto';
     e.preventDefault();
     container.setPointerCapture(e.pointerId);
 });
@@ -1407,11 +1399,11 @@ container.addEventListener('pointerup', (e) => {
     if (!isDragging) return;
     isDragging = false;
     container.style.cursor = 'grab';
-    container.style.scrollBehavior = 'smooth'; // re-enable smooth scroll
+    container.style.scrollBehavior = 'smooth';
     container.releasePointerCapture(e.pointerId);
 });
 
-// ----- Mobile Touch Drag -----
+// Mobile Drag
 let touchStartX = 0;
 let touchScrollStart = 0;
 
@@ -1419,22 +1411,20 @@ container.addEventListener('touchstart', (e) => {
     if (e.touches.length !== 1) return;
     touchStartX = e.touches[0].clientX;
     touchScrollStart = container.scrollLeft;
-    container.style.scrollBehavior = 'auto'; // disable smooth scroll while dragging
 });
 
 container.addEventListener('touchmove', (e) => {
     if (e.touches.length !== 1) return;
     const delta = e.touches[0].clientX - touchStartX;
     container.scrollLeft = touchScrollStart - delta;
-    e.preventDefault(); // prevent page scrolling
+    // Do NOT preventDefault here to allow auto-scroll to run on mobile
 });
 
-container.addEventListener('touchend', () => {
-    container.style.scrollBehavior = 'smooth'; // restore smooth scroll
-});
+container.addEventListener('touchend', () => {});
 
-// ----- Start Auto Scroll -----
+// Start auto scroll on page load
 window.addEventListener('DOMContentLoaded', startAutoScroll);
+
 </script>
 
 
