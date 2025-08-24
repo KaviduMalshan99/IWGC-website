@@ -1339,23 +1339,29 @@ const leftArrow = document.querySelector('.marquee-arrow.left');
 const rightArrow = document.querySelector('.marquee-arrow.right');
 
 let autoScrollRAF;
-let scrollSpeed = 0.5;
+let scrollSpeed = 0.5;   // base speed
 let scrollMultiplier = 1;
+let isPaused = false;
 
 // ----- Auto Scroll -----
 function startAutoScroll() {
     cancelAnimationFrame(autoScrollRAF);
+
     function step() {
-        container.scrollLeft += scrollSpeed * scrollMultiplier;
-        if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
-            container.scrollLeft = 0;
+        if (!isPaused) {
+            container.scrollLeft += scrollSpeed * scrollMultiplier;
+
+            // reset loop
+            if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
+                container.scrollLeft = 0;
+            }
         }
         autoScrollRAF = requestAnimationFrame(step);
     }
     autoScrollRAF = requestAnimationFrame(step);
 }
 
-// ----- Arrow Buttons (desktop) -----
+// ----- Arrow Buttons -----
 function arrowBoost(direction) {
     scrollMultiplier = 30 * direction;
 }
@@ -1363,70 +1369,62 @@ function arrowRelease() {
     scrollMultiplier = 1;
 }
 
-if (leftArrow && rightArrow) {
-    leftArrow.addEventListener('mousedown', () => arrowBoost(-1));
-    leftArrow.addEventListener('mouseup', arrowRelease);
-    leftArrow.addEventListener('mouseleave', arrowRelease);
+[leftArrow, rightArrow].forEach((arrow, idx) => {
+    if (!arrow) return;
+    const dir = idx === 0 ? -1 : 1;
+    arrow.addEventListener('mousedown', () => arrowBoost(dir));
+    arrow.addEventListener('mouseup', arrowRelease);
+    arrow.addEventListener('mouseleave', arrowRelease);
+});
 
-    rightArrow.addEventListener('mousedown', () => arrowBoost(1));
-    rightArrow.addEventListener('mouseup', arrowRelease);
-    rightArrow.addEventListener('mouseleave', arrowRelease);
+// ----- Pause while dragging (Desktop + Mobile) -----
+let dragStartX = 0;
+let dragScrollStart = 0;
+
+function startDrag(x) {
+    isPaused = true; // pause auto-scroll
+    dragStartX = x;
+    dragScrollStart = container.scrollLeft;
 }
 
-// ----- Desktop Drag -----
-let isDragging = false;
-let startX = 0;
-let scrollStart = 0;
+function moveDrag(x) {
+    const delta = x - dragStartX;
+    container.scrollLeft = dragScrollStart - delta;
+}
 
+function endDrag() {
+    isPaused = false; // resume auto-scroll
+}
+
+// Desktop mouse drag
 container.addEventListener('pointerdown', (e) => {
-    if (e.pointerType !== 'mouse') return;
-    isDragging = true;
-    startX = e.clientX;
-    scrollStart = container.scrollLeft;
-    container.style.cursor = 'grabbing';
-    container.style.scrollBehavior = 'auto';
-    e.preventDefault();
-    container.setPointerCapture(e.pointerId);
+    if (e.pointerType === 'mouse') {
+        startDrag(e.clientX);
+        container.setPointerCapture(e.pointerId);
+    }
 });
-
 container.addEventListener('pointermove', (e) => {
-    if (!isDragging) return;
-    const delta = e.clientX - startX;
-    container.scrollLeft = scrollStart - delta;
+    if (e.pointerType === 'mouse' && isPaused) moveDrag(e.clientX);
 });
-
 container.addEventListener('pointerup', (e) => {
-    if (!isDragging) return;
-    isDragging = false;
-    container.style.cursor = 'grab';
-    container.style.scrollBehavior = 'smooth';
-    container.releasePointerCapture(e.pointerId);
+    if (e.pointerType === 'mouse') endDrag();
 });
 
-// ----- Mobile Touch Drag -----
-let touchStartX = 0;
-let touchScrollStart = 0;
-
+// Mobile touch drag
 container.addEventListener('touchstart', (e) => {
-    if (e.touches.length !== 1) return;
-    touchStartX = e.touches[0].clientX;
-    touchScrollStart = container.scrollLeft;
+    if (e.touches.length === 1) {
+        startDrag(e.touches[0].clientX);
+    }
 });
-
 container.addEventListener('touchmove', (e) => {
-    if (e.touches.length !== 1) return;
-    const delta = e.touches[0].clientX - touchStartX;
-    container.scrollLeft = touchScrollStart - delta;
-    // no e.preventDefault(); so auto-scroll keeps running
+    if (e.touches.length === 1 && isPaused) {
+        moveDrag(e.touches[0].clientX);
+    }
 });
+container.addEventListener('touchend', endDrag);
 
-container.addEventListener('touchend', () => {
-    // nothing needed; auto-scroll continues
-});
-
-// ----- Start Auto Scroll -----
+// ----- Start -----
 window.addEventListener('DOMContentLoaded', startAutoScroll);
-
 
 </script>
 
