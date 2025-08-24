@@ -116,6 +116,32 @@
         }
     }
 
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .service-ribbon-wrapper {
+        height: 100px;
+        padding: 0 10px;
+    }
+
+    .service-ribbon-item {
+        font-size: 20px;
+        gap: 15px;       
+    }
+
+    .service-ribbon-item i {
+        min-width: 25px; 
+        font-size: 18px; 
+    }
+
+    .service-ribbon-content {
+        gap: 20px;
+    }
+
+    .service-ribbon-track {
+        animation: scroll 10s linear infinite;
+    }
+}
+
 
 /* programs section */
 
@@ -1226,17 +1252,24 @@
 
 <style>
 .partner-ribbon-wrapper {
-    position: relative;
-    overflow: hidden;
     width: 100%;
-    padding: 20px 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    position: relative; /* for arrows */
 }
 
 .partner-ribbon-track {
     display: flex;
+}
+
+.partner-ribbon-content {
+    display: flex;
     gap: 80px;
     align-items: center;
     width: max-content;
+    animation: partner-scroll 70s linear infinite;
 }
 
 .partner-ribbon-item img {
@@ -1249,34 +1282,58 @@
     transform: scale(1.1);
 }
 
+/* Animation */
+@keyframes partner-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
 /* Arrows */
-.scroll-arrow {
+.ribbon-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.8);
-    border: none;
-    cursor: pointer;
-    font-size: 28px;
-    padding: 8px 12px;
+    background: #fff;
     border-radius: 50%;
-    transition: background 0.3s ease, color 0.3s ease;
-    z-index: 10;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    z-index: 5;
 }
 
-.scroll-arrow:hover {
-    background: #ff0000;
+.ribbon-arrow:hover {
+    background: red;
     color: #fff;
 }
 
-.scroll-left { left: 5px; }
-.scroll-right { right: 5px; }
+.ribbon-arrow.left {
+    left: 10px;
+}
+
+.ribbon-arrow.right {
+    right: 10px;
+}
 
 @media (max-width: 768px) {
-    .partner-ribbon-track { gap: 40px; }
-    .partner-ribbon-item img { height: 50px; }
+    .partner-ribbon-content {
+        gap: 40px;
+    }
+    .partner-ribbon-item img {
+        height: 50px;
+    }
+    .ribbon-arrow {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
 }
 </style>
+
 
 <div class="rts-client-area ptb--100 brand-bg-three bg_image mt--20">
     <div class="container">
@@ -1290,79 +1347,67 @@
         </div>
     </div>    
 
-    <!-- Arrows -->
-    <button class="scroll-arrow scroll-left">&#10094;</button>
-    <button class="scroll-arrow scroll-right">&#10095;</button>
+    <div class="partner-ribbon-wrapper">
+        <!-- Left Arrow -->
+        <div class="ribbon-arrow left">&#10094;</div>
 
-    <div class="partner-ribbon-wrapper" id="partnerRibbon">
         <div class="partner-ribbon-track" id="partnerTrack">
-            <!-- logos repeated twice for seamless scroll -->
-            <div class="partner-ribbon-item"><img src="frontend/assets/images/uni/uni1.webp" alt="Client 1"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni2.png" alt="Client 2"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni3.png" alt="Client 3"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni4.png" alt="Client 4"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture4.png" alt="Client 5"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture9.png" alt="Client 6"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni7.png" alt="Client 7"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture10.png" alt="Client 8"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni9.png" alt="Client 9"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture8.png" alt="Client 10"></div>
+            <div class="partner-ribbon-content">
+                <!-- logos repeated twice for seamless loop -->
+                <div class="partner-ribbon-item"><img src="frontend/assets/images/uni/uni1.webp" alt="Client 1"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni2.png" alt="Client 2"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni3.png" alt="Client 3"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni4.png" alt="Client 4"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture4.png" alt="Client 5"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture9.png" alt="Client 6"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni7.png" alt="Client 7"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture10.png" alt="Client 8"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni9.png" alt="Client 9"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture8.png" alt="Client 10"></div>
 
-            <!-- duplicate for smooth infinite effect -->
-            <div class="partner-ribbon-item"><img src="frontend/assets/images/uni/uni1.webp" alt="Client 1"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni2.png" alt="Client 2"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni3.png" alt="Client 3"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni4.png" alt="Client 4"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture4.png" alt="Client 5"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture9.png" alt="Client 6"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni7.png" alt="Client 7"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture10.png" alt="Client 8"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni9.png" alt="Client 9"></div>
-            <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture8.png" alt="Client 10"></div>
+                <!-- repeat again -->
+                <div class="partner-ribbon-item"><img src="frontend/assets/images/uni/uni1.webp" alt="Client 1"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni2.png" alt="Client 2"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni3.png" alt="Client 3"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni4.png" alt="Client 4"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture4.png" alt="Client 5"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture9.png" alt="Client 6"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni7.png" alt="Client 7"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture10.png" alt="Client 8"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni9.png" alt="Client 9"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture8.png" alt="Client 10"></div>
+            </div>
         </div>
+
+        <!-- Right Arrow -->
+        <div class="ribbon-arrow right">&#10095;</div>
     </div>
 </div>
 
+
 <script>
-const ribbon = document.getElementById("partnerRibbon");
-const track = document.getElementById("partnerTrack");
-const leftArrow = document.querySelector(".scroll-left");
-const rightArrow = document.querySelector(".scroll-right");
+document.addEventListener("DOMContentLoaded", function () {
+    const track = document.getElementById("partnerTrack");
+    const leftArrow = document.querySelector(".ribbon-arrow.left");
+    const rightArrow = document.querySelector(".ribbon-arrow.right");
 
-let speed = 0.5; // auto scroll speed
-let scrollPos = 0;
-let requestId;
+    // stop auto scroll animation on hover
+    const content = track.querySelector(".partner-ribbon-content");
+    track.addEventListener("mouseenter", () => content.style.animationPlayState = "paused");
+    track.addEventListener("mouseleave", () => content.style.animationPlayState = "running");
 
-// Auto scroll function
-function autoScroll() {
-    scrollPos += speed;
-    if (scrollPos >= track.scrollWidth / 2) scrollPos = 0; // reset at half
-    ribbon.scrollLeft = scrollPos;
-    requestId = requestAnimationFrame(autoScroll);
-}
+    // scroll amount
+    const scrollStep = 200;
 
-// Start auto scroll
-requestId = requestAnimationFrame(autoScroll);
+    leftArrow.addEventListener("click", () => {
+        track.scrollBy({ left: -scrollStep, behavior: "smooth" });
+    });
 
-// Arrow click
-leftArrow.addEventListener("click", () => {
-    scrollPos -= 200;
-    ribbon.scrollLeft = scrollPos;
+    rightArrow.addEventListener("click", () => {
+        track.scrollBy({ left: scrollStep, behavior: "smooth" });
+    });
 });
-
-rightArrow.addEventListener("click", () => {
-    scrollPos += 200;
-    ribbon.scrollLeft = scrollPos;
-});
-
-// Pause auto scroll on hover
-ribbon.addEventListener("mouseenter", () => cancelAnimationFrame(requestId));
-ribbon.addEventListener("mouseleave", () => requestId = requestAnimationFrame(autoScroll));
 </script>
-
-
-
-
 
      
 <!-- rts gallery area start -->
