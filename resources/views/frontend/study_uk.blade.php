@@ -9,7 +9,28 @@
     .partner-breadcrumb {
         background-size: cover !important;  
         background-position: center !important;  
-        height: 25vh !important; 
+        height: 20vh !important; 
+    }
+            h5.title-sm {
+        font-size: 19px !important;
+    }
+
+     p.disc {
+        font-size: 15px !important; 
+        text-align: justify;
+        text-justify: inter-word; 
+        word-break: break-word;   
+        hyphens: auto;            
+    }
+
+     .icon {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 14px !important;
+    }
+
+    h3 {
+        font-size: 18px;
     }
 }
 
@@ -178,8 +199,8 @@
     <div style="padding: 50px; background-color: #f9f9f9; font-family: Arial, sans-serif; color: #1b2954;">
         
         <!-- Intro Section -->
-        <h2 style="color: #1b2954; margin-bottom: 10px;">Excited to begin your academic adventure in the UK?</h2>
-        <p style="font-size: 16px; line-height: 1.6; margin-bottom: 30px;">
+        <h5 class="title-sm" style="color: #1b2954; margin-bottom: 10px;">Excited to begin your academic adventure in the UK?</h2>
+        <p class="disc" style="font-size: 16px; line-height: 1.6; margin-bottom: 30px;">
             Choosing to study in the UK is a strategic decision that combines high-quality education, cultural diversity, and numerous opportunities for personal and professional growth. Whether you aim for a leading university experience, a shorter degree path, or an enriching cultural journey, the UK stands out as an ideal destination for international students. Embark on your academic adventure and unlock your future today!
         </p>
 
@@ -261,154 +282,169 @@
 </style>
 
 
+
 <style>
-        .marquee-wrapper-outer {
+.partner-ribbon-wrapper {
+    width: 100%;
+    overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    padding: 0 20px;
-    gap: 20px;
+    padding: 20px 0;
+    position: relative; /* for arrows */
 }
 
-.logo-marquee-track {
+.partner-ribbon-track {
     display: flex;
-    width: max-content;
-    transition: transform 0.3s ease;
 }
 
-.logo-marquee-container {
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none; 
-    scrollbar-width: none;    
-}
-
-.logo-marquee-container::-webkit-scrollbar {
-    display: none;            
-}
-
-
-.logo-marquee {
+.partner-ribbon-content {
     display: flex;
     gap: 80px;
     align-items: center;
+    width: max-content;
+    animation: partner-scroll 70s linear infinite;
 }
 
-.logo-marquee img {
+.partner-ribbon-item img {
     height: 70px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
 
-.logo-marquee img:hover {
+.partner-ribbon-item img:hover {
     transform: scale(1.1);
-    opacity: 1;
 }
 
-.marquee-arrow {
-    font-size: 30px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-    z-index: 2;
+/* Animation */
+@keyframes partner-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
-.marquee-arrow:hover {
-    background-color: #ed3532;
-    color: white;
-}
 
-@keyframes scroll-marquee {
-    0% {
-        transform: translateX(0%);
+
+@media (max-width: 768px) {
+    .partner-ribbon-content {
+        gap: 40px;
     }
-    100% {
-        transform: translateX(-50%);
+    .partner-ribbon-item img {
+        height: 50px;
+    }
+    .ribbon-arrow {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
     }
 }
-
 </style>
 
-   <!-- rts Esteemed Clients start -->
-<div class="rts-client-area ptb--100 brand-bg-three bg_image mb--100">
-        <h3 style="text-align:center;margin-bottom: 30px; font-size: 25px; color: #ed3532;">
-                 Explore Your Dream Institutions
-        </h3>
-          <div class="marquee-wrapper-outer">
-            <div class="marquee-arrow left" onclick="scrollLogos(-1)">
-                &#10094;
-            </div>
-                <div class="logo-marquee-container" id="logoContainer">
-                    <div class="logo-marquee-track" id="logoTrack">
-                        <!-- Repeat logos for seamless loop -->
-                        <div class="logo-marquee">
-                            <img src="public/frontend/assets/images/UK/Picture1.png" alt="Picture 1">
-                            <img src="public/frontend/assets/images/UK/Picture2.png" alt="Picture 2">
-                            <img src="public/frontend/assets/images/UK/Picture3.png" alt="Picture 3">
-                            <img src="public/frontend/assets/images/UK/Picture4.png" alt="Picture 4">
-                            <img src="public/frontend/assets/images/UK/Picture5.png" alt="Picture 5">
-                            <img src="public/frontend/assets/images/UK/Picture6.png" alt="Picture 6">
-                            <img src="public/frontend/assets/images/UK/Picture7.png" alt="Picture 7">
-                            <img src="public/frontend/assets/images/UK/Picture8.png" alt="Picture 8">
-                            <img src="public/frontend/assets/images/UK/Picture9.png" alt="Picture 9">
-                        </div>
-                        
-                    </div>
-                </div>
 
-        <div class="marquee-arrow right" onclick="scrollLogos(1)">
-            &#10095;
+<div class="rts-client-area ptb--100 brand-bg-three bg_image mt--20">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pb-5">
+                <div class="title-style-two center">
+                   <h3 style="text-align:center;margin-bottom: 30px; font-size: 25px; color: #ed3532;">
+                        Explore Your Dream Institutions
+                </h3>
+                </div>
+            </div>
         </div>
+    </div>    
+
+    <div class="partner-ribbon-wrapper">
+    
+        <div class="partner-ribbon-track" id="partnerTrack">
+            <div class="partner-ribbon-content">
+               <!-- logos repeated twice for seamless loop -->
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture1.png" alt="UK 1"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture2.png" alt="UK 2"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture3.png" alt="UK 3"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture4.png" alt="UK 4"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture5.png" alt="UK 5"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture6.png" alt="UK 6"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture7.png" alt="UK 7"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture8.png" alt="UK 8"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture9.png" alt="UK 9"></div>
+
+                <!-- repeat again for seamless scroll -->
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture1.png" alt="UK 1"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture2.png" alt="UK 2"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture3.png" alt="UK 3"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture4.png" alt="UK 4"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture5.png" alt="UK 5"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture6.png" alt="UK 6"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture7.png" alt="UK 7"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture8.png" alt="UK 8"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture9.png" alt="UK 9"></div>
+            </div>
         </div>
+
+ 
+    </div>
 </div>
-<!-- rts galllery area end -->
 
 <script>
-    const container = document.getElementById('logoContainer');
-    let autoScrollInterval;
+const ribbon = document.querySelector('.partner-ribbon-wrapper');
+const track = document.querySelector('.partner-ribbon-track');
 
-    function getSingleLogoScrollWidth() {
-        const logo = container.querySelector('.logo-marquee img');
-        if (!logo) return 200; 
-        const style = getComputedStyle(logo);
-        const marginRight = parseInt(style.marginRight || 0);
-        const gap = 80; 
-        return logo.offsetWidth + gap;
-    }
+let isDragging = false;
+let startX;
+let scrollLeft;
 
-    function startAutoScroll() {
-        stopAutoScroll(); 
-        autoScrollInterval = setInterval(() => {
-            container.scrollBy({ left: 1, behavior: 'smooth' });
-        }, 20);
-    }
+// Pause/resume CSS auto-scroll animation
+const content = document.querySelector('.partner-ribbon-content');
+function pauseAnimation() {
+    content.style.animationPlayState = 'paused';
+}
+function resumeAnimation() {
+    content.style.animationPlayState = 'running';
+}
 
-    function stopAutoScroll() {
-        clearInterval(autoScrollInterval);
-    }
+// Mouse events for desktop drag
+ribbon.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    pauseAnimation();
+    startX = e.pageX - ribbon.offsetLeft;
+    scrollLeft = ribbon.scrollLeft;
+});
 
-    function scrollLogos(direction) {
-        const scrollAmount = getSingleLogoScrollWidth();
-        container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+ribbon.addEventListener('mouseleave', () => {
+    isDragging = false;
+    resumeAnimation();
+});
 
-        // Restart auto-scroll after short pause
-        stopAutoScroll();
-        setTimeout(startAutoScroll, 1000);
-    }
+ribbon.addEventListener('mouseup', () => {
+    isDragging = false;
+    resumeAnimation();
+});
 
-    // Start auto-scroll on page load
-    window.addEventListener('DOMContentLoaded', startAutoScroll);
+ribbon.addEventListener('mousemove', (e) => {
+    if(!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - ribbon.offsetLeft;
+    const walk = (x - startX) * 2; // scroll speed multiplier
+    ribbon.scrollLeft = scrollLeft - walk;
+});
 
-    container.addEventListener('mouseenter', stopAutoScroll);
-    container.addEventListener('mouseleave', startAutoScroll);
+// Touch events for mobile drag
+ribbon.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    pauseAnimation();
+    startX = e.touches[0].pageX - ribbon.offsetLeft;
+    scrollLeft = ribbon.scrollLeft;
+});
 
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') scrollLogos(-1);
-        if (e.key === 'ArrowRight') scrollLogos(1);
-    });
+ribbon.addEventListener('touchend', () => {
+    isDragging = false;
+    resumeAnimation();
+});
+
+ribbon.addEventListener('touchmove', (e) => {
+    if(!isDragging) return;
+    const x = e.touches[0].pageX - ribbon.offsetLeft;
+    const walk = (x - startX) * 2; // scroll speed multiplier
+    ribbon.scrollLeft = scrollLeft - walk;
+});
 </script>
 @endsection
