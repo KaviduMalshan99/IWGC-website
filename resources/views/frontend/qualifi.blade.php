@@ -103,8 +103,69 @@
     .partner-breadcrumb {
         background-size: cover !important;  
         background-position: center !important;  
-        height: 14vh !important; 
+        height: 12vh !important; 
     }
+
+     h4.title {
+        font-size: 20px !important;
+    }
+
+     p.disc {
+        font-size: 15px !important; 
+        text-align: justify;
+        text-justify: inter-word; 
+        word-break: break-word;   
+        hyphens: auto;            
+    }
+
+    .why-list li{
+         font-size: 15px !important; 
+    }
+
+      .level-table {
+        font-size: 13px; 
+    }
+
+    .level-table th,
+    .level-table td {
+        padding: 8px 6px; 
+    }
+
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+   
+
+    h3 {
+        font-size: 18px;
+    }
+
+    ul.degree-list li {
+        font-size: 15px;
+    }
+
+    .accordion-button {
+        padding: 8px 12px !important;
+    }
+}
+
+/* Change accordion arrow color for all screens */
+.accordion-button::after {
+    filter: invert(1); 
+    color: white;
+}
+
+/* Example: make it red */
+.accordion-button::after {
+    color: #ed3532; 
+    font-weight: bold;
+}
+
+/* Optional: change arrow color on expand */
+.accordion-button:not(.collapsed)::after {
+    color: gold; 
 }
 
 </style>
@@ -116,7 +177,7 @@ position: relative; background-size: contain; background-position: center;">
 
 <!-- Banner Section -->
 <div class="partner-breadcrumb" style="
-    background-image: url('{{ asset('public/frontend/assets/images/Qualifi.WEBP') }}'); 
+    background-image: url('{{ asset('/frontend/assets/images/Qualifi.WEBP') }}'); 
     background-repeat: no-repeat; 
     background-size: 100% auto; 
     background-position: top center;
@@ -195,7 +256,7 @@ position: relative; background-size: contain; background-position: center;">
             <div class="row">
                 <div class="col-lg-12">
                    <h3 class="mt-5">Level Equivalencies: Understanding the Framework</h3>
-                    <p class="mb-4">
+                    <p class=" mb-4">
                         QUALIFI programs are offered at multiple RQF levels, making it easy to align your
 education with global standards. Here’s a quick look at how these levels compare:
                     </p>

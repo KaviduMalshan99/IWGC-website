@@ -134,6 +134,56 @@
         background-position: center !important;  
         height: 35vh !important; 
     }
+
+      h4.title {
+        font-size: 20px !important;
+    }
+
+     p.disc {
+        font-size: 15px !important; 
+        text-align: justify;
+        text-justify: inter-word; 
+        word-break: break-word;   
+        hyphens: auto;            
+    }
+
+    .why-list li{
+         font-size: 15px !important; 
+    }
+
+      .level-table {
+        font-size: 13px; 
+    }
+
+    .level-table th,
+    .level-table td {
+        padding: 8px 6px; 
+    }
+
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+   
+
+    h3 {
+        font-size: 18px;
+    }
+
+    ul.degree-list li {
+        font-size: 15px;
+    }
+
+    .accordion-button {
+        font-size: 16px !important; /* question font */
+        padding: 8px 12px !important; /* optional: reduce padding */
+    }
+
+    .accordion-body {
+        font-size: 15px !important; /* answer font */
+        line-height: 1.4; /* optional: tighter line spacing */
+    }
 }
 </style>
 
@@ -141,7 +191,7 @@
 
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Faculty of Education 03.webp') }}');  height: 300px;position: relative;background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('/frontend/assets/images/Faculty of Education 03.webp') }}');  height: 300px;position: relative;background-size: cover; background-position: center;">
 </div>
 
 <!-- Title and Info Boxes -->
@@ -274,14 +324,14 @@
     <div class="rts-faq-area rts-section-gapBottom">
         <div class="container">
             <div class="row">
-                 <div class="col-lg-12" style="padding-bottom:50px">
+                 <div class="col-lg-12">
                     <div class="title-style-one center">
                         <span class="pre"></span>
                         <h2 class="title rts-text-anime-style-1"> Frequently Asked Questions
                         </h2>
                     </div>
                 </div>
-                <div class="col-lg-10 pl--50 pl_md--0 pl_sm--0 mt_md--50 mt_sm--80 mx-auto" data-animation="fadeInUp" data-delay="0.3">
+                <div class="col-lg-10 pl--50 pl_md--0 pl_sm--0 mt_md--50  mx-auto" data-animation="fadeInUp" data-delay="0.3">
                     <div class="accordion faq-wrapper-inner-page" id="accordionExample">
                         <div class="accordion-item"  style="border-color: gold; box-shadow: 0 4px 8px rgba(255, 208, 0, 0.18); ">
                             <h2 class="accordion-header" id="headingOne">
