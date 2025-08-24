@@ -1288,36 +1288,7 @@
     100% { transform: translateX(-50%); }
 }
 
-/* Arrows */
-.ribbon-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #fff;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
-    z-index: 5;
-}
 
-.ribbon-arrow:hover {
-    background: red;
-    color: #fff;
-}
-
-.ribbon-arrow.left {
-    left: 10px;
-}
-
-.ribbon-arrow.right {
-    right: 10px;
-}
 
 @media (max-width: 768px) {
     .partner-ribbon-content {
@@ -1348,9 +1319,7 @@
     </div>    
 
     <div class="partner-ribbon-wrapper">
-        <!-- Left Arrow -->
-        <div class="ribbon-arrow left">&#10094;</div>
-
+    
         <div class="partner-ribbon-track" id="partnerTrack">
             <div class="partner-ribbon-content">
                 <!-- logos repeated twice for seamless loop -->
@@ -1379,35 +1348,74 @@
             </div>
         </div>
 
-        <!-- Right Arrow -->
-        <div class="ribbon-arrow right">&#10095;</div>
+ 
     </div>
 </div>
 
-
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const track = document.getElementById("partnerTrack");
-    const leftArrow = document.querySelector(".ribbon-arrow.left");
-    const rightArrow = document.querySelector(".ribbon-arrow.right");
+const ribbon = document.querySelector('.partner-ribbon-wrapper');
+const track = document.querySelector('.partner-ribbon-track');
 
-    // stop auto scroll animation on hover
-    const content = track.querySelector(".partner-ribbon-content");
-    track.addEventListener("mouseenter", () => content.style.animationPlayState = "paused");
-    track.addEventListener("mouseleave", () => content.style.animationPlayState = "running");
+let isDragging = false;
+let startX;
+let scrollLeft;
 
-    // scroll amount
-    const scrollStep = 200;
+// Pause/resume CSS auto-scroll animation
+const content = document.querySelector('.partner-ribbon-content');
+function pauseAnimation() {
+    content.style.animationPlayState = 'paused';
+}
+function resumeAnimation() {
+    content.style.animationPlayState = 'running';
+}
 
-    leftArrow.addEventListener("click", () => {
-        track.scrollBy({ left: -scrollStep, behavior: "smooth" });
-    });
+// Mouse events for desktop drag
+ribbon.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    pauseAnimation();
+    startX = e.pageX - ribbon.offsetLeft;
+    scrollLeft = ribbon.scrollLeft;
+});
 
-    rightArrow.addEventListener("click", () => {
-        track.scrollBy({ left: scrollStep, behavior: "smooth" });
-    });
+ribbon.addEventListener('mouseleave', () => {
+    isDragging = false;
+    resumeAnimation();
+});
+
+ribbon.addEventListener('mouseup', () => {
+    isDragging = false;
+    resumeAnimation();
+});
+
+ribbon.addEventListener('mousemove', (e) => {
+    if(!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - ribbon.offsetLeft;
+    const walk = (x - startX) * 2; // scroll speed multiplier
+    ribbon.scrollLeft = scrollLeft - walk;
+});
+
+// Touch events for mobile drag
+ribbon.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    pauseAnimation();
+    startX = e.touches[0].pageX - ribbon.offsetLeft;
+    scrollLeft = ribbon.scrollLeft;
+});
+
+ribbon.addEventListener('touchend', () => {
+    isDragging = false;
+    resumeAnimation();
+});
+
+ribbon.addEventListener('touchmove', (e) => {
+    if(!isDragging) return;
+    const x = e.touches[0].pageX - ribbon.offsetLeft;
+    const walk = (x - startX) * 2; // scroll speed multiplier
+    ribbon.scrollLeft = scrollLeft - walk;
 });
 </script>
+
 
      
 <!-- rts gallery area start -->
