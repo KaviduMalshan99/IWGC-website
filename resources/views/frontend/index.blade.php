@@ -1224,8 +1224,8 @@
 
     
 
- <style>
-      .marquee-wrapper-outer {
+<style>
+.marquee-wrapper-outer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1237,7 +1237,6 @@
 .logo-marquee-track {
     display: flex;
     width: max-content;
-    transition: transform 0.3s ease;
 }
 
 .logo-marquee-container {
@@ -1250,7 +1249,6 @@
 .logo-marquee-container::-webkit-scrollbar {
     display: none;            
 }
-
 
 .logo-marquee {
     display: flex;
@@ -1285,34 +1283,19 @@
     color: white;
 }
 
-@keyframes scroll-marquee {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
 @media (max-width: 768px) {
     .logo-marquee {
-        gap: 40px; /* smaller gap on mobile */
+        gap: 40px;
     }
-
     .logo-marquee img {
-        height: 50px; /* reduce logo size */
+        height: 50px;
     }
-
     .marquee-arrow {
-        font-size: 24px;
-        padding: 8px 12px;
+        display: none;
     }
 }
-
 </style>
 
-
-<!-- rts Esteemed Clients start -->
 <div class="rts-client-area ptb--100 brand-bg-three bg_image mt--20">
     <div class="container">
         <div class="row">
@@ -1324,37 +1307,139 @@
             </div>
         </div>
     </div>    
+
     <div class="marquee-wrapper-outer">
-        <div class="marquee-arrow left" onclick="scrollLogos(-1)">
-            &#10094;
-        </div>
+        <div class="marquee-arrow left">&#10094;</div>
 
         <div class="logo-marquee-container" id="logoContainer">
-            <div class="logo-marquee-track" id="logoTrack">
-            <!-- Repeat logos for seamless loop -->
-            <div class="logo-marquee">
-                <img src="frontend/assets/images/uni/uni1.webp" alt="Client 1">
-                <img src="/frontend/assets/images/uni/uni2.png" alt="Client 2">
-                <img src="/frontend/assets/images/uni/uni3.png" alt="Client 3">
-                <img src="/frontend/assets/images/uni/uni4.png" alt="Client 4">
-                <img src="/frontend/assets/images/malaysia/Picture4.png" alt="Picture 4">
-                <img src="/frontend/assets/images/malaysia/Picture9.png" alt="Client 6">
-                <img src="/frontend/assets/images/uni/uni7.png" alt="Client 7">
-                <img src="/frontend/assets/images/malaysia/Picture10.png" alt="Client 8">
-                <img src="/frontend/assets/images/uni/uni9.png" alt="Client 9">
-                <img src="/frontend/assets/images/malaysia/Picture8.png" alt="Client 10">
+            <div class="logo-marquee-track">
+                <div class="logo-marquee">
+                    <img src="frontend/assets/images/uni/uni1.webp" alt="Client 1">
+                    <img src="/frontend/assets/images/uni/uni2.png" alt="Client 2">
+                    <img src="/frontend/assets/images/uni/uni3.png" alt="Client 3">
+                    <img src="/frontend/assets/images/uni/uni4.png" alt="Client 4">
+                    <img src="/frontend/assets/images/malaysia/Picture4.png" alt="Picture 4">
+                    <img src="/frontend/assets/images/malaysia/Picture9.png" alt="Client 6">
+                    <img src="/frontend/assets/images/uni/uni7.png" alt="Client 7">
+                    <img src="/frontend/assets/images/malaysia/Picture10.png" alt="Client 8">
+                    <img src="/frontend/assets/images/uni/uni9.png" alt="Client 9">
+                    <img src="/frontend/assets/images/malaysia/Picture8.png" alt="Client 10">
+                </div>
             </div>
-            
         </div>
-    </div>
-     <div class="marquee-arrow right" onclick="scrollLogos(1)">
-            &#10095;
-        </div>
+
+        <div class="marquee-arrow right">&#10095;</div>
     </div>
 </div>
-<!-- rts galllery area end -->
 
-    
+
+<script>
+const container = document.getElementById('logoContainer');
+const leftArrow = document.querySelector('.marquee-arrow.left');
+const rightArrow = document.querySelector('.marquee-arrow.right');
+
+let autoScrollRAF;
+let scrollSpeed = 0.5;
+let scrollMultiplier = 1;
+
+// ----- Auto Scroll -----
+function startAutoScroll() {
+    function step() {
+        container.scrollLeft += scrollSpeed * scrollMultiplier;
+        if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
+            container.scrollLeft = 0;
+        }
+        autoScrollRAF = requestAnimationFrame(step);
+    }
+    autoScrollRAF = requestAnimationFrame(step);
+}
+
+function stopAutoScroll() {
+    cancelAnimationFrame(autoScrollRAF);
+}
+
+// ----- Arrow Buttons (desktop only) -----
+function arrowBoost(direction) {
+    scrollMultiplier = 30 * direction;
+}
+
+function arrowRelease() {
+    scrollMultiplier = 1;
+}
+
+leftArrow.addEventListener('mousedown', () => arrowBoost(-1));
+leftArrow.addEventListener('mouseup', arrowRelease);
+leftArrow.addEventListener('mouseleave', arrowRelease);
+
+rightArrow.addEventListener('mousedown', () => arrowBoost(1));
+rightArrow.addEventListener('mouseup', arrowRelease);
+rightArrow.addEventListener('mouseleave', arrowRelease);
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') arrowBoost(-1);
+    if (e.key === 'ArrowRight') arrowBoost(1);
+});
+document.addEventListener('keyup', arrowRelease);
+
+// ----- Desktop Mouse Drag -----
+let isDragging = false;
+let startX = 0;
+let scrollStart = 0;
+
+container.addEventListener('pointerdown', (e) => {
+    if (e.pointerType !== 'mouse') return;
+    isDragging = true;
+    startX = e.clientX;
+    scrollStart = container.scrollLeft;
+    container.style.cursor = 'grabbing';
+    container.style.scrollBehavior = 'auto'; // disable smooth scroll during drag
+    e.preventDefault();
+    container.setPointerCapture(e.pointerId);
+});
+
+container.addEventListener('pointermove', (e) => {
+    if (!isDragging) return;
+    const delta = e.clientX - startX;
+    container.scrollLeft = scrollStart - delta;
+});
+
+container.addEventListener('pointerup', (e) => {
+    if (!isDragging) return;
+    isDragging = false;
+    container.style.cursor = 'grab';
+    container.style.scrollBehavior = 'smooth'; // re-enable smooth scroll
+    container.releasePointerCapture(e.pointerId);
+});
+
+// ----- Mobile Touch Drag -----
+let touchStartX = 0;
+let touchScrollStart = 0;
+
+container.addEventListener('touchstart', (e) => {
+    if (e.touches.length !== 1) return;
+    touchStartX = e.touches[0].clientX;
+    touchScrollStart = container.scrollLeft;
+    container.style.scrollBehavior = 'auto'; // disable smooth scroll while dragging
+});
+
+container.addEventListener('touchmove', (e) => {
+    if (e.touches.length !== 1) return;
+    const delta = e.touches[0].clientX - touchStartX;
+    container.scrollLeft = touchScrollStart - delta;
+    e.preventDefault(); // prevent page scrolling
+});
+
+container.addEventListener('touchend', () => {
+    container.style.scrollBehavior = 'smooth'; // restore smooth scroll
+});
+
+// ----- Start Auto Scroll -----
+window.addEventListener('DOMContentLoaded', startAutoScroll);
+</script>
+
+
+
+
      
 <!-- rts gallery area start -->
 <div class="rts-gallery-area rts-section-gap">
@@ -1509,73 +1594,6 @@
     
 </script>
 
-<script>
-    const container = document.getElementById('logoContainer');
-    let autoScrollInterval;
-
-    function getSingleLogoScrollWidth() {
-        const logo = container.querySelector('.logo-marquee img');
-        if (!logo) return 200; 
-        const style = getComputedStyle(logo);
-        const marginRight = parseInt(style.marginRight || 0);
-        const gap = 80; 
-        return logo.offsetWidth + gap;
-    }
-
-    function startAutoScroll() {
-        stopAutoScroll(); 
-        autoScrollInterval = setInterval(() => {
-            container.scrollBy({ left: 1, behavior: 'smooth' });
-        }, 20);
-    }
-
-    function stopAutoScroll() {
-        clearInterval(autoScrollInterval);
-    }
-
-   function scrollLogos(direction) {
-    const logos = container.querySelectorAll('.logo-marquee img');
-    if (logos.length === 0) return;
-
-    const logoWidth = logos[0].offsetWidth + 40; // include mobile gap (40px)
-    const containerWidth = container.offsetWidth;
-
-    // current scroll index
-    let currentIndex = Math.round(container.scrollLeft / logoWidth);
-
-    // update index based on arrow direction
-    currentIndex += direction;
-
-    // clamp within range
-    if (currentIndex < 0) currentIndex = 0;
-    if (currentIndex >= logos.length) currentIndex = logos.length - 1;
-
-    // calculate scroll position so logo centers
-    const scrollTo =
-        currentIndex * logoWidth - (containerWidth / 2 - logoWidth / 2);
-
-    container.scrollTo({
-        left: scrollTo,
-        behavior: "smooth"
-    });
-
-    // restart auto scroll
-    stopAutoScroll();
-    setTimeout(startAutoScroll, 2000);
-}
-
-
-    // Start auto-scroll on page load
-    window.addEventListener('DOMContentLoaded', startAutoScroll);
-
-    container.addEventListener('mouseenter', stopAutoScroll);
-    container.addEventListener('mouseleave', startAutoScroll);
-
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') scrollLogos(-1);
-        if (e.key === 'ArrowRight') scrollLogos(1);
-    });
-</script>
 
 
 @endsection
