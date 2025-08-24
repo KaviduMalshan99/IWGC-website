@@ -103,7 +103,7 @@
     .partner-breadcrumb {
         background-size: cover !important;  
         background-position: center !important;  
-        height: 12vh !important; 
+        height: 10vh !important; 
     }
 
      h4.title {
