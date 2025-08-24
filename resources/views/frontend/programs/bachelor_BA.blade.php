@@ -120,7 +120,7 @@
     .partner-breadcrumb {
         background-size: cover !important;  
         background-position: center !important;  
-        height: 2vh !important; 
+        height: 25vh !important; 
     }
 }
 @media (max-width: 768px) {

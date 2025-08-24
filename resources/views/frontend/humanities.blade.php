@@ -133,7 +133,7 @@
     .partner-breadcrumb {
         background-size: cover !important;  
         background-position: center !important;  
-        height: 35vh !important; 
+        height: 25vh !important; 
     }
          h4.title {
         font-size: 20px !important;
@@ -165,7 +165,15 @@
         overflow-x: auto;
     }
 
-   
+     .program-card {
+        height: 320px !important; /* adjust as needed */
+    }
+
+    .program-image img {
+        height: 100% !important;
+        object-fit: cover !important; /* makes images fill nicely */
+    }
+
 
     h3 {
         font-size: 18px;

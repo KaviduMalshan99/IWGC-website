@@ -133,7 +133,7 @@
     .partner-breadcrumb {
         background-size: cover !important;  
         background-position: center !important;  
-        height: 35vh !important; 
+        height: 25vh !important; 
     }
 
      h4.title {
@@ -185,6 +185,17 @@
         font-size: 15px !important; /* answer font */
         line-height: 1.4; /* optional: tighter line spacing */
     }
+
+    .program-card {
+        height: 320px !important; /* adjust as needed */
+    }
+
+    .program-image img {
+        height: 100% !important;
+        object-fit: cover !important; /* makes images fill nicely */
+    }
+
+
 }
 </style>
 
