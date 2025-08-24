@@ -1335,12 +1335,16 @@
 
 <script>
 const container = document.getElementById('logoContainer');
+const leftArrow = document.querySelector('.marquee-arrow.left');
+const rightArrow = document.querySelector('.marquee-arrow.right');
+
 let autoScrollRAF;
 let scrollSpeed = 0.5;
 let scrollMultiplier = 1;
 
-// Auto scroll function (works on mobile too)
+// ----- Auto Scroll -----
 function startAutoScroll() {
+    cancelAnimationFrame(autoScrollRAF);
     function step() {
         container.scrollLeft += scrollSpeed * scrollMultiplier;
         if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
@@ -1348,11 +1352,10 @@ function startAutoScroll() {
         }
         autoScrollRAF = requestAnimationFrame(step);
     }
-    cancelAnimationFrame(autoScrollRAF);
     autoScrollRAF = requestAnimationFrame(step);
 }
 
-// Arrow Boost
+// ----- Arrow Buttons (desktop) -----
 function arrowBoost(direction) {
     scrollMultiplier = 30 * direction;
 }
@@ -1360,10 +1363,7 @@ function arrowRelease() {
     scrollMultiplier = 1;
 }
 
-// Attach arrow events (desktop only)
-const leftArrow = document.querySelector('.marquee-arrow.left');
-const rightArrow = document.querySelector('.marquee-arrow.right');
-if(leftArrow && rightArrow){
+if (leftArrow && rightArrow) {
     leftArrow.addEventListener('mousedown', () => arrowBoost(-1));
     leftArrow.addEventListener('mouseup', arrowRelease);
     leftArrow.addEventListener('mouseleave', arrowRelease);
@@ -1373,7 +1373,7 @@ if(leftArrow && rightArrow){
     rightArrow.addEventListener('mouseleave', arrowRelease);
 }
 
-// Desktop Drag
+// ----- Desktop Drag -----
 let isDragging = false;
 let startX = 0;
 let scrollStart = 0;
@@ -1403,7 +1403,7 @@ container.addEventListener('pointerup', (e) => {
     container.releasePointerCapture(e.pointerId);
 });
 
-// Mobile Drag
+// ----- Mobile Touch Drag -----
 let touchStartX = 0;
 let touchScrollStart = 0;
 
@@ -1417,13 +1417,16 @@ container.addEventListener('touchmove', (e) => {
     if (e.touches.length !== 1) return;
     const delta = e.touches[0].clientX - touchStartX;
     container.scrollLeft = touchScrollStart - delta;
-    // Do NOT preventDefault here to allow auto-scroll to run on mobile
+    // no e.preventDefault(); so auto-scroll keeps running
 });
 
-container.addEventListener('touchend', () => {});
+container.addEventListener('touchend', () => {
+    // nothing needed; auto-scroll continues
+});
 
-// Start auto scroll on page load
+// ----- Start Auto Scroll -----
 window.addEventListener('DOMContentLoaded', startAutoScroll);
+
 
 </script>
 
