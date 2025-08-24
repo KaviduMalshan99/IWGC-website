@@ -177,7 +177,7 @@ position: relative; background-size: contain; background-position: center;">
 
 <!-- Banner Section -->
 <div class="partner-breadcrumb" style="
-    background-image: url('{{ asset('/frontend/assets/images/Qualifi.WEBP') }}'); 
+    background-image: url('{{ asset('public/frontend/assets/images/Qualifi.WEBP') }}'); 
     background-repeat: no-repeat; 
     background-size: 100% auto; 
     background-position: top center;
