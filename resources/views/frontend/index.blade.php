@@ -268,76 +268,6 @@
 
 
 
-        .marquee-wrapper-outer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    padding: 0 20px;
-    gap: 20px;
-}
-
-.logo-marquee-track {
-    display: flex;
-    width: max-content;
-    transition: transform 0.3s ease;
-}
-
-.logo-marquee-container {
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none; 
-    scrollbar-width: none;    
-}
-
-.logo-marquee-container::-webkit-scrollbar {
-    display: none;            
-}
-
-
-.logo-marquee {
-    display: flex;
-    gap: 80px;
-    align-items: center;
-}
-
-.logo-marquee img {
-    height: 70px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.logo-marquee img:hover {
-    transform: scale(1.1);
-    opacity: 1;
-}
-
-.marquee-arrow {
-    font-size: 30px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-    z-index: 2;
-}
-
-.marquee-arrow:hover {
-    background-color: #ed3532;
-    color: white;
-}
-
-@keyframes scroll-marquee {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-
 /* ------------------------------------------ Gallery section */
 .image-wrapper {
     position: relative;
@@ -676,7 +606,14 @@
 <!-- rts service area end -->
 
 
+<style>
+    @media (max-width: 768px) {
+    .program-card .program-image {
+        height: 300px; /* smaller fixed height on mobile */
+    }
+}
 
+</style>
 
 <!-- rts steps area start -->
 <div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop bg-light">
@@ -1287,6 +1224,92 @@
 
     
 
+ <style>
+      .marquee-wrapper-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.logo-marquee-track {
+    display: flex;
+    width: max-content;
+    transition: transform 0.3s ease;
+}
+
+.logo-marquee-container {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;    
+}
+
+.logo-marquee-container::-webkit-scrollbar {
+    display: none;            
+}
+
+
+.logo-marquee {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.logo-marquee img {
+    height: 70px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo-marquee img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.marquee-arrow {
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.marquee-arrow:hover {
+    background-color: #ed3532;
+    color: white;
+}
+
+@keyframes scroll-marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-marquee {
+        gap: 40px; /* smaller gap on mobile */
+    }
+
+    .logo-marquee img {
+        height: 50px; /* reduce logo size */
+    }
+
+    .marquee-arrow {
+        font-size: 24px;
+        padding: 8px 12px;
+    }
+}
+
+</style>
 
 
 <!-- rts Esteemed Clients start -->
@@ -1311,15 +1334,15 @@
             <!-- Repeat logos for seamless loop -->
             <div class="logo-marquee">
                 <img src="frontend/assets/images/uni/uni1.webp" alt="Client 1">
-                <img src="public/frontend/assets/images/uni/uni2.png" alt="Client 2">
-                <img src="public/frontend/assets/images/uni/uni3.png" alt="Client 3">
-                <img src="public/frontend/assets/images/uni/uni4.png" alt="Client 4">
-                <img src="public/frontend/assets/images/malaysia/Picture4.png" alt="Picture 4">
-                <img src="public/frontend/assets/images/malaysia/Picture9.png" alt="Client 6">
-                <img src="public/frontend/assets/images/uni/uni7.png" alt="Client 7">
-                <img src="public/frontend/assets/images/malaysia/Picture10.png" alt="Client 8">
-                <img src="public/frontend/assets/images/uni/uni9.png" alt="Client 9">
-                <img src="public/frontend/assets/images/malaysia/Picture8.png" alt="Client 10">
+                <img src="/frontend/assets/images/uni/uni2.png" alt="Client 2">
+                <img src="/frontend/assets/images/uni/uni3.png" alt="Client 3">
+                <img src="/frontend/assets/images/uni/uni4.png" alt="Client 4">
+                <img src="/frontend/assets/images/malaysia/Picture4.png" alt="Picture 4">
+                <img src="/frontend/assets/images/malaysia/Picture9.png" alt="Client 6">
+                <img src="/frontend/assets/images/uni/uni7.png" alt="Client 7">
+                <img src="/frontend/assets/images/malaysia/Picture10.png" alt="Client 8">
+                <img src="/frontend/assets/images/uni/uni9.png" alt="Client 9">
+                <img src="/frontend/assets/images/malaysia/Picture8.png" alt="Client 10">
             </div>
             
         </div>
@@ -1510,14 +1533,37 @@
         clearInterval(autoScrollInterval);
     }
 
-    function scrollLogos(direction) {
-        const scrollAmount = getSingleLogoScrollWidth();
-        container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+   function scrollLogos(direction) {
+    const logos = container.querySelectorAll('.logo-marquee img');
+    if (logos.length === 0) return;
 
-        // Restart auto-scroll after short pause
-        stopAutoScroll();
-        setTimeout(startAutoScroll, 1000);
-    }
+    const logoWidth = logos[0].offsetWidth + 40; // include mobile gap (40px)
+    const containerWidth = container.offsetWidth;
+
+    // current scroll index
+    let currentIndex = Math.round(container.scrollLeft / logoWidth);
+
+    // update index based on arrow direction
+    currentIndex += direction;
+
+    // clamp within range
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex >= logos.length) currentIndex = logos.length - 1;
+
+    // calculate scroll position so logo centers
+    const scrollTo =
+        currentIndex * logoWidth - (containerWidth / 2 - logoWidth / 2);
+
+    container.scrollTo({
+        left: scrollTo,
+        behavior: "smooth"
+    });
+
+    // restart auto scroll
+    stopAutoScroll();
+    setTimeout(startAutoScroll, 2000);
+}
+
 
     // Start auto-scroll on page load
     window.addEventListener('DOMContentLoaded', startAutoScroll);
