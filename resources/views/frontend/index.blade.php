@@ -379,8 +379,8 @@
         background-repeat: no-repeat !important;
         background-position: center !important;
         height: 38vh !important;
-        padding-top: 25px;
-        padding-bottom: 20px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .banner-inner-two-content h1.title {
@@ -388,34 +388,29 @@
         line-height: 1.2 !important;
         max-width: 90% !important;
         margin: 0 auto !important;     
-        text-align: center !important;
+        text-align: center !important;  /* center the text */
     }
+
 
     .banner-inner-two-content p.disc,
     .banner-inner-two-content p.pre-title {
         font-size: 12px !important;
-        max-width: 90% !important;
-        margin: 0 auto;
+        max-width: 90% !important;  /* reduce paragraph width */
+        margin: 0 auto;            /* center align paragraph */
         line-height: 1.4 !important;
-    }
-
-    /* Hide description on mobile */
-    .banner-inner-two-content p.disc {
-        display: none !important;
     }
 
     .banner-inner-two-content a.rts-btn {
         font-size: 10px !important;
-        padding: 0px 12px !important;
-        margin-top: 80px;
+        padding: 0px 12px !important; /* reduce button padding */
+        margin-top: 15px;
     }
 
     .swiper-button-next,
     .swiper-button-prev {
-        display: none;
+        display: none; /* hide nav arrows on mobile */
     }
 }
-
 
 
 </style>
@@ -456,7 +451,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="banner-inner-two-content">
-                                     <p class="pre-title" style="color: #fff;"><span style="color: #fff;">Welcome!</span> </p>
+                                    
                                     <h1 class="title" style="color: #fff;">Post-Study Guidance for Further Growth</h1>
                                     <p class="disc" style="color: rgba(255,255,255,0.8);">
                                     Explore study abroad programs and career development & training opportunities. Our personalized advice and industry tips help students and graduates unlock their future. Strat your journey today!
@@ -481,7 +476,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="banner-inner-two-content">
-                                     <p class="pre-title" style="color: #fff;"><span style="color: #fff;">Welcome!</span> </p>
+                                    
                                     <h1 class="title" style="color: #fff;">Designed to Suit Your Lifestyle</h1>
                                     <p class="disc" style="color: rgba(255,255,255,0.8);">
                                     Learn anytime, anywhere with our flexible online platform. Study at your own pace with a custom curriculum, get regular feedback, and receive dedicated support every step of the way.
