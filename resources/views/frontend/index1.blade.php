@@ -133,6 +133,67 @@
     justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+    .rts-banner-area-two {
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        height: 38vh !important;
+        padding-top: 30px !important;   
+        padding-bottom: 20px !important; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .banner-inner-two-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        height: 100%;                 
+        padding: 0;                    
+    }
+
+    .banner-inner-two-content .text-block {
+        flex-grow: 0;                    
+        margin-top: 0;                 
+        text-align: center;
+    }
+
+    .banner-inner-two-content h1.title {
+        font-size: 18px !important;
+        line-height: 1.2 !important;
+        max-width: 90% !important;
+        margin: 0 auto 5px auto !important;     
+    }
+
+    .banner-inner-two-content p.disc{
+        font-size: 12px !important;
+        max-width: 90% !important;
+        margin-top:60px ;  
+        margin-bottom: 3px !important;         
+        line-height: 1.4 !important;
+    }
+
+     .banner-inner-two-content a.rts-btn {
+        font-size: 10px !important;
+        padding: 5px 12px !important; 
+        margin-top: 0 !important;  
+        align-self: center;
+    }
+
+    .banner-inner-two-content p.pre-title {
+        font-size: 12px !important;
+        max-width: 90% !important;
+        margin: 0 auto 5px auto;           
+        line-height: 1.4 !important;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none; /* hide nav arrows on mobile */
+    }
+}
 </style>
 
     <div class="banner-swiper-two">
