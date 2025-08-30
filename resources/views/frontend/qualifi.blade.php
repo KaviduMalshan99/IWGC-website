@@ -261,6 +261,11 @@ position: relative; background-size: contain; background-position: center;">
 education with global standards. Here’s a quick look at how these levels compare:
                     </p>
                     
+<img src="{{ asset('Levels Diagram.webp') }}">
+
+
+
+
                 <div class="table-responsive">
                    <table class="level-table">
                         <thead>
