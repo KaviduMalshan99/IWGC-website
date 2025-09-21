@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IWGC Campus – A premier higher education institution in Sri Lanka offering world-class undergraduate and postgraduate programs. Focused on academic excellence, innovation, and career development, IWGC provides a vibrant campus life and global learning opportunities.">
+    <meta name="description" content="IWGC Campus – A premier higher education institution offering world-class undergraduate and postgraduate programs. Focused on academic excellence, innovation, and career development, IWGC provides a vibrant campus life and global learning opportunities.">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('logo2.png') }}">
     <title>Imperial Wisdom Graduate Campus</title>
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/fontawesome.css') }}">
