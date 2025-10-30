@@ -254,7 +254,7 @@
          <div class="col-md-4">
                 <a href="{{ route('diploma_BA') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('public/frontend/assets/images/Diploma In Business Admnistration ( Thumbnail ).webp') }}" alt="Master of Business Administration" class="img-fluid">
+                        <img src="{{ asset('public/frontend/assets/new/Diploma In Business Admnistration ( Thumbnail ).webp') }}" alt="Master of Business Administration" class="img-fluid">
                         <div class="overlay"></div>
                         <div class="program-content">
                             <h3>Diploma in Business Administration</h3>
@@ -293,7 +293,7 @@
             <div class="col-md-4">
                 <a href="{{ route('bachelor_PM') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('public/frontend/assets/images/Bachelor of Project Management  ( Thumbnail ).webp') }}" alt="Bachelor of Project Management" class="img-fluid">
+                        <img src="{{ asset('public/frontend/assets/new/Bachelor of Project Management  ( Thumbnail ).webp') }}" alt="Bachelor of Project Management" class="img-fluid">
                         <div class="overlay"></div>
                         <div class="program-content">
                             <h3>Bachelor of Project Management</h3>
@@ -306,7 +306,7 @@
             <div class="col-md-4">
                 <a href="{{ route('master_CM') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('public/frontend/assets/images/Master of Construction Management ( Thumbnail ).webp') }}" alt="Master of Construction Management" class="img-fluid">
+                        <img src="{{ asset('public/frontend/assets/new/Master of Construction Management ( Thumbnail ).webp') }}" alt="Master of Construction Management" class="img-fluid">
                         <div class="overlay"></div>
                         <div class="program-content">
                             <h3>Master of Construction Management (MCM)</h3>
@@ -319,7 +319,7 @@
             <div class="col-md-4">
                 <a href="{{ route('master_PM') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('public/frontend/assets/images/Master of Project Management  ( Thumbnail ).webp') }}" alt="Master of Project Management" class="img-fluid">
+                        <img src="{{ asset('public/frontend/assets/new/Master of Project Management  ( Thumbnail ).webp') }}" alt="Master of Project Management" class="img-fluid">
                         <div class="overlay"></div>
                         <div class="program-content">
                             <h3>Master of Project Management (MPM)</h3>
