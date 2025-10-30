@@ -935,7 +935,7 @@
 
 
 <!-- rts faq area start -->
-<div class="rts-faq-area rts-section-gapBottom faq-banner" style="margin-top: 80px; background-image: url('{{ asset('frontend/assets/new/FAQ Girl.webp') }}'); height: 900px; background-size: cover; background-position: center; position: relative;">
+<div class="rts-faq-area rts-section-gapBottom faq-banner" style="margin-top: 80px; background-image: url('{{ asset('public/frontend/assets/new/FAQ Girl.webp') }}'); height: 900px; background-size: cover; background-position: center; position: relative;">
 
     <!-- Overlay -->
     <div class="faq-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
