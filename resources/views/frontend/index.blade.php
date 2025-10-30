@@ -423,7 +423,7 @@
 
          <!-- Slide 2 -->
             <div class="swiper-slide">
-                <div class="rts-banner-area-two rts-section-gap" style="position: relative; background-image: url('{{ asset('frontend/assets/new/Hero 03.webp') }}'); background-size: cover; background-position: center;">
+                <div class="rts-banner-area-two rts-section-gap" style="position: relative; background-image: url('{{ asset('public/frontend/assets/new/Hero 03.webp') }}'); background-size: cover; background-position: center;">
                     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
                     <div class="container" style="position: relative; z-index: 2;">
                         <div class="row">
@@ -445,7 +445,7 @@
 
             <!-- Slide 1 -->
             <div class="swiper-slide">
-                <div class="rts-banner-area-two rts-section-gap" style="position: relative; background-image: url('{{ asset('frontend/assets/new/Hero 02.webp') }}'); background-size: cover; background-position: center;">
+                <div class="rts-banner-area-two rts-section-gap" style="position: relative; background-image: url('{{ asset('public/frontend/assets/new/Hero 02.webp') }}'); background-size: cover; background-position: center;">
                     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
                     <div class="container" style="position: relative; z-index: 2;">
                         <div class="row">
@@ -470,7 +470,7 @@
 
              <!-- Slide 3 -->
             <div class="swiper-slide">
-                <div class="rts-banner-area-two rts-section-gap" style="position: relative; background-image: url('{{ asset('frontend/assets/new/Hero 01.4.jpg') }}'); background-size: cover; background-position: center;">
+                <div class="rts-banner-area-two rts-section-gap" style="position: relative; background-image: url('{{ asset('public/frontend/assets/new/Hero 01.4.jpg') }}'); background-size: cover; background-position: center;">
                     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
                     <div class="container" style="position: relative; z-index: 2;">
                         <div class="row">
