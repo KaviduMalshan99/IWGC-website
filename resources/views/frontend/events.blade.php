@@ -53,7 +53,7 @@
 
 </style>
  <!-- partners area breadcrumb area wrapper -->
-    <div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Event.webp') }}');height: 300px;position: relative; background-size: cover; background-position: center;">
+    <div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/new/Event.webp') }}');height: 300px;position: relative; background-size: cover; background-position: center;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

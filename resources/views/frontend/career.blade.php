@@ -27,7 +27,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Careers 01.webp') }}'); background-size: cover; background-position: center;  height: 300px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/new/Careers 01.webp') }}'); background-size: cover; background-position: center;  height: 300px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->

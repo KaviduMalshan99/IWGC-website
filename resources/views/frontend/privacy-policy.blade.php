@@ -65,7 +65,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Privacy Policy.webp') }}'); background-size: cover; background-position: top;  height: 300px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/new/Privacy Policy.webp') }}'); background-size: cover; background-position: top;  height: 300px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->

@@ -174,7 +174,7 @@
 
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Bachelor Of Teaching Primary ( 400 x 1900 ).webp') }}'); background-size: cover; background-position: top;height: 300px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/new/Bachelor Of Teaching Primary ( 400 x 1900 ).webp') }}'); background-size: cover; background-position: top;height: 300px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->

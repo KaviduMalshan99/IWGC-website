@@ -179,7 +179,7 @@
 
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Diploma In Business Admnistration ( Banner 400 x 1900 ).webp') }}'); background-size: cover; background-position: center;height: 300px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/new/Diploma In Business Admnistration ( Banner 400 x 1900 ).webp') }}'); background-size: cover; background-position: center;height: 300px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->

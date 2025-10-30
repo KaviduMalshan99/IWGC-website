@@ -172,7 +172,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/images/Bachelor of Counseling 01.webp') }}'); background-size: cover; background-position: top;height: 300px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/new/Bachelor of Counseling 01.webp') }}'); background-size: cover; background-position: top;height: 300px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->
