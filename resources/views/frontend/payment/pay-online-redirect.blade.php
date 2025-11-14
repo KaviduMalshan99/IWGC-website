@@ -1,4 +1,4 @@
-<form id="payment_form" method="POST" action="https://testsecureacceptance.cybersource.com/pay">
+<form id="payment_form" method="POST" action="https://secureacceptance.cybersource.com/pay">
     @foreach($fields as $key => $value)
         <input type="hidden" name="{{ $key }}" value="{{ $value }}">
     @endforeach
