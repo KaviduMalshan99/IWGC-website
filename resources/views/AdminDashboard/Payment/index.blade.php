@@ -36,48 +36,48 @@
 
          
       <div class="table-responsive-fix">
-    <table class="table" id="blog-list">
-        <thead>
-            <tr>
-                <th>Transaction id</th>
-                <th>Date</th>
-                <th>Amount</th>
-                <th>Payee Name</th>
-                <th>Email</th>
-                <th>Contact</th>
-                <th>Address</th>
-                <th>Reason</th>
-                <th>Action</th>
-            </tr>
-        </thead>
+          <table class="table" id="blog-list">
+              <thead>
+                  <tr>
+                      <th>Transaction id</th>
+                      <th>Date</th>
+                      <th>Amount</th>
+                      <th>Payee Name</th>
+                      <th>Email</th>
+                      <th>Contact</th>
+                      <th>Address</th>
+                      <th>Reason</th>
+                      <th>Action</th>
+                  </tr>
+              </thead>
 
-        <tbody>
-            @foreach ($payments as $payment)
-                <tr>
-                    <td>{{ $payment->transaction_id }}</td>
-                    <td>{{ $payment->created_at->format('Y-m-d H:i A') }}</td>
-                    <td>Rs {{ number_format($payment->amount, 2) }}</td>
-                    <td>{{ $payment->payee_name }}</td>
-                    <td>{{ $payment->email }}</td>
-                    <td>{{ $payment->phone }}</td>
-                    <td>{{ $payment->address}}, {{ $payment->city}}, {{ $payment->postal_code}}</td>
-                    <td>{{ $payment->reason }}</td>
+              <tbody>
+                  @foreach ($payments as $payment)
+                      <tr>
+                          <td>{{ $payment->transaction_id }}</td>
+                          <td>{{ $payment->created_at->format('Y-m-d H:i A') }}</td>
+                          <td>Rs {{ number_format($payment->amount, 2) }}</td>
+                          <td>{{ $payment->payee_name }}</td>
+                          <td>{{ $payment->email }}</td>
+                          <td>{{ $payment->phone }}</td>
+                          <td>{{ $payment->address}}, {{ $payment->city}}, {{ $payment->postal_code}}</td>
+                          <td>{{ $payment->reason }}</td>
 
-                    <td>
-                        <form action="{{ route('payments.destroy', $payment->id) }}" method="POST"
-                              onsubmit="return confirm('Are you sure you want to delete this payment?');">
-                            @csrf
-                            @method('DELETE')
-                            <button class="btn btn-danger btn-sm p-2">
-                                <i class="fa fa-trash"></i>
-                            </button>
-                        </form>
-                    </td>
-                </tr>
-            @endforeach
-        </tbody>
-    </table>
-</div>
+                          <td>
+                              <form action="{{ route('payments.destroy', $payment->id) }}" method="POST"
+                                    onsubmit="return confirm('Are you sure you want to delete this payment?');">
+                                  @csrf
+                                  @method('DELETE')
+                                  <button class="btn btn-danger btn-sm p-2">
+                                      <i class="fa fa-trash"></i>
+                                  </button>
+                              </form>
+                          </td>
+                      </tr>
+                  @endforeach
+              </tbody>
+          </table>
+      </div>
 
 
         </div>
