@@ -209,6 +209,7 @@ Route::middleware([App\Http\Middleware\AdminAuth::class])->group(function () {
     Route::delete('/testimonials/{id}', [TestimonialController::class, 'destroy'])->name('testimonial.destroy');
 
     Route::get('/online-payments', [OnlinePaymentController::class, 'index'])->name('payments.index');
+    Route::delete('/online-payments/{id}', [OnlinePaymentController::class, 'destroy'])->name('payments.destroy');
 
 
 });

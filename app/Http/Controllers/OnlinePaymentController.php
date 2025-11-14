@@ -91,4 +91,12 @@ class OnlinePaymentController extends Controller
         $payments = OnlinePayment::all();
         return view('AdminDashboard.Payment.index', compact('payments'));
     }
+
+        public function destroy($id)
+    {
+        $payment = OnlinePayment::findOrFail($id);
+        $payment->delete();
+        return redirect()->back()->with('success', 'Payment Record Deleted Successfully!');
+    }
+
 }
