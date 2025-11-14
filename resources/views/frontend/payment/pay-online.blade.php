@@ -74,7 +74,7 @@
 <div class="payment-card">
 
     <!-- Logo -->
- <img src="{{ asset('frontend/assets/lms.png') }}" alt="Logo" class="logo"> 
+ <img src="{{ asset('public/frontend/assets/lms.png') }}" alt="Logo" class="logo"> 
     <h3>Online Payment</h3>
 
     <form method="POST" action="{{ route('payonline.submit') }}">
