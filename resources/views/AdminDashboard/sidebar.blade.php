@@ -100,7 +100,7 @@
                             </ul>
                         </li>
 
-                        <li class="sidebar-list">
+                    <li class="sidebar-list">
                         <a class="sidebar-link sidebar-title" href="#">
                             <svg class="stroke-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
@@ -114,6 +114,19 @@
                             <li><a href="{{ route('testimonial.create') }}">Add Testimonial</a></li>
                         </ul>
                     </li>
+
+                     <li class="sidebar-list">
+                           <a class="sidebar-link sidebar-title" href="#">
+                                <svg class="stroke-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                    <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                </svg>
+                                <span>Payments</span>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="{{ route('payments.index') }}">Payment List</a></li>
+                            </ul>
+                        </li>
 
 
                 </ul>

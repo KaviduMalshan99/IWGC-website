@@ -153,6 +153,7 @@ Route::get('/Scholarships', function () {
 
 
 
+use App\Http\Controllers\OnlinePaymentController;
 
 //admin dashboard
 
@@ -207,11 +208,29 @@ Route::middleware([App\Http\Middleware\AdminAuth::class])->group(function () {
     Route::put('/testimonials/{id}', [TestimonialController::class, 'update'])->name('testimonial.update');
     Route::delete('/testimonials/{id}', [TestimonialController::class, 'destroy'])->name('testimonial.destroy');
 
+    Route::get('/online-payments', [OnlinePaymentController::class, 'index'])->name('payments.index');
+
 
 });
 
 
 
+
+// Show payment form
+Route::get('/pay-online', [OnlinePaymentController::class, 'showForm'])
+    ->name('payonline.form');
+
+// Submit form → redirect to Cybersource
+Route::post('/pay-online/submit', [OnlinePaymentController::class, 'redirectToGateway'])
+    ->name('payonline.submit');
+
+// Cybersource success
+Route::match(['GET','POST'], '/pay-online/success', [OnlinePaymentController::class, 'success'])
+    ->name('payonline.success')->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class, 'web']);
+
+// Cybersource fail
+Route::match(['GET','POST'], '/pay-online/fail', [OnlinePaymentController::class, 'fail'])
+    ->name('payonline.fail')->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class, 'web']);
 
 
 

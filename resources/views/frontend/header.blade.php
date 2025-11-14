@@ -91,7 +91,7 @@
 
                             <ul class="top-nav">
                                 <li><a href="{{ route('enroll') }}" class="nav-button">ENROLL</a></li>
-                                <li><a href="" class="nav-button">PAY ONLINE</a></li>
+                                <li><a href="{{ route('payonline.form') }}" target="_blank" class="nav-button">PAY ONLINE</a></li>
                                 <li><a href="http://lms.iwgc.lk" target="_blank" class="nav-button highlight">LMS</a></li>
                             </ul>
 
