@@ -134,11 +134,15 @@ class OnlinePaymentController extends Controller
     //admin
         public function index(Request $request)
     {
-        $status = $request->query('status'); 
+        $status = $request->query('status'); // pending / approved / rejected
+
         if ($status && in_array($status, ['pending', 'approved', 'rejected'])) {
-            $payments = OnlinePayment::where('admin_status', $status)->get();
+            $payments = OnlinePayment::where('status', 'success')
+                                    ->where('admin_status', $status)
+                                    ->get();
         } else {
-            $payments = OnlinePayment::all();
+            // show all successful payments by default
+            $payments = OnlinePayment::where('status', 'success')->get();
         }
 
         return view('AdminDashboard.Payment.index', compact('payments', 'status'));
