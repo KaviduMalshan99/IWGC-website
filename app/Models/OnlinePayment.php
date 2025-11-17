@@ -14,9 +14,13 @@ class OnlinePayment extends Model
         'city',
         'postal_code',
         'reason',
+        'currency',
         'amount',
         'transaction_id',
-        'status'
+        'status',
+        'receipt_no',
+        'receipt_path', 
+        'admin_status',
     ];
 
 }

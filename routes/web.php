@@ -210,6 +210,8 @@ Route::middleware([App\Http\Middleware\AdminAuth::class])->group(function () {
 
     Route::get('/online-payments', [OnlinePaymentController::class, 'index'])->name('payments.index');
     Route::delete('/online-payments/{id}', [OnlinePaymentController::class, 'destroy'])->name('payments.destroy');
+    Route::post('admin/payments/status/{id}', [OnlinePaymentController::class, 'updateStatus'])->name('payments.updateStatus');
+
 
 
 });

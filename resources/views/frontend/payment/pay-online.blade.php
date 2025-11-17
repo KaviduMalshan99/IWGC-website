@@ -116,6 +116,14 @@
         </div>
 
         <div class="mb-3 text-start">
+            <label>Currency</label>
+            <select name="currency" class="form-control" required>
+                <option value="LKR">LKR</option>
+                <option value="USD">USD</option>
+            </select>
+        </div>
+
+        <div class="mb-3 text-start">
             <label>Amount (LKR)</label>
             <input type="number" step="0.01" name="amount" class="form-control" required>
         </div>
