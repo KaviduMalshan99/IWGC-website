@@ -1331,24 +1331,26 @@
                 <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni2.png" alt="Client 2"></div>
                 <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni3.png" alt="Client 3"></div>
                 <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni4.png" alt="Client 4"></div>
-                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture4.png" alt="Client 5"></div>
-                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture9.png" alt="Client 6"></div>
-                <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni7.png" alt="Client 7"></div>
-                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture10.png" alt="Client 8"></div>
-                <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni9.png" alt="Client 9"></div>
-                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture8.png" alt="Client 10"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/ANNU_uni1.jpeg" alt="Client 5"></div> 
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Arden 3_uni2.jpeg" alt="Client 6"></div> 
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/ENAE 1_uni3.jpeg" alt="Client 7"></div> 
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/IAU_uni4.jpeg" alt="Client 8"></div> 
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/IDMNC_uni5.jpeg" alt="Client 9"></div> 
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Liutebm_uni6.jpeg" alt="Client 10"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Supershine_uni7.jpeg" alt="Client 11"></div>
 
                 <!-- repeat again -->
                 <div class="partner-ribbon-item"><img src="frontend/assets/images/uni/uni1.webp" alt="Client 1"></div>
                 <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni2.png" alt="Client 2"></div>
                 <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni3.png" alt="Client 3"></div>
                 <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni4.png" alt="Client 4"></div>
-                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture4.png" alt="Client 5"></div>
-                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture9.png" alt="Client 6"></div>
-                <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni7.png" alt="Client 7"></div>
-                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture10.png" alt="Client 8"></div>
-                <div class="partner-ribbon-item"><img src="/frontend/assets/images/uni/uni9.png" alt="Client 9"></div>
-                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Picture8.png" alt="Client 10"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/ANNU_uni1.jpeg" alt="Client 5"></div> 
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Arden 3_uni2.jpeg" alt="Client 6"></div> 
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/ENAE 1_uni3.jpeg" alt="Client 7"></div> 
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/IAU_uni4.jpeg" alt="Client 8"></div> 
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/IDMNC_uni5.jpeg" alt="Client 9"></div> 
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Liutebm_uni6.jpeg" alt="Client 10"></div>
+                <div class="partner-ribbon-item"><img src="/frontend/assets/images/malaysia/Supershine_uni7.jpeg" alt="Client 11"></div>
             </div>
         </div>
 

@@ -1,72 +1,5 @@
 
-<style>
-    /* Add this to your CSS file */
-    .rts-mega-menu .mega-menu-item.with-list li a {
-        font-size: 14px;
-        /* Adjust this value to your preferred size */
-        text-decoration: none !important;
-    }
-
-    .rts-mega-menu .mega-menu-item.with-list li a:hover {
-        text-decoration: none !important;
-    }
-
-    .hega-menu-head-wrapper p.hega-menu-head {
-        font-size: 16px;
-        /* Slightly larger for category headings */
-        font-weight: bold;
-    }
-
-.top-nav .highlight {
-    display: inline-block;
-    width:55px;
-    background-color: #FF0003;
-    color: #fff !important;
-    text-align:center;
-    font-weight: bold;
-    border-radius: 6px;
-    margin-top:5px;
-    line-height: 1.2;
-    height: auto;
-    vertical-align: middle;
-    text-decoration: none;
-}
-
-
-    .top-nav .nav-button {
-        display: inline-block;
-        padding: 10px 20px;
-        color: #fff;
-        background-color: #1b2954;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    .top-nav .nav-button:hover {
-        transform: translateY(-3px);
-    }
-
-    .top-nav .highlight {
-        background-color: #E60022;
-        color: #1b2954;
-        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    }
-
-    .top-nav .highlight:hover {
-        background-color: #E60022;
-        color: #111;
-        transform: translateY(-3px);
-    }
-
-    .top-nav {
-        list-style: none;
-        display: flex;
-        gap: 10px;
-        padding: 0;
-    }
-
-</style>
+  
 
 <header class="header-one header--sticky">
     <div class="header-top-area-wrapper" style="background-color: #1b2954 !important">
@@ -142,30 +75,60 @@
                                                                         <p class="hega-menu-head" style="color: black;"> University Programs</p>
                                                                     </li>
                                                                     <li>
+                                                                         <a href="{{ route('international_american_university') }}"
+                                                                            style="color:black; display:block; padding:8px 15px; transition:all 0.3s;"
+                                                                            onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
+                                                                            onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
+                                                                                <i class="fa-sharp fa-regular fa-chevron-right"></i>
+                                                                                International American University (USA)
+                                                                            </a>
+
+                                                                            <a href="{{ route('arden_university') }}"
+                                                                            style="color:black; display:block; padding:8px 15px; transition:all 0.3s; margin-top:5px;"
+                                                                            onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
+                                                                            onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
+                                                                                <i class="fa-sharp fa-regular fa-chevron-right"></i>
+                                                                                Arden University (United Kingdom)
+                                                                            </a>
+
+                                                                            <a href="{{ route('enae_business_school') }}"
+                                                                            style="color:black; display:block; padding:8px 15px; transition:all 0.3s; margin-top:5px;"
+                                                                            onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
+                                                                            onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
+                                                                                <i class="fa-sharp fa-regular fa-chevron-right"></i>
+                                                                                ENAE Business School – Spain
+                                                                            </a>
+
+                                                                            <a href="{{ route('an_najah_national_university') }}"
+                                                                            style="color:black; display:block; padding:8px 15px; transition:all 0.3s; margin-top:5px;"
+                                                                            onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
+                                                                            onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
+                                                                                <i class="fa-sharp fa-regular fa-chevron-right"></i>
+                                                                                An-Najah National University - Palestine
+                                                                            </a>
+
+                                                                            <a href="{{ route('supershine_university') }}"
+                                                                            style="color:black; display:block; padding:8px 15px; transition:all 0.3s; margin-top:5px;"
+                                                                            onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
+                                                                            onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
+                                                                                <i class="fa-sharp fa-regular fa-chevron-right"></i>
+                                                                                Supershine University – Zambia
+                                                                            </a>
+
+                                                                            <a href="{{ route('liutebm_university') }}"
+                                                                            style="color:black; display:block; padding:8px 15px; transition:all 0.3s; margin-top:5px;"
+                                                                            onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
+                                                                            onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
+                                                                                <i class="fa-sharp fa-regular fa-chevron-right"></i>
+                                                                                LIUTEBM University – Zambia
+                                                                            </a>
                                                                         <a href="{{ route('avid') }}" 
                                                                         style="color:black; display:block; padding:8px 15px; transition:all 0.3s;"
                                                                         onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
                                                                         onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
                                                                         <i class="fa-sharp fa-regular fa-chevron-right"></i> Avid College – Maldives
                                                                         </a>
-                                                                        <a href="{{ route('business') }}" 
-                                                                        style="margin-left:40px;color:black; display:block; padding:8px 15px; transition:all 0.3s; margin-top: 5px;"
-                                                                        onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
-                                                                        onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
-                                                                        <i class="fa-sharp fa-regular fa-chevron-right"></i> Faculty of Business Management
-                                                                        </a>
-                                                                        <a href="{{ route('education') }}" 
-                                                                        style="margin-left:40px;color:black; display:block; padding:8px 15px; transition:all 0.3s; margin-top: 5px;"
-                                                                        onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
-                                                                        onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
-                                                                        <i class="fa-sharp fa-regular fa-chevron-right"></i> Faculty of Education
-                                                                        </a>
-                                                                        <a href="{{ route('humanities') }}" 
-                                                                        style="margin-left:40px;color:black; display:block; padding:8px 15px; transition:all 0.3s; margin-top: 5px;"
-                                                                        onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
-                                                                        onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
-                                                                        <i class="fa-sharp fa-regular fa-chevron-right"></i> Faculty of Humanities
-                                                                        </a>
+                                                                        
                                                                     </li>
                                                                 </ul>
                                                             </div>

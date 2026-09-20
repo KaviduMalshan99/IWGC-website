@@ -67,6 +67,33 @@ Route::get('/avid-college-maldives', function () {
     return view('frontend.avid');
 })->name('avid');
 
+
+// New University Programs
+
+Route::get('/international-american-university-usa', function () {
+    return view('frontend.univercities.international_american_university');
+})->name('international_american_university');
+
+Route::get('/arden-university-uk', function () {
+    return view('frontend.univercities.arden_university');
+})->name('arden_university');
+
+Route::get('/enae-business-school-spain', function () {
+    return view('frontend.univercities.enae_business_school');
+})->name('enae_business_school');
+
+Route::get('/an-najah-national-university-palestine', function () {
+    return view('frontend.univercities.an_najah_national_university');
+})->name('an_najah_national_university');
+
+Route::get('/supershine-university-zambia', function () {
+    return view('frontend.univercities.supershine_university');
+})->name('supershine_university');
+
+Route::get('/liutebm-university-zambia', function () {
+    return view('frontend.univercities.liutebm_university');
+})->name('liutebm_university');
+
 Route::get('/Diploma-in-Business-Administration', function () {
     return view('frontend.programs.diploma_BA');
 })->name('diploma_BA');
