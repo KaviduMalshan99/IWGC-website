@@ -101,6 +101,10 @@
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
+.rts-client-area.recognition-section {
+    margin-bottom: 40px;
+}
+
 @media (max-width: 991px) {
     .program-content {
         width: 90%;
@@ -125,6 +129,63 @@
         text-justify: inter-word; 
         word-break: break-word;   
         hyphens: auto;            
+    }
+}
+</style>
+
+
+
+<style>
+.partner-ribbon-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    position: relative; /* for arrows */
+}
+
+.partner-ribbon-track {
+    display: flex;
+}
+
+.partner-ribbon-content {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    width: max-content;
+    animation: partner-scroll 70s linear infinite;
+}
+
+.partner-ribbon-item img {
+    height: 70px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.partner-ribbon-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes partner-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+
+
+@media (max-width: 768px) {
+    .partner-ribbon-content {
+        gap: 40px;
+    }
+    .partner-ribbon-item img {
+        height: 50px;
+    }
+    .ribbon-arrow {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
     }
 }
 </style>
@@ -162,6 +223,48 @@
     </div>
 </div>
 
+<div class="rts-client-area ptb--100 brand-bg-three bg_image mt--20 recognition-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pb-5">
+                <div class="title-style-two center">
+                    <h4 style="text-align:center;margin-bottom: 30px; color: #ed3532;">
+                        Recognitions & Accreditations 
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <div class="partner-ribbon-wrapper">
+    
+        <div class="partner-ribbon-track" id="partnerTrack">
+            <div class="partner-ribbon-content">
+                <!-- logos repeated twice for seamless loop -->
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/a.jpeg" alt="Client 1"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/b.jpeg" alt="Client 2"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/c.jpeg" alt="Client 3"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/d.jpeg" alt="Client 4"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/e.jpeg" alt="Client 5"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/f.jpeg" alt="Client 6"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/g.jpeg" alt="Client 7"></div>
+
+
+                    <!-- repeat again for seamless loop -->
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/a.jpeg" alt="Client 1"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/b.jpeg" alt="Client 2"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/c.jpeg" alt="Client 3"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/d.jpeg" alt="Client 4"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/e.jpeg" alt="Client 5"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/f.jpeg" alt="Client 6"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/g.jpeg" alt="Client 7"></div>
+            </div>
+        </div>
+
+ 
+    </div>
+</div>
+
 <!-- Faculties Section -->
 <div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop mb--100 working-process-one">
     <div class="container mb-4 pb-3">
@@ -175,28 +278,47 @@
     </div>
 
     <div class="container">
-        <div class="row g-4 justify-content-center ">
+        <div class="row g-4 justify-content-center">
+
+            <!-- MBA -->
             <div class="col-md-4">
-                <a href="{{ route('business') }}" class="program-card">
+                <a href="{{ route('mba') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('public/frontend/assets/new/Faculty of Business Management.webp') }}" alt="Faculty of Business" class="img-fluid">
+                        <img src="{{ asset('public/frontend/assets/new/Faculty of Business Management.webp') }}"
+                            alt="Master of Business Administration"
+                            class="img-fluid">
+
                         <div class="program-overlay"></div>
+
                         <div class="program-content">
                             <h3>Master of Business Administration (MBA)</h3>
-                            <span class="btn btn-outline-light">Discover <i class="fas fa-arrow-right ms-2"></i></span>
+
+                            <span class="btn btn-outline-light">
+                                Discover
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </span>
                         </div>
                     </div>
                 </a>
             </div>
 
+            <!-- DBA -->
             <div class="col-md-4">
-                <a href="{{ route('education') }}" class="program-card">
+                <a href="{{ route('dba') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('public/frontend/assets/new/Faculty of Education.webp') }}" alt="Faculty of Education" class="img-fluid">
+                        <img src="{{ asset('public/frontend/assets/new/Faculty of Education.webp') }}"
+                            alt="Doctor of Business Administration"
+                            class="img-fluid">
+
                         <div class="program-overlay"></div>
+
                         <div class="program-content">
                             <h3>Doctor of Business Administration (DBA)</h3>
-                            <span class="btn btn-outline-light">Discover <i class="fas fa-arrow-right ms-2"></i></span>
+
+                            <span class="btn btn-outline-light">
+                                Discover
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </span>
                         </div>
                     </div>
                 </a>
@@ -205,5 +327,72 @@
         </div>
     </div>
 </div>
+
+
+<script>
+const ribbon = document.querySelector('.partner-ribbon-wrapper');
+const track = document.querySelector('.partner-ribbon-track');
+
+let isDragging = false;
+let startX;
+let scrollLeft;
+
+// Pause/resume CSS auto-scroll animation
+const content = document.querySelector('.partner-ribbon-content');
+function pauseAnimation() {
+    content.style.animationPlayState = 'paused';
+}
+function resumeAnimation() {
+    content.style.animationPlayState = 'running';
+}
+
+// Mouse events for desktop drag
+ribbon.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    pauseAnimation();
+    startX = e.pageX - ribbon.offsetLeft;
+    scrollLeft = ribbon.scrollLeft;
+});
+
+ribbon.addEventListener('mouseleave', () => {
+    isDragging = false;
+    resumeAnimation();
+});
+
+ribbon.addEventListener('mouseup', () => {
+    isDragging = false;
+    resumeAnimation();
+});
+
+ribbon.addEventListener('mousemove', (e) => {
+    if(!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - ribbon.offsetLeft;
+    const walk = (x - startX) * 2; // scroll speed multiplier
+    ribbon.scrollLeft = scrollLeft - walk;
+});
+
+// Touch events for mobile drag
+ribbon.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    pauseAnimation();
+    startX = e.touches[0].pageX - ribbon.offsetLeft;
+    scrollLeft = ribbon.scrollLeft;
+});
+
+ribbon.addEventListener('touchend', () => {
+    isDragging = false;
+    resumeAnimation();
+});
+
+ribbon.addEventListener('touchmove', (e) => {
+    if(!isDragging) return;
+    const x = e.touches[0].pageX - ribbon.offsetLeft;
+    const walk = (x - startX) * 2; // scroll speed multiplier
+    ribbon.scrollLeft = scrollLeft - walk;
+});
+</script>
+
+
 
 @endsection

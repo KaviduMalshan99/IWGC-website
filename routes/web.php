@@ -74,6 +74,14 @@ Route::get('/international-american-university-usa', function () {
     return view('frontend.univercities.international_american_university');
 })->name('international_american_university');
 
+Route::get('/master-of-business-administration-mba-iau', function () {
+    return view('frontend.univercities.iau.mba');
+})->name('mba');
+
+Route::get('/doctor-of-business-administration-dba-iau', function () {
+    return view('frontend.univercities.iau.dba');
+})->name('dba');
+
 Route::get('/arden-university-uk', function () {
     return view('frontend.univercities.arden_university');
 })->name('arden_university');
