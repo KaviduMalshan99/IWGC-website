@@ -528,72 +528,72 @@
                 <!-- First Set -->
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/a.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/a.jpeg') }}"
                          alt="Arden Recognition 1">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/b.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/b.jpeg') }}"
                          alt="Arden Recognition 2">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/c.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/c.jpeg') }}"
                          alt="Arden Recognition 3">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/d.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/d.jpeg') }}"
                          alt="Arden Recognition 4">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/e.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/e.jpeg') }}"
                          alt="Arden Recognition 5">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/f.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/f.jpeg') }}"
                          alt="Arden Recognition 6">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/g.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/g.jpeg') }}"
                          alt="Arden Recognition 7">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/f.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/f.jpeg') }}"
                          alt="Arden Recognition 8">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/j.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/j.jpeg') }}"
                          alt="Arden Recognition 9">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/k.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/k.jpeg') }}"
                          alt="Arden Recognition 10">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/l.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/l.jpeg') }}"
                          alt="Arden Recognition 11">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/m.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/m.jpeg') }}"
                          alt="Arden Recognition 12">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/i.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/i.jpeg') }}"
                          alt="Arden Recognition 13">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/h.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/h.jpeg') }}"
                          alt="Arden Recognition 14">
                 </div>
 
@@ -601,72 +601,72 @@
                 <!-- Second Set - Seamless Loop -->
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/a.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/a.jpeg') }}"
                          alt="Arden Recognition 1">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/b.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/b.jpeg') }}"
                          alt="Arden Recognition 2">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/c.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/c.jpeg') }}"
                          alt="Arden Recognition 3">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/d.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/d.jpeg') }}"
                          alt="Arden Recognition 4">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/e.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/e.jpeg') }}"
                          alt="Arden Recognition 5">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/f.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/f.jpeg') }}"
                          alt="Arden Recognition 6">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/g.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/g.jpeg') }}"
                          alt="Arden Recognition 7">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/f.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/f.jpeg') }}"
                          alt="Arden Recognition 8">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/j.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/j.jpeg') }}"
                          alt="Arden Recognition 9">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/k.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/k.jpeg') }}"
                          alt="Arden Recognition 10">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/l.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/l.jpeg') }}"
                          alt="Arden Recognition 11">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/m.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/m.jpeg') }}"
                          alt="Arden Recognition 12">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/i.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/i.jpeg') }}"
                          alt="Arden Recognition 13">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('public/frontend/assets/images/arder/h.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/h.jpeg') }}"
                          alt="Arden Recognition 14">
                 </div>
 
