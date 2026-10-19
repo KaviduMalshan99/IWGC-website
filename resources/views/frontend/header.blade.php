@@ -96,7 +96,7 @@
                                                                             onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
                                                                             onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
                                                                                 <i class="fa-sharp fa-regular fa-chevron-right"></i>
-                                                                                ENAE Business School – Spain
+                                                                                ENAE Business School (Spain)
                                                                             </a>
 
                                                                             <a href="{{ route('an_najah_national_university') }}"
@@ -104,7 +104,7 @@
                                                                             onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
                                                                             onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
                                                                                 <i class="fa-sharp fa-regular fa-chevron-right"></i>
-                                                                                An-Najah National University - Palestine
+                                                                                An-Najah National University (Palestine)
                                                                             </a>
 
                                                                             <a href="{{ route('supershine_university') }}"
@@ -112,7 +112,14 @@
                                                                             onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
                                                                             onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
                                                                                 <i class="fa-sharp fa-regular fa-chevron-right"></i>
-                                                                                Supershine University – Zambia
+                                                                                Supershine University (Zambia)
+                                                                            </a>
+
+                                                                            <a href="{{ route('avid') }}" 
+                                                                            style="color:black; display:block; padding:8px 15px; transition:all 0.3s;"
+                                                                            onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
+                                                                            onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
+                                                                            <i class="fa-sharp fa-regular fa-chevron-right"></i> Avid College – Maldives
                                                                             </a>
 
                                                                             <a href="{{ route('liutebm_university') }}"
@@ -120,14 +127,9 @@
                                                                             onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
                                                                             onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
                                                                                 <i class="fa-sharp fa-regular fa-chevron-right"></i>
-                                                                                LIUTEBM University – Zambia
+                                                                                LIUTEBM University (Zambia)
                                                                             </a>
-                                                                        <a href="{{ route('avid') }}" 
-                                                                        style="color:black; display:block; padding:8px 15px; transition:all 0.3s;"
-                                                                        onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
-                                                                        onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
-                                                                        <i class="fa-sharp fa-regular fa-chevron-right"></i> Avid College – Maldives
-                                                                        </a>
+                                                                        
                                                                         
                                                                     </li>
                                                                 </ul>
@@ -150,12 +152,15 @@
                                                             <div class="col-lg-4">
                                                                 <ul class="mega-menu-item with-list parent-nav">
                                                                     <li class="hega-menu-head-wrapper">
-                                                                        <p class="hega-menu-head" style="color: black;"> Other</p>
+                                                                        <p class="hega-menu-head" style="color: black;"> TVEC Approved Programs</p>
                                                                     </li>
                                                                     <li>
-                                                                        
-                                                                        <i class="fa-sharp fa-regular fa-chevron-right"></i> CPD – UK
-                                                                      
+                                                                        <a href="{{ route('qualifi') }}" 
+                                                                        style="color:black; display:block; padding:8px 15px; transition:all 0.3s;"
+                                                                        onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
+                                                                        onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
+                                                                        <i class="fa-sharp fa-regular fa-chevron-right"></i> Certificate in Human Resource Management
+                                                                        </a>
                                                                     </li>
                                                                 </ul>
                                                             </div>

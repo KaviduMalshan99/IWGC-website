@@ -645,7 +645,7 @@
 
 </style>
 
-<!-- rts steps area start -->
+<!-- rts steps area start 
 <div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop bg-light">
     <div class="container">
         <div class="row">
@@ -734,7 +734,7 @@
             </div>
     </div>
 </div>
-<!-- rts steps area end -->
+rts steps area end -->
 
 
 <!-- working process area start -->

@@ -767,14 +767,14 @@
                 <a href="javascript:void(0);"
                    class="program-card"
                    onclick="openBrochureSurvey(
-                       'Bachelor of Science in Business Management',
+                       'BA (HONS) Business Management',
                        '{{ asset('public/frontend/assets/brochures/arden-bsc-business-management.pdf') }}'
                    )">
 
                     <div class="program-image">
 
                         <img src="{{ asset('public/frontend/assets/new/Faculty of Business Management.webp') }}"
-                             alt="Bachelor of Science in Business Management"
+                             alt="BA (HONS) Business Management"
                              class="img-fluid">
 
                         <div class="program-overlay"></div>
@@ -782,7 +782,7 @@
                         <div class="program-content">
 
                             <h3>
-                                Bachelor of Science in Business Management
+                                BA (HONS) Business Management
                             </h3>
 
                             <span class="btn btn-outline-light">
@@ -808,14 +808,14 @@
                 <a href="javascript:void(0);"
                    class="program-card"
                    onclick="openBrochureSurvey(
-                       'Bachelor of Science in Computing',
+                       'BSc (HONS) Computing (Top Up)',
                        '{{ asset('public/frontend/assets/new/Faculty of Education.webp') }}'
                    )">
 
                     <div class="program-image">
 
                         <img src="{{ asset('public/frontend/assets/new/Faculty of Education.webp') }}"
-                             alt="Bachelor of Science in Computing"
+                             alt="BSc (HONS) Computing (Top Up)"
                              class="img-fluid">
 
                         <div class="program-overlay"></div>
@@ -823,7 +823,7 @@
                         <div class="program-content">
 
                             <h3>
-                                Bachelor of Science in Computing
+                                BSc (HONS) Computing (Top Up)
                             </h3>
 
                             <span class="btn btn-outline-light">
