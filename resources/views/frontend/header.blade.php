@@ -155,7 +155,7 @@
                                                                         <p class="hega-menu-head" style="color: black;"> TVEC Approved Programs</p>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="{{ route('qualifi') }}" 
+                                                                        <a href="{{ route('certificate_HRM') }}" 
                                                                         style="color:black; display:block; padding:8px 15px; transition:all 0.3s;"
                                                                         onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
                                                                         onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">

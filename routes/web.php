@@ -126,6 +126,10 @@ Route::get('/Master-of-Project-Management', function () {
     return view('frontend.programs.master_PM');
 })->name('master_PM');
 
+Route::get('/Certificate-in-Human-Resource-Management', function () {
+    return view('frontend.programs.certificate_HRM');
+})->name('certificate_HRM');
+
 
 
 
