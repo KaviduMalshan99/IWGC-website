@@ -119,7 +119,7 @@
                                                                             style="color:black; display:block; padding:8px 15px; transition:all 0.3s;"
                                                                             onmouseover="this.style.transform='translateX(10px)'; this.style.backgroundColor='#f2f2f8';"
                                                                             onmouseout="this.style.transform='none'; this.style.backgroundColor='transparent';">
-                                                                            <i class="fa-sharp fa-regular fa-chevron-right"></i> Avid College – Maldives
+                                                                            <i class="fa-sharp fa-regular fa-chevron-right"></i> Avid College (Maldives)
                                                                             </a>
 
                                                                             <a href="{{ route('liutebm_university') }}"

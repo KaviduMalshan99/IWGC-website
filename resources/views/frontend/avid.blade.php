@@ -130,7 +130,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/Avid College.webp') }}'); height: 300px; position: relative; background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/Avid/mainimage.jpg') }}'); height: 300px; position: relative; background-size: cover; background-position: center;">
 </div>
 
 
@@ -180,7 +180,7 @@
             <div class="col-md-4">
                 <a href="{{ route('business') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}" alt="Faculty of Business" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/new/Avid/c1.jpg') }}" alt="Faculty of Business" class="img-fluid">
                         <div class="program-overlay"></div>
                         <div class="program-content">
                             <h3>Faculty of Business</h3>
@@ -193,7 +193,7 @@
             <div class="col-md-4">
                 <a href="{{ route('education') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('frontend/assets/new/Faculty of Education.webp') }}" alt="Faculty of Education" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/new/Avid/c2.jpg') }}" alt="Faculty of Education" class="img-fluid">
                         <div class="program-overlay"></div>
                         <div class="program-content">
                             <h3>Faculty of Education</h3>
@@ -206,7 +206,7 @@
             <div class="col-md-4">
                 <a href="{{ route('humanities') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('frontend/assets/new/Faculty of Humanities.webp') }}" alt="Faculty of Humanities" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/new/Avid/c3.jpg') }}" alt="Faculty of Humanities" class="img-fluid">
                         <div class="program-overlay"></div>
                         <div class="program-content">
                             <h3>Faculty of Humanities</h3>

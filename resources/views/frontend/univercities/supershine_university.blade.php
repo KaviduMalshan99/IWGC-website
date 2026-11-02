@@ -298,7 +298,7 @@
 
 <div class="partner-breadcrumb"
      style="
-        background-image: url('{{ asset('frontend/assets/new/Avid College.webp') }}');
+        background-image: url('{{ asset('frontend/assets/new/liubtm/Supershine-1900-x-400.jpg') }}');
 
         height: 300px;
 
@@ -471,7 +471,7 @@
                    class="supershine-program-card">
 
 
-                    <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
+                    <img src="{{ asset('frontend/assets/new/liubtm/Supershine-Postgraduate-Programs-2651-x-2651.jpg') }}"
                          alt="Supershine University Postgraduate Programs"
                          class="img-fluid">
 
@@ -516,7 +516,7 @@
                    class="supershine-program-card">
 
 
-                    <img src="{{ asset('frontend/assets/new/Faculty of Education.webp') }}"
+                    <img src="{{ asset('frontend/assets/new/liubtm/Supershine-Undergraduate Programs-2-2651-x-2651.jpg') }}"
                          alt="Supershine University Undergraduate Programs"
                          class="img-fluid">
 

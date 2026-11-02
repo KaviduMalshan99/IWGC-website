@@ -572,7 +572,7 @@
 
 <div class="partner-breadcrumb"
      style="
-        background-image: url('{{ asset('frontend/assets/new/Avid College.webp') }}');
+        background-image: url('{{ asset('frontend/assets/new/Enae/mainimage.jpg') }}');
 
         height: 300px;
 
@@ -943,14 +943,14 @@
 
                    onclick="openBrochureSurvey(
                        'Global Executive MBA',
-                       'https://www.enae.com/master/global-executive-mba'
+                       '{{ asset('frontend/assets/brochures/enae-corporate-brochure.pdf') }}'
                    )">
 
 
                     <div class="program-image">
 
 
-                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/Enae/glmba.jpg') }}"
 
                              alt="Global Executive MBA"
 
@@ -1005,14 +1005,14 @@
 
                    onclick="openBrochureSurvey(
                        'Master in International Trade',
-                       'https://www.enae.com/master/master-international-trade'
+                       '{{ asset('frontend/assets/brochures/enae-corporate-brochure.pdf') }}'
                    )">
 
 
                     <div class="program-image">
 
 
-                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/Enae/Miet.jpg') }}"
 
                              alt="Master in International Trade"
 
@@ -1067,14 +1067,14 @@
 
                    onclick="openBrochureSurvey(
                        'Master in Global Supply Chain Management',
-                       'https://www.enae.com/master/master-global-supply-chain-management'
+                       '{{ asset('frontend/assets/brochures/enae-corporate-brochure.pdf') }}'
                    )">
 
 
                     <div class="program-image">
 
 
-                        <img src="{{ asset('frontend/assets/new/Faculty of Education.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/Enae/gsc.jpg') }}"
 
                              alt="Master in Global Supply Chain Management"
 
@@ -1129,14 +1129,14 @@
 
                    onclick="openBrochureSurvey(
                        'Master in Corporate Finance Management and Fintech',
-                       'https://www.enae.com/master/master-corporate-finance-management-and-fintech'
+                       '{{ asset('frontend/assets/brochures/enae-corporate-brochure.pdf') }}'
                    )">
 
 
                     <div class="program-image">
 
 
-                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/Enae/cfe.jpg') }}"
 
                              alt="Master in Corporate Finance Management and Fintech"
 
@@ -1191,14 +1191,14 @@
 
                    onclick="openBrochureSurvey(
                        'Master in International Trade, Ecommerce and AI Concentration',
-                       'https://www.enae.com/master/master-international-trade-ecommerce-and-ai-concentration'
+                       '{{ asset('frontend/assets/brochures/enae-corporate-brochure.pdf') }}'
                    )">
 
 
                     <div class="program-image">
 
 
-                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/Enae/meit.jpg') }}"
 
                              alt="Master in International Trade, Ecommerce and AI Concentration"
 
@@ -1254,14 +1254,14 @@
 
                    onclick="openBrochureSurvey(
                        'Master in International and Digital Marketing',
-                       'https://www.enae.com/master/master-international-and-digital-marketing'
+                       '{{ asset('frontend/assets/brochures/enae-corporate-brochure.pdf') }}'
                    )">
 
 
                     <div class="program-image">
 
 
-                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/Enae/mdm.jpg') }}"
 
                              alt="Master in International and Digital Marketing"
 
@@ -1321,7 +1321,7 @@
 
                onclick="openBrochureSurvey(
                    'ENAE Business School – General Brochure',
-                   '{{ asset('frontend/assets/brochures/enae-business-school.pdf') }}'
+                   '{{ asset('frontend/assets/brochures/enae-corporate-brochure.pdf') }}'
                )">
 
                 <i class="fas fa-flag"></i>
@@ -1709,7 +1709,7 @@
         document.getElementById(
             'brochureUrl'
         ).value =
-            "{{ asset('frontend/assets/brochures/enae-business-school.pdf') }}";
+            "{{ asset('frontend/assets/brochures/enae-corporate-brochure.pdf') }}";
 
 
         /*

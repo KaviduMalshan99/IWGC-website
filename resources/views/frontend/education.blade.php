@@ -201,7 +201,7 @@
 
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/Faculty of Education 03.webp') }}');  height: 300px;position: relative;background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/Avid/c2main.jpg') }}');  height: 300px;position: relative;background-size: cover; background-position: center;">
 </div>
 
 <!-- Title and Info Boxes -->

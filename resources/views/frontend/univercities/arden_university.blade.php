@@ -396,7 +396,7 @@
 
 <div class="partner-breadcrumb"
      style="
-        background-image: url('{{ asset('frontend/assets/new/Avid College.webp') }}');
+        background-image: url('{{ asset('frontend/assets/new/Arden/mainimage.jpg') }}');
         height: 300px;
         position: relative;
         background-size: cover;
@@ -732,7 +732,7 @@
 
                     <div class="program-image">
 
-                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/Arden/master.jpg') }}"
                              alt="MBA – Master of Business Administration"
                              class="img-fluid">
 
@@ -773,7 +773,7 @@
 
                     <div class="program-image">
 
-                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/Arden/business.jpg') }}"
                              alt="BA (HONS) Business Management"
                              class="img-fluid">
 
@@ -814,7 +814,7 @@
 
                     <div class="program-image">
 
-                        <img src="{{ asset('frontend/assets/new/Faculty of Education.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/Arden/computer.jpg') }}"
                              alt="BSc (HONS) Computing (Top Up)"
                              class="img-fluid">
 

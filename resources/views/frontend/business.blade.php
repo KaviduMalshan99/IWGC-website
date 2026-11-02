@@ -200,7 +200,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/Faculty of Business Management 01.webp') }}'); height: 300px;position: relative;background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/Avid/c1main.jpg') }}'); height: 300px;position: relative;background-size: cover; background-position: center;">
 </div>
 
 <!-- Title and Info Boxes -->

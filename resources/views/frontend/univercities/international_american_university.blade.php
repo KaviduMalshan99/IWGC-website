@@ -191,7 +191,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/Avid College.webp') }}'); height: 300px; position: relative; background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/iau/mainimage.jpg') }}'); height: 300px; position: relative; background-size: cover; background-position: center;">
 </div>
 
 
@@ -284,7 +284,7 @@
             <div class="col-md-4">
                 <a href="{{ route('mba') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/iau/IAU-MBA-2651-x-2651.jpg') }}"
                             alt="Master of Business Administration"
                             class="img-fluid">
 
@@ -306,7 +306,7 @@
             <div class="col-md-4">
                 <a href="{{ route('dba') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('frontend/assets/new/Faculty of Education.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/iau/IAU-DBA-2651-x-2651.jpg') }}"
                             alt="Doctor of Business Administration"
                             class="img-fluid">
 
