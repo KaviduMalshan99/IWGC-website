@@ -180,7 +180,7 @@
 
     .partner-ribbon-content {
         display: flex;
-        gap: 60px;
+        gap: 80px;
         align-items: center;
         width: max-content;
         animation: partner-scroll 70s linear infinite;
@@ -191,7 +191,7 @@
     }
 
     .partner-ribbon-item img {
-        height: 110px;
+        height: 70px;
         width: auto;
         object-fit: contain;
         transition: transform 0.3s ease;
@@ -357,7 +357,7 @@
         }
 
         .partner-ribbon-item img {
-            height: 80px;
+            height: 50px;
         }
 
         .program-image {
@@ -396,7 +396,7 @@
 
 <div class="partner-breadcrumb"
      style="
-        background-image: url('{{ asset('frontend/assets/new/Avid College.webp') }}');
+        background-image: url('{{ asset('public/frontend/assets/new/Avid College.webp') }}');
         height: 300px;
         position: relative;
         background-size: cover;
@@ -528,72 +528,72 @@
                 <!-- First Set -->
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/a.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/a.jpeg') }}"
                          alt="Arden Recognition 1">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/b.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/b.jpeg') }}"
                          alt="Arden Recognition 2">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/c.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/c.jpeg') }}"
                          alt="Arden Recognition 3">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/d.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/d.jpeg') }}"
                          alt="Arden Recognition 4">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/e.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/e.jpeg') }}"
                          alt="Arden Recognition 5">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/f.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/f.jpeg') }}"
                          alt="Arden Recognition 6">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/g.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/g.jpeg') }}"
                          alt="Arden Recognition 7">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/f.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/f.jpeg') }}"
                          alt="Arden Recognition 8">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/j.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/j.jpeg') }}"
                          alt="Arden Recognition 9">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/k.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/k.jpeg') }}"
                          alt="Arden Recognition 10">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/l.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/l.jpeg') }}"
                          alt="Arden Recognition 11">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/m.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/m.jpeg') }}"
                          alt="Arden Recognition 12">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/i.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/i.jpeg') }}"
                          alt="Arden Recognition 13">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/h.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/h.jpeg') }}"
                          alt="Arden Recognition 14">
                 </div>
 
@@ -601,72 +601,72 @@
                 <!-- Second Set - Seamless Loop -->
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/a.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/a.jpeg') }}"
                          alt="Arden Recognition 1">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/b.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/b.jpeg') }}"
                          alt="Arden Recognition 2">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/c.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/c.jpeg') }}"
                          alt="Arden Recognition 3">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/d.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/d.jpeg') }}"
                          alt="Arden Recognition 4">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/e.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/e.jpeg') }}"
                          alt="Arden Recognition 5">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/f.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/f.jpeg') }}"
                          alt="Arden Recognition 6">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/g.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/g.jpeg') }}"
                          alt="Arden Recognition 7">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/f.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/f.jpeg') }}"
                          alt="Arden Recognition 8">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/j.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/j.jpeg') }}"
                          alt="Arden Recognition 9">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/k.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/k.jpeg') }}"
                          alt="Arden Recognition 10">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/l.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/l.jpeg') }}"
                          alt="Arden Recognition 11">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/m.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/m.jpeg') }}"
                          alt="Arden Recognition 12">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/i.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/i.jpeg') }}"
                          alt="Arden Recognition 13">
                 </div>
 
                 <div class="partner-ribbon-item">
-                    <img src="{{ asset('frontend/assets/images/arden/h.jpeg') }}"
+                    <img src="{{ asset('public/frontend/assets/images/arden/h.jpeg') }}"
                          alt="Arden Recognition 14">
                 </div>
 
@@ -727,12 +727,12 @@
                    class="program-card"
                    onclick="openBrochureSurvey(
                        'MBA – Master of Business Administration',
-                       '{{ asset('frontend/assets/brochures/arden-mba.pdf') }}'
+                       '{{ asset('public/frontend/assets/brochures/arden-mba.pdf') }}'
                    )">
 
                     <div class="program-image">
 
-                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('public/frontend/assets/new/Faculty of Business Management.webp') }}"
                              alt="MBA – Master of Business Administration"
                              class="img-fluid">
 
@@ -768,12 +768,12 @@
                    class="program-card"
                    onclick="openBrochureSurvey(
                        'BA (HONS) Business Management',
-                       '{{ asset('frontend/assets/brochures/arden-bsc-business-management.pdf') }}'
+                       '{{ asset('public/frontend/assets/brochures/arden-bsc-business-management.pdf') }}'
                    )">
 
                     <div class="program-image">
 
-                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('public/frontend/assets/new/Faculty of Business Management.webp') }}"
                              alt="BA (HONS) Business Management"
                              class="img-fluid">
 
@@ -809,12 +809,12 @@
                    class="program-card"
                    onclick="openBrochureSurvey(
                        'BSc (HONS) Computing (Top Up)',
-                       '{{ asset('frontend/assets/new/Faculty of Education.webp') }}'
+                       '{{ asset('public/frontend/assets/new/Faculty of Education.webp') }}'
                    )">
 
                     <div class="program-image">
 
-                        <img src="{{ asset('frontend/assets/new/Faculty of Education.webp') }}"
+                        <img src="{{ asset('public/frontend/assets/new/Faculty of Education.webp') }}"
                              alt="BSc (HONS) Computing (Top Up)"
                              class="img-fluid">
 

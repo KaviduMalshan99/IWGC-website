@@ -36,7 +36,7 @@
 
 </style>
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/04.3.webp') }}'); background-size: cover; background-position: center; height: 300px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/new/04.3.webp') }}'); background-size: cover; background-position: center; height: 300px;position: relative;">
 </div>
 <!-- Title and Info Boxes -->
 <div class="container mt-5">
@@ -357,26 +357,26 @@
         <div class="partner-ribbon-track" id="partnerTrack">
             <div class="partner-ribbon-content">
                <!-- logos repeated twice for seamless loop -->
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture1.png') }}" alt="UK 1"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture2.png') }}" alt="UK 2"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture3.png') }}" alt="UK 3"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture4.png') }}" alt="UK 4"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture5.png') }}" alt="UK 5"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture6.png') }}" alt="UK 6"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture7.png') }}" alt="UK 7"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture8.png') }}" alt="UK 8"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture9.png') }}" alt="UK 9"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture1.png" alt="UK 1"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture2.png" alt="UK 2"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture3.png" alt="UK 3"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture4.png" alt="UK 4"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture5.png" alt="UK 5"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture6.png" alt="UK 6"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture7.png" alt="UK 7"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture8.png" alt="UK 8"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture9.png" alt="UK 9"></div>
 
                 <!-- repeat again for seamless scroll -->
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture1.png') }}" alt="UK 1"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture2.png') }}" alt="UK 2"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture3.png') }}" alt="UK 3"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture4.png') }}" alt="UK 4"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture5.png') }}" alt="UK 5"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture6.png') }}" alt="UK 6"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture7.png') }}" alt="UK 7"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture8.png') }}" alt="UK 8"></div>
-                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/UK/Picture9.png') }}" alt="UK 9"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture1.png" alt="UK 1"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture2.png" alt="UK 2"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture3.png" alt="UK 3"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture4.png" alt="UK 4"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture5.png" alt="UK 5"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture6.png" alt="UK 6"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture7.png" alt="UK 7"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture8.png" alt="UK 8"></div>
+                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/UK/Picture9.png" alt="UK 9"></div>
             </div>
         </div>
 

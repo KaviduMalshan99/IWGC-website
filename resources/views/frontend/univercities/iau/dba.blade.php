@@ -390,7 +390,7 @@
 <!-- Banner Section -->
 <div class="partner-breadcrumb"
      style="
-        background-image: url('{{ asset('frontend/assets/new/Bachelor of Business Management 01.webp') }}');
+        background-image: url('{{ asset('public/frontend/assets/new/Bachelor of Business Management 01.webp') }}');
         background-size: cover;
         background-position: center;
         height: 300px;

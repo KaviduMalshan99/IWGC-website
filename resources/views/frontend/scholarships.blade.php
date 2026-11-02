@@ -174,7 +174,7 @@
 </style>
 
  <!-- partners area breadcrumb area wrapper -->
-    <div class="partner-breadcrumb"  style="background-image: url('{{ asset('frontend/assets/images/Scholaship 01.2.webp') }}'); height: 300px; position: relative; background-size: cover; background-position: center;">
+    <div class="partner-breadcrumb"  style="background-image: url('{{ asset('public/frontend/assets/images/Scholaship 01.2.webp') }}'); height: 300px; position: relative; background-size: cover; background-position: center;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -364,7 +364,7 @@ journey.
 
 
 <!-- rts faq area start -->
-<div class="rts-faq-area rts-section-gapBottom faq-banner" style="margin-top: 80px; background-image: url('{{ asset('frontend/assets/new/FAQ Boy.webp') }}'); height: 900px; background-size: cover; background-position: center; position: relative;">
+<div class="rts-faq-area rts-section-gapBottom faq-banner" style="margin-top: 80px; background-image: url('{{ asset('public/frontend/assets/new/FAQ Boy.webp') }}'); height: 900px; background-size: cover; background-position: center; position: relative;">
 
     <!-- Overlay -->
     <div class="faq-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;

@@ -151,14 +151,14 @@
 
 .partner-ribbon-content {
     display: flex;
-    gap: 60px;
+    gap: 80px;
     align-items: center;
     width: max-content;
     animation: partner-scroll 70s linear infinite;
 }
 
 .partner-ribbon-item img {
-    height: 110px;
+    height: 70px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
@@ -180,7 +180,7 @@
         gap: 40px;
     }
     .partner-ribbon-item img {
-        height: 80px;
+        height: 50px;
     }
     .ribbon-arrow {
         width: 28px;
@@ -191,7 +191,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/Avid College.webp') }}'); height: 300px; position: relative; background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/new/Avid College.webp') }}'); height: 300px; position: relative; background-size: cover; background-position: center;">
 </div>
 
 
@@ -241,23 +241,23 @@
         <div class="partner-ribbon-track" id="partnerTrack">
             <div class="partner-ribbon-content">
                 <!-- logos repeated twice for seamless loop -->
-                    <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/aiu/a.jpeg') }}" alt="Client 1"></div>
-                    <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/aiu/b.jpeg') }}" alt="Client 2"></div>
-                    <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/aiu/c.jpeg') }}" alt="Client 3"></div>
-                    <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/aiu/d.jpeg') }}" alt="Client 4"></div>
-                    <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/aiu/e.jpeg') }}" alt="Client 5"></div>
-                    <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/aiu/f.jpeg') }}" alt="Client 6"></div>
-                    <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/aiu/g.jpeg') }}" alt="Client 7"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/a.jpeg" alt="Client 1"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/b.jpeg" alt="Client 2"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/c.jpeg" alt="Client 3"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/d.jpeg" alt="Client 4"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/e.jpeg" alt="Client 5"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/f.jpeg" alt="Client 6"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/g.jpeg" alt="Client 7"></div>
 
 
                     <!-- repeat again for seamless loop -->
-                    <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/aiu/a.jpeg') }}" alt="Client 1"></div>
-                    <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/aiu/b.jpeg') }}" alt="Client 2"></div>
-                    <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/aiu/c.jpeg') }}" alt="Client 3"></div>
-                    <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/aiu/d.jpeg') }}" alt="Client 4"></div>
-                    <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/aiu/e.jpeg') }}" alt="Client 5"></div>
-                    <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/aiu/f.jpeg') }}" alt="Client 6"></div>
-                    <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/aiu/g.jpeg') }}" alt="Client 7"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/a.jpeg" alt="Client 1"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/b.jpeg" alt="Client 2"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/c.jpeg" alt="Client 3"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/d.jpeg" alt="Client 4"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/e.jpeg" alt="Client 5"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/f.jpeg" alt="Client 6"></div>
+                    <div class="partner-ribbon-item"><img src="public/frontend/assets/images/aiu/g.jpeg" alt="Client 7"></div>
             </div>
         </div>
 
@@ -284,7 +284,7 @@
             <div class="col-md-4">
                 <a href="{{ route('mba') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('public/frontend/assets/new/Faculty of Business Management.webp') }}"
                             alt="Master of Business Administration"
                             class="img-fluid">
 
@@ -306,7 +306,7 @@
             <div class="col-md-4">
                 <a href="{{ route('dba') }}" class="program-card">
                     <div class="program-image">
-                        <img src="{{ asset('frontend/assets/new/Faculty of Education.webp') }}"
+                        <img src="{{ asset('public/frontend/assets/new/Faculty of Education.webp') }}"
                             alt="Doctor of Business Administration"
                             class="img-fluid">
 

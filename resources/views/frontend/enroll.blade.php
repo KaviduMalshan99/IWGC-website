@@ -135,7 +135,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/Enroll Now.webp') }}'); background-size: cover; background-position: center;  height: 300px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/new/Enroll Now.webp') }}'); background-size: cover; background-position: center;  height: 300px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->
@@ -265,7 +265,7 @@ For a detailed overview of the application process, including necessary document
                                 Please fill it out completely and submit it along with the required documents.
                             </p>
 
-                            <a href="{{ asset('Fillable - IMPWIS_Student_Application.pdf') }}" 
+                            <a href="{{ asset('public/Fillable - IMPWIS_Student_Application.pdf') }}" 
                             class="btn btn-primary" 
                             style="padding: 12px 24px; font-size: 16px; border-radius: 30px; background-color: #ba1e1eff; border: none;" 
                             download>
