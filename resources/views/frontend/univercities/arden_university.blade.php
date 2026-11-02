@@ -809,7 +809,7 @@
                    class="program-card"
                    onclick="openBrochureSurvey(
                        'BSc (HONS) Computing (Top Up)',
-                       '{{ asset('frontend/assets/new/Faculty of Education.webp') }}'
+                       '{{ asset('frontend/assets/brochures/arden-bsc-computing.pdf') }}'
                    )">
 
                     <div class="program-image">
