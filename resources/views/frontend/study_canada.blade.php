@@ -45,7 +45,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/new/01.2.webp') }}'); background-size: cover; background-position: top; height: 300px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/01.2.webp') }}'); background-size: cover; background-position: top; height: 300px;position: relative;">
 </div>
 <!-- Title and Info Boxes -->
 <div class="container mt-5">
@@ -354,32 +354,32 @@
         <div class="partner-ribbon-track" id="partnerTrack">
             <div class="partner-ribbon-content">
                 <!-- logos repeated twice for seamless loop -->
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture1.png" alt="Client 1"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture2.png" alt="Client 2"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture3.png" alt="Client 3"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture4.png" alt="Client 4"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture5.png" alt="Client 5"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture6.png" alt="Client 6"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture7.png" alt="Client 7"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture8.png" alt="Client 8"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture9.png" alt="Client 9"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture10.png" alt="Client 10"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture11.png" alt="Client 11"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture12.png" alt="Client 12"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture1.png') }}" alt="Client 1"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture2.png') }}" alt="Client 2"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture3.png') }}" alt="Client 3"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture4.png') }}" alt="Client 4"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture5.png') }}" alt="Client 5"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture6.png') }}" alt="Client 6"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture7.png') }}" alt="Client 7"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture8.png') }}" alt="Client 8"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture9.png') }}" alt="Client 9"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture10.png') }}" alt="Client 10"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture11.png') }}" alt="Client 11"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture12.png') }}" alt="Client 12"></div>
 
                 <!-- repeat again for seamless scroll -->
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture1.png" alt="Client 1"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture2.png" alt="Client 2"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture3.png" alt="Client 3"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture4.png" alt="Client 4"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture5.png" alt="Client 5"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture6.png" alt="Client 6"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture7.png" alt="Client 7"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture8.png" alt="Client 8"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture9.png" alt="Client 9"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture10.png" alt="Client 10"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture11.png" alt="Client 11"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/canada/Picture12.png" alt="Client 12"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture1.png') }}" alt="Client 1"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture2.png') }}" alt="Client 2"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture3.png') }}" alt="Client 3"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture4.png') }}" alt="Client 4"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture5.png') }}" alt="Client 5"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture6.png') }}" alt="Client 6"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture7.png') }}" alt="Client 7"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture8.png') }}" alt="Client 8"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture9.png') }}" alt="Client 9"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture10.png') }}" alt="Client 10"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture11.png') }}" alt="Client 11"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/canada/Picture12.png') }}" alt="Client 12"></div>
 
             </div>
         </div>

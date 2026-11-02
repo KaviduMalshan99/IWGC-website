@@ -201,7 +201,7 @@
 
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/new/Faculty of Education 03.webp') }}');  height: 300px;position: relative;background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/Faculty of Education 03.webp') }}');  height: 300px;position: relative;background-size: cover; background-position: center;">
 </div>
 
 <!-- Title and Info Boxes -->
@@ -240,7 +240,7 @@
 </div>
 
 <!-- Faculties Section -->
-<div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop working-process-one bg-main" style="background-image: url('{{ asset('public/frontend/assets/images/cta/01.webp') }}'); background-color: #06427eff;">
+<div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop working-process-one bg-main" style="background-image: url('{{ asset('frontend/assets/images/cta/01.webp') }}'); background-color: #06427eff;">
     <div class="container mb-4 pb-3">
         <div class="row">
             <div class="col-lg-12 text-center">

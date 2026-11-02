@@ -177,7 +177,7 @@ position: relative; background-size: contain; background-position: center;">
 
 <!-- Banner Section -->
 <div class="partner-breadcrumb" style="
-    background-image: url('{{ asset('public/frontend/assets/new/Qualifi.webp') }}'); 
+    background-image: url('{{ asset('frontend/assets/new/Qualifi.webp') }}'); 
     background-repeat: no-repeat; 
     background-size: 100% auto; 
     background-position: top center;
@@ -261,7 +261,7 @@ position: relative; background-size: contain; background-position: center;">
 education with global standards. Here’s a quick look at how these levels compare:
                     </p>
                     
-<img src="{{ asset('public/Levels Diagram.webp') }}" alt="Levels Diagram">
+<img src="{{ asset('Levels Diagram.webp') }}" alt="Levels Diagram">
 
 
 
@@ -872,7 +872,7 @@ academic transitions and support for migration or further studies.</li>
 
                         <!-- Right: Image -->
                        <div class="col-lg-5">
-                            <img src="public/frontend/assets/images/Qualifi ( 500 x 1170 ).webp" alt="Business Degrees" class="img-fluid rounded shadow" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="{{ asset('frontend/assets/images/Qualifi ( 500 x 1170 ).webp') }}" alt="Business Degrees" class="img-fluid rounded shadow" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
 
                     </div>

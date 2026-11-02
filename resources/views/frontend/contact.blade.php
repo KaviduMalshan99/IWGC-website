@@ -18,7 +18,7 @@
 
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/new/Contact us 01.webp') }}'); background-size: cover; background-position: center;  height: 300px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/Contact us 01.webp') }}'); background-size: cover; background-position: center;  height: 300px;position: relative;">
 </div>
 <!-- Title and Info Boxes -->
 <div class="container mt--50 mb--100 pb-5">
@@ -69,7 +69,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="thumbnail-contact-form">
-                        <img src="public/frontend/assets/images/Contact Us.webp" alt="contact">
+                        <img src="{{ asset('frontend/assets/images/Contact Us.webp') }}" alt="contact">
                     </div>
                 </div>
                 <div class="col-lg-4">

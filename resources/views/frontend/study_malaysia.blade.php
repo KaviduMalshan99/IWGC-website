@@ -43,7 +43,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/new/03.4.webp') }}'); background-size: cover; background-position: top; height: 300px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/03.4.webp') }}'); background-size: cover; background-position: top; height: 300px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->
@@ -356,28 +356,28 @@ Moreover, Malaysia’s multicultural society—comprising Malays, Chinese, India
         <div class="partner-ribbon-track" id="partnerTrack">
             <div class="partner-ribbon-content">
                <!-- logos repeated twice for seamless loop -->
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture1.png" alt="Malaysia 1"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture2.png" alt="Malaysia 2"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture3.png" alt="Malaysia 3"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture4.png" alt="Malaysia 4"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture5.png" alt="Malaysia 5"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture6.png" alt="Malaysia 6"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture7.png" alt="Malaysia 7"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture8.png" alt="Malaysia 8"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture9.png" alt="Malaysia 9"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture10.png" alt="Malaysia 10"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture1.png') }}" alt="Malaysia 1"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture2.png') }}" alt="Malaysia 2"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture3.png') }}" alt="Malaysia 3"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture4.png') }}" alt="Malaysia 4"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture5.png') }}" alt="Malaysia 5"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture6.png') }}" alt="Malaysia 6"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture7.png') }}" alt="Malaysia 7"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture8.png') }}" alt="Malaysia 8"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture9.png') }}" alt="Malaysia 9"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture10.png') }}" alt="Malaysia 10"></div>
 
                 <!-- repeat again for seamless scroll -->
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture1.png" alt="Malaysia 1"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture2.png" alt="Malaysia 2"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture3.png" alt="Malaysia 3"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture4.png" alt="Malaysia 4"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture5.png" alt="Malaysia 5"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture6.png" alt="Malaysia 6"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture7.png" alt="Malaysia 7"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture8.png" alt="Malaysia 8"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture9.png" alt="Malaysia 9"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/malaysia/Picture10.png" alt="Malaysia 10"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture1.png') }}" alt="Malaysia 1"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture2.png') }}" alt="Malaysia 2"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture3.png') }}" alt="Malaysia 3"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture4.png') }}" alt="Malaysia 4"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture5.png') }}" alt="Malaysia 5"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture6.png') }}" alt="Malaysia 6"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture7.png') }}" alt="Malaysia 7"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture8.png') }}" alt="Malaysia 8"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture9.png') }}" alt="Malaysia 9"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/malaysia/Picture10.png') }}" alt="Malaysia 10"></div>
 
 
             </div>

@@ -207,7 +207,7 @@
     .partner-ribbon-content {
         display: flex;
 
-        gap: 80px;
+        gap: 60px;
 
         align-items: center;
 
@@ -222,7 +222,7 @@
     }
 
     .partner-ribbon-item img {
-        height: 70px;
+        height: 110px;
 
         width: auto;
 
@@ -525,7 +525,7 @@
         }
 
         .partner-ribbon-item img {
-            height: 50px;
+            height: 80px;
         }
 
         .program-image {
@@ -572,7 +572,7 @@
 
 <div class="partner-breadcrumb"
      style="
-        background-image: url('{{ asset('public/frontend/assets/new/Avid College.webp') }}');
+        background-image: url('{{ asset('frontend/assets/new/Avid College.webp') }}');
 
         height: 300px;
 
@@ -719,7 +719,7 @@
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/a.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/a.jpeg') }}"
                          alt="ENAE Recognition 1">
 
                 </div>
@@ -727,7 +727,7 @@
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/b.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/b.jpeg') }}"
                          alt="ENAE Recognition 2">
 
                 </div>
@@ -735,7 +735,7 @@
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/c.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/c.jpeg') }}"
                          alt="ENAE Recognition 3">
 
                 </div>
@@ -743,7 +743,7 @@
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/d.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/d.jpeg') }}"
                          alt="ENAE Recognition 4">
 
                 </div>
@@ -751,7 +751,7 @@
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/e.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/e.jpeg') }}"
                          alt="ENAE Recognition 5">
 
                 </div>
@@ -759,7 +759,7 @@
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/f.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/f.jpeg') }}"
                          alt="ENAE Recognition 6">
 
                 </div>
@@ -767,21 +767,21 @@
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/g.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/g.jpeg') }}"
                          alt="ENAE Recognition 7">
 
                 </div>
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/h.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/h.jpeg') }}"
                          alt="ENAE Recognition 8">
 
                 </div>
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/i.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/i.jpeg') }}"
                          alt="ENAE Recognition 9">
 
                 </div>
@@ -794,7 +794,7 @@
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/a.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/a.jpeg') }}"
                          alt="ENAE Recognition 1">
 
                 </div>
@@ -802,7 +802,7 @@
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/b.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/b.jpeg') }}"
                          alt="ENAE Recognition 2">
 
                 </div>
@@ -810,7 +810,7 @@
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/c.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/c.jpeg') }}"
                          alt="ENAE Recognition 3">
 
                 </div>
@@ -818,7 +818,7 @@
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/d.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/d.jpeg') }}"
                          alt="ENAE Recognition 4">
 
                 </div>
@@ -826,7 +826,7 @@
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/e.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/e.jpeg') }}"
                          alt="ENAE Recognition 5">
 
                 </div>
@@ -834,7 +834,7 @@
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/f.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/f.jpeg') }}"
                          alt="ENAE Recognition 6">
 
                 </div>
@@ -842,7 +842,7 @@
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/g.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/g.jpeg') }}"
                          alt="ENAE Recognition 7">
 
                 </div>
@@ -850,14 +850,14 @@
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/h.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/h.jpeg') }}"
                          alt="ENAE Recognition 8">
 
                 </div>
 
                 <div class="partner-ribbon-item">
 
-                    <img src="{{ asset('public/frontend/assets/images/enae/i.jpeg') }}"
+                    <img src="{{ asset('frontend/assets/images/enae/i.jpeg') }}"
                          alt="ENAE Recognition 9">
 
                 </div>
@@ -950,7 +950,7 @@
                     <div class="program-image">
 
 
-                        <img src="{{ asset('public/frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
 
                              alt="Global Executive MBA"
 
@@ -1012,7 +1012,7 @@
                     <div class="program-image">
 
 
-                        <img src="{{ asset('public/frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
 
                              alt="Master in International Trade"
 
@@ -1074,7 +1074,7 @@
                     <div class="program-image">
 
 
-                        <img src="{{ asset('public/frontend/assets/new/Faculty of Education.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/Faculty of Education.webp') }}"
 
                              alt="Master in Global Supply Chain Management"
 
@@ -1136,7 +1136,7 @@
                     <div class="program-image">
 
 
-                        <img src="{{ asset('public/frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
 
                              alt="Master in Corporate Finance Management and Fintech"
 
@@ -1198,7 +1198,7 @@
                     <div class="program-image">
 
 
-                        <img src="{{ asset('public/frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
 
                              alt="Master in International Trade, Ecommerce and AI Concentration"
 
@@ -1261,7 +1261,7 @@
                     <div class="program-image">
 
 
-                        <img src="{{ asset('public/frontend/assets/new/Faculty of Business Management.webp') }}"
+                        <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
 
                              alt="Master in International and Digital Marketing"
 
@@ -1321,7 +1321,7 @@
 
                onclick="openBrochureSurvey(
                    'ENAE Business School – General Brochure',
-                   '{{ asset('public/frontend/assets/brochures/enae-business-school.pdf') }}'
+                   '{{ asset('frontend/assets/brochures/enae-business-school.pdf') }}'
                )">
 
                 <i class="fas fa-flag"></i>
@@ -1709,7 +1709,7 @@
         document.getElementById(
             'brochureUrl'
         ).value =
-            "{{ asset('public/frontend/assets/brochures/enae-business-school.pdf') }}";
+            "{{ asset('frontend/assets/brochures/enae-business-school.pdf') }}";
 
 
         /*
