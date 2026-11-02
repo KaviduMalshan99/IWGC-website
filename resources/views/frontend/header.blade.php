@@ -63,7 +63,7 @@
                                             <a href="{{ route('about') }}">About</a>
                                         </li>
                                         
-                                        <li class="main-nav has-dropdown mega-menu">
+                                        <li id="programs-nav-item" class="main-nav has-dropdown mega-menu">
                                             <a href="#">Programs</a>
                                             <div class="rts-mega-menu" style="background-color: #ffff;">
                                                 <div class="wrapper">
@@ -199,7 +199,7 @@
 
                           
                             <div class="button-area">
-                                <a href="{{ route('avid') }}" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn" style="background:#ed3532;">View 
+                                <a href="#" id="view-programs-btn" aria-expanded="false" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn" style="background:#ed3532;">View
                                         Programs</a>
                                 <button id="menu-btn" class="menu-btn menu ml--20 ml_sm--5">
                                     <img class="menu-light" src="{{ asset('frontend/assets/images/icons/01.svg') }}" alt="Menu-icon">
@@ -212,3 +212,75 @@
         </div>
     </div>
 </header>
+
+{{-- "View Programs" button: mirrors the theme's :hover rules for the Programs mega menu via .is-open. --}}
+<style>
+    #programs-nav-item.is-open .rts-mega-menu {
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+        transform: scaleY(1);
+    }
+    #programs-nav-item.is-open > a {
+        color: var(--color-red) !important;
+    }
+    #programs-nav-item.is-open > a::after {
+        content: "\f077";
+        color: var(--color-primary);
+    }
+</style>
+<script>
+    (function () {
+        var item = document.getElementById('programs-nav-item');
+        var button = document.getElementById('view-programs-btn');
+        var navArea = item.closest('.nav-area');
+
+        function setOpen(open) {
+            item.classList.toggle('is-open', open);
+            button.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+
+        // Below 1200px the nav is hidden, so use the side menu. Its handlers
+        // live in main.js and metismenu.js, so trigger them with real clicks.
+        function openSideMenu() {
+            document.getElementById('menu-btn').click();
+            var programs = document.getElementById('mobile-programs-toggle');
+            if (!programs.parentElement.classList.contains('mm-active')) {
+                programs.click();
+            }
+        }
+
+        document.addEventListener('click', function (event) {
+            if (button.contains(event.target)) {
+                event.preventDefault();
+                if (getComputedStyle(navArea).display === 'none') {
+                    openSideMenu();
+                } else {
+                    setOpen(!item.classList.contains('is-open'));
+                }
+            } else if (!item.contains(event.target)) {
+                setOpen(false);
+            }
+        });
+
+        // The nav link is href="#"; it only reveals the menu, so don't jump to the top.
+        item.firstElementChild.addEventListener('click', function (event) {
+            event.preventDefault();
+        });
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                setOpen(false);
+            }
+        });
+
+        // Don't let the Study Abroad dropdown open on top of the mega menu.
+        navArea.querySelectorAll('.main-nav.has-dropdown').forEach(function (other) {
+            if (other !== item) {
+                other.addEventListener('mouseenter', function () {
+                    setOpen(false);
+                });
+            }
+        });
+    })();
+</script>

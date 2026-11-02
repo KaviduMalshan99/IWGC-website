@@ -283,11 +283,20 @@
                         <a href="{{ route('about') }}" class="main" aria-expanded="false">About</a>
                     </li>
                     <li class="has-droupdown">
-                        <a href="#" class="main" aria-expanded="false">Programs</a>
+                        <a href="#" id="mobile-programs-toggle" class="main" aria-expanded="false">Programs</a>
                         <ul class="submenu mm-collapse" style="height: 0px;">
-                            <li><a class="mobile-menu-link" href="{{ route('avid') }}">Avid College – Maldives</a></li>
-                            <li><a class="mobile-menu-link" href="{{ route('qualifi') }}">  Ofqual – UK Regulated</a></li>
-                            <li><a class="mobile-menu-link" href="project-details.html">CPD – UK</a></li>
+                            <li style="padding: 10px 0 4px; font-weight: 600; color: #1C2539;">University Programs</li>
+                            <li><a class="mobile-menu-link" href="{{ route('international_american_university') }}">International American University (USA)</a></li>
+                            <li><a class="mobile-menu-link" href="{{ route('arden_university') }}">Arden University (United Kingdom)</a></li>
+                            <li><a class="mobile-menu-link" href="{{ route('enae_business_school') }}">ENAE Business School (Spain)</a></li>
+                            <li><a class="mobile-menu-link" href="{{ route('an_najah_national_university') }}">An-Najah National University (Palestine)</a></li>
+                            <li><a class="mobile-menu-link" href="{{ route('supershine_university') }}">Supershine University (Zambia)</a></li>
+                            <li><a class="mobile-menu-link" href="{{ route('avid') }}">Avid College (Maldives)</a></li>
+                            <li><a class="mobile-menu-link" href="{{ route('liutebm_university') }}">LIUTEBM University (Zambia)</a></li>
+                            <li style="padding: 10px 0 4px; font-weight: 600; color: #1C2539;">Ofqual – UK Regulated</li>
+                            <li><a class="mobile-menu-link" href="{{ route('qualifi') }}">QUALIFI</a></li>
+                            <li style="padding: 10px 0 4px; font-weight: 600; color: #1C2539;">TVEC Approved Programs</li>
+                            <li><a class="mobile-menu-link" href="{{ route('certificate_HRM') }}">Certificate in Human Resource Management</a></li>
                         </ul>
                     </li>
                      <li class="has-droupdown">
