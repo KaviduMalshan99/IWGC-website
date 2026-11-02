@@ -55,18 +55,39 @@
     }
 }
 
-@media (max-width: 768px) {
+/* Vision and Mission fill their equal-height columns (overrides the theme's 84% max-width) */
+.business-goal-area-2 .consultancy-style-one .vision-mission-box {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+}
 
-    /* Center each card */
-    .business-goal-area-2 .signle-consultancy {
-        width: 100% !important;
-        max-width: 350px !important; /* optional card width */
-        margin: 0 auto 20px auto !important; /* center with spacing */
+/* Same size as the contact page map: container width, 450px tall, square corners */
+.about-wide-image {
+    height: 450px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.about-wide-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* The map stays 450px on every screen; this image shortens so it isn't a tall crop */
+@media (max-width: 991px) {
+    .about-wide-image {
+        height: 320px;
     }
+}
 
- 
-
- 
+@media (max-width: 575px) {
+    .about-wide-image {
+        height: 220px;
+    }
 }
 
 </style>
@@ -119,48 +140,36 @@ Every learner who walks through our doors becomes part of a journey marked by in
     <!-- rts business goal area start -->
     <div class="business-goal-area-2" style="padding-top:20px">
         <div class="container pt--30">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="consultancy-style-one">
-                        <div class="title-style-two mb--40 left">
-                           
+            <div class="row g-4 consultancy-style-one">
+                <div class="col-lg-6 d-flex">
+                    <div class="signle-consultancy vision-mission-box">
+                        <div class="icon">
+                            <img src="{{ asset('frontend/assets/images/about/icons/01.svg') }}" alt="">
                         </div>
-                            <div class="signle-consultancy mb--30 vision-mission-box">
-                                <div class="icon">
-                                    <img src="frontend/assets/images/about/icons/01.svg" alt="">
-                                </div>
-                                <div class="information">
-                                    <h4 class="title">Our Vision</h4>
-                                    <p class="disc">
-                                        To be a globally recognized center of academic excellence that transforms lives through innovative education, empowering individuals to become visionary leaders and change-makers in their respective fields.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="signle-consultancy vision-mission-box">
-                                <div class="icon">
-                                    <img src="frontend/assets/images/about/icons/02.svg" alt="">
-                                </div>
-                                <div class="information">
-                                    <h4 class="title">Our Mission</h4>
-                                    <p class="disc">
-                                        To provide transformative educational experiences that combine academic rigor with real-world relevance, fostering intellectual curiosity, critical thinking, and ethical leadership. We are committed to creating an inclusive learning environment that nurtures talent, encourages innovation, and prepares students to address global challenges with confidence and compassion.
-                                    </p>
-                                </div>
-                            </div>
-                        <div class="button-wrapper mt--40" data-animation="fadeInUp" data-delay="0.4" data-duration="1.2">
-                           
+                        <div class="information">
+                            <h4 class="title">Our Vision</h4>
+                            <p class="disc">
+                                To be a globally recognized center of academic excellence that transforms lives through innovative education, empowering individuals to become visionary leaders and change-makers in their respective fields.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="">
-                        <div class="large-thumbnail">
-                            <img src="frontend/assets/images/hero/b1.jpg" alt="">
+                <div class="col-lg-6 d-flex">
+                    <div class="signle-consultancy vision-mission-box">
+                        <div class="icon">
+                            <img src="{{ asset('frontend/assets/images/about/icons/02.svg') }}" alt="">
                         </div>
-                       
+                        <div class="information">
+                            <h4 class="title">Our Mission</h4>
+                            <p class="disc">
+                                To provide transformative educational experiences that combine academic rigor with real-world relevance, fostering intellectual curiosity, critical thinking, and ethical leadership. We are committed to creating an inclusive learning environment that nurtures talent, encourages innovation, and prepares students to address global challenges with confidence and compassion.
+                            </p>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="about-wide-image mt-4">
+                <img src="{{ asset('frontend/assets/images/about/about-wide.jpg') }}" alt="Imperial Wisdom Graduate Campus">
             </div>
         </div>
     </div>
