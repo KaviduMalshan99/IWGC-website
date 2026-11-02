@@ -454,6 +454,51 @@
         <div class="row g-4 justify-content-center">
 
 
+        <!-- =================================
+                 BACHELORS PROGRAMS
+            ================================== -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <a href="https://liutebmsoip.net/bachelor-programs.php"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="liutebm-program-card">
+
+
+                    <img src="{{ asset('frontend/assets/new/liubtm/LIUTEBM-LIUTEBM---Bachelors-Program-2651-x-2651.jpg') }}"
+                         alt="LIUTEBM University Bachelors Programs"
+                         class="img-fluid">
+
+
+                    <div class="program-overlay"></div>
+
+
+                    <div class="program-card-content">
+
+                        <h3>
+
+                            Bachelors Programs
+
+                        </h3>
+
+
+                        <span class="program-btn">
+
+                            Explore Programs
+
+                            <i class="fas fa-external-link-alt"></i>
+
+                        </span>
+
+                    </div>
+
+
+                </a>
+
+            </div>
+
+
             <!-- =================================
                  MASTERS PROGRAMS
             ================================== -->
@@ -544,49 +589,7 @@
             </div>
 
 
-            <!-- =================================
-                 BACHELORS PROGRAMS
-            ================================== -->
-
-            <div class="col-lg-4 col-md-6">
-
-                <a href="https://liutebmsoip.net/bachelor-programs.php"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="liutebm-program-card">
-
-
-                    <img src="{{ asset('frontend/assets/new/liubtm/LIUTEBM-LIUTEBM---Bachelors-Program-2651-x-2651.jpg') }}"
-                         alt="LIUTEBM University Bachelors Programs"
-                         class="img-fluid">
-
-
-                    <div class="program-overlay"></div>
-
-
-                    <div class="program-card-content">
-
-                        <h3>
-
-                            Bachelors Programs
-
-                        </h3>
-
-
-                        <span class="program-btn">
-
-                            Explore Programs
-
-                            <i class="fas fa-external-link-alt"></i>
-
-                        </span>
-
-                    </div>
-
-
-                </a>
-
-            </div>
+            
 
 
         </div>

@@ -390,7 +390,7 @@
 <!-- Banner Section -->
 <div class="partner-breadcrumb"
      style="
-        background-image: url('{{ asset('frontend/assets/new/Bachelor of Business Management 01.webp') }}');
+        background-image: url('{{ asset('frontend/assets/new/iau/IAU-MBA-1900-x-400.jpg') }}');
         background-size: cover;
         background-position: center;
         height: 300px;

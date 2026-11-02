@@ -178,7 +178,7 @@
 </style>
 
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/Master of Business Asministration 03.webp') }}');  height: 300px;position: relative;background-size: cover; background-position: center;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/iau/IAU-MBA-1900-x-400.jpg') }}');  height: 300px;position: relative;background-size: cover; background-position: center;">
 </div>
 
 <!-- Title and Info Boxes -->
