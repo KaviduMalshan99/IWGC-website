@@ -14,6 +14,89 @@
 }
 
 
+/* Desktop: three touching, equal-height boxes; the tallest text box sets the height */
+@media (min-width: 992px) {
+    .rts-contact-area-in-page .contact-info-area-wrapper-p,
+    .rts-contact-area-in-page .contact-form-p,
+    .rts-contact-area-in-page .thumbnail-contact-form {
+        height: 100%;
+        margin: 0; /* theme uses negative margins that overlap the image */
+    }
+
+    .rts-contact-area-in-page .thumbnail-contact-form {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .rts-contact-area-in-page .thumbnail-contact-form img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .rts-contact-area-in-page .contact-form-p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* The box is narrower without the overlap, so use less side padding */
+    .rts-contact-area-in-page .contact-info-area-wrapper-p {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .rts-contact-area-in-page .single-contact-info .icon {
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+    .rts-contact-area-in-page .contact-info-area-wrapper-p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .rts-contact-area-in-page .contact-info-area-wrapper-p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .rts-contact-area-in-page .single-contact-info {
+        gap: 12px;
+    }
+
+    .rts-contact-area-in-page .single-contact-info .info-wrapper a {
+        font-size: 19px;
+    }
+
+    /* One phone number per line, never broken in the middle */
+    .rts-contact-area-in-page .single-contact-info:first-child .info-wrapper a {
+        display: block;
+        white-space: nowrap;
+    }
+}
+
+/* Stacked layout: keep the image box square whatever the image shape */
+@media (max-width: 991px) {
+    .rts-contact-area-in-page .thumbnail-contact-form {
+        aspect-ratio: 1 / 1;
+    }
+
+    .rts-contact-area-in-page .thumbnail-contact-form img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
 </style>
 
 
@@ -33,7 +116,7 @@
     <!-- contact areas main -->
     <div class="rts-contact-area-in-page" data-animation="fadeInUp" data-delay="0.2">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row gx-lg-0">
                 <div class="col-lg-4">
                     <div class="contact-info-area-wrapper-p" style="border:2px solid gold;">
                         <div class="single-contact-info">

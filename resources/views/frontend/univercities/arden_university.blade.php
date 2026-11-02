@@ -25,7 +25,7 @@
 
     .program-image {
         position: relative;
-        height: 360px;
+        aspect-ratio: 1 / 1;
         overflow: hidden;
     }
 
@@ -319,10 +319,6 @@
 
     @media (max-width: 991px) {
 
-        .program-image {
-            height: 320px;
-        }
-
         .program-content {
             width: 90%;
         }
@@ -360,10 +356,6 @@
             height: 80px;
         }
 
-        .program-image {
-            height: 300px;
-        }
-
         .program-content h3 {
             font-size: 19px;
         }
@@ -378,10 +370,6 @@
     }
 
     @media (max-width: 576px) {
-
-        .program-image {
-            height: 280px;
-        }
 
         .program-content h3 {
             font-size: 18px;

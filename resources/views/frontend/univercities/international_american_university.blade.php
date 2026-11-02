@@ -267,14 +267,31 @@
 
 <!-- Faculties Section -->
 <div class="rts-client-review-area rts-section-gapBottom rts-section-gapTop mb--100 working-process-one">
+    
     <div class="container mb-4 pb-3">
+
         <div class="row">
+
             <div class="col-lg-12">
-                <div class=" center">
-                    <h2 class="title rts-text-anime-style-1 text-white">Our Programs</h2>
+
+                <div class="program-section-title text-center">
+
+                    <h2 class="title rts-text-anime-style-1 text-white">
+                        Our Programs
+                    </h2>
+
+                    <p class="disc text-white" style="text-align:center; margin-top: 20px;">
+                        Explore internationally recognised International American University
+                        programmes designed to support academic growth,
+                        professional development and global career opportunities.
+                    </p>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
 
     <div class="container">

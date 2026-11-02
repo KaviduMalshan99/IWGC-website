@@ -101,7 +101,7 @@
 
         border-radius: 15px;
 
-        height: 350px;
+        aspect-ratio: 1 / 1;
 
         text-decoration: none;
 
@@ -244,14 +244,6 @@
        MOBILE
     ========================================= */
 
-    @media (max-width: 991px) {
-
-        .liutebm-program-card {
-            height: 320px;
-        }
-
-    }
-
     @media (max-width: 768px) {
 
         .partner-breadcrumb {
@@ -284,10 +276,6 @@
 
         .program-section-title {
             margin-bottom: 30px;
-        }
-
-        .liutebm-program-card {
-            height: 300px;
         }
 
         .program-card-content h3 {

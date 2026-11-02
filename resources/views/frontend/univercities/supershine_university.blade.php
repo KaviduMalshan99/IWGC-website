@@ -101,7 +101,7 @@
 
         border-radius: 15px;
 
-        height: 360px;
+        aspect-ratio: 1 / 1;
 
         text-decoration: none;
 
@@ -277,10 +277,6 @@
 
         .program-section-title {
             margin-bottom: 30px;
-        }
-
-        .supershine-program-card {
-            height: 300px;
         }
 
         .program-card-content h3 {
