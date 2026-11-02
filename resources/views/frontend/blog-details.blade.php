@@ -47,7 +47,7 @@
                 <div class="blog-details-area-inner-content">
                      @if($blog->main_image)
                     <div class="thumbnail-large">
-                        <img src="{{ asset('storage/app/public/'.$blog->main_image) }}" alt="{{ $blog->title }}">
+                        <img src="{{ url('storage/app/public/'.$blog->main_image) }}" alt="{{ $blog->title }}">
                     </div>
                     @endif
 
@@ -76,14 +76,14 @@
                         @if($blog->subimage1)
                         <div class="col-lg-6">
                             <div class="thumbnail details mb_sm--15">
-                                <img src="{{ asset('storage/app/public/'.$blog->subimage1) }}" alt="{{ $blog->title }}">
+                                <img src="{{ url('storage/app/public/'.$blog->subimage1) }}" alt="{{ $blog->title }}">
                             </div>
                         </div>
                         @endif
                         @if($blog->subimage2)
                         <div class="col-lg-6">
                             <div class="thumbnail details mb_sm--15">
-                                <img src="{{ asset('storage/app/public/'.$blog->subimage2) }}" alt="{{ $blog->title }}">
+                                <img src="{{ url('storage/app/public/'.$blog->subimage2) }}" alt="{{ $blog->title }}">
                             </div>
                         </div>
                         @endif
@@ -129,7 +129,7 @@
                             @if($recentBlog->main_image)
                             <div class="thumbnail">
                                 <a href="{{ route('blog-details', $recentBlog->id) }}">
-                                    <img src="{{ asset('storage/app/public/'.$recentBlog->main_image) }}" alt="{{ $recentBlog->title }}" style="width:90px">
+                                    <img src="{{ url('storage/app/public/'.$recentBlog->main_image) }}" alt="{{ $recentBlog->title }}" style="width:90px">
                                 </a>
                             </div>
                             @endif

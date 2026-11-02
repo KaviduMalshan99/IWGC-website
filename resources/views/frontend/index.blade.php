@@ -1222,7 +1222,7 @@ rts steps area end -->
                                     <img src="{{ asset('logo2.png') }}" alt="Logo" class="testimonial-logo">
 
                                     <a href="#" class="thumbnail">
-                                        <img src="{{ asset('storage/app/public/' . $testimonial->avatar) }}" alt="testimonial image">
+                                        <img src="{{ url('storage/app/public/' . $testimonial->avatar) }}" alt="testimonial image">
                                     </a>
 
                                     <div class="discription">

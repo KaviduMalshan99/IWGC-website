@@ -83,7 +83,7 @@
                     @foreach($blogs as $blog)
                         <div class="blog-single-post-listing" data-animation="fadeInUp" data-delay="0.2" style="border-color: #1b2954; box-shadow: 0 4px 10px rgba(27, 41, 84, 0.2);">
                             <div class="thumbnail">
-                                <img src="{{ asset('storage/app/public/' . $blog->main_image) }}" alt="{{ $blog->title }}" style="height:auto">
+                                <img src="{{ url('storage/app/public/' . $blog->main_image) }}" alt="{{ $blog->title }}" style="height:auto">
                             </div>
                             <div class="blog-listing-content">
                                 <div class="user-info">
@@ -177,7 +177,7 @@
                                 <div class="recent-post-single">
                                     <div class="thumbnail">
                                         <a href="{{ route('blog-details', $post->id) }}">
-                                            <img src="{{ asset('storage/app/public/' . $post->main_image) }}" alt="{{ $post->title }}" style="width:90px">
+                                            <img src="{{ url('storage/app/public/' . $post->main_image) }}" alt="{{ $post->title }}" style="width:90px">
                                         </a>
                                     </div>
                                     <div class="content-area">
