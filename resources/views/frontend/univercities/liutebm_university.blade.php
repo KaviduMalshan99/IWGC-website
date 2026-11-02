@@ -305,7 +305,7 @@
 
 <div class="partner-breadcrumb"
      style="
-        background-image: url('{{ asset('public/frontend/assets/new/Avid College.webp') }}');
+        background-image: url('{{ asset('frontend/assets/new/Avid College.webp') }}');
 
         height: 300px;
 
@@ -478,7 +478,7 @@
                    class="liutebm-program-card">
 
 
-                    <img src="{{ asset('public/frontend/assets/new/Faculty of Business Management.webp') }}"
+                    <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
                          alt="LIUTEBM University Masters Programs"
                          class="img-fluid">
 
@@ -523,7 +523,7 @@
                    class="liutebm-program-card">
 
 
-                    <img src="{{ asset('public/frontend/assets/new/Faculty of Education.webp') }}"
+                    <img src="{{ asset('frontend/assets/new/Faculty of Education.webp') }}"
                          alt="LIUTEBM University Doctoral Programs"
                          class="img-fluid">
 
@@ -568,7 +568,7 @@
                    class="liutebm-program-card">
 
 
-                    <img src="{{ asset('public/frontend/assets/new/Faculty of Business Management.webp') }}"
+                    <img src="{{ asset('frontend/assets/new/Faculty of Business Management.webp') }}"
                          alt="LIUTEBM University Bachelors Programs"
                          class="img-fluid">
 

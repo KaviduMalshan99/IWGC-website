@@ -53,7 +53,7 @@
 
 </style>
  <!-- partners area breadcrumb area wrapper -->
-    <div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/new/Event.webp') }}');height: 300px;position: relative; background-size: cover; background-position: center;">
+    <div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/Event.webp') }}');height: 300px;position: relative; background-size: cover; background-position: center;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -152,7 +152,7 @@
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954;gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
                                          <div class="thumbnail" style="flex: 0.8; width: 300px; height: 600px; overflow: hidden; margin-top:20px">
-                                            <img src="public/frontend/assets/images/events/innovatus.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
+                                            <img src="{{ asset('frontend/assets/images/events/innovatus.jpg') }}" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
                                             <h3 class="title" style="color:white">Imperial Wisdom Pvt. Ltd. and Innovatus Campus Pvt. Ltd. strike Strategic Alliance</h3>
@@ -208,7 +208,7 @@
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954;gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
                                         <div class="thumbnail" style="flex: 0.8; width: 300px; height: 600px; overflow: hidden;margin-top:20px">
-                                            <img src="public/frontend/assets/images/events/uwe.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
+                                            <img src="{{ asset('frontend/assets/images/events/uwe.jpg') }}" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
                                             <h3 class="title" style="color:white">Imperial Wisdom Graduate Campus at the UWE Agent Meet 2025</h3>
@@ -257,7 +257,7 @@
                                 <div class="swiper-slide" style="width: 100% !important;">
                                     <div class="single-testimonials-style-five d-flex" style="background-color: #1b2954;gap: 20px; align-items: stretch; border: 2px solid gold; box-shadow: 0 10px 20px rgba(29, 52, 141, 0.2);">
                                          <div class="thumbnail" style="flex: 0.8; width: 300px; height: 600px; overflow: hidden; margin-top:20px">
-                                            <img src="public/frontend/assets/images/events/INTI-9.jpg" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
+                                            <img src="{{ asset('frontend/assets/images/events/INTI-9.jpg') }}" alt="project" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="inner-content p-5" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
                                             <h3 class="title" style="color:white">INTI University Postgraduate Scholarship Introduction Event</h3>

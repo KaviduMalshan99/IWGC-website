@@ -36,7 +36,7 @@
 }
 </style>
 <!-- Banner Section -->
-<div class="partner-breadcrumb" style="background-image: url('{{ asset('public/frontend/assets/new/02.2.webp') }}'); background-size: cover; background-position: top; height:300px;position: relative;">
+<div class="partner-breadcrumb" style="background-image: url('{{ asset('frontend/assets/new/02.2.webp') }}'); background-size: cover; background-position: top; height:300px;position: relative;">
 </div>
 
 <!-- Title and Info Boxes -->
@@ -327,18 +327,18 @@
             <div class="partner-ribbon-content">
 
                 <!-- logos repeated twice for seamless loop -->
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/singapore/Picture1.png" alt="Singapore 1"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/singapore/Picture2.png" alt="Singapore 2"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/singapore/Picture3.png" alt="Singapore 3"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/singapore/Picture4.png" alt="Singapore 4"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/singapore/Picture5.png" alt="Singapore 5"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/singapore/Picture1.png') }}" alt="Singapore 1"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/singapore/Picture2.png') }}" alt="Singapore 2"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/singapore/Picture3.png') }}" alt="Singapore 3"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/singapore/Picture4.png') }}" alt="Singapore 4"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/singapore/Picture5.png') }}" alt="Singapore 5"></div>
 
                 <!-- repeat again for seamless scroll -->
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/singapore/Picture1.png" alt="Singapore 1"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/singapore/Picture2.png" alt="Singapore 2"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/singapore/Picture3.png" alt="Singapore 3"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/singapore/Picture4.png" alt="Singapore 4"></div>
-                <div class="partner-ribbon-item"><img src="public/frontend/assets/images/singapore/Picture5.png" alt="Singapore 5"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/singapore/Picture1.png') }}" alt="Singapore 1"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/singapore/Picture2.png') }}" alt="Singapore 2"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/singapore/Picture3.png') }}" alt="Singapore 3"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/singapore/Picture4.png') }}" alt="Singapore 4"></div>
+                <div class="partner-ribbon-item"><img src="{{ asset('frontend/assets/images/singapore/Picture5.png') }}" alt="Singapore 5"></div>
             </div>
         </div>
 

@@ -161,7 +161,7 @@
 
 <div class="partner-breadcrumb"
      style="
-        background-image: url('{{ asset('public/frontend/assets/new/Avid College.webp') }}');
+        background-image: url('{{ asset('frontend/assets/new/Avid College.webp') }}');
 
         height: 300px;
 
